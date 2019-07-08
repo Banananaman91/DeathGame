@@ -9,6 +9,7 @@ public class ItemPickUp : MonoBehaviour {
     ItemInfo itemInfo;
     private SpriteRenderer _sprite;
     private BoxCollider2D _collider;
+    [SerializeField] public int _itemPlace;
 
 	// Use this for initialization
 	void Start () {
@@ -16,13 +17,8 @@ public class ItemPickUp : MonoBehaviour {
         _sprite = gameObject.GetComponent<SpriteRenderer>();
         _collider = gameObject.GetComponent<BoxCollider2D>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-	}
-
-    public void Interact(DeathMovement playerInteraction)
+	public void Interact(DeathMovement playerInteraction)
     {
          invScript.AddItem(gameObject);      //go to InventoryScript void AddItem()
         _sprite.enabled = false;

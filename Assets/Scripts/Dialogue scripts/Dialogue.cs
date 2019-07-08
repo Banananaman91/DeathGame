@@ -36,7 +36,7 @@ public class Dialogue : Interacted
 
     SpriteRenderer _myRenderer;
 
-    public bool isIntro = false;
+    public bool isIntro;
 
 
     private void Start()

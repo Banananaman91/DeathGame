@@ -41,8 +41,8 @@ public class ManagerScript : MonoBehaviour {
 
     public void LoadInfo(int _buttonNumber)         //function that Loads information onto the Description panel
     {
-        nameOfItem.text = inventoryScript.items[_buttonNumber].GetComponent<ItemInfo>().itemName;                   //Loads name of item that was pressed onto Description panel
-        descriptionOfItem.text = inventoryScript.items[_buttonNumber].GetComponent<ItemInfo>().itemDescription;     //Loads description of item that was pressed onto Description panel
+        nameOfItem.text = inventoryScript._items[_buttonNumber].GetComponent<ItemInfo>().itemName;                   //Loads name of item that was pressed onto Description panel
+        descriptionOfItem.text = inventoryScript._items[_buttonNumber].GetComponent<ItemInfo>().itemDescription;     //Loads description of item that was pressed onto Description panel
     }
 
     public void LoadGood()
