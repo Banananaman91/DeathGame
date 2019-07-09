@@ -7,22 +7,18 @@ using UnityEngine.UI;
 public class JournalInventoryScript : MonoBehaviour
 {
     [SerializeField] private Button[] pageItemPlace;
-    [SerializeField] public GameObject[] GoodPages;
-    [SerializeField] public GameObject[] EvilPages;
-    [SerializeField] public GameObject[] DeceitfulPages;
-    [SerializeField] public GameObject[] UnfortunatePages;
     [SerializeField] private DeathMovement _thePlayer;
-    [SerializeField] private Test _testPlayer;
-    [SerializeField] public GameObject[] _books;
+    [SerializeField] private GameObject[] _books;
+    public GameObject[] Books => _books;
 
     public void AddPage(GameObject _page)
     {
-        Dialogue dialogueScr = _page.GetComponent<Dialogue>();
-        Sprite spriteRdr = _page.GetComponent<SpriteRenderer>().sprite;
+        Dialogue dialogue = _page.GetComponent<Dialogue>();
+        Sprite sprite = _page.GetComponent<SpriteRenderer>().sprite;
 
-        _books[dialogueScr.pageClass] = _page;
-        pageItemPlace[dialogueScr.pageClass].image.overrideSprite = spriteRdr;
-        pageItemPlace[dialogueScr.pageClass].onClick.AddListener(() => dialogueScr.Interact(_thePlayer));
+        _books[dialogue.PageClass] = _page;
+        pageItemPlace[dialogue.PageClass].image.overrideSprite = sprite;
+        pageItemPlace[dialogue.PageClass].onClick.AddListener(() => dialogue.Interact(_thePlayer));
     }
 }
 

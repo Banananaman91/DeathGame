@@ -5,11 +5,11 @@ using UnityEngine;
 
 namespace Dialogue_scripts
 {
-    [RequireComponent(typeof(BoxCollider2D))]
+    [RequireComponent(typeof(BoxCollider2D), typeof(SpriteRenderer))]
     public class Dialogue : Interacted
     {
-        [TextArea] [SerializeField] private string[] _textBox; // string array for inputting separate dialogue boxes
-        [TextArea] [SerializeField] private string[] _hiddenTextBox;
+        [TextArea, SerializeField] private string[] _textBox; // string array for inputting separate dialogue boxes
+        [TextArea, SerializeField] private string[] _hiddenTextBox;
         [SerializeField] private RenderDialogue _pageRender;
         [SerializeField] private GameObject _rayCast;
         [SerializeField] private GameObject _dialogueBox;
@@ -19,19 +19,16 @@ namespace Dialogue_scripts
         [SerializeField] private GameObject _item;
         [SerializeField] private DeathMovement _movement;
         [SerializeField] private int _itemClass;
-        [SerializeField] public int pageClass;
-        private BoxCollider2D _myCollider;
-        private SpriteRenderer _myRenderer;
+        [SerializeField] private int pageClass;
         [SerializeField] private bool isIntro;
+        [SerializeField] private BoxCollider2D _myCollider;
+        [SerializeField] private SpriteRenderer _myRenderer;
+        public int PageClass => pageClass;
 
 
         private void Start()
         {
             _dialogueBox.SetActive(false);
-
-            _myCollider = GetComponent<BoxCollider2D>();
-
-            _myRenderer = gameObject.GetComponent<SpriteRenderer>();
 
             if (_hiddenItem != null) _hiddenItem.SetActive(false);
 
@@ -45,19 +42,34 @@ namespace Dialogue_scripts
             if (_movement != null) _movement.enabled = false;
             if (_accessItem != null)
             {
-                if (_accessItem.activeSelf == false) StartCoroutine(RunParagraphCycle());
+                if (_accessItem.activeSelf == false)
+                {
+                    StartCoroutine(RunParagraphCycle());
+                }
 
-                else StartCoroutine(RunHiddenParagraphCycle());
+                else
+                {
+                    StartCoroutine(RunHiddenParagraphCycle());
+                }
             }
 
             else if (_item != null)
             {
-                if (_item.activeSelf == true) StartCoroutine(RunHiddenParagraphCycle());
+                if (_item.activeSelf == true)
+                {
+                    StartCoroutine(RunHiddenParagraphCycle());
+                }
 
-                else StartCoroutine(RunParagraphCycle());
+                else
+                {
+                    StartCoroutine(RunParagraphCycle());
+                }
             }
 
-            else StartCoroutine(RunParagraphCycle());
+            else
+            {
+                StartCoroutine(RunParagraphCycle());
+            }
         }
 
         public IEnumerator Play(String pageText)

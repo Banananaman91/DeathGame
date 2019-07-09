@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class InventoryScript : MonoBehaviour {
 
     [SerializeField] private Button[] _itemPlace;                       //creates an array of Buttons
-    [SerializeField] public GameObject[] _items;                       //creates an array of GameObjects
+    [SerializeField] private GameObject[] _items;                       //creates an array of GameObjects
     [SerializeField] private ManagerScript _manager;                    //reference to ManagerScript
+    public GameObject[] Items => _items;
 
     // Use this for initialization
     void Start () {
@@ -20,9 +21,9 @@ public class InventoryScript : MonoBehaviour {
     {
         ItemPickUp item = newItem.GetComponent<ItemPickUp>();
         Sprite sprite = newItem.GetComponent<SpriteRenderer>().sprite;
-        _items[item._itemPlace] = newItem;
-        _itemPlace[item._itemPlace].gameObject.SetActive(true);
-        _itemPlace[item._itemPlace].image.overrideSprite = sprite;
-        _itemPlace[item._itemPlace].onClick.AddListener(() => _manager.LoadInfo(item._itemPlace));
+        _items[item.ItemPlace] = newItem;
+        _itemPlace[item.ItemPlace].gameObject.SetActive(true);
+        _itemPlace[item.ItemPlace].image.overrideSprite = sprite;
+        _itemPlace[item.ItemPlace].onClick.AddListener(() => _manager.LoadInfo(item.ItemPlace));
     }
 }

@@ -8,7 +8,8 @@ public class ItemPickUp : MonoBehaviour {
     [SerializeField] private InventoryScript _invScript;        //access InventoryScript class
     [SerializeField] private SpriteRenderer _sprite;
     [SerializeField] private BoxCollider2D _collider;
-    [SerializeField] public int _itemPlace;
+    [SerializeField] private int _itemPlace;
+    public int ItemPlace => _itemPlace;
 
     public void Interact(DeathMovement playerInteraction)
     {
