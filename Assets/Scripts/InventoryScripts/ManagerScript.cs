@@ -23,11 +23,11 @@ public class ManagerScript : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Tab))        //if statement that activates when button I is pressed
         {
-            _invPanel.SetActive(true);           //sets GameObject as active
-            _journalInvPanel.SetActive(true);    //sets GameObject as active
-            if (active == false)                //if statement that checks the bool
+            if (!active)                //if statement that checks the bool
             {
                 active = true;                  //changes the bool
+                _invPanel.SetActive(true);           //sets GameObject as active
+                _journalInvPanel.SetActive(true);    //sets GameObject as active
             }
             else if(active)             //if statement that checks the bool
             {

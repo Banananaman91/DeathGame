@@ -11,7 +11,6 @@ public class JournalInventoryScript : MonoBehaviour
     [SerializeField] public GameObject[] EvilPages;
     [SerializeField] public GameObject[] DeceitfulPages;
     [SerializeField] public GameObject[] UnfortunatePages;
-    public ManagerScript manager;                    //reference to ManagerScript
     [SerializeField] private DeathMovement _thePlayer;
     [SerializeField] private Test _testPlayer;
     [SerializeField] public GameObject[] _books;
