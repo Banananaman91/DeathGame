@@ -5,22 +5,15 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class ItemPickUp : MonoBehaviour {
-    public InventoryScript invScript;        //access InventoryScript class
-    ItemInfo itemInfo;
-    private SpriteRenderer _sprite;
-    private BoxCollider2D _collider;
+    [SerializeField] private InventoryScript _invScript;        //access InventoryScript class
+    [SerializeField] private SpriteRenderer _sprite;
+    [SerializeField] private BoxCollider2D _collider;
     [SerializeField] public int _itemPlace;
 
-	// Use this for initialization
-	void Start () {
-        itemInfo = gameObject.GetComponent<ItemInfo>();
-        _sprite = gameObject.GetComponent<SpriteRenderer>();
-        _collider = gameObject.GetComponent<BoxCollider2D>();
-	}
-
-	public void Interact(DeathMovement playerInteraction)
+    public void Interact(DeathMovement playerInteraction)
     {
-         invScript.AddItem(gameObject);      //go to InventoryScript void AddItem()
+        if (_invScript == null || _sprite == null || _collider == null) return;
+        _invScript.AddItem(gameObject);      //go to InventoryScript void AddItem()
         _sprite.enabled = false;
         _collider.enabled = false;
     }

@@ -1,197 +1,184 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
+﻿using System;
 using System.Collections;
 using System.Text;
-using System;
+using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class Dialogue : Interacted
+namespace Dialogue_scripts
 {
-    [TextArea] public string[] _textBox; // string array for inputting separate dialogue boxes
-
-    [TextArea] public string[] _hiddenTextBox;
-
-    [SerializeField] private RenderDialogue _pageRender;
-
-    [SerializeField] GameObject rayCast;
-
-    [SerializeField] GameObject dialogueBox;
-
-    public JournalInventoryScript joInvScript;
-
-    [SerializeField] GameObject accessItem;
-
-    [SerializeField] GameObject hiddenItem;
-
-    [SerializeField] GameObject item;
-
-    [SerializeField] private DeathMovement _movement;
-
-    public int _itemClass;
-
-    public int _pageClass;
-
-    BoxCollider2D _myCollider;
-
-    SpriteRenderer _myRenderer;
-
-    public bool isIntro;
-
-
-    private void Start()
+    [RequireComponent(typeof(BoxCollider2D))]
+    public class Dialogue : Interacted
     {
-        dialogueBox.SetActive(false);
+        [TextArea] [SerializeField] private string[] _textBox; // string array for inputting separate dialogue boxes
+        [TextArea] [SerializeField] private string[] _hiddenTextBox;
+        [SerializeField] private RenderDialogue _pageRender;
+        [SerializeField] private GameObject _rayCast;
+        [SerializeField] private GameObject _dialogueBox;
+        [SerializeField] private JournalInventoryScript _joInvScript;
+        [SerializeField] private GameObject _accessItem;
+        [SerializeField] private GameObject _hiddenItem;
+        [SerializeField] private GameObject _item;
+        [SerializeField] private DeathMovement _movement;
+        [SerializeField] private int _itemClass;
+        [SerializeField] public int pageClass;
+        private BoxCollider2D _myCollider;
+        private SpriteRenderer _myRenderer;
+        [SerializeField] private bool isIntro;
 
-        _myCollider = GetComponent<BoxCollider2D>();
 
-        _myRenderer = gameObject.GetComponent<SpriteRenderer>();
-
-        if (hiddenItem != null) hiddenItem.SetActive(false);
-
-        if (item != null) item.SetActive(false);
-    }
-
-
-
-    public void Interact(DeathMovement playerInteraction)
-    {
-        if (_movement != null) _movement.enabled = false;
-        if (accessItem != null)
+        private void Start()
         {
-            if (accessItem.activeSelf == false) StartCoroutine(RunParagraphCycle());
+            _dialogueBox.SetActive(false);
 
-            else StartCoroutine(RunHiddenParagraphCycle());
+            _myCollider = GetComponent<BoxCollider2D>();
+
+            _myRenderer = gameObject.GetComponent<SpriteRenderer>();
+
+            if (_hiddenItem != null) _hiddenItem.SetActive(false);
+
+            if (_item != null) _item.SetActive(false);
         }
 
-        else if (item != null)
+
+
+        public void Interact(DeathMovement playerInteraction)
         {
-            if (item.activeSelf == true) StartCoroutine(RunHiddenParagraphCycle());
+            if (_movement != null) _movement.enabled = false;
+            if (_accessItem != null)
+            {
+                if (_accessItem.activeSelf == false) StartCoroutine(RunParagraphCycle());
+
+                else StartCoroutine(RunHiddenParagraphCycle());
+            }
+
+            else if (_item != null)
+            {
+                if (_item.activeSelf == true) StartCoroutine(RunHiddenParagraphCycle());
+
+                else StartCoroutine(RunParagraphCycle());
+            }
 
             else StartCoroutine(RunParagraphCycle());
         }
 
-        else StartCoroutine(RunParagraphCycle());
-    }
-
-    public IEnumerator Play(String pageText)
-    {
-        var sb = new StringBuilder();
-
-        var letters = pageText.ToCharArray();
-
-        foreach (var letter in letters)
+        public IEnumerator Play(String pageText)
         {
-            sb.Append(letter);
+            var sb = new StringBuilder();
 
-            _pageRender.RenderPageText(sb.ToString());
+            var letters = pageText.ToCharArray();
 
-            yield return new WaitForSeconds(0.0375f);
-        }
+            foreach (var letter in letters)
+            {
+                sb.Append(letter);
+
+                _pageRender.RenderPageText(sb.ToString());
+
+                yield return new WaitForSeconds(0.0375f);
+            }
 
        
-        yield return null;
-    }
-
-    public IEnumerator RunParagraphCycle()
-    {
-        dialogueBox.SetActive(true);
-
-        rayCast.SetActive(false);
-
-        int paragraphCounter = 0;
-
-        Coroutine currentRoutine = null;
-
-        while (paragraphCounter < _textBox.Length)
-        {
-            if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-            currentRoutine = StartCoroutine(Play(_textBox[paragraphCounter]));
-
-            ++paragraphCounter;
-
-            yield return new WaitForSeconds(0.0375f);
-
-            while (!Input.GetKeyDown(KeyCode.E))
-            {
-                yield return null;
-            }
-
             yield return null;
         }
 
-        if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-        dialogueBox.SetActive(false);
-
-        if (_itemClass >= 1)
+        public IEnumerator RunParagraphCycle()
         {
-            joInvScript.AddPage(gameObject);
+            _dialogueBox.SetActive(true);
 
-            _myRenderer.enabled = false;
-        }
+            _rayCast.SetActive(false);
 
-        _myCollider.enabled = false;
+            int paragraphCounter = 0;
 
-        rayCast.SetActive(true);
+            Coroutine currentRoutine = null;
 
-        if (_itemClass == 0)
-        {
-            _myCollider.enabled = true;
-            if (item != null) item.SetActive(true);
-            if (isIntro == true)
+            while (paragraphCounter < _textBox.Length)
             {
+                if (currentRoutine != null) StopCoroutine(currentRoutine);
+
+                currentRoutine = StartCoroutine(Play(_textBox[paragraphCounter]));
+
+                ++paragraphCounter;
+
+                yield return new WaitForSeconds(0.0375f);
+
+                while (!Input.GetKeyDown(KeyCode.E))
+                {
+                    yield return null;
+                }
+
+                yield return null;
+            }
+
+            if (currentRoutine != null) StopCoroutine(currentRoutine);
+
+            _dialogueBox.SetActive(false);
+
+            if (_itemClass >= 1)
+            {
+                _joInvScript.AddPage(gameObject);
+
                 _myRenderer.enabled = false;
-                _myCollider.enabled = false;
             }
-        }
-        if (_movement != null) _movement.enabled = true;
-        
-    }
 
-    public IEnumerator RunHiddenParagraphCycle()
-    {
-        dialogueBox.SetActive(true);
+            _myCollider.enabled = false;
 
-        rayCast.SetActive(false);
+            _rayCast.SetActive(true);
 
-        int paragraphCounter = 0;
-
-        Coroutine currentRoutine = null;
-
-        while (paragraphCounter < _hiddenTextBox.Length)
-        {
-            if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-            currentRoutine = StartCoroutine(Play(_hiddenTextBox[paragraphCounter]));
-
-            ++paragraphCounter;
-
-            yield return new WaitForSeconds(0.0375f);
-
-            while (!Input.GetKeyDown(KeyCode.E))
+            if (_itemClass == 0)
             {
+                _myCollider.enabled = true;
+                if (_item != null) _item.SetActive(true);
+                if (isIntro == true)
+                {
+                    _myRenderer.enabled = false;
+                    _myCollider.enabled = false;
+                }
+            }
+            if (_movement != null) _movement.enabled = true;
+        
+        }
+
+        public IEnumerator RunHiddenParagraphCycle()
+        {
+            _dialogueBox.SetActive(true);
+
+            _rayCast.SetActive(false);
+
+            int paragraphCounter = 0;
+
+            Coroutine currentRoutine = null;
+
+            while (paragraphCounter < _hiddenTextBox.Length)
+            {
+                if (currentRoutine != null) StopCoroutine(currentRoutine);
+
+                currentRoutine = StartCoroutine(Play(_hiddenTextBox[paragraphCounter]));
+
+                ++paragraphCounter;
+
+                yield return new WaitForSeconds(0.0375f);
+
+                while (!Input.GetKeyDown(KeyCode.E))
+                {
+                    yield return null;
+                }
+
                 yield return null;
             }
 
-            yield return null;
+            if (currentRoutine != null) StopCoroutine(currentRoutine);
+
+            _dialogueBox.SetActive(false);
+
+            _myCollider.enabled = false;
+
+            _rayCast.SetActive(true);
+
+            _myCollider.enabled = true;
+
+            if (_hiddenItem != null) _hiddenItem.SetActive(true);
+
+            if (_accessItem != null) _accessItem = null;
+
+            if (_movement != null) _movement.enabled = true;
         }
-
-        if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-        dialogueBox.SetActive(false);
-
-        _myCollider.enabled = false;
-
-        rayCast.SetActive(true);
-
-        _myCollider.enabled = true;
-
-        if (hiddenItem != null) hiddenItem.SetActive(true);
-
-        if (accessItem != null) accessItem = null;
-
-        if (_movement != null) _movement.enabled = true;
     }
 }

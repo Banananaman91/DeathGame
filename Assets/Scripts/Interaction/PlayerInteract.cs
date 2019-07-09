@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Dialogue_scripts;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour {

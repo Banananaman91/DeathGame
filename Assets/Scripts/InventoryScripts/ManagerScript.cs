@@ -5,80 +5,59 @@ using UnityEngine.UI;
 
 public class ManagerScript : MonoBehaviour {
 
-    public GameObject invPanel, journalInvPanel, itemInfo;    //reference to a GameObject
-    public InventoryScript inventoryScript;                     //reference to InventoryScript
-    public JournalInventoryScript journalScript;
-    [SerializeField] Text nameOfItem, descriptionOfItem;        //Serialize Text fields for information panel
+    [SerializeField] private GameObject _invPanel, _journalInvPanel, _itemInfo;    //reference to a GameObject
+    [SerializeField] private InventoryScript _inventoryScript;                     //reference to InventoryScript
+    [SerializeField] private JournalInventoryScript _journalScript;
+    [SerializeField] private Text _nameOfItem, _descriptionOfItem;        //Serialize Text fields for information panel
     [HideInInspector]
-    public bool active = false;    // bool to check if inventory is open or closed
+    public bool active;    // bool to check if inventory is open or closed
 
 
     // Use this for initialization
     void Start () {
-        invPanel.SetActive(false);                  //sets the GameObject as unactive
-        journalInvPanel.SetActive(false);           //sets the GameObject as unactive
+        _invPanel.SetActive(false);                  //sets the GameObject as unactive
+        _journalInvPanel.SetActive(false);           //sets the GameObject as unactive
     }
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Tab))        //if statement that activates when button I is pressed
         {
-            invPanel.SetActive(true);           //sets GameObject as active
-            journalInvPanel.SetActive(true);    //sets GameObject as active
+            _invPanel.SetActive(true);           //sets GameObject as active
+            _journalInvPanel.SetActive(true);    //sets GameObject as active
             if (active == false)                //if statement that checks the bool
             {
                 active = true;                  //changes the bool
             }
-            else if(active == true)             //if statement that checks the bool
+            else if(active)             //if statement that checks the bool
             {
                 active = false;                 //changes the bool
-                invPanel.SetActive(false);      //sets the GameObject as unactive
-                journalInvPanel.SetActive(false);      //sets the GameObject as unactive
-                itemInfo.SetActive(false);
+                _invPanel.SetActive(false);      //sets the GameObject as unactive
+                _journalInvPanel.SetActive(false);      //sets the GameObject as unactive
+                _itemInfo.SetActive(false);
             }
         }
     }
 
     public void LoadInfo(int _buttonNumber)         //function that Loads information onto the Description panel
     {
-        nameOfItem.text = inventoryScript._items[_buttonNumber].GetComponent<ItemInfo>().itemName;                   //Loads name of item that was pressed onto Description panel
-        descriptionOfItem.text = inventoryScript._items[_buttonNumber].GetComponent<ItemInfo>().itemDescription;     //Loads description of item that was pressed onto Description panel
+        _nameOfItem.text = _inventoryScript._items[_buttonNumber].GetComponent<ItemInfo>().itemName;                   //Loads name of item that was pressed onto Description panel
+        _descriptionOfItem.text = _inventoryScript._items[_buttonNumber].GetComponent<ItemInfo>().itemDescription;     //Loads description of item that was pressed onto Description panel
     }
 
-    public void LoadGood()
+    public void LoadPageRiddles(ItemInfo item)
     {
-        nameOfItem.text = "Good Journal";
-        descriptionOfItem.text = "";
-        foreach (GameObject page in journalScript.GoodPages)
+        _descriptionOfItem.text = "";
+        _nameOfItem.text = item.itemName;
+        foreach (var PAGE in _journalScript._books)
         {
-            if(page != null) descriptionOfItem.text += page.GetComponent<ItemInfo>().itemDescription + System.Environment.NewLine;
-        }
-    }
-    public void LoadEvil()
-    {
-        nameOfItem.text = "Evil Journal";
-        descriptionOfItem.text = "";
-        foreach (GameObject page in journalScript.EvilPages)
-        {
-            if (page != null) descriptionOfItem.text += page.GetComponent<ItemInfo>().itemDescription + System.Environment.NewLine;
-        }
-    }
-    public void LoadDeceitful()
-    {
-        nameOfItem.text = "Deceitful Journal";
-        descriptionOfItem.text = "";
-        foreach (GameObject page in journalScript.DeceitfulPages)
-        {
-            if (page != null) descriptionOfItem.text += page.GetComponent<ItemInfo>().itemDescription + System.Environment.NewLine;
-        }
-    }
-    public void LoadUnfortunate()
-    {
-        nameOfItem.text = "Unfortunate Journal";
-        descriptionOfItem.text = "";
-        foreach (GameObject page in journalScript.UnfortunatePages)
-        {
-            if (page != null) descriptionOfItem.text += page.GetComponent<ItemInfo>().itemDescription + System.Environment.NewLine;
+            if (PAGE == null) continue;
+            bool foundPage = PAGE.GetComponent<ItemInfo>().itemName.Contains(_nameOfItem.text);
+            if (foundPage)
+            {
+                Debug.Log("Found page");
+                _descriptionOfItem.text += PAGE.GetComponent<ItemInfo>().itemDescription + System.Environment.NewLine;
+            }
         }
     }
 }
