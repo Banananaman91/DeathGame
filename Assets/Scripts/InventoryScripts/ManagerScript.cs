@@ -39,10 +39,10 @@ namespace InventoryScripts
             }
         }
 
-        public void LoadItemInformation(int _buttonNumber)         //function that Loads information onto the Description panel
+        public void LoadItemInformation(int buttonNumber)         //function that Loads information onto the Description panel
         {
-            _nameOfItem.text = _inventoryScript.Items[_buttonNumber].GetComponent<ItemInfo>().ItemName;                   //Loads name of item that was pressed onto Description panel
-            _descriptionOfItem.text = _inventoryScript.Items[_buttonNumber].GetComponent<ItemInfo>().ItemDescription;     //Loads description of item that was pressed onto Description panel
+            _nameOfItem.text = _inventoryScript.Items[buttonNumber].GetComponent<ItemInfo>().ItemName;                   //Loads name of item that was pressed onto Description panel
+            _descriptionOfItem.text = _inventoryScript.Items[buttonNumber].GetComponent<ItemInfo>().ItemDescription;     //Loads description of item that was pressed onto Description panel
         }
 
         public void LoadPageRiddles(ItemInfo item)
