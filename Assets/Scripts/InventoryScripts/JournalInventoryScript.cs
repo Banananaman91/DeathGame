@@ -1,24 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using DialogueScripts;
+﻿using DialogueScripts;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class JournalInventoryScript : MonoBehaviour
+namespace InventoryScripts
 {
-    [SerializeField] private Button[] pageItemPlace;
-    [SerializeField] private DeathMovement _thePlayer;
-    [SerializeField] private GameObject[] _books;
-    public GameObject[] Books => _books;
-
-    public void AddPage(GameObject _page)
+    public class JournalInventoryScript : MonoBehaviour
     {
-        Dialogue dialogue = _page.GetComponent<Dialogue>();
-        Sprite sprite = _page.GetComponent<SpriteRenderer>().sprite;
+        [SerializeField] private Button[] pageItemPlace;
+        [SerializeField] private DeathMovement _thePlayer;
+        [SerializeField] private GameObject[] _books;
+        public GameObject[] Books => _books;
 
-        _books[dialogue.PageClass] = _page;
-        pageItemPlace[dialogue.PageClass].image.overrideSprite = sprite;
-        pageItemPlace[dialogue.PageClass].onClick.AddListener(() => dialogue.Interact(_thePlayer));
+        public void AddPage(Dialogue page)
+        {
+            _books[page.PageClass] = page.gameObject;
+            pageItemPlace[page.PageClass].image.overrideSprite = page.Sprite;
+            pageItemPlace[page.PageClass].onClick.AddListener(() => page.Interact(_thePlayer));
+        }
     }
 }
 

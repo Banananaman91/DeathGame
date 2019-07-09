@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using InventoryScripts;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,7 +24,7 @@ public class CursorScript : MonoBehaviour
         transform.position = Camera.main.ScreenToWorldPoint(new Vector3 (Input.mousePosition.x,Input.mousePosition.y,Camera.main.nearClipPlane));
         if(managerScript != null)
         {
-            if (managerScript.Active == true || pause._pauseState == true)
+            if (managerScript.Active || pause.PauseState)
             {
                 sp.enabled = true;
             }

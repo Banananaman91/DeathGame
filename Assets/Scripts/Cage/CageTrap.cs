@@ -160,7 +160,7 @@ public class CageTrap : MonoBehaviour {
 
         _myCollider.enabled = false;
 
-        end._pauseState = true;
+        end.PauseState = true;
     }
 
     public IEnumerator RunWarning()

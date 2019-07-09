@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PauseGame : MonoBehaviour {
     [SerializeField] GameObject pause;
-    public bool _pauseState = false;
+    public bool PauseState { get; set; }
 
     public void Start()
     {
@@ -14,7 +14,7 @@ public class PauseGame : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
-        if (_pauseState == false)
+        if (PauseState == false)
         {
             pause.SetActive(false);
             Time.timeScale = 1f;
@@ -26,13 +26,13 @@ public class PauseGame : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (_pauseState == false)
+            if (PauseState == false)
             {
-                _pauseState = true;
+                PauseState = true;
             }
             else
             {
-                _pauseState = false;
+                PauseState = false;
             }
         }
 	}
