@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DialogueScripts;
+using InventoryScripts;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour {
