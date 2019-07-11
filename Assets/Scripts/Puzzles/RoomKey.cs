@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Text;
 using System;
+using DialogueScripts;
 
 public class RoomKey : MonoBehaviour {
 

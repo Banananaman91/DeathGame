@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Cage;
 using DialogueScripts;
 using InventoryScripts;
 using UnityEngine;

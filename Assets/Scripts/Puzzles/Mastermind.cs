@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Text;
 using System;
+using DialogueScripts;
 using UnityEngine.Tilemaps;
 
 [RequireComponent(typeof(BoxCollider2D))]
