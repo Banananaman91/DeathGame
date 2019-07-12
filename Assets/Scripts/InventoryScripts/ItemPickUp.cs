@@ -2,7 +2,8 @@
 
 namespace InventoryScripts
 {
-    public class ItemPickUp : MonoBehaviour {
+    public class ItemPickUp : MonoBehaviour, IInteract
+    {
         [SerializeField] private InventoryScript _invScript;        //access InventoryScript class
         [SerializeField] private SpriteRenderer _sprite;
         [SerializeField] private BoxCollider2D _collider;

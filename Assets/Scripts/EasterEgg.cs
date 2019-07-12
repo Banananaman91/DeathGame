@@ -5,7 +5,7 @@ using System.Text;
 using System;
 using DialogueScripts;
 [RequireComponent(typeof(BoxCollider2D))]
-public class EasterEgg : MonoBehaviour 
+public class EasterEgg : MonoBehaviour, IInteract 
 {
     [SerializeField] private GameObject[] _raffleTickets;
     [SerializeField, TextArea] private string[] _textBox; // string array for inputting separate dialogue boxes

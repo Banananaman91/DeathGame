@@ -8,7 +8,8 @@ using UnityEngine.Video;
 namespace Cage
 {
     [RequireComponent(typeof(BoxCollider2D))]
-    public class CageTrap : MonoBehaviour {
+    public class CageTrap : MonoBehaviour, IInteract
+    {
         [SerializeField] private DeathMovement _movement;
         [SerializeField] private Dialogue[] _pages;
         [SerializeField, TextArea] private string[] _textBox; // string array for inputting separate dialogue boxes
