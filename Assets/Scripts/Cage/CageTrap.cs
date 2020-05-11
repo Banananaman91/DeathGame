@@ -1,210 +1,146 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
+using System.Collections;
 using System.Text;
-using System;
+using DialogueScripts;
+using UnityEngine;
 using UnityEngine.Video;
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class CageTrap : MonoBehaviour {
-    [SerializeField] DeathMovement movement;
-
-    [SerializeField] GameObject[] pages;
-
-    CircleCollider2D myCollider;
-
-    [TextArea] public string[] _textBox; // string array for inputting separate dialogue boxes
-
-    [TextArea] public string[] _hiddenTextBox;
-
-    [TextArea] public string[] _warningTextBox;
-
-    [SerializeField] private RenderDialogue _pageRender;
-
-    [SerializeField] GameObject rayCast;
-
-    [SerializeField] GameObject dialogueBox;
-
-    [SerializeField] VideoPlayer outro;
-
-    BoxCollider2D _myCollider;
-
-    private bool _warning = false;
-
-    public PauseGame end;
-
-    public void Start()
+namespace Cage
+{
+    [RequireComponent(typeof(BoxCollider2D))]
+    public class CageTrap : MonoBehaviour, IInteract
     {
-        dialogueBox.SetActive(false);
-
-        _myCollider = GetComponent<BoxCollider2D>();
-    }
-
-    public void Interact(DeathMovement playerInteraction)
-    {
-        int activateCount = 0;
-
-        foreach (GameObject page in pages)
-        {
-            BoxCollider2D objectCollider = page.GetComponent<BoxCollider2D>();
-            if (objectCollider.enabled == false) activateCount++;
-        }
-
-        if (activateCount == pages.Length)
-        {
-            if (_warning == true)
-            {
-                StartCoroutine(RunHiddenParagraphCycle());       
-                //outro.Play();
-                rayCast.SetActive(false);
-
-            }
-            else StartCoroutine(RunWarning());
-        }
-        else StartCoroutine(RunParagraphCycle());
-    }
-
-    public IEnumerator Play(String pageText)
-    {
-        var sb = new StringBuilder();
-
-        var letters = pageText.ToCharArray();
-
-        foreach (var letter in letters)
-        {
-            sb.Append(letter);
-
-            _pageRender.RenderPageText(sb.ToString());
-
-            yield return new WaitForSeconds(0.0375f);
-        }
-
-
-        yield return null;
-    }
-
-    public IEnumerator RunParagraphCycle()     
-    {
-        dialogueBox.SetActive(true);
-
-        rayCast.SetActive(false);
-
-        int paragraphCounter = 0;
-
-        Coroutine currentRoutine = null;
-
-        while (paragraphCounter < _textBox.Length)
-        {
-            if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-            currentRoutine = StartCoroutine(Play(_textBox[paragraphCounter]));
-
-            ++paragraphCounter;
-
-            yield return new WaitForSeconds(0.0375f);
-
-            while (!Input.GetKeyDown(KeyCode.E))
-            {
-                yield return null;
-            }
-
-            yield return null;
-        }
-
-        if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-        dialogueBox.SetActive(false);
-
-        _myCollider.enabled = false;
-
-        rayCast.SetActive(true);
-
-        _myCollider.enabled = true;
-            
+        [SerializeField] private DeathMovement _movement;
+        [SerializeField] private Dialogue[] _pages;
+        [SerializeField, TextArea] private string[] _textBox; // string array for inputting separate dialogue boxes
+        [SerializeField, TextArea] private string[] _hiddenTextBox;
+        [SerializeField, TextArea] private string[] _warningTextBox;
+        [SerializeField] private RenderDialogue _pageRender;
+        [SerializeField] private GameObject _rayCastObject;
+        [SerializeField] private GameObject _dialogueBox;
+        [SerializeField] private VideoPlayer _outro;
+        private BoxCollider2D MyCollider => gameObject.GetComponent<BoxCollider2D>();
+        [SerializeField] private PauseGame _end;
+        [SerializeField] private float _sentenceSpeed;
+        CircleCollider2D _myCircleCollider;
+        private bool _warning;
+        private bool IsMovementNotNull => _movement != null;
+        private bool IsRayCastObjectNotNull => _rayCastObject != null;
+        private bool IsDialogueBoxNotNull => _dialogueBox != null;
+        private bool IsColliderNotNull => MyCollider != null;
+        private bool IsEndPauseNotNull => _end != null;
         
-    }
-
-    public IEnumerator RunHiddenParagraphCycle()
-    {
-        movement.enabled = false;
-
-        dialogueBox.SetActive(true);
-
-        rayCast.SetActive(false);
-
-        int paragraphCounter = 0;
-
-        Coroutine currentRoutine = null;
-
-        while (paragraphCounter < _hiddenTextBox.Length)
+        private void Start()
         {
-            if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-            currentRoutine = StartCoroutine(Play(_hiddenTextBox[paragraphCounter]));
-
-            ++paragraphCounter;
-
-            yield return new WaitForSeconds(0.0375f);
-
-            while (!Input.GetKeyDown(KeyCode.E))
+            if (IsDialogueBoxNotNull) _dialogueBox.SetActive(false);
+        }
+        
+        public void Interact(DeathMovement playerInteraction)
+        {
+            if (IsMovementNotNull) _movement.enabled = false;
+            if (IsDialogueBoxNotNull) _dialogueBox.SetActive(true);
+            if (IsRayCastObjectNotNull) _rayCastObject.SetActive(false);
+            int activateCount = 0;
+            foreach (Dialogue page in _pages)
             {
-                yield return null;
+                BoxCollider2D objectCollider = page.MyCollider;
+                if (objectCollider.enabled == false) activateCount++;
             }
-
+            if (activateCount == _pages.Length)
+            {
+                if (_warning)
+                {
+                    StartCoroutine(RunHiddenParagraphCycle());       
+                    //outro.Play();
+                    _rayCastObject.SetActive(false);
+                }
+                else StartCoroutine(RunWarning());
+            }
+            else StartCoroutine(RunParagraphCycle());
+        }
+        
+        private IEnumerator Play(String pageText)
+        {
+            var sb = new StringBuilder();
+            var letters = pageText.ToCharArray();
+            foreach (var letter in letters)
+            {
+                sb.Append(letter);
+                _pageRender.RenderPageText(sb.ToString());
+                yield return new WaitForSeconds(_sentenceSpeed);
+            }
             yield return null;
         }
-
-        if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-        dialogueBox.SetActive(false);
-
-        _myCollider.enabled = false;
-
-        end.PauseState = true;
-    }
-
-    public IEnumerator RunWarning()
-    {
-        movement.enabled = false;
-
-        dialogueBox.SetActive(true);
-
-        rayCast.SetActive(false);
-
-        int paragraphCounter = 0;
-
-        Coroutine currentRoutine = null;
-
-        while (paragraphCounter < _warningTextBox.Length)
+        
+        private IEnumerator RunParagraphCycle()     
         {
-            if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-            currentRoutine = StartCoroutine(Play(_warningTextBox[paragraphCounter]));
-
-            ++paragraphCounter;
-
-            yield return new WaitForSeconds(0.0375f);
-
-            while (!Input.GetKeyDown(KeyCode.E))
+            int paragraphCounter = 0;
+            Coroutine currentRoutine = null;
+            while (paragraphCounter < _textBox.Length)
             {
+                if (currentRoutine != null) StopCoroutine(currentRoutine);
+                currentRoutine = StartCoroutine(Play(_textBox[paragraphCounter]));
+                ++paragraphCounter;
+                yield return new WaitForSeconds(_sentenceSpeed);
+                while (!Input.GetKeyDown(KeyCode.E))
+                {
+                    yield return null;
+                }
                 yield return null;
             }
-
-            yield return null;
+            if (currentRoutine != null) StopCoroutine(currentRoutine);
+            if (IsDialogueBoxNotNull) _dialogueBox.SetActive(false);
+            if (IsColliderNotNull) MyCollider.enabled = false;
+            if (IsRayCastObjectNotNull) _rayCastObject.SetActive(true);
+            if (IsColliderNotNull) MyCollider.enabled = true;
+            if (IsMovementNotNull) _movement.enabled = true;
         }
-
-        if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-        dialogueBox.SetActive(false);
-
-        _myCollider.enabled = false;
-
-        rayCast.SetActive(true);
-
-        _myCollider.enabled = true;
-
-        movement.enabled = true;
-
-        _warning = true;
+        
+        private IEnumerator RunHiddenParagraphCycle()
+        {
+            int paragraphCounter = 0;
+            Coroutine currentRoutine = null;
+            while (paragraphCounter < _hiddenTextBox.Length)
+            {
+                if (currentRoutine != null) StopCoroutine(currentRoutine);
+                currentRoutine = StartCoroutine(Play(_hiddenTextBox[paragraphCounter]));
+                ++paragraphCounter;
+                yield return new WaitForSeconds(_sentenceSpeed);
+                while (!Input.GetKeyDown(KeyCode.E))
+                {
+                    yield return null;
+                }
+                yield return null;
+            }
+            if (currentRoutine != null) StopCoroutine(currentRoutine);
+            if (IsDialogueBoxNotNull) _dialogueBox.SetActive(false);
+            if (IsColliderNotNull) MyCollider.enabled = false;
+            if (IsEndPauseNotNull) _end.PauseState = true;
+        }
+        
+        private IEnumerator RunWarning()
+        {
+            int paragraphCounter = 0;
+            Coroutine currentRoutine = null;
+            while (paragraphCounter < _warningTextBox.Length)
+            {
+                if (currentRoutine != null) StopCoroutine(currentRoutine);
+                currentRoutine = StartCoroutine(Play(_warningTextBox[paragraphCounter]));
+                ++paragraphCounter;
+                yield return new WaitForSeconds(_sentenceSpeed);
+                while (!Input.GetKeyDown(KeyCode.E))
+                {
+                    yield return null;
+                }
+                yield return null;
+            }
+            if (currentRoutine != null) StopCoroutine(currentRoutine);
+            if (IsDialogueBoxNotNull) _dialogueBox.SetActive(false);
+            if (IsColliderNotNull) MyCollider.enabled = false;
+            if (IsRayCastObjectNotNull) _rayCastObject.SetActive(true);
+            if (IsColliderNotNull) MyCollider.enabled = true;
+            if (IsMovementNotNull) _movement.enabled = true;
+            _warning = true;
+        }
     }
 }

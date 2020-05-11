@@ -14,7 +14,7 @@ namespace InventoryScripts
         public void AddPage(Dialogue page)
         {
             _books[page.PageClass] = page.gameObject;
-            pageItemPlace[page.PageClass].image.overrideSprite = page.Sprite;
+            pageItemPlace[page.PageClass].image.overrideSprite = page.SpriteObject;
             pageItemPlace[page.PageClass].onClick.AddListener(() => page.Interact(_thePlayer));
         }
     }
