@@ -49,7 +49,7 @@ public class EasterEgg : MonoBehaviour, IInteract
         foreach (var letter in letters)
         {
             sb.Append(letter);
-            if (IsPageRendererNotNull) _pageRender.RenderPageText(sb.ToString());
+            //if (IsPageRendererNotNull) _pageRender.RenderPageText(sb.ToString());
             yield return new WaitForSeconds(_sentenceSpeed);
         }
         yield return null;

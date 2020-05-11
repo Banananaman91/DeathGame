@@ -11,7 +11,7 @@ namespace InventoryScripts
         [SerializeField] private GameObject[] _books;
         public GameObject[] Books => _books;
 
-        public void AddPage(Dialogue page)
+        public void AddPage(DialogueObject page)
         {
             _books[page.PageClass] = page.gameObject;
             pageItemPlace[page.PageClass].image.overrideSprite = page.SpriteObject;

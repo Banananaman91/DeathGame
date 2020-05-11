@@ -85,7 +85,7 @@ namespace Puzzles
             foreach (var letter in letters)
             {
                 sb.Append(letter);
-                _pageRender.RenderPageText(sb.ToString());
+                //_pageRender.RenderPageText(sb.ToString());
                 yield return new WaitForSeconds(_sentenceSpeed);
             }
             yield return null;

@@ -43,8 +43,8 @@ namespace Cage
             int activateCount = 0;
             foreach (Dialogue page in _pages)
             {
-                BoxCollider2D objectCollider = page.MyCollider;
-                if (objectCollider.enabled == false) activateCount++;
+                //BoxCollider2D objectCollider = page.MyCollider;
+                //if (objectCollider.enabled == false) activateCount++;
             }
             if (activateCount == _pages.Length)
             {
@@ -66,7 +66,7 @@ namespace Cage
             foreach (var letter in letters)
             {
                 sb.Append(letter);
-                _pageRender.RenderPageText(sb.ToString());
+                //_pageRender.RenderPageText(sb.ToString());
                 yield return new WaitForSeconds(_sentenceSpeed);
             }
             yield return null;
