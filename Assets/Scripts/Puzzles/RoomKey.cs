@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Text;
-using DialogueScripts;
+using DialogueTypes;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
@@ -85,7 +85,7 @@ namespace Puzzles
             foreach (var letter in letters)
             {
                 sb.Append(letter);
-                _pageRender.RenderPageText(sb.ToString());
+                //_pageRender.RenderPageText(sb.ToString());
                 yield return new WaitForSeconds(_sentenceSpeed);
             }
             yield return null;
