@@ -10,13 +10,16 @@ namespace InventoryScripts
         [SerializeField] private JournalInventoryScript _journalScript;
         [SerializeField] private Text _nameOfItem, _descriptionOfItem;        //Serialize Text fields for information panel
         public bool Active { get; private set; }    // bool to check if inventory is open or closed
+        private bool IsInventoryPanelNotNull => _inventoryPanel != null;
+        private bool IsJournalInventoryPanelNotNull => _journalInventoryPanel != null;
+        private bool IsItemInformationNotNull => _itemInformation != null;
 
 
         // Use this for initialization
         void Start ()
         {
-            _inventoryPanel.SetActive(false);                  //sets the GameObject as unactive
-            _journalInventoryPanel.SetActive(false);           //sets the GameObject as unactive
+            if (IsInventoryPanelNotNull) _inventoryPanel.SetActive(false);                  //sets the GameObject as unactive
+            if (IsJournalInventoryPanelNotNull) _journalInventoryPanel.SetActive(false);           //sets the GameObject as unactive
         }
 	
         // Update is called once per frame
@@ -26,15 +29,15 @@ namespace InventoryScripts
                 if (!Active)                //if statement that checks the bool
                 {
                     Active = true;                  //changes the bool
-                    _inventoryPanel.SetActive(true);           //sets GameObject as active
-                    _journalInventoryPanel.SetActive(true);    //sets GameObject as active
+                    if (IsInventoryPanelNotNull) _inventoryPanel.SetActive(true);           //sets GameObject as active
+                    if (IsJournalInventoryPanelNotNull) _journalInventoryPanel.SetActive(true);    //sets GameObject as active
                 }
                 else if(Active)             //if statement that checks the bool
                 {
                     Active = false;                 //changes the bool
-                    _inventoryPanel.SetActive(false);      //sets the GameObject as unactive
-                    _journalInventoryPanel.SetActive(false);      //sets the GameObject as unactive
-                    _itemInformation.SetActive(false);
+                    if (IsInventoryPanelNotNull) _inventoryPanel.SetActive(false);      //sets the GameObject as unactive
+                    if (IsJournalInventoryPanelNotNull) _journalInventoryPanel.SetActive(false);      //sets the GameObject as unactive
+                    if (IsItemInformationNotNull) _itemInformation.SetActive(false);
                 }
             }
         }

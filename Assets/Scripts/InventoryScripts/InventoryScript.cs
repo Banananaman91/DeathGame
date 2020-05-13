@@ -17,14 +17,13 @@ namespace InventoryScripts
                 _itemPlace[i].gameObject.SetActive(false);       //turns off buttons in inventory at the start of the game
             }
         }
-        public void AddItem(GameObject newItem)                                                           //function that adds item into inventory (requires a GameObject)
+        public void AddItem(ItemPickUp newItem)                                                           //function that adds item into inventory (requires a GameObject)
         {
-            ItemPickUp item = newItem.GetComponent<ItemPickUp>();
-            Sprite sprite = newItem.GetComponent<SpriteRenderer>().sprite;
-            _items[item.ItemPlace] = newItem;
-            _itemPlace[item.ItemPlace].gameObject.SetActive(true);
-            _itemPlace[item.ItemPlace].image.overrideSprite = sprite;
-            _itemPlace[item.ItemPlace].onClick.AddListener(() => _manager.LoadItemInformation(item.ItemPlace));
+            Sprite sprite = newItem.SpriteObject;
+            _items[newItem.ItemPlace] = newItem.gameObject;
+            _itemPlace[newItem.ItemPlace].gameObject.SetActive(true);
+            _itemPlace[newItem.ItemPlace].image.overrideSprite = sprite;
+            _itemPlace[newItem.ItemPlace].onClick.AddListener(() => _manager.LoadItemInformation(newItem.ItemPlace));
         }
     }
 }
