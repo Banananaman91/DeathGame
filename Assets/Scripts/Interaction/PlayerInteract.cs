@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Cage;
-using DialogueTypes;
+using DialogueScripts;
 using InventoryScripts;
 using UnityEngine;
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Text;
-using DialogueTypes;
+using DialogueScripts;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;

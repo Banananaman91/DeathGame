@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
 using System;
-using DialogueTypes;
+using DialogueScripts;
 [RequireComponent(typeof(BoxCollider2D))]
 public class EasterEgg : MonoBehaviour, IInteract 
 {
