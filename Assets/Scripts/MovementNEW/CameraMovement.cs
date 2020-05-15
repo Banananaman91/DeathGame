@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace MovementNEW
@@ -11,9 +12,9 @@ namespace MovementNEW
         private Vector3 _cameraR;
         private Vector3 _goalRotateEuler;
         private Quaternion _goalRotateQuat;
+        [SerializeField] private List<GameObject> _listOfCameras;
         [SerializeField] private float _rotateSpeed;
         [SerializeField] private GameObject _currentCamera;
-        [SerializeField] private GameObject[] _listOfCameras;
         public Vector3 CameraF => _cameraF;
         public Vector3 CameraR => _cameraR;
         private Transform CameraPivot => _currentCamera.transform.parent;
@@ -21,14 +22,21 @@ namespace MovementNEW
         // Start is called before the first frame update
         void Start()
         {
+            if (_listOfCameras.Count == 0) //For use during development, cameras will be pre-defined later
+            {
+                var allCameras = FindObjectsOfType<Camera>();
+                foreach (var cam in allCameras)
+                {
+                    _listOfCameras.Add(cam.GetComponent<Transform>().gameObject);
+                }
+            }
             foreach (var cam in _listOfCameras)
             {
                 if(cam == _currentCamera) continue;
                 cam.SetActive(false);
             }
             _lookPoint = CameraPivot.position;
-            UpdateCameraView();
-            UpdateMovementDirection();
+            UpdateViewAndMovement();
         }
 
         // Update is called once per frame
@@ -51,6 +59,12 @@ namespace MovementNEW
             _startedRotation = true;
             StartCoroutine(SmoothRotate(_goalRotateEuler));
         }
+        
+        private void UpdateViewAndMovement()
+        {
+            UpdateCameraView();
+            UpdateMovementDirection();
+        }
     
         private void UpdateCameraView()
         {
@@ -62,19 +76,19 @@ namespace MovementNEW
             _cameraF = new Vector3(CameraTransform.forward.x, 0f, CameraTransform.forward.z).normalized;
             _cameraR = new Vector3(CameraTransform.right.x, 0f, CameraTransform.right.z).normalized;
         }
-
-        public void ChangeRoom(int room)
+        
+        public void ChangeRoom(GameObject roomCamera)
         {
             var angle = CameraPivot.rotation.eulerAngles;
             _currentCamera.SetActive(false);
-            _currentCamera = _listOfCameras[room];
+            _currentCamera = roomCamera;
             _currentCamera.SetActive(true);
             _lookPoint = _currentCamera.transform.parent.position;
             if (CameraPivot.rotation.eulerAngles != angle)
             {
                 CameraPivot.eulerAngles = angle;
             }
-            UpdateCameraView();
+            UpdateViewAndMovement();
         }
 
         IEnumerator SmoothRotate(Vector3 goalEuler)

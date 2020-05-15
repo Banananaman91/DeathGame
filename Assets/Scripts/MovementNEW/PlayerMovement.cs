@@ -32,10 +32,10 @@ namespace MovementNEW
 
         private void OnCollisionEnter(Collision other)
         {
-            var roomNumber = other.gameObject.GetComponent<RoomNumbers>();
+            var roomNumber = other.gameObject.GetComponent<RoomCameras>();
             if (roomNumber)
             {
-                _cameraScript.ChangeRoom(roomNumber.RoomToCamera);
+                _cameraScript.ChangeRoom(roomNumber.RoomCamera);
             }
         }
     }
