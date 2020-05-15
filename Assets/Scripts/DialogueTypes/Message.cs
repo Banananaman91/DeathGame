@@ -10,8 +10,11 @@ namespace DialogueTypes
         [SerializeField] private string _messageText;
         [SerializeField] private string _npcMood;
         [SerializeField] private List<Response> _responses;
+        [SerializeField] private int _nextMessage;
         public string NpcMood => _npcMood;
         public string MessageText => _messageText;
         public List<Response> Responses => _responses;
+
+        public int NextMessage => _nextMessage;
     }
 }
