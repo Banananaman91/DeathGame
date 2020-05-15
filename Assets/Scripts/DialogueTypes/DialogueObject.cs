@@ -4,7 +4,7 @@ namespace DialogueTypes
 {
     public class DialogueObject : MonoBehaviour
     {
-        [SerializeField] private DialogueTypes.Dialogue _dialogue;
+        [SerializeField] private Dialogue _dialogue;
         [SerializeField] private NpcImages _npcImages;
         [SerializeField] private RenderDialogue _pageRender;
         [SerializeField] private int _startMessage;

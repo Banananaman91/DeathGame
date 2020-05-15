@@ -18,7 +18,7 @@ namespace DialogueTypes
         [SerializeField] private GameObject _dialogueBox;
         private List<Button> _responseOptions = new List<Button>();
         private Image _previousImage;
-        private DialogueTypes.NpcMoods _npcImageMoods;
+        private NpcMoods _npcImageMoods;
         private Image _newMoodImage;
         private Coroutine _currentRoutine;
         private bool IsPreviousImageNotNull => _previousImage != null;
@@ -31,7 +31,8 @@ namespace DialogueTypes
             _pageText.text = pageText;
         }
 
-        private IEnumerator Play(DialogueTypes.Dialogue npc, DialogueTypes.Message npcMessage)
+        //Play the dialogue text
+        private IEnumerator Play(Dialogue npc, Message npcMessage)
         {
             var sb = new StringBuilder();
             var letters = npcMessage.MessageText.ToCharArray();
@@ -43,14 +44,17 @@ namespace DialogueTypes
             }
         }
 
-        public void PlayParagraphCycle(DialogueTypes.Dialogue npcDialogue, DialogueTypes.NpcImages npcImages, int paragraphNumber)
+        //Update paragraph to be displayed
+        public void PlayParagraphCycle(Dialogue npcDialogue, NpcImages npcImages, int paragraphNumber)
         {
+            //exit condition
             if (paragraphNumber < 0)
             {
                 EndDialogue();
                 return;
             }
-
+            
+            //Build list of NPC images for correct NPC
             foreach (var npcImageMoods in npcImages.NpcImage)
             {
                 var npcImageName = npcImageMoods.NpcName.ToLower();
@@ -60,6 +64,7 @@ namespace DialogueTypes
                 }
             }
 
+            //Set NPC mood image from previous list based on current mood
             foreach (var npcMood in _npcImageMoods.NpcMoodImages)
             {
                 var npcMoodName = npcMood.name.ToLower();
@@ -91,7 +96,7 @@ namespace DialogueTypes
 
         }
 
-        private void GetResponse(DialogueTypes.Dialogue npcMessage, DialogueTypes.Message npcResponses, DialogueTypes.NpcImages npcImages)
+        private void GetResponse(Dialogue npcMessage, Message npcResponses, NpcImages npcImages)
         {
             foreach (Button buttonObject in _responseOptions)
             {
