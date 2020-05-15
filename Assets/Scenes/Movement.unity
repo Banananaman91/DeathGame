@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb3480b005bd98446b24383ff867dcc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomToCamera: 0
+  _roomToCamera: 0
 --- !u!1 &472490897
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb3480b005bd98446b24383ff867dcc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomToCamera: 1
+  _roomToCamera: 1
 --- !u!1 &512046569
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,9 +428,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c8cc64161634a49864245c7bcf6530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  currentCamera: {fileID: 1427142089}
-  listOfCameras:
+  _rotateSpeed: 3
+  _currentCamera: {fileID: 1427142089}
+  _listOfCameras:
   - {fileID: 1427142089}
   - {fileID: 995298743}
   - {fileID: 1392495960}
@@ -811,8 +811,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  playerRb: {fileID: 1059229891}
-  cameraScript: {fileID: 590951322}
+  _playerRb: {fileID: 1059229891}
+  _cameraScript: {fileID: 590951322}
 --- !u!1 &1392495960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,7 +1153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb3480b005bd98446b24383ff867dcc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomToCamera: 2
+  _roomToCamera: 2
 --- !u!64 &1539855565
 MeshCollider:
   m_ObjectHideFlags: 0

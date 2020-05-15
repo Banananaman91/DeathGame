@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class RoomNumbers : MonoBehaviour
+namespace MovementNEW
 {
-    [SerializeField] private int roomToCamera;
-    public int RoomToCamera => roomToCamera;
+    public class RoomNumbers : MonoBehaviour
+    {
+        [SerializeField] private int _roomToCamera;
+        public int RoomToCamera => _roomToCamera;
+    }
 }
