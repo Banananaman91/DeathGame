@@ -1,48 +1,42 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
-using UnityEngine;
+﻿using UnityEngine;
 using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
-public class PlayerMovement : MonoBehaviour
+namespace MovementNEW
 {
-    public float speed;
-    private Ray _ray;
-    private RaycastHit _hit;
-    [SerializeField] private Rigidbody playerRb;
-    [SerializeField] private CameraMovement cameraScript;
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerMovement : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        MovePlayer();
-    }
-
-    private void MovePlayer()
-    {
-        Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        input = input.normalized;
-        if (input != Vector3.zero)
+        public float speed;
+        private Ray _ray;
+        private RaycastHit _hit;
+        private Vector3 _playerInput;
+        private Quaternion _playerRotation;
+        [SerializeField] private Rigidbody _playerRb;
+        [SerializeField] private CameraMovement _cameraScript;
+    
+        // Update is called once per frame
+        void Update()
         {
-            Quaternion rotation = Quaternion.LookRotation(input);
-            playerRb.velocity = (cameraScript.CameraF * input.z + cameraScript.CameraR * input.x) * speed;
-            playerRb.rotation = rotation;
+            MovePlayer();
         }
-    }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        var roomNumber = other.gameObject.GetComponent<RoomNumbers>();
-        if (roomNumber)
+        private void MovePlayer()
         {
-            cameraScript.ChangeRoom(roomNumber.RoomToCamera);
+            _playerInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+            if (_playerInput == Vector3.zero) return;
+            _playerInput = _playerInput.normalized;
+            _playerRotation = Quaternion.LookRotation(_playerInput);
+            _playerRb.velocity = (_cameraScript.CameraF * _playerInput.z + _cameraScript.CameraR * _playerInput.x) * speed;
+            _playerRb.rotation = _playerRotation;
+        }
+
+        private void OnCollisionEnter(Collision other)
+        {
+            var roomNumber = other.gameObject.GetComponent<RoomCameras>();
+            if (roomNumber)
+            {
+                _cameraScript.ChangeRoom(roomNumber.RoomCamera);
+            }
         }
     }
 }
