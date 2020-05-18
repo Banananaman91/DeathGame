@@ -18,7 +18,7 @@ namespace DialogueTypes
         [SerializeField] private GameObject _dialogueBox;
         private List<Button> _responseOptions = new List<Button>();
         private Image _previousImage;
-        private DialogueTypes.NpcMoods _npcImageMoods;
+        private NpcMoods _npcImageMoods;
         private Image _newMoodImage;
         private Coroutine _currentRoutine;
         private bool IsPreviousImageNotNull => _previousImage != null;
@@ -31,7 +31,8 @@ namespace DialogueTypes
             _pageText.text = pageText;
         }
 
-        private IEnumerator Play(DialogueTypes.Dialogue npc, DialogueTypes.Message npcMessage)
+        //Play the dialogue text
+        private IEnumerator Play(Dialogue npc, Message npcMessage, NpcImages npcImages, int paragraphNumber)
         {
             var sb = new StringBuilder();
             var letters = npcMessage.MessageText.ToCharArray();
@@ -41,40 +42,57 @@ namespace DialogueTypes
                 RenderPageText(npc.NpcName, sb.ToString());
                 yield return new WaitForSeconds(_sentenceSpeed);
             }
+            yield return new WaitForSeconds(_sentenceSpeed);
+            if (npc.Messages[paragraphNumber].Responses.Count != 0) GetResponse(npc, npc.Messages[paragraphNumber], npcImages);
+            else StartCoroutine(WaitForInput(npc, npcImages, paragraphNumber));
         }
 
-        public void PlayParagraphCycle(DialogueTypes.Dialogue npcDialogue, DialogueTypes.NpcImages npcImages, int paragraphNumber)
+        //Update paragraph to be displayed
+        public void PlayParagraphCycle(Dialogue npcDialogue, NpcImages npcImages, int paragraphNumber)
         {
+            //exit condition
             if (paragraphNumber < 0)
             {
                 EndDialogue();
                 return;
             }
 
-            foreach (var npcImageMoods in npcImages.NpcImage)
+            if (_responseOptions.Count != 0)
             {
-                var npcImageName = npcImageMoods.NpcName.ToLower();
-                if (npcImageName.Contains(npcDialogue.NpcName.ToLower()))
+                foreach (Button buttonObject in _responseOptions)
                 {
-                    _npcImageMoods = npcImageMoods;
+                    Destroy(buttonObject.gameObject);
                 }
+                _responseOptions.Clear();
             }
 
-            foreach (var npcMood in _npcImageMoods.NpcMoodImages)
+            if (npcImages != null)
             {
-                var npcMoodName = npcMood.name.ToLower();
-                if (npcMoodName.Contains(npcDialogue.Messages[paragraphNumber].NpcMood.ToLower()))
+                //Build list of NPC images for correct NPC
+                foreach (var npcImageMoods in npcImages.NpcImage)
                 {
-                    _newMoodImage = npcMood;
+                    var npcImageName = npcImageMoods.NpcName.ToLower();
+                    if (npcImageName.Contains(npcDialogue.NpcName.ToLower()))
+                    {
+                        _npcImageMoods = npcImageMoods;
+                    }
+                }
+
+                //Set NPC mood image from previous list based on current mood
+                foreach (var npcMood in _npcImageMoods.NpcMoodImages)
+                {
+                    var npcMoodName = npcMood.name.ToLower();
+                    if (npcMoodName.Contains(npcDialogue.Messages[paragraphNumber].NpcMood.ToLower()))
+                    {
+                        _newMoodImage = npcMood;
+                    }
                 }
             }
-
+            
             if (!_dialogueBox.activeSelf) _dialogueBox.SetActive(true);
-
-
+            
             if (IsPreviousImageNotNull) Destroy(_previousImage.gameObject);
-
-
+            
             if (IsNewMoodImageNotNull)
             {
                 var newImage = Instantiate(_newMoodImage, _pageImagePosition.transform);
@@ -86,18 +104,12 @@ namespace DialogueTypes
             _pageName.text = string.Empty;
             _pageText.text = string.Empty;
 
-            _currentRoutine = StartCoroutine(Play(npcDialogue, npcDialogue.Messages[paragraphNumber]));
-            GetResponse(npcDialogue, npcDialogue.Messages[paragraphNumber], npcImages);
+            _currentRoutine = StartCoroutine(Play(npcDialogue, npcDialogue.Messages[paragraphNumber], npcImages, paragraphNumber));
 
         }
 
-        private void GetResponse(DialogueTypes.Dialogue npcMessage, DialogueTypes.Message npcResponses, DialogueTypes.NpcImages npcImages)
+        private void GetResponse(Dialogue npcMessage, Message npcResponses, NpcImages npcImages)
         {
-            foreach (Button buttonObject in _responseOptions)
-            {
-                Destroy(buttonObject.gameObject);
-            }
-            _responseOptions.Clear();
             for (var index = 0; index < npcResponses.Responses.Count; index++)
             {
                 var response = npcResponses.Responses[index];
@@ -108,6 +120,17 @@ namespace DialogueTypes
                 _responseOptions.Add(button);
                 button.onClick.AddListener(() => PlayParagraphCycle(npcMessage, npcImages, response.Next));
             }
+        }
+
+        private IEnumerator WaitForInput(Dialogue npcDialogue, NpcImages npcImages, int paragraphNumber)
+        {
+            if (paragraphNumber + 1 > npcDialogue.Messages.Count) EndDialogue();
+            while (!Input.anyKey)
+            {
+                yield return null;
+            }
+            if (paragraphNumber + 1 > npcDialogue.Messages.Count) EndDialogue();
+            else PlayParagraphCycle(npcDialogue, npcImages, npcDialogue.Messages[paragraphNumber].NextMessage);
         }
 
         private void EndDialogue()
