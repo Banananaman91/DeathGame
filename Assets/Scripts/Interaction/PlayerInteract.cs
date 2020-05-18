@@ -3,35 +3,31 @@ using System.Collections.Generic;
 using Cage;
 using DialogueTypes;
 using InventoryScripts;
+using MovementNEW;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour {
 
-    [SerializeField] private DeathMovement _thePlayer;
+    [SerializeField] private PlayerMovement _thePlayer;
     
     private bool _interact;
     
     private void Update()
     {
 
-        _interact = (Input.GetKeyDown(KeyCode.E));
+        _interact = (Input.GetKeyDown(KeyCode.Space));
 
         if (!_interact) return;
 
         // Cast a ray straight down.
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.localScale = _thePlayer.rayDir, 1.5f);
-        Debug.DrawRay(transform.position, transform.localScale = _thePlayer.rayDir);
+        RaycastHit hit;
+        Physics.Raycast(transform.position, _thePlayer.RayDir, out hit, 1.5f);
+        Debug.DrawRay(transform.position, _thePlayer.RayDir);
         // If it hits something...
-        if (hit.collider != null)
-        {
-            IInteract interactable = hit.collider.GetComponent<IInteract>();
-
-
-            if (interactable == null) return;
-
-            interactable.Interact(_thePlayer);
-
-        }
+        if (hit.collider == null) return;
+        IInteract interactable = hit.collider.GetComponent<IInteract>();
+        
+        interactable?.Interact(_thePlayer);
         //_wasInteracting = interacting;
     }
 

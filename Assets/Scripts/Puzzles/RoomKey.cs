@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Text;
 using DialogueTypes;
+using MovementNEW;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
@@ -51,7 +52,7 @@ namespace Puzzles
             }
         }
 
-        public void Interact(DeathMovement playerInteraction)
+        public void Interact(PlayerMovement playerInteraction)
         {
             if (IsMovementNotNull) _movement.enabled = false;
             if (IsKeyNotNull)

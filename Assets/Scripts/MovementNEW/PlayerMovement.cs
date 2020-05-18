@@ -13,6 +13,7 @@ namespace MovementNEW
         private Quaternion _playerRotation;
         [SerializeField] private Rigidbody _playerRb;
         [SerializeField] private CameraMovement _cameraScript;
+        public Vector3 RayDir => transform.forward;
     
         // Update is called once per frame
         void Update()

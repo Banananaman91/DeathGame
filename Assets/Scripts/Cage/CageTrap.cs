@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Text;
 using DialogueTypes;
+using MovementNEW;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -35,7 +36,7 @@ namespace Cage
             if (IsDialogueBoxNotNull) _dialogueBox.SetActive(false);
         }
         
-        public void Interact(DeathMovement playerInteraction)
+        public void Interact(PlayerMovement playerInteraction)
         {
             if (IsMovementNotNull) _movement.enabled = false;
             if (IsDialogueBoxNotNull) _dialogueBox.SetActive(true);

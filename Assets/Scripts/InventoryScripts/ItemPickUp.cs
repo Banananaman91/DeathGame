@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using MovementNEW;
+using UnityEngine;
 
 namespace InventoryScripts
 {
@@ -12,7 +13,7 @@ namespace InventoryScripts
         public Sprite SpriteObject => gameObject.GetComponent<SpriteRenderer>().sprite;
         public int ItemPlace => _itemPlace;
 
-        public void Interact(DeathMovement playerInteraction)
+        public void Interact(PlayerMovement playerInteraction)
         {
             if (_invScript == null || _sprite == null || _collider == null) return;
             _invScript.AddItem(thisItem);      //go to InventoryScript void AddItem()

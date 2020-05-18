@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Text;
 using DialogueTypes;
+using MovementNEW;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UI;
@@ -183,7 +184,7 @@ namespace Puzzles
             _bookGuess3 = 0;
         }
 
-        public void Interact(DeathMovement playerInteraction)
+        public void Interact(PlayerMovement playerInteraction)
         {
             SetColours();
             RandomColour();

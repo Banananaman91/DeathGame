@@ -1,4 +1,5 @@
 ﻿using DialogueTypes;
+using MovementNEW;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +8,7 @@ namespace InventoryScripts
     public class JournalInventoryScript : MonoBehaviour
     {
         [SerializeField] private Button[] pageItemPlace;
-        [SerializeField] private DeathMovement _thePlayer;
+        [SerializeField] private PlayerMovement _thePlayer;
         [SerializeField] private GameObject[] _books;
         public GameObject[] Books => _books;
 

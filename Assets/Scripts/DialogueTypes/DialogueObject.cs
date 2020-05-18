@@ -1,9 +1,10 @@
 ﻿using System;
+using MovementNEW;
 using UnityEngine;
 
 namespace DialogueTypes
 {
-    public class DialogueObject : MonoBehaviour
+    public class DialogueObject : MonoBehaviour, IInteract
     {
         [SerializeField] private Dialogue _dialogue;
         [SerializeField] private NpcImages _npcImages;
@@ -12,12 +13,6 @@ namespace DialogueTypes
         public int PageClass { get; set; }
         public Sprite SpriteObject { get; set; }
 
-        public void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Space)) Interact();
-            if (Input.GetKeyDown(KeyCode.Alpha1)) _startMessage = 1;
-        }
-
-        public void Interact(DeathMovement thePlayer = null) => _pageRender.PlayParagraphCycle(_dialogue, _npcImages,_startMessage);
+        public void Interact(PlayerMovement thePlayer = null) => _pageRender.PlayParagraphCycle(_dialogue, _npcImages,_startMessage);
     }
 }
