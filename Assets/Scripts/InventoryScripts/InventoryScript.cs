@@ -19,11 +19,15 @@ namespace InventoryScripts
         }
         public void AddItem(ItemPickUp newItem)                                                           //function that adds item into inventory (requires a GameObject)
         {
-            Sprite sprite = newItem.SpriteObject;
-            _items[newItem.ItemPlace] = newItem.gameObject;
-            _itemPlace[newItem.ItemPlace].gameObject.SetActive(true);
-            _itemPlace[newItem.ItemPlace].image.overrideSprite = sprite;
-            _itemPlace[newItem.ItemPlace].onClick.AddListener(() => _manager.LoadItemInformation(newItem.ItemPlace));
+           for(var i = 0; i <= _itemPlace.Length; i++)
+           {
+               if (_items[i] != null) continue;
+               _items[i] = newItem.gameObject;
+               _itemPlace[i].gameObject.SetActive(true);
+               _itemPlace[i].image.overrideSprite = newItem.ObjectSprite;
+               _itemPlace[i].onClick.AddListener(() => _manager.LoadItemInformation(i));
+               return;
+           }
         }
     }
 }

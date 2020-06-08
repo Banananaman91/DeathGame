@@ -13,7 +13,7 @@ namespace Pages
         public Sprite SpriteObject => _spriteObject;
         public void Interact(PlayerMovement playerInteraction)
         {
-            throw new System.NotImplementedException();
+            _pageRender.PlayParagraphCycle(_dialogue, _npcImages,_startMessage, this);
         }
     }
 }

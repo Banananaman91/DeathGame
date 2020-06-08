@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace InventoryScripts
@@ -44,6 +44,7 @@ namespace InventoryScripts
 
         public void LoadItemInformation(int buttonNumber)         //function that Loads information onto the Description panel
         {
+            _itemInformation.SetActive(true);
             _nameOfItem.text = _inventoryScript.Items[buttonNumber].GetComponent<ItemInfo>().ItemName;                   //Loads name of item that was pressed onto Description panel
             _descriptionOfItem.text = _inventoryScript.Items[buttonNumber].GetComponent<ItemInfo>().ItemDescription;     //Loads description of item that was pressed onto Description panel
         }

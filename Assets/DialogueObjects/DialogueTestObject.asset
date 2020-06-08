@@ -17,20 +17,28 @@ MonoBehaviour:
   - _messageText: This is a book case
     _npcMood: 
     _responses: []
-    _nextMessage: 2
-  - _messageText: Did this work?
+    _nextMessage: 1
+  - _messageText: Something is sticking out
     _npcMood: 
     _responses:
-    - _next: 3
-      _reply: Yes
     - _next: -1
-      _reply: No
+      _reply: Take it
+      _triggerEvent: 1
+    - _next: -1
+      _reply: Leave it
+      _triggerEvent: 0
     _nextMessage: -1
-  - _messageText: Dialogue will appear
+  - _messageText: Hm, something else is here
     _npcMood: 
-    _responses: []
-    _nextMessage: 1
-  - _messageText: Test complete
+    _responses:
+    - _next: -1
+      _reply: Take it
+      _triggerEvent: 1
+    - _next: -1
+      _reply: Leave it
+      _triggerEvent: 0
+    _nextMessage: -1
+  - _messageText: Damn Granny, that's an interesting book selection
     _npcMood: 
     _responses: []
     _nextMessage: -1
