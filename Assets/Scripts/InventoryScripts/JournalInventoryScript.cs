@@ -1,5 +1,6 @@
 ﻿using DialogueTypes;
 using MovementNEW;
+using Pages;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +13,7 @@ namespace InventoryScripts
         [SerializeField] private GameObject[] _books;
         public GameObject[] Books => _books;
 
-        public void AddPage(DialogueObject page)
+        public void AddPage(Page page)
         {
             _books[page.PageClass] = page.gameObject;
             pageItemPlace[page.PageClass].image.overrideSprite = page.SpriteObject;

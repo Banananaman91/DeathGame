@@ -32,7 +32,7 @@ namespace DialogueTypes
         }
 
         //Play the dialogue text
-        private IEnumerator Play(Dialogue npc, Message npcMessage, NpcImages npcImages, int paragraphNumber)
+        private IEnumerator Play(Dialogue npc, Message npcMessage, NpcImages npcImages, int paragraphNumber, DialogueObject dialogueObject)
         {
             var sb = new StringBuilder();
             var letters = npcMessage.MessageText.ToCharArray();
@@ -43,12 +43,12 @@ namespace DialogueTypes
                 yield return new WaitForSeconds(_sentenceSpeed);
             }
             yield return new WaitForSeconds(_sentenceSpeed);
-            if (npc.Messages[paragraphNumber].Responses.Count != 0) GetResponse(npc, npc.Messages[paragraphNumber], npcImages);
-            else StartCoroutine(WaitForInput(npc, npcImages, paragraphNumber));
+            if (npc.Messages[paragraphNumber].Responses.Count != 0) GetResponse(npc, npc.Messages[paragraphNumber], npcImages, dialogueObject);
+            else StartCoroutine(WaitForInput(npc, npcImages, paragraphNumber, dialogueObject));
         }
 
         //Update paragraph to be displayed
-        public void PlayParagraphCycle(Dialogue npcDialogue, NpcImages npcImages, int paragraphNumber)
+        public void PlayParagraphCycle(Dialogue npcDialogue, NpcImages npcImages, int paragraphNumber, DialogueObject dialogueObject)
         {
             //exit condition
             if (paragraphNumber < 0)
@@ -104,11 +104,11 @@ namespace DialogueTypes
             _pageName.text = string.Empty;
             _pageText.text = string.Empty;
 
-            _currentRoutine = StartCoroutine(Play(npcDialogue, npcDialogue.Messages[paragraphNumber], npcImages, paragraphNumber));
+            _currentRoutine = StartCoroutine(Play(npcDialogue, npcDialogue.Messages[paragraphNumber], npcImages, paragraphNumber, dialogueObject));
 
         }
 
-        private void GetResponse(Dialogue npcMessage, Message npcResponses, NpcImages npcImages)
+        private void GetResponse(Dialogue npcMessage, Message npcResponses, NpcImages npcImages, DialogueObject dialogueObject)
         {
             for (var index = 0; index < npcResponses.Responses.Count; index++)
             {
@@ -118,11 +118,12 @@ namespace DialogueTypes
                 button.transform.SetParent(_dialogueBackground.transform);
                 button.GetComponentInChildren<Text>().text = response.Reply;
                 _responseOptions.Add(button);
-                button.onClick.AddListener(() => PlayParagraphCycle(npcMessage, npcImages, response.Next));
+                button.onClick.AddListener(() => PlayParagraphCycle(npcMessage, npcImages, response.Next, dialogueObject));
+                if (response.TriggerEvent) button.onClick.AddListener(dialogueObject.ResponseTrigger);
             }
         }
 
-        private IEnumerator WaitForInput(Dialogue npcDialogue, NpcImages npcImages, int paragraphNumber)
+        private IEnumerator WaitForInput(Dialogue npcDialogue, NpcImages npcImages, int paragraphNumber, DialogueObject dialogueObject)
         {
             if (paragraphNumber + 1 > npcDialogue.Messages.Count) EndDialogue();
             while (!Input.anyKey)
@@ -130,7 +131,7 @@ namespace DialogueTypes
                 yield return null;
             }
             if (paragraphNumber + 1 > npcDialogue.Messages.Count) EndDialogue();
-            else PlayParagraphCycle(npcDialogue, npcImages, npcDialogue.Messages[paragraphNumber].NextMessage);
+            else PlayParagraphCycle(npcDialogue, npcImages, npcDialogue.Messages[paragraphNumber].NextMessage, dialogueObject);
         }
 
         private void EndDialogue()

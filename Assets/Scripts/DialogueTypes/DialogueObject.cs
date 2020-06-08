@@ -4,15 +4,16 @@ using UnityEngine;
 
 namespace DialogueTypes
 {
-    public class DialogueObject : MonoBehaviour, IInteract
+    public class DialogueObject : MonoBehaviour
     {
-        [SerializeField] private Dialogue _dialogue;
-        [SerializeField] private NpcImages _npcImages;
-        [SerializeField] private RenderDialogue _pageRender;
-        [SerializeField] private int _startMessage;
-        public int PageClass { get; set; }
-        public Sprite SpriteObject { get; set; }
+        [SerializeField] protected Dialogue _dialogue;
+        [SerializeField] protected NpcImages _npcImages;
+        [SerializeField] protected RenderDialogue _pageRender;
+        [SerializeField] protected int _startMessage;
 
-        public void Interact(PlayerMovement thePlayer = null) => _pageRender.PlayParagraphCycle(_dialogue, _npcImages,_startMessage);
+        public virtual void ResponseTrigger()
+        {
+            throw new Exception("ResponseTrigger not initialised");
+        }
     }
 }

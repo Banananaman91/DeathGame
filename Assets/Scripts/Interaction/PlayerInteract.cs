@@ -25,7 +25,9 @@ public class PlayerInteract : MonoBehaviour {
         Debug.DrawRay(transform.position, _thePlayer.RayDir);
         // If it hits something...
         if (hit.collider == null) return;
+        Debug.Log("hit");
         IInteract interactable = hit.collider.GetComponent<IInteract>();
+        Debug.Log(hit.collider.gameObject.name);
         
         interactable?.Interact(_thePlayer);
         //_wasInteracting = interacting;
