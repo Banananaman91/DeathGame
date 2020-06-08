@@ -9,7 +9,6 @@ namespace Cage
         [SerializeField] private GameObject _trap;
         public void Interact(PlayerMovement playerInteraction)
         {
-            Debug.Log("Interacted");
             _pageRender.PlayParagraphCycle(_dialogue, _npcImages,_startMessage, this);
         }
 
