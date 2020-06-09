@@ -14,7 +14,6 @@ public class FurnitureInteract : DialogueObject , IInteract
     [SerializeField] private GameObject[] _objectsInside;
     [SerializeField] private InventoryScript _inventoryScript;
     [SerializeField] private JournalInventoryScript _journalInventory;
-    [SerializeField] private bool _hiddenFirstObjectCheck;
     [SerializeField] private bool _hiddenObjectCheck;
     [SerializeField] private GameObject _hiddenObject;
     [SerializeField] private int _hiddenObjectPosition;
