@@ -17,56 +17,27 @@ public class FurnitureInteract : DialogueObject , IInteract
     [SerializeField] private bool _hiddenFirstObjectCheck;
     [SerializeField] private bool _hiddenObjectCheck;
     [SerializeField] private GameObject _hiddenObject;
+    [SerializeField] private int _hiddenObjectPosition;
     [Header("Starting Message location")]
     [SerializeField] private int _unlockedStartMessage;
     [SerializeField] private int _unlockedEndMessage;
-    private int _collectedObject;
+    public int _collectedObject;
     private bool _noObjectsLeft;
 
     private void OnValidate()
     {
-        if (_hiddenObjectCheck || _hiddenFirstObjectCheck)
-        {
-            if (!_hiddenObject)
-            {
-                Debug.LogWarning(gameObject.name + ": _hiddenObject is null, make it not null");
-            }
-        }
-        if (!_hiddenFirstObjectCheck || !_hiddenObjectCheck) return;
-        Debug.LogWarning(gameObject.name + ": _hiddenFirstObjectCheck and _hiddenObjectCheck can't both be true, set only one");
-        _hiddenFirstObjectCheck = false;
-        _hiddenObjectCheck = false;
+        if (!_hiddenObjectCheck) _hiddenObjectPosition = -1;
+        if (_hiddenObjectCheck && !_hiddenObject) Debug.LogWarning(gameObject.name + ": _hiddenObject is null, make it not null");
     }
 
     public void Interact(PlayerMovement playerInteraction)
     {
-        if (_collectedObject == 0 && _hiddenFirstObjectCheck)
-        {
-            if (!_journalInventory.Books.Contains(_hiddenObject) &&
-                !_inventoryScript.Items.Contains(_hiddenObject))
-            {
-                _startMessage = _unlockedEndMessage;
-            }
-            else
-            {
-                _startMessage = _unlockedStartMessage;
-                _hiddenFirstObjectCheck = false;
-            }
-        }
+
+        if (_collectedObject == _hiddenObjectPosition && (!_journalInventory.Books.Contains(_hiddenObject) &&
+                                                          !_inventoryScript.Items.Contains(_hiddenObject))) _startMessage = _unlockedEndMessage;
         
-        if (_collectedObject != 0 && _hiddenObjectCheck)
-        {
-            if (!_journalInventory.Books.Contains(_hiddenObject) &&
-                !_inventoryScript.Items.Contains(_hiddenObject))
-            {
-                _startMessage = _unlockedEndMessage;
-            }
-            else
-            {
-                _startMessage = _unlockedStartMessage;
-                _hiddenObjectCheck = false;
-            }
-        }
+        else if (_collectedObject == _hiddenObjectPosition && (_journalInventory.Books.Contains(_hiddenObject) ||
+                                                               _inventoryScript.Items.Contains(_hiddenObject))) _startMessage = _unlockedStartMessage;
         
         _pageRender.PlayParagraphCycle(_dialogue, _npcImages,_startMessage, this);
     }
