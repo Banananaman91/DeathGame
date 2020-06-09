@@ -1044,7 +1044,6 @@ GameObject:
   - component: {fileID: 4348459961658635397}
   - component: {fileID: 4348459961658635396}
   - component: {fileID: 8809263300072738721}
-  - component: {fileID: 1016120719}
   m_Layer: 0
   m_Name: BOOKCASE
   m_TagString: Untagged
@@ -1126,22 +1125,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.065, y: 0.16499999, z: 0.19999999}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1016120719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4348459961658635394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 044a0ee289ead8a40a81f1a9307597f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue: {fileID: 11400000, guid: 149708db27dff8943a12353f468eefcf, type: 2}
-  _npcImages: {fileID: 0}
-  _pageRender: {fileID: 0}
-  _startMessage: 0
 --- !u!1 &4348459961817846934
 GameObject:
   m_ObjectHideFlags: 0

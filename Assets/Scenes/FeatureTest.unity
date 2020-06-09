@@ -9387,10 +9387,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1016120719, guid: 9fd4024dd2585d94e899b9f32580e897, type: 3}
-      propertyPath: _pageRender
-      value: 
-      objectReference: {fileID: 1176142011}
     - target: {fileID: 406243935955877861, guid: 9fd4024dd2585d94e899b9f32580e897,
         type: 3}
       propertyPath: m_Name
@@ -9461,8 +9457,7 @@ PrefabInstance:
       propertyPath: _pageRender
       value: 
       objectReference: {fileID: 1176142011}
-    m_RemovedComponents:
-    - {fileID: 1016120719, guid: 9fd4024dd2585d94e899b9f32580e897, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fd4024dd2585d94e899b9f32580e897, type: 3}
 --- !u!1 &1726274084 stripped
 GameObject:
@@ -9491,6 +9486,9 @@ MonoBehaviour:
   - {fileID: 1089081363}
   _inventoryScript: {fileID: 405869541}
   _journalInventory: {fileID: 606318063}
+  _hiddenFirstObjectCheck: 0
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
   _unlockedStartMessage: 2
   _unlockedEndMessage: 3
 --- !u!1 &1735389137
@@ -12257,6 +12255,9 @@ MonoBehaviour:
   - {fileID: 955545329}
   _inventoryScript: {fileID: 405869541}
   _journalInventory: {fileID: 606318063}
+  _hiddenFirstObjectCheck: 0
+  _hiddenObjectCheck: 1
+  _hiddenObject: {fileID: 1089081363}
   _unlockedStartMessage: 2
   _unlockedEndMessage: 3
 --- !u!1 &2115254678

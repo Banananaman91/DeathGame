@@ -6,6 +6,7 @@ namespace DialogueTypes
 {
     public class DialogueObject : MonoBehaviour
     {
+        [Header("Dialogue")]
         [SerializeField] protected Dialogue _dialogue;
         [SerializeField] protected NpcImages _npcImages;
         [SerializeField] protected RenderDialogue _pageRender;
