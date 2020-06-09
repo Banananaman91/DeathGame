@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,11 @@ namespace InventoryScripts
         private bool IsJournalInventoryPanelNotNull => _journalInventoryPanel != null;
         private bool IsItemInformationNotNull => _itemInformation != null;
 
+        private void Awake()
+        {
+            _inventoryPanel.SetActive(true);
+            _journalInventoryPanel.SetActive(true);
+        }
 
         // Use this for initialization
         void Start ()
@@ -53,16 +59,18 @@ namespace InventoryScripts
         {
             _descriptionOfItem.text = "";
             _nameOfItem.text = item.ItemName;
+            var itemDescription = item.ItemDescription.ToLower();
             foreach (var page in _journalScript.Books)
             {
                 if (page == null) continue;
-                bool foundPage = page.GetComponent<ItemInfo>().ItemName.Contains(_nameOfItem.text);
+                bool foundPage = page.GetComponent<ItemInfo>().ItemName.ToLower().Contains(itemDescription);
                 if (foundPage)
                 {
                     Debug.Log("Found page");
-                    _descriptionOfItem.text += page.GetComponent<ItemInfo>().ItemDescription + System.Environment.NewLine;
+                    _descriptionOfItem.text += page.GetComponent<ItemInfo>().ItemDescription + Environment.NewLine;
                 }
             }
+            _itemInformation.SetActive(true);
         }
     }
 }

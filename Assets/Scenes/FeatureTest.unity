@@ -1402,7 +1402,7 @@ PrefabInstance:
     - target: {fileID: 7045267628140896529, guid: 650aaa6674f82e34195fdc85f78d381b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7045267628140896529, guid: 650aaa6674f82e34195fdc85f78d381b,
         type: 3}
@@ -2082,8 +2082,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemName: 
-  _itemDescription: 
+  _itemName: Good Book
+  _itemDescription: good
 --- !u!114 &348786960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2138,12 +2138,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 922110864}
         m_MethodName: LoadPageRiddles
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 348786959}
-          m_ObjectArgumentAssemblyTypeName: ItemInfo, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemInfo, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2313,8 +2313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemName: 
-  _itemDescription: 
+  _itemName: Deceitful Book
+  _itemDescription: deceitful
 --- !u!114 &375158742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2369,12 +2369,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 922110864}
         m_MethodName: LoadPageRiddles
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 375158741}
-          m_ObjectArgumentAssemblyTypeName: ItemInfo, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemInfo, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2991,7 +2991,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &476756569
 MonoBehaviour:
@@ -4445,7 +4445,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 72.943, y: -82.089005, z: -50.833004}
 --- !u!1 &716155312
 GameObject:
@@ -5180,7 +5180,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &909894766
 GameObject:
@@ -5308,7 +5308,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &937646455
 GameObject:
@@ -5435,7 +5435,7 @@ PrefabInstance:
     - target: {fileID: 2773093214608734765, guid: 3f71df07f59c8924f88e539384d4f3c1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2773093214608734765, guid: 3f71df07f59c8924f88e539384d4f3c1,
         type: 3}
@@ -5605,6 +5605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 955545330}
   - component: {fileID: 955545331}
+  - component: {fileID: 955545332}
   m_Layer: 0
   m_Name: Page2
   m_TagString: Untagged
@@ -5644,6 +5645,20 @@ MonoBehaviour:
   _startMessage: 0
   _pageClass: 4
   _spriteObject: {fileID: 21300000, guid: a66ecd1a6fc0b924c961c8a1932e5a16, type: 3}
+--- !u!114 &955545332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955545329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemName: Evil Page
+  _itemDescription: The Granny is big evil, give her the stab
 --- !u!1 &974586594
 GameObject:
   m_ObjectHideFlags: 0
@@ -6382,6 +6397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1148480741}
   - component: {fileID: 1148480742}
+  - component: {fileID: 1148480743}
   m_Layer: 0
   m_Name: Page1
   m_TagString: Untagged
@@ -6421,6 +6437,20 @@ MonoBehaviour:
   _startMessage: 0
   _pageClass: 0
   _spriteObject: {fileID: 21300000, guid: b5f8f83bab776f347bf7bfc6bafa5abd, type: 3}
+--- !u!114 &1148480743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148480740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemName: Good Page
+  _itemDescription: A goody two shoes Granny page
 --- !u!1 &1148578082
 GameObject:
   m_ObjectHideFlags: 0
@@ -6544,7 +6574,7 @@ PrefabInstance:
     - target: {fileID: 9107250903774102944, guid: ac025dda60b72364e928d32b93db58e5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9107250903774102944, guid: ac025dda60b72364e928d32b93db58e5,
         type: 3}
@@ -7460,7 +7490,7 @@ PrefabInstance:
     - target: {fileID: 5026341300382460379, guid: af14b6d2ee7c71447b51c13c4c30f2a7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5026341300382460379, guid: af14b6d2ee7c71447b51c13c4c30f2a7,
         type: 3}
@@ -8061,7 +8091,7 @@ PrefabInstance:
     - target: {fileID: 2129250329446901576, guid: 85659d333ca7928459c19cb8fdea55cf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2129250329446901576, guid: 85659d333ca7928459c19cb8fdea55cf,
         type: 3}
@@ -8215,8 +8245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemName: 
-  _itemDescription: 
+  _itemName: Evil Book
+  _itemDescription: evil
 --- !u!114 &1492772138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8271,12 +8301,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 922110864}
         m_MethodName: LoadPageRiddles
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1492772137}
-          m_ObjectArgumentAssemblyTypeName: ItemInfo, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemInfo, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9669,7 +9699,7 @@ PrefabInstance:
     - target: {fileID: 8468698216008747145, guid: e91f23094091215468fc46421afed330,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8468698216008747145, guid: e91f23094091215468fc46421afed330,
         type: 3}
@@ -9901,7 +9931,7 @@ PrefabInstance:
     - target: {fileID: 2019661311248894163, guid: 9fd4024dd2585d94e899b9f32580e897,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2019661311248894163, guid: 9fd4024dd2585d94e899b9f32580e897,
         type: 3}
@@ -9952,7 +9982,6 @@ MonoBehaviour:
   - {fileID: 1089081363}
   _inventoryScript: {fileID: 405869541}
   _journalInventory: {fileID: 606318063}
-  _hiddenFirstObjectCheck: 0
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
@@ -10237,7 +10266,7 @@ PrefabInstance:
     - target: {fileID: 9059769409797870643, guid: 0e21064d653b2b64db335a9745560626,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9059769409797870643, guid: 0e21064d653b2b64db335a9745560626,
         type: 3}
@@ -11313,8 +11342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemName: 
-  _itemDescription: 
+  _itemName: Unfortunate Book
+  _itemDescription: unfortunate
 --- !u!114 &1916967807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11369,12 +11398,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 922110864}
         m_MethodName: LoadPageRiddles
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1916967806}
-          m_ObjectArgumentAssemblyTypeName: ItemInfo, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemInfo, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11693,7 +11722,7 @@ PrefabInstance:
     - target: {fileID: 5632565620966156338, guid: 53c7c0089e97d9e49a5bb40d8e142102,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5632565620966156338, guid: 53c7c0089e97d9e49a5bb40d8e142102,
         type: 3}
@@ -12068,7 +12097,7 @@ PrefabInstance:
     - target: {fileID: 1358856035951238664, guid: 82e88429f750c8e4d9a64f387f639d8a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1358856035951238664, guid: 82e88429f750c8e4d9a64f387f639d8a,
         type: 3}
@@ -12338,7 +12367,7 @@ PrefabInstance:
     - target: {fileID: 1322779004657572569, guid: 52d5a02b9964520459099d1e553cabfb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1322779004657572569, guid: 52d5a02b9964520459099d1e553cabfb,
         type: 3}
@@ -12743,7 +12772,6 @@ MonoBehaviour:
   - {fileID: 955545329}
   _inventoryScript: {fileID: 405869541}
   _journalInventory: {fileID: 606318063}
-  _hiddenFirstObjectCheck: 0
   _hiddenObjectCheck: 1
   _hiddenObject: {fileID: 1089081363}
   _hiddenObjectPosition: 1
@@ -12857,5 +12885,5 @@ Transform:
   - {fileID: 1089081364}
   - {fileID: 1278203991}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
