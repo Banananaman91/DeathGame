@@ -5642,6 +5642,7 @@ MonoBehaviour:
   _dialogue: {fileID: 11400000, guid: e42a11341336d1c43a2bfcc1ff16a762, type: 2}
   _npcImages: {fileID: 0}
   _pageRender: {fileID: 1176142011}
+  _alternativePageRender: {fileID: 0}
   _startMessage: 0
   _pageClass: 4
   _spriteObject: {fileID: 21300000, guid: a66ecd1a6fc0b924c961c8a1932e5a16, type: 3}
@@ -6434,6 +6435,7 @@ MonoBehaviour:
   _dialogue: {fileID: 11400000, guid: e42a11341336d1c43a2bfcc1ff16a762, type: 2}
   _npcImages: {fileID: 0}
   _pageRender: {fileID: 1176142011}
+  _alternativePageRender: {fileID: 0}
   _startMessage: 0
   _pageClass: 0
   _spriteObject: {fileID: 21300000, guid: b5f8f83bab776f347bf7bfc6bafa5abd, type: 3}
@@ -9950,9 +9952,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2508889104048530773, guid: 9fd4024dd2585d94e899b9f32580e897,
         type: 3}
+      propertyPath: _requiredItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508889104048530773, guid: 9fd4024dd2585d94e899b9f32580e897,
+        type: 3}
       propertyPath: _pageRender
       value: 
       objectReference: {fileID: 1176142011}
+    - target: {fileID: 2508889104048530773, guid: 9fd4024dd2585d94e899b9f32580e897,
+        type: 3}
+      propertyPath: _alternativePageRender
+      value: 
+      objectReference: {fileID: 1646473224}
+    - target: {fileID: 2508889104048530773, guid: 9fd4024dd2585d94e899b9f32580e897,
+        type: 3}
+      propertyPath: _trapTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508889104048530773, guid: 9fd4024dd2585d94e899b9f32580e897,
+        type: 3}
+      propertyPath: _requiredItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 1148480740}
+    - target: {fileID: 2508889104048530773, guid: 9fd4024dd2585d94e899b9f32580e897,
+        type: 3}
+      propertyPath: _requiredItems.Array.data[1]
+      value: 
+      objectReference: {fileID: 955545329}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fd4024dd2585d94e899b9f32580e897, type: 3}
 --- !u!1 &1726274084 stripped
@@ -9976,6 +10003,7 @@ MonoBehaviour:
   _dialogue: {fileID: 11400000, guid: 149708db27dff8943a12353f468eefcf, type: 2}
   _npcImages: {fileID: 0}
   _pageRender: {fileID: 1646473224}
+  _alternativePageRender: {fileID: 0}
   _startMessage: 0
   _objectsInside:
   - {fileID: 1148480740}
@@ -12329,6 +12357,11 @@ PrefabInstance:
       propertyPath: _cameraScript
       value: 
       objectReference: {fileID: 1504791887}
+    - target: {fileID: 1322779004657572566, guid: 52d5a02b9964520459099d1e553cabfb,
+        type: 3}
+      propertyPath: _journalInventory
+      value: 
+      objectReference: {fileID: 606318063}
     - target: {fileID: 1322779004657572569, guid: 52d5a02b9964520459099d1e553cabfb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12766,6 +12799,7 @@ MonoBehaviour:
   _dialogue: {fileID: 11400000, guid: 149708db27dff8943a12353f468eefcf, type: 2}
   _npcImages: {fileID: 0}
   _pageRender: {fileID: 1646473224}
+  _alternativePageRender: {fileID: 0}
   _startMessage: 0
   _objectsInside:
   - {fileID: 1278203990}

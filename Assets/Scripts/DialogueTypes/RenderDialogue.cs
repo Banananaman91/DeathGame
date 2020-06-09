@@ -39,7 +39,7 @@ namespace DialogueTypes
             foreach (var letter in letters)
             {
                 sb.Append(letter);
-                RenderPageText(npc.NpcName, sb.ToString());
+                RenderPageText(npcMessage.NpcName, sb.ToString());
                 yield return new WaitForSeconds(_sentenceSpeed);
             }
             yield return new WaitForSeconds(_sentenceSpeed);
@@ -72,7 +72,7 @@ namespace DialogueTypes
                 foreach (var npcImageMoods in npcImages.NpcImage)
                 {
                     var npcImageName = npcImageMoods.NpcName.ToLower();
-                    if (npcImageName.Contains(npcDialogue.NpcName.ToLower()))
+                    if (npcImageName.Contains(npcDialogue.Messages[paragraphNumber].NpcName.ToLower()))
                     {
                         _npcImageMoods = npcImageMoods;
                     }

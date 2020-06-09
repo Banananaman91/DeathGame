@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using InventoryScripts;
+using UnityEngine;
 using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
@@ -13,6 +14,10 @@ namespace MovementNEW
         private Quaternion _playerRotation;
         [SerializeField] private Rigidbody _playerRb;
         [SerializeField] private CameraMovement _cameraScript;
+        [SerializeField] private JournalInventoryScript _journalInventory;
+
+        public JournalInventoryScript JournalInventory => _journalInventory;
+
         public Vector3 RayDir => transform.forward;
     
         // Update is called once per frame

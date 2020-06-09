@@ -12,23 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: CageDialogue
   m_EditorClassIdentifier: 
-  _npcName: 
   _messages:
-  - _messageText: Do you wish to initiate the end?
-    _npcMood: 
-    _responses:
-    - _next: 1
-      _reply: Yes
-      _triggerEvent: 1
-    - _next: 2
-      _reply: No
-      _triggerEvent: 0
-    _nextMessage: 0
-  - _messageText: Failure
+  - _npcName: Death
+    _messageText: This is a very large table
     _npcMood: 
     _responses: []
     _nextMessage: -1
-  - _messageText: Success
+  - _npcName: 
+    _messageText: This is a hiding place, initiate final choice?
+    _npcMood: 
+    _responses:
+    - _next: 2
+      _reply: Yes
+      _triggerEvent: 1
+    - _next: -1
+      _reply: No
+      _triggerEvent: 0
+    _nextMessage: -1
+  - _npcName: Old Lady Gunk
+    _messageText: Ahahahahha
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Old Lady Gunk
+    _messageText: You trapped suka
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Old Lady Gunk
+    _messageText: Now enjoy spending the rest of your life trapped at a table
     _npcMood: 
     _responses: []
     _nextMessage: -1
