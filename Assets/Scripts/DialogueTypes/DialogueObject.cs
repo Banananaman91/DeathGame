@@ -8,7 +8,6 @@ namespace DialogueTypes
     {
         [Header("Dialogue")]
         [SerializeField] protected Dialogue _dialogue;
-        [SerializeField] protected NpcImages _npcImages;
         [SerializeField] protected RenderDialogue _pageRender;
         [SerializeField] protected RenderDialogue _alternativePageRender;
         [SerializeField] protected int _startMessage;
