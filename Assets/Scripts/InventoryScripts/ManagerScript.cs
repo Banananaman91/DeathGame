@@ -27,7 +27,7 @@ namespace InventoryScripts
             if (IsInventoryPanelNotNull) _inventoryPanel.SetActive(false);                  //sets the GameObject as unactive
             if (IsJournalInventoryPanelNotNull) _journalInventoryPanel.SetActive(false);           //sets the GameObject as unactive
         }
-	
+#if UNITY_STANDALONE
         // Update is called once per frame
         void Update () {
             if (Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Tab))        //if statement that activates when button I is pressed
@@ -47,6 +47,24 @@ namespace InventoryScripts
                 }
             }
         }
+#elif UNITY_ANDROID || UNITY_IOS || UNITY_IPHONE
+        public void Inventory()
+        {
+            if (!Active)                //if statement that checks the bool
+            {
+                Active = true;                  //changes the bool
+                if (IsInventoryPanelNotNull) _inventoryPanel.SetActive(true);           //sets GameObject as active
+                if (IsJournalInventoryPanelNotNull) _journalInventoryPanel.SetActive(true);    //sets GameObject as active
+            }
+            else if(Active)             //if statement that checks the bool
+            {
+                Active = false;                 //changes the bool
+                if (IsInventoryPanelNotNull) _inventoryPanel.SetActive(false);      //sets the GameObject as unactive
+                if (IsJournalInventoryPanelNotNull) _journalInventoryPanel.SetActive(false);      //sets the GameObject as unactive
+                if (IsItemInformationNotNull) _itemInformation.SetActive(false);
+            }
+        }
+#endif
 
         public void LoadItemInformation(int buttonNumber)         //function that Loads information onto the Description panel
         {

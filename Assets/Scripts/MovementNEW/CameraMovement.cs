@@ -38,11 +38,12 @@ namespace MovementNEW
             _lookPoint = CameraPivot.position;
             UpdateViewAndMovement();
         }
-
+#if UNITY_STANDALONE
         // Update is called once per frame
         void Update()
         {
             if (_startedRotation) return;
+
             if (Input.GetKeyDown(KeyCode.E))
             {
                 RotateCamera(-90);
@@ -52,6 +53,20 @@ namespace MovementNEW
                 RotateCamera(90);
             }
         }
+        
+#elif UNITY_ANDROID || UNITY_IOS || UNITY_IPHONE
+        public void RotateLeft(int angle)
+        {
+            if (_startedRotation) return;
+            RotateCamera(angle);
+        }
+
+        public void RotateRight(int angle)
+        {
+            if (_startedRotation) return;
+            RotateCamera(angle);
+        }
+#endif
     
         private void RotateCamera(int angle)
         {

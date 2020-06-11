@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: DialogueTestObject
   m_EditorClassIdentifier: 
-  _npcName: Book Case
   _messages:
-  - _messageText: This is a book case
+  - _npcName: Death
+    _messageText: This is a book case
     _npcMood: 
     _responses: []
     _nextMessage: 1
-  - _messageText: Something is sticking out
+  - _npcName: Death
+    _messageText: Something is sticking out
     _npcMood: 
     _responses:
     - _next: -1
@@ -28,7 +29,8 @@ MonoBehaviour:
       _reply: Leave it
       _triggerEvent: 0
     _nextMessage: -1
-  - _messageText: Hm, something else is here
+  - _npcName: Death
+    _messageText: Hm, something else is here
     _npcMood: 
     _responses:
     - _next: -1
@@ -38,7 +40,8 @@ MonoBehaviour:
       _reply: Leave it
       _triggerEvent: 0
     _nextMessage: -1
-  - _messageText: Damn Granny, that's an interesting book selection
+  - _npcName: Death
+    _messageText: Damn Granny, that's an interesting book selection
     _npcMood: 
     _responses: []
     _nextMessage: -1
