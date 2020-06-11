@@ -14,11 +14,11 @@ public class PlayerInteract : MonoBehaviour {
     
     private void Update()
     {
-
+#if UNITY_STANDALONE
         _interact = (Input.GetKeyDown(KeyCode.Space));
-
+#endif
         if (!_interact) return;
-
+        _interact = false;
         // Cast a ray straight down.
         RaycastHit hit;
         Physics.Raycast(transform.position, _thePlayer.RayDir, out hit, 1.5f);
@@ -30,5 +30,10 @@ public class PlayerInteract : MonoBehaviour {
         interactable?.Interact(_thePlayer);
         //_wasInteracting = interacting;
     }
-
+#if UNITY_ANDROID || UNITY_IOS || UNITY_IPHONE
+    public void Interact()
+    {
+        _interact = true;
+    }
+#endif
 }
