@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: HOUSE
-  m_Shader: {fileID: -6465566751694194690, guid: 3a04dc19628732747b9115f7b2e28ad7,
+  m_Shader: {fileID: -6465566751694194690, guid: 0a1a73aa8f838bc4889e836e7a16584c,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -68,6 +68,9 @@ Material:
     - Vector1_1A453559: 0
     - Vector1_2824732: 0
     - Vector1_3C8AF336: 0
+    - Vector1_DA16C01D: 0
+    - Vector1_E3FCBFEE: 2.5
+    - Vector1_E609AFFD: 0.3
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
