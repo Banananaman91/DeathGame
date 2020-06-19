@@ -21,9 +21,9 @@ namespace Cage
             if (_itemCount != _requiredItems.Length)
             {
                 _itemCount = 0;
-                _alternativePageRender.PlayParagraphCycle(_dialogue, _npcImages,_startMessage, this);
+                _alternativePageRender.PlayDialogue(_dialogue, _startMessage, this);
             }
-            else _pageRender.PlayParagraphCycle(_dialogue, _npcImages,_trapTrigger, this);
+            else _pageRender.PlayDialogue(_dialogue, _trapTrigger, this);
         }
 
         public override void ResponseTrigger()

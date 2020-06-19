@@ -13,7 +13,7 @@ namespace Pages
         public Sprite SpriteObject => _spriteObject;
         public void Interact(PlayerMovement playerInteraction)
         {
-            _pageRender.PlayParagraphCycle(_dialogue, _npcImages,_startMessage, this);
+            _pageRender.PlayDialogue(_dialogue, _startMessage, this);
         }
     }
 }

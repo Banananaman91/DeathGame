@@ -14,17 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcImage:
   - _npcName: Death
-    _npcMoodImages:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    _npcMoodImages: []
   - _npcName: Old Lady
-    _npcMoodImages:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    _npcMoodImages: []
   - _npcName: Dave
-    _npcMoodImages:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    _npcMoodImages: []

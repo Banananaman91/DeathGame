@@ -38,7 +38,7 @@ public class FurnitureInteract : DialogueObject , IInteract
         else if (_collectedObject == _hiddenObjectPosition && (_journalInventory.Books.Contains(_hiddenObject) ||
                                                                _inventoryScript.Items.Contains(_hiddenObject))) _startMessage = _unlockedStartMessage;
         
-        _pageRender.PlayParagraphCycle(_dialogue, _npcImages,_startMessage, this);
+        _pageRender.PlayDialogue(_dialogue, _startMessage, this);
     }
     
     public override void ResponseTrigger()
