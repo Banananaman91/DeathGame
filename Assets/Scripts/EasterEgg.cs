@@ -4,6 +4,8 @@ using UnityEngine;
 using System.Text;
 using System;
 using DialogueTypes;
+using MovementNEW;
+
 [RequireComponent(typeof(BoxCollider2D))]
 public class EasterEgg : MonoBehaviour, IInteract 
 {
@@ -27,7 +29,7 @@ public class EasterEgg : MonoBehaviour, IInteract
         if (IsJackEggNotNull) _jackEgg.SetActive(false);
     }
     
-    public void Interact(DeathMovement playerInteraction)
+    public void Interact(PlayerMovement playerInteraction)
     {
         int activateCount = 0;
         foreach (GameObject item in _raffleTickets)

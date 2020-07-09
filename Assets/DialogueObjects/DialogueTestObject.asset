@@ -12,25 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: DialogueTestObject
   m_EditorClassIdentifier: 
-  _npcName: Granny Jammy
   _messages:
-  - _messageText: Testing mic test 1 2 1 2
-    _npcMood: Bored
+  - _npcName: Death
+    _messageText: This is a book case
+    _npcMood: 
     _responses: []
-    _nextMessage: 2
-  - _messageText: You have unlocked dialogue options
+    _nextMessage: 1
+  - _npcName: Death
+    _messageText: Something is sticking out
     _npcMood: 
     _responses:
-    - _next: 3
-      _reply: Go to the end
     - _next: -1
-      _reply: Quit
+      _reply: Take it
+      _triggerEvent: 1
+    - _next: -1
+      _reply: Leave it
+      _triggerEvent: 0
     _nextMessage: -1
-  - _messageText: Test complete
+  - _npcName: Death
+    _messageText: Hm, something else is here
     _npcMood: 
-    _responses: []
+    _responses:
+    - _next: -1
+      _reply: Take it
+      _triggerEvent: 1
+    - _next: -1
+      _reply: Leave it
+      _triggerEvent: 0
     _nextMessage: -1
-  - _messageText: Good choice
+  - _npcName: Death
+    _messageText: Damn Granny, that's an interesting book selection
     _npcMood: 
     _responses: []
     _nextMessage: -1
