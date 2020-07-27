@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: NpcImages
   m_EditorClassIdentifier: 
   _npcImage:
-  - _npcName: 
+  - _npcName: Death
+    _npcMoodImages: []
+  - _npcName: Old Lady
+    _npcMoodImages: []
+  - _npcName: Dave
     _npcMoodImages: []
