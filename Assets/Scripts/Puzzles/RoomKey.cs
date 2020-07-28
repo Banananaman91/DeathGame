@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Text;
-using DialogueTypes;
 using MovementNEW;
+using ScriptableDialogueSystem.Editor.DialogueTypes;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;

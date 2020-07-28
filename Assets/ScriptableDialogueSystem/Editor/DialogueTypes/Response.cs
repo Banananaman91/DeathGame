@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-namespace DialogueTypes
+namespace ScriptableDialogueSystem.Editor.DialogueTypes
 {
     [Serializable]
     public class Response

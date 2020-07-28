@@ -1,9 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Cage;
-using DialogueTypes;
-using InventoryScripts;
-using MovementNEW;
+﻿using MovementNEW;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour {

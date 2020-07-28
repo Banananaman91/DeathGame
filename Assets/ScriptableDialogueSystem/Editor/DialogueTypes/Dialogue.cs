@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DialogueTypes
+namespace ScriptableDialogueSystem.Editor.DialogueTypes
 {
     [CreateAssetMenu(fileName = "Dialogue", menuName = "Dialogue", order = 1), Serializable]
     public class Dialogue : ScriptableObject

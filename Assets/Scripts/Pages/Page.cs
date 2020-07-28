@@ -1,5 +1,5 @@
-﻿using DialogueTypes;
-using MovementNEW;
+﻿using MovementNEW;
+using ScriptableDialogueSystem.Editor.DialogueTypes;
 using UnityEngine;
 
 namespace Pages
@@ -13,7 +13,7 @@ namespace Pages
         public Sprite SpriteObject => _spriteObject;
         public void Interact(PlayerMovement playerInteraction)
         {
-            _pageRender.PlayDialogue(_dialogue, _startMessage, this);
+            _pageRender.PlayDialogue(_myDialogue);
         }
     }
 }

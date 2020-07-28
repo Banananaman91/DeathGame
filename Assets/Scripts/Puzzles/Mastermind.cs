@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Text;
-using DialogueTypes;
+﻿using System.Collections;
 using MovementNEW;
+using ScriptableDialogueSystem.Editor.DialogueTypes;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
 namespace Puzzles
@@ -177,12 +174,7 @@ namespace Puzzles
 
         public void Interact(PlayerMovement playerInteraction)
         {
-            _pageRender.PlayDialogue(_dialogue, _startMessage, this);
-        }
-        
-        public override void ResponseTrigger()
-        {
-            _puzzlePanel.SetActive(true);
+            _pageRender.PlayDialogue(_myDialogue);
         }
 
         private IEnumerator RunWinCycle()
