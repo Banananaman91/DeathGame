@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DialogueTypes
+namespace ScriptableDialogueSystem.Editor.DialogueTypes
 {
     public class RenderDialogue : MonoBehaviour
     {
@@ -22,13 +20,13 @@ namespace DialogueTypes
         [SerializeField] private GameObject[] _otherDialogues;
         private List<Button> _responseOptions = new List<Button>();
         private Image _previousImage;
-        private NpcMoods _npcImageMoods;
+        private NpcBio _npcImageBio;
         private Image _newMoodImage;
         private Coroutine _currentRoutine;
         private Dialogue _npc;
+        private DialogueObject _dialogueObject;
         private Message _npcMessage;
         private int _paragraphNumber;
-        private DialogueObject _dialogueObject;
         private bool _runningDialogue;
 
         private bool IsPreviousImageNotNull => _previousImage != null;
@@ -60,11 +58,10 @@ namespace DialogueTypes
             else StartCoroutine(WaitForInput());
         }
 
-        public void PlayDialogue(Dialogue npcDialogue, int paragraphNumber, DialogueObject dialogueObject)
+        public void PlayDialogue(Dialogue npcDialogue)
         {
             _npc = npcDialogue;
-            _paragraphNumber = paragraphNumber;
-            _dialogueObject = dialogueObject;
+            _paragraphNumber = 0;
             _runningDialogue = true;
             foreach (var dialogue in _otherDialogues)
             {
@@ -101,17 +98,34 @@ namespace DialogueTypes
                     var npcImageName = npcImageMoods.NpcName.ToLower();
                     if (npcImageName.Contains(_npc.Messages[_paragraphNumber].NpcName.ToLower()))
                     {
-                        _npcImageMoods = npcImageMoods;
+                        _npcImageBio = npcImageMoods;
                     }
                 }
 
-                //Set NPC mood image from previous list based on current mood
-                foreach (var npcMood in _npcImageMoods.NpcMoodImages)
+                if (_npcImageBio != null)
                 {
-                    var npcMoodName = npcMood.name.ToLower();
-                    if (npcMoodName.Contains(_npc.Messages[_paragraphNumber].NpcMood.ToLower()))
+                    //Set the dialogue box backgorund to the npcs required background if one exists
+                    if (_npcImageBio.DialogueBackgroundImage) _dialogueBackground.sprite = _npcImageBio.DialogueBackgroundImage;
+ 
+                    _pageName.color = _npcImageBio.DialogueTextColour;
+                    _pageText.color = _npcImageBio.DialogueTextColour;
+                    _dialogueBackground.color = _npcImageBio.DialogueBackgroundColour;
+                    
+                    //Set the dialogue box font to the npcs required font if one exists
+                    if (_npcImageBio.DialogueTextFont)
                     {
-                        _newMoodImage = npcMood;
+                        _pageName.font = _npcImageBio.DialogueTextFont;
+                        _pageText.font = _npcImageBio.DialogueTextFont;
+                    }
+
+                    //Set NPC mood image from previous list based on current mood
+                    foreach (var npcMood in _npcImageBio.NpcMoodImages)
+                    {
+                        var npcMoodName = npcMood.name.ToLower();
+                        if (npcMoodName.Contains(_npc.Messages[_paragraphNumber].NpcMood.ToLower()))
+                        {
+                            _newMoodImage = npcMood;
+                        }
                     }
                 }
             }
@@ -145,8 +159,13 @@ namespace DialogueTypes
                 button.GetComponentInChildren<Text>().text = response.Reply;
                 _responseOptions.Add(button);
                 button.onClick.AddListener(() => PlayParagraphCycle(response.Next));
-                if (response.TriggerEvent) button.onClick.AddListener(_dialogueObject.ResponseTrigger);
+                if (response.TriggerEvent) button.onClick.AddListener(_dialogueObject.MyEvent.Invoke);
             }
+        }
+
+        public void AssignResponseObject(DialogueObject dialogueObject)
+        {
+            _dialogueObject = dialogueObject;
         }
 
         private IEnumerator WaitForInput()

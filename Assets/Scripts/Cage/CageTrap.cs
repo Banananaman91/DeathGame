@@ -1,6 +1,6 @@
 ﻿using System.Linq;
-using DialogueTypes;
 using MovementNEW;
+using ScriptableDialogueSystem.Editor.DialogueTypes;
 using UnityEngine;
 
 namespace Cage
@@ -21,14 +21,8 @@ namespace Cage
             if (_itemCount != _requiredItems.Length)
             {
                 _itemCount = 0;
-                _alternativePageRender.PlayDialogue(_dialogue, _startMessage, this);
             }
-            else _pageRender.PlayDialogue(_dialogue, _trapTrigger, this);
-        }
-
-        public override void ResponseTrigger()
-        {
-            _trap.SetActive(true);
+            else _pageRender.PlayDialogue(_myDialogue);
         }
     }
 }

@@ -1,10 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
 using System;
-using DialogueTypes;
 using MovementNEW;
+using ScriptableDialogueSystem.Editor.DialogueTypes;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class EasterEgg : MonoBehaviour, IInteract 

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using DialogueTypes;
-using InventoryScripts;
+﻿using InventoryScripts;
 using MovementNEW;
-using Pages;
+using ScriptableDialogueSystem.Editor.DialogueTypes;
 using UnityEngine;
 
 public class FurnitureInteract : DialogueObject , IInteract
@@ -32,38 +27,12 @@ public class FurnitureInteract : DialogueObject , IInteract
     public void Interact(PlayerMovement playerInteraction)
     {
 
-        if (_collectedObject == _hiddenObjectPosition && (!_journalInventory.Books.Contains(_hiddenObject) &&
-                                                          !_inventoryScript.Items.Contains(_hiddenObject))) _startMessage = _unlockedEndMessage;
-        
-        else if (_collectedObject == _hiddenObjectPosition && (_journalInventory.Books.Contains(_hiddenObject) ||
-                                                               _inventoryScript.Items.Contains(_hiddenObject))) _startMessage = _unlockedStartMessage;
-        
-        _pageRender.PlayDialogue(_dialogue, _startMessage, this);
-    }
-    
-    public override void ResponseTrigger()
-    {
-        if (_noObjectsLeft) return;
-        var pageCheck = _objectsInside[_collectedObject].GetComponent<Page>();
-        if (pageCheck != null)
-        {
-            _journalInventory.AddPage(pageCheck);
-            _startMessage = _unlockedStartMessage;
-            _collectedObject++;
-            if (_collectedObject < _objectsInside.Length) return;
-            _startMessage = _unlockedEndMessage;
-            _noObjectsLeft = true;
-            return;
-        }
-        var objectCheck = _objectsInside[_collectedObject].GetComponent<ItemPickUp>();
-        if (objectCheck != null)
-        {
-            _inventoryScript.AddItem(objectCheck);
-            _startMessage = _unlockedStartMessage;
-            _collectedObject++;
-            if (_collectedObject < _objectsInside.Length) return;
-            _startMessage = _unlockedEndMessage;
-            _noObjectsLeft = true;
-        }
+        // if (_collectedObject == _hiddenObjectPosition && (!_journalInventory.Books.Contains(_hiddenObject) &&
+        //                                                   !_inventoryScript.Items.Contains(_hiddenObject))) _startMessage = _unlockedEndMessage;
+        //
+        // else if (_collectedObject == _hiddenObjectPosition && (_journalInventory.Books.Contains(_hiddenObject) ||
+        //                                                        _inventoryScript.Items.Contains(_hiddenObject))) _startMessage = _unlockedStartMessage;
+        //
+        _pageRender.PlayDialogue(_myDialogue);
     }
 }

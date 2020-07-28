@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DialogueTypes
+namespace ScriptableDialogueSystem.Editor.DialogueTypes
 {
     [Serializable]
     public class Message
