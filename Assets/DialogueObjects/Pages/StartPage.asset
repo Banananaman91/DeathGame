@@ -12,4 +12,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: StartPage
   m_EditorClassIdentifier: 
-  _messages: []
+  _messages:
+  - _npcName: Granny
+    _messageText: The day I moved into my first home was an eventful day. I never
+      realised how much this home would affect my life
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+  - _npcName: Granny
+    _messageText: ' Was it the timing? Or simply what was meant to be'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+  - _npcName: Granny
+    _messageText: I had been unpacking all morning when I heard the knock at the
+      door
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Granny
+    _messageText: ' It was unexpected, but I was excited to see who my first visitor
+      would be'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Granny
+    _messageText: I opened the door to see a woman, who seemed distressed but still
+      managed to smile at the sight of me
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+  - _npcName: Lady
+    _messageText: I am sorry
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+  - _npcName: Lady
+    _messageText: My car appears to have broken down and I have been walking for
+      miles
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+  - _npcName: Lady
+    _messageText: Could I trouble you for some help or, at the least, some rest?
+    _npcMood: 
+    _responses: []
+    _nextMessage: 8
+  - _npcName: Granny
+    _messageText: I was stricken by her, but promptly invited her inside
+    _npcMood: 
+    _responses: []
+    _nextMessage: 9
+  - _npcName: Granny
+    _messageText: ' I could not help her in any way, but I welcomed her as my first
+      guest and decided to take care of her.'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 10
+  - _npcName: Granny
+    _messageText: We talked for hours and lost track of the time
+    _npcMood: 
+    _responses: []
+    _nextMessage: 11
+  - _npcName: Granny
+    _messageText: Once I realised that it had gotten dark outside, I insisted that
+      she should stay the night
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1

@@ -12,4 +12,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: DeceitfulPage1
   m_EditorClassIdentifier: 
-  _messages: []
+  _messages:
+  - _npcName: Granny
+    _messageText: Midway through the night I slipped out of my bed
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+  - _npcName: Granny
+    _messageText: I quietly made my way downstairs and checked in on the woman
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+  - _npcName: Granny
+    _messageText: She was fast asleep
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Granny
+    _messageText: I began to check through her things and found, in her purse, just
+      what I had suspected
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Granny
+    _messageText: There was a marking on the inside of her purse that shows she was
+      with the resistance
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+  - _npcName: Granny
+    _messageText: I knew I had to do something about her
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+  - _npcName: Granny
+    _messageText: " I couldn\u2019t allow her to go free"
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+  - _npcName: Granny
+    _messageText: ' I headed to the basement and found the chains I always kept for
+      such an occasion'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 8
+  - _npcName: Granny
+    _messageText: My father was part of the military police and always said to keep
+      this stuff just in case
+    _npcMood: 
+    _responses: []
+    _nextMessage: 9
+  - _npcName: Granny
+    _messageText: I decided that rushing her would be best
+    _npcMood: 
+    _responses: []
+    _nextMessage: 10
+  - _npcName: Granny
+    _messageText: Her delirious state would help me be able to pin her down and chain
+      her up
+    _npcMood: 
+    _responses: []
+    _nextMessage: 11
+  - _npcName: Granny
+    _messageText: Once this was complete, I used some rope to string her up in a
+      secret room behind a bookcase
+    _npcMood: 
+    _responses: []
+    _nextMessage: 12
+  - _npcName: Granny
+    _messageText: ' This is where I proceeded to beat her as my own personal justice
+      for her crimes against the state.'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 13
+  - _npcName: Granny
+    _messageText: There would be no need to rush and call the police just yet for
+      this traitor, I can have some fun
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1

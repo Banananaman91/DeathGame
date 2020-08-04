@@ -12,4 +12,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: UnfortunatePage2
   m_EditorClassIdentifier: 
-  _messages: []
+  _messages:
+  - _npcName: Granny
+    _messageText: When I came around it was very dark
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+  - _npcName: Granny
+    _messageText: I was tied to a chair
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+  - _npcName: Granny
+    _messageText: The room was bare with concrete
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Lady
+    _messageText: You have woken then? I guess that means it is time to begin
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Granny
+    _messageText: I will not repeat the events that followed
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+  - _npcName: Granny
+    _messageText: The pain, the acts, I have never felt something so terrible
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+  - _npcName: Granny
+    _messageText: I eventually passed out with the pain.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+  - _npcName: Granny
+    _messageText: I am certain that much more followed but all that I know is that
+      when I next awoke
+    _npcMood: 
+    _responses: []
+    _nextMessage: 8
+  - _npcName: Granny
+    _messageText: ' I was back in my bed'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 9
+  - _npcName: Granny
+    _messageText: ' My body ached, but I made my way downstairs and checked around'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 10
+  - _npcName: Granny
+    _messageText: she was nowhere to be seen
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1

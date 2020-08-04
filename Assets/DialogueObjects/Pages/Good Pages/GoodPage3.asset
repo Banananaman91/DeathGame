@@ -12,4 +12,84 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: GoodPage3
   m_EditorClassIdentifier: 
-  _messages: []
+  _messages:
+  - _npcName: Granny
+    _messageText: Later in the night there was another knock on the door.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+  - _npcName: Granny
+    _messageText: ' It was much quieter, so I was hesitant to open the door at first'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+  - _npcName: Granny
+    _messageText: But I wondered if it might be her again
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Granny
+    _messageText: and if she was in some sort of trouble
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Granny
+    _messageText: I opened the door to find it was her
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+  - _npcName: Granny
+    _messageText: She apologised for disturbing me and asked if she might rest here
+      again
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+  - _npcName: Granny
+    _messageText: Of course, I invited her in immediately
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+  - _npcName: Granny
+    _messageText: After she settled with some tea, I began to discuss the Police
+      arrival earlier in the day
+    _npcMood: 
+    _responses: []
+    _nextMessage: 8
+  - _npcName: Granny
+    _messageText: She began to open to me about her life and what she was escaping
+    _npcMood: 
+    _responses: []
+    _nextMessage: 9
+  - _npcName: Granny
+    _messageText: My heart broke for her
+    _npcMood: 
+    _responses: []
+    _nextMessage: 10
+  - _npcName: Granny
+    _messageText: I made a quick phone call to the police to let them know she was
+      here and safe
+    _npcMood: 
+    _responses: []
+    _nextMessage: 11
+  - _npcName: Granny
+    _messageText: I asked if they would mind visiting in the morning to speak to
+      her
+    _npcMood: 
+    _responses: []
+    _nextMessage: 12
+  - _npcName: Granny
+    _messageText: That night we stayed together in my bed.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 13
+  - _npcName: Granny
+    _messageText: "I don\u2019t believe I had ever slept so well than laying next
+      to her"
+    _npcMood: 
+    _responses: []
+    _nextMessage: 14
+  - _npcName: Granny
+    _messageText: she seemed so much more relaxed than I had so far seen her
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1

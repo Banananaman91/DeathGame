@@ -12,4 +12,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: Introduction
   m_EditorClassIdentifier: 
-  _messages: []
+  _messages:
+  - _npcName: Granny
+    _messageText: Welcome, Death. For the longest time I have been preparing myself
+      for your arrival
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+  - _npcName: Granny
+    _messageText: At first, I thought I would be able to welcome you with ease
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+  - _npcName: Granny
+    _messageText: As time passed, I realised I was not ready to be taken so easily
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Granny
+    _messageText: So, Death, I challenge you
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Granny
+    _messageText: ' I have hidden myself inside of the house'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+  - _npcName: Granny
+    _messageText: Scattered around you will find pieces of my Journal that each contain
+      a riddle
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+  - _npcName: Granny
+    _messageText: ' Upon solving these you will find me'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+  - _npcName: Granny
+    _messageText: But beware, there are also fake versions of each journal entry
+    _npcMood: 
+    _responses: []
+    _nextMessage: 8
+  - _npcName: Granny
+    _messageText: These versions will lead you to a trap
+    _npcMood: 
+    _responses: []
+    _nextMessage: 9
+  - _npcName: Granny
+    _messageText: You must be certain that the place you have found is the real hiding
+      place, or you will find that I have defeated you
+    _npcMood: 
+    _responses: []
+    _nextMessage: 10
+  - _npcName: Granny
+    _messageText: On the other side of this note you will find the first entry
+    _npcMood: 
+    _responses: []
+    _nextMessage: 11
+  - _npcName: System
+    _messageText: Do you want to read the first part?
+    _npcMood: 
+    _responses:
+    - _next: -1
+      _reply: Yes
+      _triggerEvent: 1
+    - _next: -1
+      _reply: No
+      _triggerEvent: 0
+    _nextMessage: -1
