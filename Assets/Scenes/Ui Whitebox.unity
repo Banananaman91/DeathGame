@@ -2231,7 +2231,6 @@ GameObject:
   - component: {fileID: 421789104}
   - component: {fileID: 421789103}
   - component: {fileID: 421789102}
-  - component: {fileID: 421789105}
   - component: {fileID: 421789106}
   m_Layer: 5
   m_Name: Turning page
@@ -2316,18 +2315,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421789100}
   m_CullTransparentMesh: 0
---- !u!114 &421789105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421789100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae5fd54ae03ace4792ec57890039f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &421789106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2340,6 +2327,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b31f061979857499cefa5c76cad217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _turnLtoR: 49
+  _turnRtoL: 50
 --- !u!1 &431432039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,10 +3083,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 1482735097}
-  _sprite: {fileID: 572246016}
-  _collider: {fileID: 572246012}
   _itemPlace: 4
   thisItem: {fileID: 572246015}
+  _objectSprite: {fileID: 0}
 --- !u!212 &572246016
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4509,10 +4497,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 1482735097}
-  _sprite: {fileID: 936007578}
-  _collider: {fileID: 936007581}
   _itemPlace: 3
   thisItem: {fileID: 936007577}
+  _objectSprite: {fileID: 0}
 --- !u!212 &936007578
 SpriteRenderer:
   m_ObjectHideFlags: 0
