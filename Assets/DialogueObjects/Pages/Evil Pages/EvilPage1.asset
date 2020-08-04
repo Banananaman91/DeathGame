@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: EvilPage1
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Granny
+    _messageText: "During the night I had snuck down and searched through this woman\u2019s
+      purse"
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+  - _npcName: Granny
+    _messageText: I made a note of her address from her driving id
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+  - _npcName: Granny
+    _messageText: The next morning, I made us both breakfast and began to ask about
+      her personal life
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Granny
+    _messageText: She told me about how she had a husband of 10 years and together
+      they had 2 little children
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Granny
+    _messageText: It was so sweet, she seemed so happy about it all
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+  - _npcName: Granny
+    _messageText: She told me about how she had been away visiting her mother and
+      was returning home to surprise them
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+  - _npcName: Granny
+    _messageText: I insisted that she linger around for a while longer and that I
+      would bake her gifts for her whole family
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+  - _npcName: Granny
+    _messageText: Once my cakes were finished I wrapped them up for her and she left,
+      thanking me profusely for my hospitality
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1

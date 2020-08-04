@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: GoodPage2
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Granny
+    _messageText: I awoke later that evening to knocking on the door again.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+  - _npcName: Granny
+    _messageText: I ran excitedly to the door to see if this woman had returned.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+  - _npcName: Granny
+    _messageText: Alas, she had not
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Granny
+    _messageText: There were two police officers standing there
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Officer
+    _messageText: "Sorry ma\u2019am, we are following up on a query about a young
+      woman who was seen in this area yesterday"
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+  - _npcName: Officer
+    _messageText: She has been reported missing by her husband several days ago
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+  - _npcName: Officer
+    _messageText: Have you seen anyone that looked out of place to you?
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+  - _npcName: Young Granny
+    _messageText: "I\u2019m sorry officer, a woman did arrive here yesterday but
+      left early this morning"
+    _npcMood: 
+    _responses: []
+    _nextMessage: 8
+  - _npcName: Young Granny
+    _messageText: She made no indication of being lost but just needed a place to
+      stay
+    _npcMood: 
+    _responses: []
+    _nextMessage: 9
+  - _npcName: Officer
+    _messageText: Oh, right then.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 10
+  - _npcName: Officer
+    _messageText: ' If you do happen to see this woman again could you please contact
+      us?'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 11
+  - _npcName: Officer
+    _messageText: We must take these missing person cases very seriously and if there
+      is something more to it then we would need to follow up on that
+    _npcMood: 
+    _responses: []
+    _nextMessage: 12
+  - _npcName: Young Granny
+    _messageText: Absolutely officer
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1

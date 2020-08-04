@@ -1,31 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using MovementNEW;
 using UnityEngine;
-using UnityEngine.UI;
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class ItemPickUp : MonoBehaviour {
-    public InventoryScript invScript;        //access InventoryScript class
-    ItemInfo itemInfo;
-    private SpriteRenderer _sprite;
-    private BoxCollider2D _collider;
-
-	// Use this for initialization
-	void Start () {
-        itemInfo = gameObject.GetComponent<ItemInfo>();
-        _sprite = gameObject.GetComponent<SpriteRenderer>();
-        _collider = gameObject.GetComponent<BoxCollider2D>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-	}
-
-    public void Interact(DeathMovement playerInteraction)
+namespace InventoryScripts
+{
+    public class ItemPickUp : MonoBehaviour, IInteract
     {
-         invScript.AddItem(gameObject);      //go to InventoryScript void AddItem()
-        _sprite.enabled = false;
-        _collider.enabled = false;
+        [SerializeField] private InventoryScript _invScript;        //access InventoryScript class
+        [SerializeField] private int _itemPlace;
+        [SerializeField] private ItemPickUp thisItem;
+        [SerializeField] private Sprite _objectSprite;
+        public int ItemPlace => _itemPlace;
+        public Sprite ObjectSprite => _objectSprite;
+
+        public void Interact(PlayerMovement playerInteraction)
+        {
+            if (_invScript == null) return;
+            _invScript.AddItem(thisItem);      //go to InventoryScript void AddItem()
+        }
     }
 }

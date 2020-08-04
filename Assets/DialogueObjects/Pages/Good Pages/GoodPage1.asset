@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: GoodPage1
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Granny
+    _messageText: "As I lay in bed, I couldn\u2019t stop thinking of this strange
+      woman downstairs."
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+  - _npcName: Granny
+    _messageText: She had turned up so suddenly
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+  - _npcName: Granny
+    _messageText: on my first day in my home
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Granny
+    _messageText: yet it felt so right that she should be here.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Granny
+    _messageText: I contemplated what I should do all night and found that sleep
+      escaped me come the morning.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+  - _npcName: Granny
+    _messageText: "Yet I didn\u2019t feel completely exhausted and rose to make breakfast
+      for my new guest eagerly."
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+  - _npcName: Granny
+    _messageText: Once we had finished breakfast and talked some more, this lady
+      apologised for having stayed so long to rest and insisted that she must be
+      going.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+  - _npcName: Granny
+    _messageText: It was such a shame
+    _npcMood: 
+    _responses: []
+    _nextMessage: 8
+  - _npcName: Granny
+    _messageText: but as she left, I was sure to tell her that she was welcome back
+      anytime.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 9
+  - _npcName: Granny
+    _messageText: She gave me the sweetest smile I had ever received and said
+    _npcMood: 
+    _responses: []
+    _nextMessage: 10
+  - _npcName: Lady
+    _messageText: I would be happy to
+    _npcMood: 
+    _responses: []
+    _nextMessage: 11
+  - _npcName: Granny
+    _messageText: Once she left, I spent the day relaxing and found myself falling
+      asleep dreaming of her.
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1

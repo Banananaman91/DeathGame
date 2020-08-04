@@ -1,0 +1,16 @@
+﻿{
+  "name": "com.banananaman91.scriptable-dialogue-system",
+  "version": "1.2.0",
+  "displayName": "Scriptable Dialogue",
+  "description": "A dialogue system utilising unity's scriptable objects",
+  "unity": "2019.3",
+  "keywords": [
+    "Scriptable Object",
+    "Dialogue"
+  ],
+  "author": {
+    "name": "Ian Barrow",
+    "email": "Barrowian1991@gmail.com",
+    "url": "https://github.com/Banananaman91"
+  }
+}

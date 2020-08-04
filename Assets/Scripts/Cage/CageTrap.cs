@@ -1,210 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Linq;
+using MovementNEW;
+using ScriptableDialogueSystem.Editor.DialogueTypes;
 using UnityEngine;
-using System.Text;
-using System;
-using UnityEngine.Video;
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class CageTrap : MonoBehaviour {
-    [SerializeField] DeathMovement movement;
-
-    [SerializeField] GameObject[] pages;
-
-    CircleCollider2D myCollider;
-
-    [TextArea] public string[] _textBox; // string array for inputting separate dialogue boxes
-
-    [TextArea] public string[] _hiddenTextBox;
-
-    [TextArea] public string[] _warningTextBox;
-
-    [SerializeField] private RenderDialogue _pageRender;
-
-    [SerializeField] GameObject rayCast;
-
-    [SerializeField] GameObject dialogueBox;
-
-    [SerializeField] VideoPlayer outro;
-
-    BoxCollider2D _myCollider;
-
-    private bool _warning = false;
-
-    public PauseGame end;
-
-    public void Start()
+namespace Cage
+{
+    public class CageTrap : DialogueObject, IInteract
     {
-        dialogueBox.SetActive(false);
-
-        _myCollider = GetComponent<BoxCollider2D>();
-    }
-
-    public void Interact(DeathMovement playerInteraction)
-    {
-        int activateCount = 0;
-
-        foreach (GameObject page in pages)
+        [SerializeField] private GameObject _trap;
+        [SerializeField] private GameObject[] _requiredItems;
+        [SerializeField] private int _trapTrigger;
+        private int _itemCount;
+        public void Interact(PlayerMovement playerInteraction)
         {
-            BoxCollider2D objectCollider = page.GetComponent<BoxCollider2D>();
-            if (objectCollider.enabled == false) activateCount++;
-        }
-
-        if (activateCount == pages.Length)
-        {
-            if (_warning == true)
+            foreach (var item in _requiredItems)
             {
-                StartCoroutine(RunHiddenParagraphCycle());       
-                //outro.Play();
-                rayCast.SetActive(false);
-
-            }
-            else StartCoroutine(RunWarning());
-        }
-        else StartCoroutine(RunParagraphCycle());
-    }
-
-    public IEnumerator Play(String pageText)
-    {
-        var sb = new StringBuilder();
-
-        var letters = pageText.ToCharArray();
-
-        foreach (var letter in letters)
-        {
-            sb.Append(letter);
-
-            _pageRender.RenderPageText(sb.ToString());
-
-            yield return new WaitForSeconds(0.0375f);
-        }
-
-
-        yield return null;
-    }
-
-    public IEnumerator RunParagraphCycle()     
-    {
-        dialogueBox.SetActive(true);
-
-        rayCast.SetActive(false);
-
-        int paragraphCounter = 0;
-
-        Coroutine currentRoutine = null;
-
-        while (paragraphCounter < _textBox.Length)
-        {
-            if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-            currentRoutine = StartCoroutine(Play(_textBox[paragraphCounter]));
-
-            ++paragraphCounter;
-
-            yield return new WaitForSeconds(0.0375f);
-
-            while (!Input.GetKeyDown(KeyCode.E))
-            {
-                yield return null;
+                if (playerInteraction.JournalInventory.Books.Contains(item)) _itemCount++;
             }
 
-            yield return null;
-        }
-
-        if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-        dialogueBox.SetActive(false);
-
-        _myCollider.enabled = false;
-
-        rayCast.SetActive(true);
-
-        _myCollider.enabled = true;
-            
-        
-    }
-
-    public IEnumerator RunHiddenParagraphCycle()
-    {
-        movement.enabled = false;
-
-        dialogueBox.SetActive(true);
-
-        rayCast.SetActive(false);
-
-        int paragraphCounter = 0;
-
-        Coroutine currentRoutine = null;
-
-        while (paragraphCounter < _hiddenTextBox.Length)
-        {
-            if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-            currentRoutine = StartCoroutine(Play(_hiddenTextBox[paragraphCounter]));
-
-            ++paragraphCounter;
-
-            yield return new WaitForSeconds(0.0375f);
-
-            while (!Input.GetKeyDown(KeyCode.E))
+            if (_itemCount != _requiredItems.Length)
             {
-                yield return null;
+                _itemCount = 0;
             }
-
-            yield return null;
+            else _pageRender.PlayDialogue(_myDialogue);
         }
-
-        if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-        dialogueBox.SetActive(false);
-
-        _myCollider.enabled = false;
-
-        end._pauseState = true;
-    }
-
-    public IEnumerator RunWarning()
-    {
-        movement.enabled = false;
-
-        dialogueBox.SetActive(true);
-
-        rayCast.SetActive(false);
-
-        int paragraphCounter = 0;
-
-        Coroutine currentRoutine = null;
-
-        while (paragraphCounter < _warningTextBox.Length)
-        {
-            if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-            currentRoutine = StartCoroutine(Play(_warningTextBox[paragraphCounter]));
-
-            ++paragraphCounter;
-
-            yield return new WaitForSeconds(0.0375f);
-
-            while (!Input.GetKeyDown(KeyCode.E))
-            {
-                yield return null;
-            }
-
-            yield return null;
-        }
-
-        if (currentRoutine != null) StopCoroutine(currentRoutine);
-
-        dialogueBox.SetActive(false);
-
-        _myCollider.enabled = false;
-
-        rayCast.SetActive(true);
-
-        _myCollider.enabled = true;
-
-        movement.enabled = true;
-
-        _warning = true;
     }
 }
