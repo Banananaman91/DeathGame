@@ -4688,6 +4688,7 @@ MonoBehaviour:
   _candle: {fileID: 8598477559058315920, guid: 489b52dacb8b44940985e35596c76f68, type: 3}
   _candleLimit: 4
   _cooldownTime: 1
+  CandleCount: 0
 --- !u!1 &8296172668649524038
 GameObject:
   m_ObjectHideFlags: 0
