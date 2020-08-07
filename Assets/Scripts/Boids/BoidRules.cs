@@ -41,54 +41,71 @@ namespace Boids
          * return goal position - boid position / 100
          */
 
-        public Vector3 boidRule1(Boid boid, List<Rigidbody> neighbours) // cohesion
+        public Vector3 BoidRule1(Boid boid, List<Rigidbody> neighbours) // cohesion
         {
             var average = new Vector3(0, 0, 0);
             var boidRb = boid.BoidRigidbody;
+
+            if (neighbours.Count == 0) return average;
 
             foreach (var neighbour in neighbours)
             {
                 average += neighbour.position;
             }
 
-            average /= neighbours.Count;
-            average -= boidRb.position;
+            // average /= neighbours.Count;
+            // average -= boidRb.position;
+            
+            var n = 1;
+            if (neighbours.Count > n) n = neighbours.Count - 1;
+            average /= n;
+            average = (average - boidRb.velocity) / 100;
             var direction = average;
             return direction;
         }
 
-        public Vector3 boidRule2(Boid boid, List<Rigidbody> neighbours) // separation
+        public Vector3 BoidRule2(Boid boid, List<Rigidbody> neighbours) // separation
         {
             var boidRb = boid.BoidRigidbody;
             var separation = new Vector3(0, 0, 0);
+            if (neighbours.Count == 0) return separation;
 
             foreach (var neighbour in neighbours)
             {
-                var distanceVector = boidRb.position - neighbour.position;
-                if (Vector3.Distance(boidRb.position, neighbour.position) < boid.NeighbourSeparationDistance) separation -= distanceVector;
+                var distanceVector = neighbour.position - boidRb.position;
+                if (Vector3.Distance(neighbour.position, boidRb.position) < boid.NeighbourSeparationDistance) separation -= distanceVector;
             }
 
-            return -separation;
+            return separation;
         }
 
-        public Vector3 boidRule3(Boid boid, List<Rigidbody> neighbours) // match velocity
+        public Vector3 BoidRule3(Boid boid, List<Rigidbody> neighbours) // match velocity
         {
             var averageVelocity = new Vector3(0, 0, 0);
             var boidRb = boid.BoidRigidbody;
+            if (neighbours.Count == 0) return averageVelocity;
 
             foreach (var neighbour in neighbours)
             {
                 averageVelocity += neighbour.velocity;
             }
 
-            averageVelocity /= neighbours.Count;
+            var n = 1;
+            if (neighbours.Count > n) n = neighbours.Count - 1;
+            averageVelocity /= n;
+            averageVelocity = (averageVelocity - boidRb.velocity) / 8;
             return averageVelocity;
         }
         
         public Vector3 BoidRule4(Boid boid) // tend towards leader
         {
-            if (Vector3.Distance(boid.transform.position, boid.Leader.position) < boid.LeaderDistance) return Vector3.zero;
-            var direction = boid.Leader.position - boid.BoidRigidbody.position;
+            Vector3 direction;
+            if (Vector3.Distance(boid.transform.position, boid.Leader.position) < boid.LeaderDistance)
+            {
+                direction = (boid.Leader.position + boid.BoidRigidbody.position) / 100;
+                return direction;
+            }
+            direction = (boid.Leader.position - boid.BoidRigidbody.position) / 100;
             return direction;
         }
 

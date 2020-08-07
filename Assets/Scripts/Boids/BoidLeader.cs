@@ -11,6 +11,7 @@ namespace Boids
         [SerializeField] private GameObject _boid;
         [SerializeField, Range(1, 50)] private int _flockTotal;
         [SerializeField] private int _spawnRadius;
+        [SerializeField] private int _leaderDistance;
         private List<Boid> _boidSwarm = new List<Boid>();
 
         private void Awake()
@@ -23,12 +24,13 @@ namespace Boids
             }
             foreach (var boid in _boidSwarm)
             {
-                foreach (var t in _boidSwarm.Where(t => !boid.NeighboursRigidbodies.Contains(t.BoidRigidbody) && t != boid))
-                {
-                    boid.AddNeighbour(t.BoidRigidbody);
-                }
+                // foreach (var t in _boidSwarm.Where(t => !boid.NeighboursRigidbodies.Contains(t.BoidRigidbody) && t != boid))
+                // {
+                //     boid.AddNeighbour(t.BoidRigidbody);
+                // }
                 boid.AddLeader(_rb);
-                boid.AddNeighbour(_rb);
+                boid.LeaderDistance = _leaderDistance;
+                //boid.AddNeighbour(_rb);
             }
         }
     }

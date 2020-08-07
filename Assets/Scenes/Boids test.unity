@@ -380,8 +380,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 766577135}
   _boid: {fileID: 5779161040887280371, guid: ca472ad744e856e41939ad0f7fb3bf05, type: 3}
-  _flockTotal: 10
+  _flockTotal: 30
   _spawnRadius: 10
+  _leaderDistance: 15
 --- !u!65 &766577137
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -450,7 +451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766577134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -85.2706, y: 2.4260087, z: 30.43947}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
