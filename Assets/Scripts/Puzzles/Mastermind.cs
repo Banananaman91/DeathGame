@@ -1,32 +1,23 @@
-﻿using System;
-using System.Collections;
-using System.Text;
-using DialogueTypes;
+﻿using System.Collections;
+using MovementNEW;
+using ScriptableDialogueSystem.Editor.DialogueTypes;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
 namespace Puzzles
 {
     [RequireComponent(typeof(BoxCollider2D))]
-    public class Mastermind : MonoBehaviour, IInteract
+    public class Mastermind : DialogueObject, IInteract
     {
         [SerializeField] private Image[] _bookImages;
         [SerializeField] private GameObject _puzzlePanel;
         [SerializeField] private Text _numberOfRight;
-        [SerializeField] private DeathMovement _movement;
-        [SerializeField] private RenderDialogue _pageRender;
-        [SerializeField] private GameObject _rayCastObject;
+        [SerializeField] private PlayerMovement _movement;
         [SerializeField] private GameObject _dialogueBox;
-        [SerializeField, TextArea] private string[] _textBox;
-        [SerializeField, TextArea] private string[] _winText;
-        [SerializeField, TextArea] private string[] _loseText;
-        [SerializeField] Tilemap hiddenDoor;
         [SerializeField] private AudioClip _musicTrack;
         [SerializeField] private AudioSource _trackSource;
         [SerializeField] private int _maxBookCaseDistance;
         [SerializeField] private float _bookCaseAdjustY;
-        [SerializeField] private float _sentenceSpeed;
         [SerializeField] private int _maxGuesses;
         [SerializeField] private int _amountRight;
         private Color[] _colorOrder;
@@ -36,7 +27,6 @@ namespace Puzzles
         private int _currentCount;
         private BoxCollider2D MyCollider => gameObject.GetComponent<BoxCollider2D>();
         private bool IsDialogueBoxNotNull => _dialogueBox != null;
-        private bool IsRayCastObjectNotNull => _rayCastObject != null;
         private bool IsMovementNotNull => _movement != null;
         private bool IsPuzzlePanelNotNull => _puzzlePanel != null;
         private bool IsTrackSourceNotNull => _trackSource != null;
@@ -142,7 +132,6 @@ namespace Puzzles
                 if (IsPuzzlePanelNotNull) _puzzlePanel.SetActive(false);
                 MyCollider.enabled = true;
                 _currentCount = 0;
-                SetTile(hiddenDoor, gameObject.transform.position);
                 StartCoroutine(RunWinCycle());
                 _bookCaseMovement = true;
                 if (IsTrackSourceNotNull) _trackSource.Play();//Sound PLays after the mastermind puszzle is solved
@@ -183,106 +172,19 @@ namespace Puzzles
             _bookGuess3 = 0;
         }
 
-        public void Interact(DeathMovement playerInteraction)
+        public void Interact(PlayerMovement playerInteraction)
         {
-            SetColours();
-            RandomColour();
-            if (IsMovementNotNull) _movement.enabled = false;
-            StartCoroutine(RunParagraphCycle());
-        }
-
-        private IEnumerator Play(String pageText)
-        {
-            var sb = new StringBuilder();
-            var letters = pageText.ToCharArray();
-            foreach (var letter in letters)
-            {
-                sb.Append(letter);
-                //_pageRender.RenderPageText(sb.ToString());
-                yield return new WaitForSeconds(_sentenceSpeed);
-            }
-            yield return null;
-        }
-
-        private IEnumerator RunParagraphCycle()
-        {
-            if (IsDialogueBoxNotNull) _dialogueBox.SetActive(true);
-            if (IsRayCastObjectNotNull) _rayCastObject.SetActive(false);
-            int paragraphCounter = 0;
-            Coroutine currentRoutine = null;
-            while (paragraphCounter < _textBox.Length)
-            {
-                if (currentRoutine != null) StopCoroutine(currentRoutine);
-                currentRoutine = StartCoroutine(Play(_textBox[paragraphCounter]));
-                ++paragraphCounter;
-                yield return new WaitForSeconds(_sentenceSpeed);
-                while (!Input.GetKeyDown(KeyCode.E))
-                {
-                    yield return null;
-                }
-                yield return null;
-            }
-            if (currentRoutine != null) StopCoroutine(currentRoutine);
-            if (IsDialogueBoxNotNull) _dialogueBox.SetActive(false);
-            MyCollider.enabled = false;
-            if (IsRayCastObjectNotNull) _rayCastObject.SetActive(true);
-            _puzzlePanel.SetActive(true);
+            _pageRender.PlayDialogue(_myDialogue);
         }
 
         private IEnumerator RunWinCycle()
         {
-            if (IsDialogueBoxNotNull) _dialogueBox.SetActive(true);
-            if (IsRayCastObjectNotNull) _rayCastObject.SetActive(false);
-            int paragraphCounter = 0;
-            Coroutine currentRoutine = null;
-            while (paragraphCounter < _winText.Length)
-            {
-                if (currentRoutine != null) StopCoroutine(currentRoutine);
-                currentRoutine = StartCoroutine(Play(_winText[paragraphCounter]));
-                ++paragraphCounter;
-                yield return new WaitForSeconds(_sentenceSpeed);
-                while (!Input.GetKeyDown(KeyCode.E))
-                {
-                    yield return null;
-                }
-                yield return null;
-            }
-            if (currentRoutine != null) StopCoroutine(currentRoutine);
-            if (IsDialogueBoxNotNull) _dialogueBox.SetActive(false);
-            MyCollider.enabled = false;
-            if (IsRayCastObjectNotNull) _rayCastObject.SetActive(true);
-            MyCollider.enabled = true;
+            yield return null;
         }
 
         private IEnumerator RunLoseCycle()
         {
-            if (IsDialogueBoxNotNull) _dialogueBox.SetActive(true);
-            if (IsRayCastObjectNotNull) _rayCastObject.SetActive(false);
-            int paragraphCounter = 0;
-            Coroutine currentRoutine = null;
-            while (paragraphCounter < _loseText.Length)
-            {
-                if (currentRoutine != null) StopCoroutine(currentRoutine);
-                currentRoutine = StartCoroutine(Play(_loseText[paragraphCounter]));
-                ++paragraphCounter;
-                yield return new WaitForSeconds(_sentenceSpeed);
-                while (!Input.GetKeyDown(KeyCode.E))
-                {
-                    yield return null;
-                }
-                yield return null;
-            }
-            if (currentRoutine != null) StopCoroutine(currentRoutine);
-            if (IsDialogueBoxNotNull) _dialogueBox.SetActive(false);
-            MyCollider.enabled = false;
-            if (IsRayCastObjectNotNull) _rayCastObject.SetActive(true);
-            MyCollider.enabled = true;
-        }
-
-        private TileBase SetTile(Tilemap tilemap, Vector2 cellWorldPos)
-        {
-            tilemap.SetTile(tilemap.WorldToCell(cellWorldPos),null);
-            return null;
+            yield return null;
         }
     }
 }

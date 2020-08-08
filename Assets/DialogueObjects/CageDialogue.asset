@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: CageDialogue
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Death
+    _messageText: This is a very large table
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1
+  - _npcName: 
+    _messageText: This is a hiding place, initiate final choice?
+    _npcMood: 
+    _responses:
+    - _next: 2
+      _reply: Yes
+      _triggerEvent: 1
+    - _next: -1
+      _reply: No
+      _triggerEvent: 0
+    _nextMessage: -1
+  - _npcName: Old Lady Gunk
+    _messageText: Ahahahahha
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Old Lady Gunk
+    _messageText: You trapped suka
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Old Lady Gunk
+    _messageText: Now enjoy spending the rest of your life trapped at a table
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1
