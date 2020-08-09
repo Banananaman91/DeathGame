@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Boids
@@ -48,14 +49,7 @@ namespace Boids
 
             if (neighbours.Count == 0) return average;
 
-            foreach (var neighbour in neighbours)
-            {
-                average += neighbour.position;
-            }
-
-            // average /= neighbours.Count;
-            // average -= boidRb.position;
-            
+            average = neighbours.Aggregate(average, (current, neighbour) => current + neighbour.position);
             var n = 1;
             if (neighbours.Count > n) n = neighbours.Count - 1;
             average /= n;
@@ -68,15 +62,7 @@ namespace Boids
         {
             var boidRb = boid.BoidRigidbody;
             var separation = new Vector3(0, 0, 0);
-            if (neighbours.Count == 0) return separation;
-
-            foreach (var neighbour in neighbours)
-            {
-                var distanceVector = neighbour.position - boidRb.position;
-                if (Vector3.Distance(neighbour.position, boidRb.position) < boid.NeighbourSeparationDistance) separation -= distanceVector;
-            }
-
-            return separation;
+            return neighbours.Count == 0 ? separation : (from neighbour in neighbours let distanceVector = neighbour.position - boidRb.position where Vector3.Distance(neighbour.position, boidRb.position) < boid.NeighbourSeparationDistance select distanceVector).Aggregate(separation, (current, distanceVector) => current - distanceVector);
         }
 
         public Vector3 BoidRule3(Boid boid, List<Rigidbody> neighbours) // match velocity
@@ -85,10 +71,7 @@ namespace Boids
             var boidRb = boid.BoidRigidbody;
             if (neighbours.Count == 0) return averageVelocity;
 
-            foreach (var neighbour in neighbours)
-            {
-                averageVelocity += neighbour.velocity;
-            }
+            averageVelocity = neighbours.Aggregate(averageVelocity, (current, neighbour) => current + neighbour.velocity);
 
             var n = 1;
             if (neighbours.Count > n) n = neighbours.Count - 1;
@@ -100,11 +83,7 @@ namespace Boids
         public Vector3 BoidRule4(Boid boid) // tend towards leader
         {
             Vector3 direction;
-            if (Vector3.Distance(boid.transform.position, boid.Leader.position) < boid.LeaderDistance)
-            {
-                direction = (boid.Leader.position + boid.BoidRigidbody.position) / 100;
-                return direction;
-            }
+            if (Vector3.Distance(boid.transform.position, boid.Leader.position) < boid.LeaderDistance) return Vector3.zero;
             direction = (boid.Leader.position - boid.BoidRigidbody.position) / 100;
             return direction;
         }
@@ -127,11 +106,7 @@ namespace Boids
             var boidRb = boid.BoidRigidbody;
             var separation = new Vector3(0, 0, 0);
 
-            foreach (var enemy in enemies)
-            {
-                var distanceVector = boidRb.position - enemy.position;
-                if (Vector3.Distance(boidRb.position, enemy.position) < boid.EnemySeparationDistance) separation -= distanceVector;
-            }
+            separation = (from enemy in enemies let distanceVector = boidRb.position - enemy.position where Vector3.Distance(boidRb.position, enemy.position) < boid.EnemySeparationDistance select distanceVector).Aggregate(separation, (current, distanceVector) => current - distanceVector);
 
             return -separation;
         }

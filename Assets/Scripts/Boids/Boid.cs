@@ -9,19 +9,19 @@ namespace Boids
     {
         [SerializeField] private int _neighbourSeparationDistance;
         [SerializeField] private int _enemySeparationDistance;
-        [SerializeField] private float _leaderDistance;
         [SerializeField] private SphereCollider _sphere;
         [SerializeField] private int _neighbourRange;
         [SerializeField] private float _movementSpeed;
+        [SerializeField] private float _turnSpeed;
         [SerializeField] private List<Rigidbody> _neighboursRigidbodies = new List<Rigidbody>();
         [SerializeField] private List<Rigidbody> _enemyRigidbodies = new List<Rigidbody>();
+        private int _forwardDistance = 1;
         private Rigidbody _leader;
         private BoidRules _boidRules = new BoidRules();
         public int NeighbourSeparationDistance => _neighbourSeparationDistance;
         public int EnemySeparationDistance => _enemySeparationDistance;
-        //public float LeaderDistance => _leaderDistance;
         public Rigidbody BoidRigidbody => GetComponent<Rigidbody>();
-        public List<Rigidbody> NeighboursRigidbodies => _neighboursRigidbodies;
+        private Transform RbTransform => BoidRigidbody.transform;
         public float MovementSpeed => _movementSpeed;
         public Rigidbody Leader => _leader;
         
@@ -36,21 +36,17 @@ namespace Boids
         private void FixedUpdate()
         {
             var direction = new Vector3(0, 0, 0);
-
+            direction += RbTransform.forward * _forwardDistance;
             direction += _boidRules.BoidRule1(this, _neighboursRigidbodies);
             direction += _boidRules.BoidRule2(this, _neighboursRigidbodies);
             direction += _boidRules.BoidRule3(this, _neighboursRigidbodies);
             direction += _boidRules.BoidRule4(this);
             if (_enemyRigidbodies.Count > 0) direction += _boidRules.BoidRule6(this, _enemyRigidbodies);
-
+            transform.Rotate(direction * (_turnSpeed * Time.deltaTime), Space.Self);
             BoidRigidbody.velocity = Vector3.ClampMagnitude(BoidRigidbody.velocity, MovementSpeed);
-            BoidRigidbody.AddForce(direction.normalized * (MovementSpeed * Time.deltaTime), ForceMode.Impulse);
-            //BoidRigidbody.AddForce(transform.forward * (_movementSpeed * Time.deltaTime), ForceMode.Impulse);
-        }
-
-        public void AddNeighbour(Rigidbody neighbour)
-        {
-            _neighboursRigidbodies.Add(neighbour);
+            //BoidRigidbody.AddForce(direction.normalized * (MovementSpeed * Time.deltaTime), ForceMode.VelocityChange);
+            var directionVector = (RbTransform.right * direction.x) + (RbTransform.up * direction.y) + (RbTransform.forward * direction.z);
+            BoidRigidbody.MovePosition(BoidRigidbody.transform.position + directionVector * (_movementSpeed * Time.deltaTime));
         }
 
         public void AddLeader(Rigidbody leader)
