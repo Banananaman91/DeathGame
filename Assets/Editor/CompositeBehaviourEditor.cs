@@ -41,7 +41,6 @@ namespace Editor
                     EditorUtility.SetDirty(cb);
                 }
             }
-            EditorGUILayout.EndHorizontal();
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("Add Behaviour"))
             {
@@ -49,15 +48,18 @@ namespace Editor
                 EditorUtility.SetDirty(cb);
             }
             EditorGUILayout.EndHorizontal();
-            EditorGUILayout.BeginHorizontal();
             if (cb.Behaviours != null && cb.Behaviours.Length > 0)
             {
+                EditorGUILayout.BeginHorizontal();
                 if (GUILayout.Button("Remove Behaviour"))
                 {
                     RemoveBehaviour(cb);
                     EditorUtility.SetDirty(cb);
                 }
+                EditorGUILayout.EndHorizontal();
             }
+            
+            
         }
 
         private void AddBehaviour(CompositeBehaviour cb)
