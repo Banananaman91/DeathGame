@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: DeceitfulPage3
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Granny
+    _messageText: I began to confess myself to this woman
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+  - _npcName: Granny
+    _messageText: I am not sure what about her got me to do so, but I began to tell
+      her all about my life
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+  - _npcName: Granny
+    _messageText: My upbringing, how I too was beaten growing up
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Granny
+    _messageText: ' I was conditioned to this behaviour'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Granny
+    _messageText: " I didn\u2019t feel I could trust her without testing her"
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+  - _npcName: Granny
+    _messageText: She became so caring to me.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+  - _npcName: Granny
+    _messageText: Soon she began to look after me too
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+  - _npcName: Granny
+    _messageText: She told me about the lies that she had told me when I had her
+      chained up
+    _npcMood: 
+    _responses: []
+    _nextMessage: 8
+  - _npcName: Granny
+    _messageText: She confessed the truth about the resistance and told me how she
+      was conditioned in the same way to hide these secrets
+    _npcMood: 
+    _responses: []
+    _nextMessage: 9
+  - _npcName: Granny
+    _messageText: even if it is beaten out of her
+    _npcMood: 
+    _responses: []
+    _nextMessage: 10
+  - _npcName: Granny
+    _messageText: ' I never realised how close our lives had been'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 11
+  - _npcName: Granny
+    _messageText: I almost felt sorry for her
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1
