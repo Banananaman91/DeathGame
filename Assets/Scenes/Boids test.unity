@@ -378,11 +378,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51226b08db34a4e438a9244b37db0b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rb: {fileID: 766577135}
-  _boid: {fileID: 5779161040887280371, guid: ca472ad744e856e41939ad0f7fb3bf05, type: 3}
-  _flockTotal: 30
-  _spawnRadius: 20
-  _leaderDistance: 0
+  _boid: {fileID: 621711306139933182, guid: ca472ad744e856e41939ad0f7fb3bf05, type: 3}
+  _flockTotal: 100
+  _boidDensity: 0.08
+  _behaviour: {fileID: 11400000, guid: 89730ce207f93c64886b1ae1a89fa5ad, type: 2}
+  _driveFactor: 2
+  _maxSpeed: 5
+  _neighbourRadius: 1.5
+  _avoidanceRadiusMultiplier: 0.5
 --- !u!65 &766577137
 BoxCollider:
   m_ObjectHideFlags: 0

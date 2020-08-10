@@ -90,7 +90,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5779161040887280371}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -123,12 +123,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c51987ed35510f4280b898d0428dc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbourSeparationDistance: 2
-  _enemySeparationDistance: 5
-  _sphere: {fileID: 8981183780390234217}
-  _neighbourRange: 1
-  _movementSpeed: 2
-  _turnSpeed: 30
-  _maxLeaderDist: 30
-  _neighboursRigidbodies: []
-  _enemyRigidbodies: []
+  _boidCollider: {fileID: 8981183780390234217}
