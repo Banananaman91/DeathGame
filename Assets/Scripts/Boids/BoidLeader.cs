@@ -27,8 +27,13 @@ namespace Boids
             }
             foreach (var boid in _boidSwarm)
             {
+                foreach (var t in _boidSwarm.Where(t => !boid.NeighboursRigidbodies.Contains(t.BoidRigidbody) && t != boid))
+                {
+                    boid.AddNeighbour(t.BoidRigidbody);
+                }
                 boid.AddLeader(_rb);
                 boid.LeaderDistance = _leaderDistance;
+                boid.AddNeighbour(_rb);
             }
         }
     }

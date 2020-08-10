@@ -126,8 +126,9 @@ MonoBehaviour:
   _neighbourSeparationDistance: 2
   _enemySeparationDistance: 5
   _sphere: {fileID: 8981183780390234217}
-  _neighbourRange: 10
-  _movementSpeed: 5
-  _turnSpeed: 20
+  _neighbourRange: 1
+  _movementSpeed: 2
+  _turnSpeed: 30
+  _maxLeaderDist: 30
   _neighboursRigidbodies: []
   _enemyRigidbodies: []
