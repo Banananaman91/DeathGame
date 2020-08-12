@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ScriptableDialogueSystem.Editor.DialogueTypes
 {
-    [CreateAssetMenu(fileName = "Dialogue", menuName = "Dialogue", order = 1), Serializable]
+    [CreateAssetMenu(fileName = "Dialogue", menuName = "Dialogue/Message Dialogue", order = 1), Serializable]
     public class Dialogue : ScriptableObject
     {
         [SerializeField] private List<Message> _messages;

@@ -121,10 +121,10 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                     //Set NPC mood image from previous list based on current mood
                     foreach (var npcMood in _npcImageBio.NpcMoodImages)
                     {
-                        var npcMoodName = npcMood.name.ToLower();
+                        var npcMoodName = npcMood.NpcMoodImage.name.ToLower();
                         if (npcMoodName.Contains(_npc.Messages[_paragraphNumber].NpcMood.ToLower()))
                         {
-                            _newMoodImage = npcMood;
+                            _newMoodImage = npcMood.NpcMoodImage;
                         }
                     }
                 }
