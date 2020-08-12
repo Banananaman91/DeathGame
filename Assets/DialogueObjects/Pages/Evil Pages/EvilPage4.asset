@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: EvilPage4
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Granny
+    _messageText: "I\u2019m not exactly certain how long that woman survived for"
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+  - _npcName: Granny
+    _messageText: She was fed and drugged plenty throughout her time there
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+  - _npcName: Granny
+    _messageText: The children suffered, the husband suffered, but she truly suffered
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Granny
+    _messageText: Seeing their body parts all around her
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Granny
+    _messageText: I think it was months before I just left her entirely
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+  - _npcName: Granny
+    _messageText: I never went back down there
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+  - _npcName: Granny
+    _messageText: I had moved on from her and began to experiment in other rooms
+      around the house
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+  - _npcName: Granny
+    _messageText: The officers did return though eventually
+    _npcMood: 
+    _responses: []
+    _nextMessage: 8
+  - _npcName: Granny
+    _messageText: They demanded more payment as, apparently, she was some high up
+      MP official whose disappearance had gained a lot of attention
+    _npcMood: 
+    _responses: []
+    _nextMessage: 9
+  - _npcName: Granny
+    _messageText: Thankfully my boys were part of the investigation
+    _npcMood: 
+    _responses: []
+    _nextMessage: 10
+  - _npcName: Granny
+    _messageText: but they needed extra payment for the extra cover up work
+    _npcMood: 
+    _responses: []
+    _nextMessage: 11
+  - _npcName: Granny
+    _messageText: "As if saving their own necks wasn\u2019t payment enough"
+    _npcMood: 
+    _responses: []
+    _nextMessage: 12
+  - _npcName: Granny
+    _messageText: I paid them, sure, but once the investigation was over, I decided
+      to be rid of those two
+    _npcMood: 
+    _responses: []
+    _nextMessage: 13
+  - _npcName: Granny
+    _messageText: One night I visited their homes and slit their throats
+    _npcMood: 
+    _responses: []
+    _nextMessage: 14
+  - _npcName: Granny
+    _messageText: I have lived rather quietly since
+    _npcMood: 
+    _responses: []
+    _nextMessage: 15
+  - _npcName: Granny
+    _messageText: I put it all down to the excitement of being young and rebellious
+    _npcMood: 
+    _responses: []
+    _nextMessage: 16
+  - _npcName: Granny
+    _messageText: That, and I had the money to do that sort of thing
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1

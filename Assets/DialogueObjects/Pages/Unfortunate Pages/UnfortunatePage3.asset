@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: UnfortunatePage3
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Granny
+    _messageText: "That night I couldn\u2019t sleep"
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+  - _npcName: Granny
+    _messageText: ' I had triple checked every lock and window before-hand'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+  - _npcName: Granny
+    _messageText: " I still couldn\u2019t forget what had happened the night before"
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+  - _npcName: Granny
+    _messageText: ' The images were flashing through my mind'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+  - _npcName: Granny
+    _messageText: That damn smile on her face.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+  - _npcName: Granny
+    _messageText: It seemed so sweet at first, but the wickedness of it truly showed
+      itself last night.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+  - _npcName: Granny
+    _messageText: I lay for what felt like hours
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+  - _npcName: Granny
+    _messageText: Then I heard it
+    _npcMood: 
+    _responses: []
+    _nextMessage: 8
+  - _npcName: Granny
+    _messageText: An ungodly scream coming from within the house
+    _npcMood: 
+    _responses: []
+    _nextMessage: 9
+  - _npcName: Granny
+    _messageText: It froze me to the spot
+    _npcMood: 
+    _responses: []
+    _nextMessage: 10
+  - _npcName: Granny
+    _messageText: "I couldn\u2019t bare to move or to check."
+    _npcMood: 
+    _responses: []
+    _nextMessage: 11
+  - _npcName: Granny
+    _messageText: Then I heard it again, louder this time
+    _npcMood: 
+    _responses: []
+    _nextMessage: 12
+  - _npcName: Granny
+    _messageText: The night was filled with the screams before eventually they stopped
+    _npcMood: 
+    _responses: []
+    _nextMessage: 13
+  - _npcName: Granny
+    _messageText: ' I was terrified to move out of my bed'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 14
+  - _npcName: Granny
+    _messageText: Once the sun rose, and light filled the place, I began to relax.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 15
+  - _npcName: Granny
+    _messageText: The screaming had stopped
+    _npcMood: 
+    _responses: []
+    _nextMessage: 16
+  - _npcName: Granny
+    _messageText: Whatever it was sounded like someone being tortured
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1
