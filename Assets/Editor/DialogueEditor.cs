@@ -159,6 +159,7 @@ namespace Editor
 
         private void AddMessage(Dialogue d)
         {
+            if (d.Messages == null) d.Messages = new List<Message>();
             d.Messages.Add(new Message());
         }
         
@@ -169,6 +170,7 @@ namespace Editor
 
         private void AddResponse(Message m)
         {
+            if (m.Responses == null) m.Responses = new List<Response>();
             m.Responses.Add(new Response());
         }
 

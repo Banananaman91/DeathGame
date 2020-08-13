@@ -4,13 +4,14 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour {
 
     [SerializeField] private PlayerMovement _thePlayer;
+    [SerializeField] private KeyCode _interactKey;
     
     private bool _interact;
     
     private void Update()
     {
 #if UNITY_STANDALONE
-        _interact = (Input.GetKeyDown(KeyCode.Space));
+        _interact = (Input.GetKeyDown(_interactKey));
 #endif
         if (!_interact) return;
         _interact = false;

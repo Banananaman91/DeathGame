@@ -20,7 +20,11 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
             set => _npcName = value;
         }
 
-        public List<MoodImage> NpcMoodImages => _npcMoodImages;
+        public List<MoodImage> NpcMoodImages
+        {
+            get => _npcMoodImages;
+            set => _npcMoodImages = value;
+        }
 
         public Sprite DialogueBackgroundImage
         {
