@@ -9,20 +9,41 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
     public class NpcBio
     {
         [SerializeField] private string _npcName;
-        [SerializeField] private List<Image> _npcMoodImages;
+        [SerializeField] private List<MoodImage> _npcMoodImages;
         [SerializeField] private Sprite _dialogueBackgroundImage;
         [SerializeField] private Color _dialogueBackgroundColour;
         [SerializeField] private Color _dialogueTextColour;
         [SerializeField] private Font _dialogueTextFont;
-        public string NpcName => _npcName;
-        public List<Image> NpcMoodImages => _npcMoodImages;
+        public string NpcName
+        {
+            get => _npcName;
+            set => _npcName = value;
+        }
 
-        public Sprite DialogueBackgroundImage => _dialogueBackgroundImage;
+        public List<MoodImage> NpcMoodImages => _npcMoodImages;
 
-        public Color DialogueTextColour => _dialogueTextColour;
+        public Sprite DialogueBackgroundImage
+        {
+            get => _dialogueBackgroundImage;
+            set => _dialogueBackgroundImage = value;
+        }
 
-        public Font DialogueTextFont => _dialogueTextFont;
+        public Color DialogueTextColour
+        {
+            get => _dialogueTextColour;
+            set => _dialogueTextColour = value;
+        }
 
-        public Color DialogueBackgroundColour => _dialogueBackgroundColour;
+        public Font DialogueTextFont
+        {
+            get => _dialogueTextFont;
+            set => _dialogueTextFont = value;
+        }
+
+        public Color DialogueBackgroundColour
+        {
+            get => _dialogueBackgroundColour;
+            set => _dialogueBackgroundColour = value;
+        }
     }
 }
