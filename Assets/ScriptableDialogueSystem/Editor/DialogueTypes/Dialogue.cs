@@ -8,6 +8,10 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
     public class Dialogue : ScriptableObject
     {
         [SerializeField] private List<Message> _messages;
-        public List<Message> Messages => _messages;
+        public List<Message> Messages
+        {
+            get => _messages;
+            set => _messages = value;
+        }
     }
 }

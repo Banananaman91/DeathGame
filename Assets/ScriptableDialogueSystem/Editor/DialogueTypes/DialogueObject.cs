@@ -13,7 +13,7 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
 
         public UnityEvent MyEvent => _myEvent;
 
-        public void ResponseTrigger()
+        protected void ResponseTrigger()
         {
             _myEvent.Invoke();
         }

@@ -143,6 +143,7 @@ namespace Editor
 
         private void AddBio(NpcImages d)
         {
+            if (d.NpcImage == null) d.NpcImage = new List<NpcBio>();
             d.NpcImage.Add(new NpcBio());
         }
         
@@ -153,6 +154,7 @@ namespace Editor
 
         private void AddImage(NpcBio m)
         {
+            if (m.NpcMoodImages == null) m.NpcMoodImages = new List<MoodImage>();
             m.NpcMoodImages.Add(new MoodImage());
         }
 
