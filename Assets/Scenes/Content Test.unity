@@ -1820,6 +1820,63 @@ Transform:
   m_Father: {fileID: 1870374170}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1195447433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1470943445853005889, guid: a44e2ae9bfcc4344c8774a4b36ade000,
+    type: 3}
+  m_PrefabInstance: {fileID: 780686415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1195447434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195447433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 27a86ed5342d5f34fac95b235be8b9cb, type: 2}
+  _pageRender: {fileID: 373605241}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1644792923}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7352407254287271671, guid: cc5ce40cc8bf47446afa5da236d0c81c,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
+--- !u!65 &1195447435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195447433}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12270185, y: 0.2622196, z: 0.12560554}
+  m_Center: {x: -0.00000035785223, y: 0.00000011948886, z: 0.005479231}
 --- !u!1001 &1404756805
 PrefabInstance:
   m_ObjectHideFlags: 0
