@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: StayInR
   m_EditorClassIdentifier: 
   _centre: {x: 0, y: 0, z: 0}
-  _radius: 50
+  _radius: 25

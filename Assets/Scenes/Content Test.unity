@@ -6333,6 +6333,7 @@ GameObject:
   - component: {fileID: 3820885158591888254}
   - component: {fileID: 3820885158591888253}
   - component: {fileID: 3820885158591888256}
+  - component: {fileID: 3820885158591888257}
   m_Layer: 0
   m_Name: Death
   m_TagString: Untagged
@@ -6400,6 +6401,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _thePlayer: {fileID: 3820885158591888253}
   _interactKey: 102
+--- !u!114 &3820885158591888257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820885158591888252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51226b08db34a4e438a9244b37db0b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _boid: {fileID: 621711306139933182, guid: ca472ad744e856e41939ad0f7fb3bf05, type: 3}
+  _flockTotal: 100
+  _boidDensity: 0.08
+  _behaviour: {fileID: 11400000, guid: 89730ce207f93c64886b1ae1a89fa5ad, type: 2}
+  _driveFactor: 2.1
+  _maxSpeed: 5
+  _neighbourRadius: 1.5
+  _avoidanceRadiusMultiplier: 0.5
 --- !u!33 &3847353466883195289
 MeshFilter:
   m_ObjectHideFlags: 0
