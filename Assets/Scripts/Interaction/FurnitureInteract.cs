@@ -33,6 +33,7 @@ public class FurnitureInteract : DialogueObject , IInteract
         // else if (_collectedObject == _hiddenObjectPosition && (_journalInventory.Books.Contains(_hiddenObject) ||
         //                                                        _inventoryScript.Items.Contains(_hiddenObject))) _startMessage = _unlockedStartMessage;
         //
+        _pageRender.AssignResponseObject(this);
         _pageRender.PlayDialogue(_myDialogue);
     }
 }
