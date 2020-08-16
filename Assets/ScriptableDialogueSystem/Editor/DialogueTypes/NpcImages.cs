@@ -8,6 +8,10 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
     public class NpcImages : ScriptableObject
     {
         [SerializeField] private List<NpcBio> _npcImage;
-        public List<NpcBio> NpcImage => _npcImage;
+        public List<NpcBio> NpcImage
+        {
+            get => _npcImage;
+            set => _npcImage = value;
+        }
     }
 }

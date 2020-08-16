@@ -30,7 +30,11 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
             set => _messageText = value;
         }
 
-        public List<Response> Responses => _responses;
+        public List<Response> Responses
+        {
+            get => _responses;
+            set => _responses = value;
+        }
 
         public int NextMessage
         {

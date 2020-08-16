@@ -9,8 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57b7561eb76acec42b01c3e149a7f849, type: 3}
-  m_Name: StayInR
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: TvCabinet
   m_EditorClassIdentifier: 
-  _centre: {x: 0, y: 0, z: 0}
-  _radius: 25
+  _messages:
+  - _npcName: Death
+    _messageText: Wouldn't mind watching a horror movie rather than looking for this
+      bitch.
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1
