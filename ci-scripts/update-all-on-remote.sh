@@ -17,10 +17,10 @@ case $input in
         done
     ;;
     [nN][oO]|[nN])
-        echo "No"
+        exit 0
     ;;
     *)
-        echo "Invalid input..."
+        echo "Invalid input. Exiting."
         exit 1
     ;;
 esac
