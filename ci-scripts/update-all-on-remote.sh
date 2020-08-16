@@ -17,8 +17,8 @@ case $input in
                 echo "INFO: Attempting rebase of ${branch}"
                 git checkout "${newBranch}"
                 git pull -r
-                git rebase development
-                git push
+                git merge development
+                #git push
             fi
         done
     ;;
