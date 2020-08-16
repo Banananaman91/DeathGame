@@ -1,3 +1,5 @@
+set -e
+
 echo "WARNING: This script will update ALL existing branches according to the remote information for the origin remote ONLY. This may break other people's branches or create merge conflicts! Only proceed if you understand the implications!"
 read -r -p "Do you understand the implications and wish to continue? (y/n)" input
 
@@ -11,9 +13,9 @@ case $input in
         for branch in $(git for-each-ref --format="%(refname:short)"); do
             newBranch=${branch#"$originPrefix"}
 
-            if $newBranch != "master"; then
+            if [ "${newBranch}" != "master" ]; then
                 echo "INFO: Attempting rebase of ${branch}"
-                git checkout $newBranch
+                git checkout "${newBranch}"
                 git rebase development
                 git push
             fi
