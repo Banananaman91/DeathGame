@@ -13,11 +13,11 @@ case $input in
         for branch in $(git for-each-ref --format="%(refname:short)"); do
             newBranch=${branch#"$originPrefix"}
 
-            if $newBranch != "master"; then
+            if [ "${newBranch}" != "master" ]; then
                 echo "INFO: Attempting rebase of ${branch}"
-                git checkout "${newBranch}"
+                git checkout $newBranch
                 git rebase development
-                #git push
+                git push
             fi
         done
     ;;
