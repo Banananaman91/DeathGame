@@ -18,7 +18,7 @@ case $input in
                 git checkout "${newBranch}"
                 git pull -r
                 git merge development
-                #git push
+                git push
             fi
         done
     ;;
