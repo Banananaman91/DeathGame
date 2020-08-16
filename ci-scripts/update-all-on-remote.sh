@@ -16,8 +16,9 @@ case $input in
             if [ "${newBranch}" != "master" ]; then
                 echo "INFO: Attempting rebase of ${branch}"
                 git checkout "${newBranch}"
-                git rebase development
-                git push
+                git pull
+                git merge development
+                #git push
             fi
         done
     ;;
