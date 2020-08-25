@@ -12,6 +12,8 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         [SerializeField] private string _npcMood;
         [SerializeField] private List<Response> _responses;
         [SerializeField] private int _nextMessage;
+        [SerializeField] private bool _triggerEvent;
+        [SerializeField] private int _eventNum;
         public String NpcName
         {
             get => _npcName;
@@ -40,6 +42,18 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         {
             get => _nextMessage;
             set => _nextMessage = value;
+        }
+
+        public bool TriggerEvent
+        {
+            get => _triggerEvent;
+            set => _triggerEvent = value;
+        }
+
+        public int EventNum
+        {
+            get => _eventNum;
+            set => _eventNum = value;
         }
     }
 }

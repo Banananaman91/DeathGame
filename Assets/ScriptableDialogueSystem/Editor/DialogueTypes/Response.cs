@@ -10,6 +10,7 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         [SerializeField] private int _next;
         [SerializeField] private string _reply;
         [SerializeField] private bool _triggerEvent;
+        [SerializeField] private int _eventNum;
         public int Next
         {
             get => _next;
@@ -26,6 +27,12 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         {
             get => _triggerEvent;
             set => _triggerEvent = value;
+        }
+
+        public int EventNum
+        {
+            get => _eventNum;
+            set => _eventNum = value;
         }
     }
 }
