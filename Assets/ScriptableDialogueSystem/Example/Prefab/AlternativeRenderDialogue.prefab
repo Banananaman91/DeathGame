@@ -295,7 +295,8 @@ MonoBehaviour:
   _dialogueBackground: {fileID: 6039030303066401101}
   _dialogueBox: {fileID: 6039030303615552719}
   _npcImages: {fileID: 11400000, guid: 9fb809c20da810841a472565e7e43dd7, type: 2}
-  _otherDialogues: []
+  _otherDialogues:
+  - {fileID: 0}
 --- !u!1 &6039030303999713479
 GameObject:
   m_ObjectHideFlags: 0

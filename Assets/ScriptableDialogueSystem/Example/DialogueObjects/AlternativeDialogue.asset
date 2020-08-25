@@ -18,21 +18,29 @@ MonoBehaviour:
     _npcMood: 
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Event
     _messageText: You can create your own events by filling out the UnityEvents section
       in the inspector of any DialogueObject inherited scripts
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Ian
     _messageText: I used it to trigger an alternate dialogue scenario, but it can
       be used to set of any event that you wish
     _npcMood: 
     _responses: []
     _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Ian
     _messageText: Also, npcImages can have customised UI for the dialogue box, such
       as what you're seeing here
     _npcMood: 
     _responses: []
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0
