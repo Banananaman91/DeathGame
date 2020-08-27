@@ -9,13 +9,13 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         [Header("Dialogue")]
         [SerializeField] protected Dialogue _myDialogue;
         [SerializeField] protected RenderDialogue _pageRender;
-        [SerializeField] protected UnityEvent _myEvent;
+        [SerializeField] protected UnityEvent[] _myEvent;
+        private int _eventNum;
+        public UnityEvent[] MyEvent => _myEvent;
 
-        public UnityEvent MyEvent => _myEvent;
-
-        public void ResponseTrigger()
+        public void EventTrigger(int num)
         {
-            _myEvent.Invoke();
+            _myEvent[num].Invoke();
         }
     }
 }

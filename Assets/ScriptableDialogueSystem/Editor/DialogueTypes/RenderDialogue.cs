@@ -17,7 +17,6 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         [SerializeField] private Image _dialogueBackground;
         [SerializeField] private GameObject _dialogueBox;
         [SerializeField] private NpcImages _npcImages;
-        [SerializeField] private GameObject[] _otherDialogues;
         private List<Button> _responseOptions = new List<Button>();
         private Image _previousImage;
         private NpcBio _npcImageBio;
@@ -27,7 +26,6 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         private DialogueObject _dialogueObject;
         private Message _npcMessage;
         private int _paragraphNumber;
-        private bool _runningDialogue;
 
         private bool IsPreviousImageNotNull => _previousImage != null;
         private bool IsCurrentRoutineNotNull => _currentRoutine != null;
@@ -42,7 +40,6 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         //Play the dialogue text
         private IEnumerator Play(Message npcMessage)
         {
-            _runningDialogue = false;
             var sb = new StringBuilder();
             var letters = npcMessage.MessageText.ToCharArray();
             foreach (var letter in letters)
@@ -51,8 +48,7 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                 RenderPageText(npcMessage.NpcName, sb.ToString());
                 yield return new WaitForSeconds(_sentenceSpeed);
             }
-
-            _runningDialogue = true;
+            
             yield return new WaitForSeconds(_sentenceSpeed);
             if (_npc.Messages[_paragraphNumber].Responses.Count != 0) GetResponse(_npc.Messages[_paragraphNumber]);
             else StartCoroutine(WaitForInput());
@@ -62,11 +58,6 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         {
             _npc = npcDialogue;
             _paragraphNumber = 0;
-            _runningDialogue = true;
-            foreach (var dialogue in _otherDialogues)
-            {
-                dialogue.SetActive(false);
-            }
             PlayParagraphCycle(_paragraphNumber);
         }
 
@@ -121,10 +112,10 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                     //Set NPC mood image from previous list based on current mood
                     foreach (var npcMood in _npcImageBio.NpcMoodImages)
                     {
-                        var npcMoodName = npcMood.name.ToLower();
+                        var npcMoodName = npcMood.NpcMoodImage.name.ToLower();
                         if (npcMoodName.Contains(_npc.Messages[_paragraphNumber].NpcMood.ToLower()))
                         {
-                            _newMoodImage = npcMood;
+                            _newMoodImage = npcMood.NpcMoodImage;
                         }
                     }
                 }
@@ -144,7 +135,7 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
             if (IsCurrentRoutineNotNull) StopCoroutine(_currentRoutine);
             _pageName.text = string.Empty;
             _pageText.text = string.Empty;
-
+            if (_npc.Messages[_paragraphNumber].TriggerEvent) _dialogueObject.MyEvent[_npc.Messages[_paragraphNumber].EventNum].Invoke();
             _currentRoutine = StartCoroutine(Play(_npc.Messages[_paragraphNumber]));
         }
 
@@ -159,7 +150,7 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                 button.GetComponentInChildren<Text>().text = response.Reply;
                 _responseOptions.Add(button);
                 button.onClick.AddListener(() => PlayParagraphCycle(response.Next));
-                if (response.TriggerEvent) button.onClick.AddListener(_dialogueObject.MyEvent.Invoke);
+                if (response.TriggerEvent) button.onClick.AddListener(_dialogueObject.MyEvent[response.EventNum].Invoke);
             }
         }
 
@@ -184,7 +175,6 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
             if (IsCurrentRoutineNotNull) StopCoroutine(_currentRoutine);
             _pageName.text = string.Empty;
             _pageText.text = string.Empty;
-            _runningDialogue = false;
             _dialogueBox.SetActive(false);
         }
     }
