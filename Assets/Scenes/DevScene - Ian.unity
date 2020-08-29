@@ -235,7 +235,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -255,9 +255,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &83842602
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -353,7 +350,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -373,9 +370,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &90912327
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -571,18 +565,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myDialogue: {fileID: 11400000, guid: 1a47408566b94a242ac0e62c5b91da0b, type: 2}
   _pageRender: {fileID: 1399708315}
-  _myEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  _myEvent: []
   _objectsInside: []
   _inventoryScript: {fileID: 0}
   _journalInventory: {fileID: 0}
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!4 &550778221
 Transform:
   m_ObjectHideFlags: 0
@@ -997,7 +986,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -1018,9 +1007,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!114 &738502219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1036,7 +1022,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -1056,9 +1042,47 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
+--- !u!1 &738502220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4930028733366161731, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+    type: 3}
+  m_PrefabInstance: {fileID: 738502214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &738502221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738502220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6831379009444178406, guid: 8294b09458d22b947b24faa8fe263a74,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &752475801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,7 +1230,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943493}
         m_MethodName: AddPage
@@ -1226,9 +1250,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &755692132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1491,7 +1512,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -1511,9 +1532,47 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
+--- !u!1 &1370793942 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 692206475034053095, guid: 580e5c52a42068647a6414ffe54ae731,
+    type: 3}
+  m_PrefabInstance: {fileID: 1370793938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1370793943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370793942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4996622374086463874, guid: 2244c11fe8284df4e8dc74cafb3de170,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!224 &1399708314 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5554085950236971512, guid: bb46d975259d93244a728a830e21390a,
@@ -1580,7 +1639,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -1600,9 +1659,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &1654313796
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1698,7 +1754,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -1718,9 +1774,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &1678477517
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1816,7 +1869,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -1836,9 +1889,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &1880509991
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3826,7 +3876,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -3846,9 +3896,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!4 &1290337139702969788
 Transform:
   m_ObjectHideFlags: 0
@@ -4104,15 +4151,15 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 736943494}
-        m_MethodName: AddItem
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 7637667291741122764, guid: e828184fae5b4c4459d0f2b39393410d,
+          m_ObjectArgument: {fileID: 8876674802920199468, guid: 4eea68a19c582f54c8c996c0631c7472,
             type: 3}
-          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4124,9 +4171,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!4 &1513073368240097605
 Transform:
   m_ObjectHideFlags: 0
@@ -4406,7 +4450,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -4426,9 +4470,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &1603538776578093784
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4732,6 +4773,7 @@ GameObject:
   - component: {fileID: 1180057822169250277}
   - component: {fileID: 1428341386756842532}
   - component: {fileID: 643650448699189353}
+  - component: {fileID: 1936378094697818864}
   m_Layer: 0
   m_Name: sink.002
   m_TagString: Untagged
@@ -4739,6 +4781,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1936378094697818864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936378094697818863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 604811569577254266, guid: 225426d355a785341895c8cbe2ae3798,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!33 &1937302919729830221
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4955,7 +5032,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -4975,9 +5052,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &2194177279096268553
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5172,7 +5246,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943493}
         m_MethodName: AddPage
@@ -5192,9 +5266,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!4 &2348452106087333968
 Transform:
   m_ObjectHideFlags: 0
@@ -5269,7 +5340,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -5289,9 +5360,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!33 &2404823747674103039
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5559,7 +5627,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -5579,9 +5647,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &2695856584147936802
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5715,6 +5780,7 @@ GameObject:
   - component: {fileID: 5637079168799015318}
   - component: {fileID: 842668570121764509}
   - component: {fileID: 122986657168909522}
+  - component: {fileID: 2740071135452380427}
   m_Layer: 0
   m_Name: Cube.036
   m_TagString: Untagged
@@ -5722,6 +5788,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2740071135452380427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2740071135452380426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1837643344038377743, guid: 2d87165ac81b3a742a0c38edb43bbc9c,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!33 &2742406431454334394
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6236,7 +6337,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -6256,9 +6357,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!33 &3264423455726666245
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6489,7 +6587,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -6509,9 +6607,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!4 &3378879168508373777
 Transform:
   m_ObjectHideFlags: 0
@@ -6731,7 +6826,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943493}
         m_MethodName: AddPage
@@ -6751,9 +6846,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!33 &3579423253798505796
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7693,7 +7785,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943493}
         m_MethodName: AddPage
@@ -7713,9 +7805,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &4137992681121283447
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7948,15 +8037,15 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 736943493}
-        m_MethodName: AddPage
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8876674802920199468, guid: 4eea68a19c582f54c8c996c0631c7472,
+          m_ObjectArgument: {fileID: 7637667291741122764, guid: e828184fae5b4c4459d0f2b39393410d,
             type: 3}
-          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7968,9 +8057,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &4268672290579014154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8210,7 +8296,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -8224,15 +8310,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 262759611512054588, guid: 5dd210c59eecfdf43bac7bac721675ef,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _objectsInside: []
   _inventoryScript: {fileID: 0}
   _journalInventory: {fileID: 0}
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!1 &4425687883774365075
 GameObject:
   m_ObjectHideFlags: 0
@@ -8575,7 +8672,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -8595,9 +8692,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!33 &4588617268329233708
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9154,6 +9248,7 @@ GameObject:
   - component: {fileID: 7572314340477458783}
   - component: {fileID: 3500917952138997460}
   - component: {fileID: 3528074193771187499}
+  - component: {fileID: 4930213871994630929}
   m_Layer: 0
   m_Name: bed.002
   m_TagString: Untagged
@@ -9161,6 +9256,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4930213871994630929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4930213871994630928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5534079485584565956, guid: 9877b53e1fd98ce4fa8bf93ae4e219ae,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!23 &4937785131917864589
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9234,7 +9364,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -9254,9 +9384,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!4 &4980869746655198460
 Transform:
   m_ObjectHideFlags: 0
@@ -10154,7 +10281,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943493}
         m_MethodName: AddPage
@@ -10174,9 +10301,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!1 &5627892409124392629
 GameObject:
   m_ObjectHideFlags: 0
@@ -10287,7 +10411,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -10307,9 +10431,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &5696984968399261662
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10977,7 +11098,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -10997,9 +11118,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &6172270469168060476
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11242,7 +11360,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -11262,9 +11380,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!33 &6265897202290865558
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11787,7 +11902,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943493}
         m_MethodName: AddPage
@@ -11807,9 +11922,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!33 &6604377836583503899
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12028,6 +12140,7 @@ GameObject:
   - component: {fileID: 5132487195623188335}
   - component: {fileID: 7671649055555004021}
   - component: {fileID: 7362554011497175215}
+  - component: {fileID: 6812738594485345199}
   m_Layer: 0
   m_Name: Unit 2
   m_TagString: Untagged
@@ -12035,6 +12148,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6812738594485345199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6812738594485345198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8794200088181206414, guid: 28ee9752974945c4d82178e97ef00bb0,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!4 &6848122840104329465
 Transform:
   m_ObjectHideFlags: 0
@@ -12432,7 +12580,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943493}
         m_MethodName: AddPage
@@ -12452,9 +12600,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &7088312771920154748
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12895,7 +13040,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -12915,9 +13060,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!1 &7301796569724038888
 GameObject:
   m_ObjectHideFlags: 0
@@ -12952,7 +13094,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -12972,9 +13114,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!1 &7306980133092513891
 GameObject:
   m_ObjectHideFlags: 0
@@ -13886,6 +14025,7 @@ GameObject:
   - component: {fileID: 2017465047161823599}
   - component: {fileID: 5994092585348170497}
   - component: {fileID: 7032776442124489090}
+  - component: {fileID: 7913427713933307878}
   m_Layer: 0
   m_Name: Unit bedroom
   m_TagString: Untagged
@@ -13893,6 +14033,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7913427713933307878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7913427713933307877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2958204867708512337, guid: 565f32f838095374c81eaaf0cd6c665a,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!4 &7916537575719787843
 Transform:
   m_ObjectHideFlags: 0
@@ -13988,15 +14163,15 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 736943494}
-        m_MethodName: AddItem
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2958204867708512337, guid: 565f32f838095374c81eaaf0cd6c665a,
+          m_ObjectArgument: {fileID: 6715511573628821253, guid: 6d20a643ac945024ea3717921c7cdd16,
             type: 3}
-          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -14008,9 +14183,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!1 &7942280775941987839
 GameObject:
   m_ObjectHideFlags: 0
@@ -14045,7 +14217,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -14065,9 +14237,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!23 &7942740792956804625
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14394,7 +14563,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -14414,9 +14583,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!4 &8152484329141824765
 Transform:
   m_ObjectHideFlags: 0
@@ -14922,7 +15088,7 @@ MonoBehaviour:
   _myDialogue: {fileID: 0}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 736943494}
         m_MethodName: AddItem
@@ -14942,9 +15108,6 @@ MonoBehaviour:
   _hiddenObjectCheck: 0
   _hiddenObject: {fileID: 0}
   _hiddenObjectPosition: -1
-  _unlockedStartMessage: 0
-  _unlockedEndMessage: 0
-  _collectedObject: 0
 --- !u!4 &8557370611710798949
 Transform:
   m_ObjectHideFlags: 0
