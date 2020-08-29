@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 849349388482341988}
   - component: {fileID: 4658141573472965162}
   - component: {fileID: 624499217369607047}
+  - component: {fileID: -6975096419772042481}
   m_Layer: 0
-  m_Name: Key2
+  m_Name: Basement Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,3 +99,17 @@ MonoBehaviour:
   _itemPlace: 0
   thisItem: {fileID: 624499217369607047}
   _objectSprite: {fileID: 21300000, guid: 2dfd8f39626f16e4e9bc9b82f94c77e8, type: 3}
+--- !u!114 &-6975096419772042481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878707891237593363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemName: Basement Key
+  _itemDescription: I'm in here
