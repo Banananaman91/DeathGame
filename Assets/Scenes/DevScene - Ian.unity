@@ -187,6 +187,242 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &83842599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 83842600}
+  - component: {fileID: 83842603}
+  - component: {fileID: 83842602}
+  - component: {fileID: 83842601}
+  m_Layer: 0
+  m_Name: Extra unit (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &83842600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83842599}
+  m_LocalRotation: {x: -0.00000008146034, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.1309757, y: 3.58, z: 0.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4488520729419426583}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &83842601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83842599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 293253373233062413, guid: d4c06888bf66f244bb9efbbb7b190d9f,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
+--- !u!23 &83842602
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83842599}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 670224309865224971, guid: 715cd35ae57f6504bb89205936fba519, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &83842603
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83842599}
+  m_Mesh: {fileID: -6168061723963359126, guid: 715cd35ae57f6504bb89205936fba519, type: 3}
+--- !u!1 &90912324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 90912325}
+  - component: {fileID: 90912328}
+  - component: {fileID: 90912327}
+  - component: {fileID: 90912326}
+  m_Layer: 0
+  m_Name: bedstand (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &90912325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90912324}
+  m_LocalRotation: {x: 0.00000008146034, y: 3.560745e-15, z: 0.00000004371139, w: 1}
+  m_LocalPosition: {x: -9.52, y: 3.76, z: -3.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6147795737448288175}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &90912326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90912324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3708011613014521563, guid: c23ba1b49d8375e42bece08e19f85ea0,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
+--- !u!23 &90912327
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90912324}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 670224309865224971, guid: f50d8cb4e65e0084590cc58d71806c19, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &90912328
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90912324}
+  m_Mesh: {fileID: 9145072903910033543, guid: f50d8cb4e65e0084590cc58d71806c19, type: 3}
 --- !u!1 &131034066
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,6 +895,170 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 736943492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &738502214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2028805857484023569}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.248834
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.419096
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+        type: 3}
+      propertyPath: m_Name
+      value: Library Furniture
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e5f4290ccdc7e0b44bb26ccfc2857257, type: 3}
+--- !u!4 &738502215 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+    type: 3}
+  m_PrefabInstance: {fileID: 738502214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &738502216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1441234683498342746, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+    type: 3}
+  m_PrefabInstance: {fileID: 738502214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &738502217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8548953378283851191, guid: e5f4290ccdc7e0b44bb26ccfc2857257,
+    type: 3}
+  m_PrefabInstance: {fileID: 738502214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &738502218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738502216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2493895396191434807, guid: a3b6eca3a8e11124aac603e8c3f89796,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside:
+  - {fileID: 736943496}
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
+--- !u!114 &738502219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738502217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 337506854670365984, guid: 87624d15404801649926baed5c8fd0d1,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!1 &752475801
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +1158,124 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &755692129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 755692130}
+  - component: {fileID: 755692133}
+  - component: {fileID: 755692132}
+  - component: {fileID: 755692131}
+  m_Layer: 0
+  m_Name: Counter (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &755692130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755692129}
+  m_LocalRotation: {x: 0.7040073, y: -0.00019478629, z: 0.7101927, w: 0.00019309037}
+  m_LocalPosition: {x: -8.85, y: 0.73, z: 15.13}
+  m_LocalScale: {x: 1, y: 1, z: 0.4874}
+  m_Children: []
+  m_Father: {fileID: 3766789126952152499}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &755692131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755692129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5512001242237628453, guid: 83b6abaf59a12804ca14c500cb2e40c5,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
+--- !u!23 &755692132
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755692129}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 670224309865224971, guid: 77bb42d7d9529514d967f583c45852a7, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &755692133
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755692129}
+  m_Mesh: {fileID: -4134462517785884784, guid: 77bb42d7d9529514d967f583c45852a7, type: 3}
 --- !u!1001 &1135695590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -877,6 +1395,125 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb46d975259d93244a728a830e21390a, type: 3}
+--- !u!1001 &1370793938
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5282863395786138590}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.065788
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1273911
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 580e5c52a42068647a6414ffe54ae731,
+        type: 3}
+      propertyPath: m_Name
+      value: Small Bathroom Furniture
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 580e5c52a42068647a6414ffe54ae731, type: 3}
+--- !u!4 &1370793939 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 580e5c52a42068647a6414ffe54ae731,
+    type: 3}
+  m_PrefabInstance: {fileID: 1370793938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1370793940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 175376230784716250, guid: 580e5c52a42068647a6414ffe54ae731,
+    type: 3}
+  m_PrefabInstance: {fileID: 1370793938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1370793941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370793940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7379317614409903937, guid: 17cd51aac119f974e9b2979de51316e6,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!224 &1399708314 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5554085950236971512, guid: bb46d975259d93244a728a830e21390a,
@@ -1013,6 +1650,242 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654313793}
   m_Mesh: {fileID: 4702581022858292011, guid: 715cd35ae57f6504bb89205936fba519, type: 3}
+--- !u!1 &1678477514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1678477515}
+  - component: {fileID: 1678477518}
+  - component: {fileID: 1678477517}
+  - component: {fileID: 1678477516}
+  m_Layer: 0
+  m_Name: Cube.015 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1678477515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678477514}
+  m_LocalRotation: {x: -0.00000008146034, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.25, y: 4, z: -0.68}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9170186577531649212}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1678477516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678477514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 18458185123675815, guid: ef0ebc6a8ba761a4e9ea4226d6718360,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
+--- !u!23 &1678477517
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678477514}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 670224309865224971, guid: 8b85aced65894b6419a271c84c40bbd3, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1678477518
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678477514}
+  m_Mesh: {fileID: -3537709356157935800, guid: 8b85aced65894b6419a271c84c40bbd3, type: 3}
+--- !u!1 &1880509988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1880509989}
+  - component: {fileID: 1880509992}
+  - component: {fileID: 1880509991}
+  - component: {fileID: 1880509990}
+  m_Layer: 0
+  m_Name: Upstairs Hallway Furniture (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1880509989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880509988}
+  m_LocalRotation: {x: 0.00000008148835, y: 0.0006402552, z: 0.00000004365923, w: 0.9999998}
+  m_LocalPosition: {x: 0.53, y: 1.38, z: -2.59}
+  m_LocalScale: {x: 1, y: 1, z: 0.48105}
+  m_Children: []
+  m_Father: {fileID: 2913265795276207082}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1880509990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880509988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7273343375634886468, guid: 84d8fbc95946ba3489cc81144c74d1b3,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
+--- !u!23 &1880509991
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880509988}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 9185737683893222716, guid: 4b8ac3734048d2446b88a9a93e457977, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1880509992
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880509988}
+  m_Mesh: {fileID: -3329902420748629119, guid: 4b8ac3734048d2446b88a9a93e457977, type: 3}
 --- !u!1 &1937704047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,8 +3152,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4419523594289877758}
   m_LocalRotation: {x: 0.00000008148835, y: 0.0006402552, z: 0.00000004365923, w: 0.9999998}
-  m_LocalPosition: {x: 0.53, y: 1.38, z: -1.97}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.53, y: 1.38, z: -0.61}
+  m_LocalScale: {x: 1, y: 1, z: 0.48105}
   m_Children: []
   m_Father: {fileID: 2913265795276207082}
   m_RootOrder: 0
@@ -2930,6 +3803,7 @@ GameObject:
   - component: {fileID: 3378879168508373777}
   - component: {fileID: 3988997327580459620}
   - component: {fileID: 3620014090990382348}
+  - component: {fileID: 1230199456917570698}
   m_Layer: 0
   m_Name: Extra unit
   m_TagString: Untagged
@@ -2937,6 +3811,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1230199456917570698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230199456917570697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7228254823318412698, guid: 631e66a32ff422e4aa16b476f14d6384,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!4 &1290337139702969788
 Transform:
   m_ObjectHideFlags: 0
@@ -3169,6 +4081,7 @@ GameObject:
   - component: {fileID: 2064047171669812862}
   - component: {fileID: 6502418516460121540}
   - component: {fileID: 8560770497843667834}
+  - component: {fileID: 1509919083180081197}
   m_Layer: 0
   m_Name: trunk
   m_TagString: Untagged
@@ -3176,6 +4089,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1509919083180081197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509919083180081196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7637667291741122764, guid: e828184fae5b4c4459d0f2b39393410d,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!4 &1513073368240097605
 Transform:
   m_ObjectHideFlags: 0
@@ -3432,6 +4383,7 @@ GameObject:
   - component: {fileID: 7883683477887980061}
   - component: {fileID: 5285932411359478994}
   - component: {fileID: 9211750449559055367}
+  - component: {fileID: 1594157036501215342}
   m_Layer: 0
   m_Name: CRT TV
   m_TagString: Untagged
@@ -3439,6 +4391,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1594157036501215342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594157036501215341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7547947971466665155, guid: fc424afe60369fe499948885f34a9b20,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!23 &1603538776578093784
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3864,7 +4854,8 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -13.248834, y: 0, z: -9.419096}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 738502215}
   m_Father: {fileID: 1554416367984544261}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3941,6 +4932,7 @@ GameObject:
   - component: {fileID: 3331393302127395800}
   - component: {fileID: 4777957655101579271}
   - component: {fileID: 169024007134071922}
+  - component: {fileID: 2131545649751829851}
   m_Layer: 0
   m_Name: bedstand
   m_TagString: Untagged
@@ -3948,6 +4940,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2131545649751829851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131545649751829850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5213482693192412609, guid: 47d1783a68676b342ac3fbf36ea48d61,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!23 &2194177279096268553
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4002,7 +5032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &2243550216837845835
 GameObject:
   m_ObjectHideFlags: 0
@@ -4119,6 +5149,7 @@ GameObject:
   - component: {fileID: 7906759701578045909}
   - component: {fileID: 7675090308352461739}
   - component: {fileID: 7127113925220978503}
+  - component: {fileID: 2303284893529957589}
   m_Layer: 0
   m_Name: table.001
   m_TagString: Untagged
@@ -4126,6 +5157,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2303284893529957589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2303284893529957588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2568549000009057186, guid: d5ab839d1757b2c41b247b2e0e789b55,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!4 &2348452106087333968
 Transform:
   m_ObjectHideFlags: 0
@@ -4177,6 +5246,7 @@ GameObject:
   - component: {fileID: 1092335391960277968}
   - component: {fileID: 6143562556908114660}
   - component: {fileID: 4531421223193494663}
+  - component: {fileID: 2401242820535804982}
   m_Layer: 0
   m_Name: table
   m_TagString: Untagged
@@ -4184,6 +5254,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2401242820535804982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2401242820535804981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5911320622802034511, guid: c3548dd6e815a1a409a8e3b666704b64,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!33 &2404823747674103039
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4428,6 +5536,7 @@ GameObject:
   - component: {fileID: 6310612959423818193}
   - component: {fileID: 4051733539254261543}
   - component: {fileID: 2987926741269258040}
+  - component: {fileID: 2666276231275778858}
   m_Layer: 0
   m_Name: shelf
   m_TagString: Untagged
@@ -4435,6 +5544,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2666276231275778858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2666276231275778857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4597892050597151424, guid: 9d09cac95f3a8c34c854664421d222db,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!23 &2695856584147936802
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4767,6 +5914,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 796596809803620589}
+  - {fileID: 1880509989}
   m_Father: {fileID: 5722300651295272678}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5560,6 +6708,7 @@ GameObject:
   - component: {fileID: 8557370611710798949}
   - component: {fileID: 2697069940153777177}
   - component: {fileID: 7088312771920154748}
+  - component: {fileID: 3572770794553669095}
   m_Layer: 0
   m_Name: bedstand.002
   m_TagString: Untagged
@@ -5567,6 +6716,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3572770794553669095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572770794553669094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5894630044793683906, guid: 0de34436bb2580d4e9dfa3e3da4b8df6,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!33 &3579423253798505796
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5907,6 +7094,7 @@ Transform:
   - {fileID: 7453813474817764226}
   - {fileID: 6552913560755362123}
   - {fileID: 836572469936321085}
+  - {fileID: 755692130}
   m_Father: {fileID: 3351884097327778525}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6482,6 +7670,7 @@ GameObject:
   - component: {fileID: 4824901982767709643}
   - component: {fileID: 6604377836583503899}
   - component: {fileID: 6467630028893772321}
+  - component: {fileID: 4132431615473759762}
   m_Layer: 0
   m_Name: chairbackup
   m_TagString: Untagged
@@ -6489,6 +7678,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4132431615473759762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132431615473759761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1548100753211292948, guid: fe37f2178a316054bb739b7dd0f4a321,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!23 &4137992681121283447
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6698,6 +7925,7 @@ GameObject:
   - component: {fileID: 2514655872074174666}
   - component: {fileID: 2653382399568564016}
   - component: {fileID: 2738563671887343046}
+  - component: {fileID: 4263219294291328940}
   m_Layer: 0
   m_Name: trunk.001
   m_TagString: Untagged
@@ -6705,6 +7933,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4263219294291328940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4263219294291328939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8876674802920199468, guid: 4eea68a19c582f54c8c996c0631c7472,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!23 &4268672290579014154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6921,6 +8187,7 @@ GameObject:
   - component: {fileID: 796596809803620589}
   - component: {fileID: 8526741453496572635}
   - component: {fileID: 2695856584147936802}
+  - component: {fileID: 4419523594289877759}
   m_Layer: 0
   m_Name: Upstairs Hallway Furniture
   m_TagString: Untagged
@@ -6928,6 +8195,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4419523594289877759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419523594289877758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 624499217369607047, guid: 480b6d7fdda5a8c43806434502b76f0d,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!1 &4425687883774365075
 GameObject:
   m_ObjectHideFlags: 0
@@ -7056,6 +8361,7 @@ Transform:
   - {fileID: 9208113204993570243}
   - {fileID: 3378879168508373777}
   - {fileID: 2017465047161823599}
+  - {fileID: 83842600}
   m_Father: {fileID: 4919055915029361844}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7246,6 +8552,7 @@ GameObject:
   - component: {fileID: 5164943204196295087}
   - component: {fileID: 5617202690861708489}
   - component: {fileID: 877183956646444920}
+  - component: {fileID: 4587118993590981494}
   m_Layer: 0
   m_Name: Cube.028
   m_TagString: Untagged
@@ -7253,6 +8560,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4587118993590981494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4587118993590981493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2254185911708517381, guid: f0769ec4c91e2254da2b420c0bece83b,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!33 &4588617268329233708
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7866,6 +9211,7 @@ GameObject:
   - component: {fileID: 281427507936423722}
   - component: {fileID: 8122236027732416528}
   - component: {fileID: 5284895498504858838}
+  - component: {fileID: 4957177842696910610}
   m_Layer: 0
   m_Name: toilet.002
   m_TagString: Untagged
@@ -7873,6 +9219,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4957177842696910610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4957177842696910609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1131271942415040893, guid: c959223f0bd8c0f4e8d662d5e8248451,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!4 &4980869746655198460
 Transform:
   m_ObjectHideFlags: 0
@@ -8387,6 +9771,7 @@ Transform:
   m_Children:
   - {fileID: 5077306470725369357}
   - {fileID: 6435512962203717225}
+  - {fileID: 1370793939}
   m_Father: {fileID: 1554416367984544261}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8746,6 +10131,7 @@ GameObject:
   - component: {fileID: 2348452106087333968}
   - component: {fileID: 290341524056129042}
   - component: {fileID: 5608017412681946442}
+  - component: {fileID: 5619362306682929987}
   m_Layer: 0
   m_Name: Bed.001
   m_TagString: Untagged
@@ -8753,6 +10139,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5619362306682929987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5619362306682929986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7896258325908111025, guid: 5c9b6535f2695a04981ea24ac95e70e2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!1 &5627892409124392629
 GameObject:
   m_ObjectHideFlags: 0
@@ -9507,6 +10931,7 @@ Transform:
   - {fileID: 8892660786272942468}
   - {fileID: 4170743551494134213}
   - {fileID: 8955475886868780002}
+  - {fileID: 90912325}
   m_Father: {fileID: 6519420145445975326}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9969,8 +11394,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5671340030013200915}
   m_LocalRotation: {x: 0.7040073, y: -0.00019478629, z: 0.7101927, w: 0.00019309037}
-  m_LocalPosition: {x: -10.15, y: 0.73, z: 15.12}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -11.51, y: 0.73, z: 15.11}
+  m_LocalScale: {x: 1, y: 1, z: 0.4874}
   m_Children: []
   m_Father: {fileID: 3766789126952152499}
   m_RootOrder: 1
@@ -10339,6 +11764,7 @@ GameObject:
   - component: {fileID: 127159918289974369}
   - component: {fileID: 3118703159596024129}
   - component: {fileID: 3872608892893873373}
+  - component: {fileID: 6589080347606870341}
   m_Layer: 0
   m_Name: Cabinet.005
   m_TagString: Untagged
@@ -10346,6 +11772,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6589080347606870341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6589080347606870340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3294993192971207896, guid: 09360a50e8846ff43bb32c8c1953b25c,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!33 &6604377836583503899
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10945,6 +12409,7 @@ GameObject:
   - component: {fileID: 2829775180231489119}
   - component: {fileID: 2707468312167996099}
   - component: {fileID: 1298332402697238475}
+  - component: {fileID: 7087885340408524351}
   m_Layer: 0
   m_Name: Cube.014
   m_TagString: Untagged
@@ -10952,6 +12417,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7087885340408524351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7087885340408524350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943493}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2821131793587113880, guid: bb470e6a673a31d469242398196a62be,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!23 &7088312771920154748
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12462,6 +13965,7 @@ GameObject:
   - component: {fileID: 9208113204993570243}
   - component: {fileID: 1607790048255478808}
   - component: {fileID: 1047759412624031947}
+  - component: {fileID: 7935656895727542768}
   m_Layer: 0
   m_Name: Dressing Table
   m_TagString: Untagged
@@ -12469,6 +13973,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7935656895727542768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7935656895727542767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2958204867708512337, guid: 565f32f838095374c81eaaf0cd6c665a,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!1 &7942280775941987839
 GameObject:
   m_ObjectHideFlags: 0
@@ -12480,6 +14022,7 @@ GameObject:
   - component: {fileID: 3675462034602379408}
   - component: {fileID: 6221662676541319131}
   - component: {fileID: 156761839260105361}
+  - component: {fileID: 7942280775941987840}
   m_Layer: 0
   m_Name: Cube.011
   m_TagString: Untagged
@@ -12487,6 +14030,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7942280775941987840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7942280775941987839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7647840639945888825, guid: 49b9a1ddea778bd48b9add563f67e9b8,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!23 &7942740792956804625
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12790,6 +14371,7 @@ GameObject:
   - component: {fileID: 6962880249439685715}
   - component: {fileID: 3861979611791634089}
   - component: {fileID: 7725948078323236545}
+  - component: {fileID: 8151531685131962238}
   m_Layer: 0
   m_Name: Cube.045
   m_TagString: Untagged
@@ -12797,6 +14379,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8151531685131962238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8151531685131962237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5692152127154227413, guid: 56b448e217f46124b88ccf818ae71324,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!4 &8152484329141824765
 Transform:
   m_ObjectHideFlags: 0
@@ -13279,6 +14899,7 @@ GameObject:
   - component: {fileID: 5653491735220151965}
   - component: {fileID: 2972160505978158720}
   - component: {fileID: 7188287708495198659}
+  - component: {fileID: 8535996347230630909}
   m_Layer: 0
   m_Name: sink
   m_TagString: Untagged
@@ -13286,6 +14907,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8535996347230630909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8535996347230630908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 0}
+  _pageRender: {fileID: 0}
+  _myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 736943494}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 764996707039337799, guid: 976ebee5921a75643ad90e3a1815a329,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+  _unlockedStartMessage: 0
+  _unlockedEndMessage: 0
+  _collectedObject: 0
 --- !u!4 &8557370611710798949
 Transform:
   m_ObjectHideFlags: 0
@@ -14012,6 +15671,7 @@ Transform:
   - {fileID: 5900754367340074507}
   - {fileID: 3931762294404795700}
   - {fileID: 5594850112282655205}
+  - {fileID: 1678477515}
   m_Father: {fileID: 3433525787219110785}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
