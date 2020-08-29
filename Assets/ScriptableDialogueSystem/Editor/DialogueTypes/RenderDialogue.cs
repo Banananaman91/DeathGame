@@ -48,6 +48,7 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                 RenderPageText(npcMessage.NpcName, sb.ToString());
                 yield return new WaitForSeconds(_sentenceSpeed);
             }
+            
             yield return new WaitForSeconds(_sentenceSpeed);
             if (_npc.Messages[_paragraphNumber].Responses.Count != 0) GetResponse(_npc.Messages[_paragraphNumber]);
             else StartCoroutine(WaitForInput());
@@ -134,7 +135,7 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
             if (IsCurrentRoutineNotNull) StopCoroutine(_currentRoutine);
             _pageName.text = string.Empty;
             _pageText.text = string.Empty;
-
+            if (_npc.Messages[_paragraphNumber].TriggerEvent) _dialogueObject.MyEvent[_npc.Messages[_paragraphNumber].EventNum].Invoke();
             _currentRoutine = StartCoroutine(Play(_npc.Messages[_paragraphNumber]));
         }
 
@@ -149,7 +150,7 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                 button.GetComponentInChildren<Text>().text = response.Reply;
                 _responseOptions.Add(button);
                 button.onClick.AddListener(() => PlayParagraphCycle(response.Next));
-                if (response.TriggerEvent) button.onClick.AddListener(_dialogueObject.MyEvent.Invoke);
+                if (response.TriggerEvent) button.onClick.AddListener(_dialogueObject.MyEvent[response.EventNum].Invoke);
             }
         }
 
