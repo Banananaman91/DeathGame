@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: b74b939f63370d14f9361a7c3ad61797, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -244,6 +244,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 293253373233062413, guid: d4c06888bf66f244bb9efbbb7b190d9f,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 83842601}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b74b939f63370d14f9361a7c3ad61797,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1370793941}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d89d013dd2cfe294f95876122e79d9ef,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1548,7 +1574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: 3e7cbf940c7c9f6449c6fd0eae1e5bb9, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -1560,6 +1586,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 7379317614409903937, guid: 17cd51aac119f974e9b2979de51316e6,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1370793941}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 3e7cbf940c7c9f6449c6fd0eae1e5bb9,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1509919083180081197}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 0d0a3cc437779354da1b38b46fbfb204,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1675,7 +1727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: 51ca50417e9601c45a4a00184bb63033, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -1687,6 +1739,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 5300366580222991710, guid: 4d96d0bc3a884c840a037781157742d3,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1654313795}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 0af042c09da41204682c29584c421513,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7087885340408524351}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 68ae1bfac55b95a4d8d20fe1e213c92e,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4213,7 +4291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: b39f7fe57ed623f43ae20c9d11a943c8, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -4225,6 +4303,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8876674802920199468, guid: 4eea68a19c582f54c8c996c0631c7472,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1509919083180081197}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b39f7fe57ed623f43ae20c9d11a943c8,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1654313795}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 12bc6f09b38f312459a199f2698d3260,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5197,7 +5301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &2243550216837845835
 GameObject:
   m_ObjectHideFlags: 0
@@ -5454,7 +5558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: 202b0128323c0ec45bba71176d3878bd, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -5466,6 +5570,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 5911320622802034511, guid: c3548dd6e815a1a409a8e3b666704b64,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2401242820535804982}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 5bb02269b8e484e47bd4963e885a2008,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5671340030013200916}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e580e73b0cbad914080254d8ce81ccc0,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5741,7 +5871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: d88aea3135f73064d93099bdb5f52933, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -5753,6 +5883,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 4597892050597151424, guid: 9d09cac95f3a8c34c854664421d222db,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2666276231275778858}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d88aea3135f73064d93099bdb5f52933,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4957177842696910610}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c70a197e76147f949b50eb4bad5ca6d1,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6966,7 +7122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: 8e3c0c5aa5f0f8944b1f7e0e8582e0af, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -6978,6 +7134,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 5894630044793683906, guid: 0de34436bb2580d4e9dfa3e3da4b8df6,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3572770794553669095}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 8e3c0c5aa5f0f8944b1f7e0e8582e0af,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 83842601}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b7b88fb35b72c9e4cb5f06fb7368da16,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7925,7 +8107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: f76e1e217657dad4b902e0e106c026c6, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -7937,6 +8119,30 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 1548100753211292948, guid: fe37f2178a316054bb739b7dd0f4a321,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4132431615473759762}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f76e1e217657dad4b902e0e106c026c6,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9530,7 +9736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: b8d05ce8910af144bad78ac120849f8d, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -9542,6 +9748,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 1131271942415040893, guid: c959223f0bd8c0f4e8d662d5e8248451,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4957177842696910610}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b8d05ce8910af144bad78ac120849f8d,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4132431615473759762}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e1864aef27bfa584eb9d20c7084f5e3c,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -10603,7 +10835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: 16af60d9953d22f47b9f9f8ecd104bef, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -10615,6 +10847,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 2711305405737661241, guid: fcaebf6a4a0f08d4f96a59df05b1cf81,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5671340030013200916}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 16af60d9953d22f47b9f9f8ecd104bef,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3572770794553669095}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 55bbf3940e913404285031f0ccd1e6bd,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11290,7 +11548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: 708f93ba725474343b9d17c86e730531, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -11302,6 +11560,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 676089601145932048, guid: 134fa321ca9aa1c48ba95d7bdd52f7f6,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6158300512940208797}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 708f93ba725474343b9d17c86e730531,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2666276231275778858}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e8ba757a5b75c7f44a342854a2ef5318,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -12798,7 +13082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myDialogue: {fileID: 0}
+  _myDialogue: {fileID: 11400000, guid: 948b3fff64c8a3142b1494512672e982, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
   - m_PersistentCalls:
@@ -12810,6 +13094,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 2821131793587113880, guid: bb470e6a673a31d469242398196a62be,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7087885340408524351}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 948b3fff64c8a3142b1494512672e982,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6158300512940208797}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1ca8e9e42b3573c41a33501fade40785,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
