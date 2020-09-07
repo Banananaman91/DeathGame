@@ -18,24 +18,43 @@ MonoBehaviour:
     _npcMood: 
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Ian
-    _messageText: I have written this to build a small dialogue tool for 2D narratives
+    _messageText: I have written this to build a small dialogue tool for 2D narratives.
+      It can also play events
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 1
+    _eventNum: 0
   - _npcName: Ian
-    _messageText: You can even have selectable responses
-    _npcMood: 
-    _responses:
-    - _next: 3
-      _reply: Thank you
-      _triggerEvent: 0
-    - _next: -1
-      _reply: Alternative
-      _triggerEvent: 1
-    _nextMessage: -1
-  - _npcName: Ian
-    _messageText: You're welcome, enjoy!
+    _messageText: You can even have it play other events at the start of messages
     _npcMood: 
     _responses: []
+    _nextMessage: 3
+    _triggerEvent: 1
+    _eventNum: 1
+  - _npcName: Ian
+    _messageText: You can have full control over what you want to happen for each
+      message as it runs
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+    _triggerEvent: 1
+    _eventNum: 2
+  - _npcName: Ian
+    _messageText: Or give responses that will trigger an event
+    _npcMood: 
+    _responses:
+    - _next: -1
+      _reply: Show me
+      _triggerEvent: 1
+      _eventNum: 3
+    - _next: -1
+      _reply: Not interested
+      _triggerEvent: 0
+      _eventNum: 0
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0
