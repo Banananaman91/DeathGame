@@ -1,8 +1,9 @@
 ﻿using System;
-using Boo.Lang;
+using System.Collections.Generic;
 using InventoryScripts;
 using MovementNEW;
 using Newtonsoft.Json;
+using Pages;
 using UnityEngine;
 
 namespace Saving
@@ -11,7 +12,9 @@ namespace Saving
     {
         [SerializeField] private GameObject[] _pickUps;
         [SerializeField] private InventoryScript _inventoryScript;
+        [SerializeField] private JournalInventoryScript _journalInventoryScript;
         private List<int> _inventoryObjects = new List<int>();
+        private Dictionary<int, int> _inventoryPages = new Dictionary<int, int>();
         private static PlayerMovement PlayerMovement => FindObjectOfType<PlayerMovement>();
         private Vector3 PlayerPosition
         {
@@ -39,11 +42,6 @@ namespace Saving
         {
             var playerPos = PlayerPosition;
             var playerRot = PlayerRotation;
-            foreach (var item in _inventoryScript.Items)
-            {
-                if (item == null) continue;
-                _inventoryObjects.Add(item.GetInstanceID());
-            }
             var saveData = new SaveData
             {
                 playerPosition = playerPos,
@@ -55,7 +53,19 @@ namespace Saving
 
         public void SaveInventory()
         {
-            var inventoryList = new InventoryList(_inventoryObjects);
+            foreach (var item in _inventoryScript.Items)
+            {
+                if (item == null) continue;
+                _inventoryObjects.Add(item.GetInstanceID());
+            }
+
+            foreach (var book in _journalInventoryScript.Books) //Not finished
+            {
+                if (book == null) continue;
+                _inventoryPages.Add(book.GetComponent<Page>().PageClass, book.GetInstanceID());
+            }
+            
+            var inventoryList = new InventoryList(_inventoryObjects, _inventoryPages);
             var json = JsonConvert.SerializeObject(inventoryList);
             SaveSystem.SaveInventory(json);
         }
@@ -81,7 +91,7 @@ namespace Saving
             if (saveString != null)
             {
                 var inventoryData = JsonConvert.DeserializeObject<InventoryList>(saveString);
-                var list = inventoryData.dataList;
+                var list = inventoryData.inventoryList;
                 foreach (var item in list)
                 {
                     CompareItems(item);
@@ -118,11 +128,13 @@ namespace Saving
         [Serializable]
         public struct InventoryList
         {
-            public List<int> dataList;
+            public List<int> inventoryList;
+            public Dictionary<int, int> pageList;
 
-            public InventoryList(List<int> _dataList)
+            public InventoryList(List<int> _inventoryList, Dictionary<int, int> _pageList)
             {
-                dataList = _dataList;
+                inventoryList = _inventoryList;
+                pageList = _pageList;
             }
         }
         //Should be improved in the future (making one Json hold all the data)
