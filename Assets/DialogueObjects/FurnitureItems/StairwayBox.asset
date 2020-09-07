@@ -18,11 +18,15 @@ MonoBehaviour:
     _npcMood: 
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Death
     _messageText: There seems to be something here.
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: 
     _messageText: Pickup Item?
     _npcMood: 
@@ -30,7 +34,11 @@ MonoBehaviour:
     - _next: -1
       _reply: Yes
       _triggerEvent: 1
+      _eventNum: 0
     - _next: -1
       _reply: No
       _triggerEvent: 0
+      _eventNum: 0
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0
