@@ -10,13 +10,36 @@ namespace Saving
 {
     public class SaveHandler : MonoBehaviour
     {
+        [Serializable]
+        private class SaveData
+        {
+            public Vector3 playerPosition;
+            public Quaternion playerRotation;
+        }
+
+        [Serializable]
+        public struct InventoryList
+        {
+            public List<int> inventoryList;
+            public List<int> pageList;
+
+            public InventoryList(List<int> _inventoryList, List<int> _pageList)
+            {
+                inventoryList = _inventoryList;
+                pageList = _pageList;
+            }
+        }
+        
+        [Tooltip("All the pick ups that player can find go here")]
         [SerializeField] private GameObject[] _pickUps;
+        [Tooltip("All the pages that player can find go here")]
+        [SerializeField] private GameObject[] _pages;
         [SerializeField] private InventoryScript _inventoryScript;
         [SerializeField] private JournalInventoryScript _journalInventoryScript;
-        private List<int> _inventoryObjects = new List<int>();
-        private Dictionary<int, int> _inventoryPages = new Dictionary<int, int>();
+        private readonly List<int> _inventoryObjects = new List<int>();
+        private readonly List<int> _inventoryPages = new List<int>();
         private static PlayerMovement PlayerMovement => FindObjectOfType<PlayerMovement>();
-        private Vector3 PlayerPosition
+        private static Vector3 PlayerPosition
         {
             get => PlayerMovement.transform.position;
             set => PlayerMovement.transform.position = value;
@@ -34,11 +57,45 @@ namespace Saving
 
         private void Start()
         {
-            Load();
-            LoadInventory();
+            LoadGame();
         }
 
-        public void Save()
+        public void SaveGame()
+        {
+            SaveSystem.Save(PlayerJson(), InventoryJson());
+        }
+
+        public void LoadGame()
+        {
+            var saves = SaveSystem.Load();
+            if (saves.Item1 != null)
+            {
+                var saveData = JsonUtility.FromJson<SaveData>(saves.Item1);
+                PlayerPosition = saveData.playerPosition;
+                PlayerRotation = saveData.playerRotation;
+            }
+            if (saves.Item2 != null)
+            {
+                var inventoryData = JsonConvert.DeserializeObject<InventoryList>(saves.Item2);
+                var invList = inventoryData.inventoryList;
+                var pageList = inventoryData.pageList;
+                foreach (var item in invList)
+                {
+                    CompareItems(item);
+                }
+                foreach (var page in pageList)
+                {
+                    AllocatePages(page);
+                }
+            }
+        }
+ 
+        public void DeleteSave()
+        {
+            SaveSystem.Delete();
+        }
+
+        private static string PlayerJson()
         {
             var playerPos = PlayerPosition;
             var playerRot = PlayerRotation;
@@ -47,11 +104,11 @@ namespace Saving
                 playerPosition = playerPos,
                 playerRotation = playerRot,
             };
-            var json = JsonUtility.ToJson(saveData);
-            SaveSystem.Save(json);
+            var playerJson = JsonUtility.ToJson(saveData);
+            return playerJson;
         }
 
-        public void SaveInventory()
+        private string InventoryJson()
         {
             foreach (var item in _inventoryScript.Items)
             {
@@ -59,84 +116,35 @@ namespace Saving
                 _inventoryObjects.Add(item.GetInstanceID());
             }
 
-            foreach (var book in _journalInventoryScript.Books) //Not finished
+            foreach (var book in _journalInventoryScript.Books)
             {
                 if (book == null) continue;
-                _inventoryPages.Add(book.GetComponent<Page>().PageClass, book.GetInstanceID());
+                _inventoryPages.Add(book.GetInstanceID());
             }
             
             var inventoryList = new InventoryList(_inventoryObjects, _inventoryPages);
-            var json = JsonConvert.SerializeObject(inventoryList);
-            SaveSystem.SaveInventory(json);
-        }
-        
-        public void Load()
-        {
-            var saveString = SaveSystem.Load();
-            if (saveString != null)
-            {
-                var saveData = JsonUtility.FromJson<SaveData>(saveString);
-                PlayerPosition = saveData.playerPosition;
-                PlayerRotation = saveData.playerRotation;
-            }
-            else
-            {
-                Debug.Log("No save to load");
-            }
+            var inventoryJson = JsonConvert.SerializeObject(inventoryList);
+            return inventoryJson;
         }
 
-        public void LoadInventory()
-        {
-            var saveString = SaveSystem.LoadInventory();
-            if (saveString != null)
-            {
-                var inventoryData = JsonConvert.DeserializeObject<InventoryList>(saveString);
-                var list = inventoryData.inventoryList;
-                foreach (var item in list)
-                {
-                    CompareItems(item);
-                }
-            }
-            else
-            {
-                Debug.Log("No inventory to load");
-            }
-        }
-
-        public void DeleteSave()
-        {
-            SaveSystem.Delete();
-        }
-
-        private void CompareItems(int item)
+        private void CompareItems(int itemId)
         {
             foreach (var pickUp in _pickUps)
             {
-                if(pickUp.GetInstanceID() != item) continue;
+                if(pickUp.GetInstanceID() != itemId) continue;
                 _inventoryScript.AddItem(pickUp.GetComponent<ItemPickUp>());
                 return;
             }
         }
-        
-        [Serializable]
-        private class SaveData
-        {
-            public Vector3 playerPosition;
-            public Quaternion playerRotation;
-        }
 
-        [Serializable]
-        public struct InventoryList
+        private void AllocatePages(int pageId)
         {
-            public List<int> inventoryList;
-            public Dictionary<int, int> pageList;
-
-            public InventoryList(List<int> _inventoryList, Dictionary<int, int> _pageList)
+            foreach (var page in _pages)
             {
-                inventoryList = _inventoryList;
-                pageList = _pageList;
+                if(page.GetInstanceID() != pageId) continue;
+                _journalInventoryScript.AddPage(page.GetComponent<Page>());
+                return;
             }
         }
-        //Should be improved in the future (making one Json hold all the data)
     }
 }
