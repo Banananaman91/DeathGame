@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: Trunk alt
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Death
+    _messageText: It must be in this trunk somewhere...
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: But which compartment?
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: Not in this one...
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: Not sure why this one has 50 cheese wheels stored inside
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: Or why this one has 50 dead pigeons...
+    _npcMood: 
+    _responses: []
+    _nextMessage: 5
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: Wait...
+    _npcMood: 
+    _responses: []
+    _nextMessage: 6
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: This pigeon has some rolled up paper stuck up it
+    _npcMood: 
+    _responses: []
+    _nextMessage: 7
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: She truly is disgusting
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1
+    _triggerEvent: 1
+    _eventNum: 0
