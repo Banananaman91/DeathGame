@@ -19,3 +19,5 @@ MonoBehaviour:
     _npcMood: 
     _responses: []
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0

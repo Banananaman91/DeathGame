@@ -53,17 +53,30 @@ namespace Editor
 
                         EditorGUILayout.BeginHorizontal();
                         EditorGUILayout.LabelField("Npc Mood", GUILayout.MinWidth(60f), GUILayout.MaxWidth(100f));
-                        EditorGUILayout.EndHorizontal();
-
-                        EditorGUILayout.BeginHorizontal();
                         d.Messages[i].NpcMood = EditorGUILayout.TextField(d.Messages[i].NpcMood, GUILayout.Width(100f));
                         EditorGUILayout.EndHorizontal();
                         
                         EditorGUILayout.BeginHorizontal();
-                        EditorGUILayout.LabelField("Next Message", GUILayout.MinWidth(60f), GUILayout.MaxWidth(100f));
+                        EditorGUILayout.LabelField("Trigger Event", 
+                            GUILayout.MaxWidth(100f));
+                        d.Messages[i].TriggerEvent =
+                            EditorGUILayout.Toggle(d.Messages[i].TriggerEvent);
                         EditorGUILayout.EndHorizontal();
 
+                        if (d.Messages[i].TriggerEvent)
+                        {
+                            EditorGUILayout.BeginHorizontal();
+
+                            EditorGUILayout.LabelField("Event Number",
+                                GUILayout.MaxWidth(100f));
+                            d.Messages[i].EventNum =
+                                EditorGUILayout.IntField(d.Messages[i].EventNum,
+                                    GUILayout.Width(80f));
+                            EditorGUILayout.EndHorizontal();
+                        }
+                        
                         EditorGUILayout.BeginHorizontal();
+                        EditorGUILayout.LabelField("Next Message", GUILayout.MinWidth(60f), GUILayout.MaxWidth(100f));
                         d.Messages[i].NextMessage = EditorGUILayout.IntField(d.Messages[i].NextMessage, GUILayout.Width(40f));
                         EditorGUILayout.EndHorizontal();
 
@@ -71,38 +84,43 @@ namespace Editor
                         {
                             for (int j = 0; j < d.Messages[i].Responses.Count; j++)
                             {
-                                EditorGUI.indentLevel = 3;
+                                EditorGUI.indentLevel = 1;
                                 EditorGUILayout.BeginHorizontal();
 
-                                EditorGUILayout.LabelField("Response " + j, GUILayout.MinWidth(150f),
-                                    GUILayout.MaxWidth(150f));
-                                EditorGUILayout.EndHorizontal();
-                                EditorGUILayout.BeginHorizontal();
+                                EditorGUILayout.LabelField(j + " Response", 
+                                    GUILayout.MaxWidth(100f));
                                 d.Messages[i].Responses[j].Reply =
                                     EditorGUILayout.TextField(d.Messages[i].Responses[j].Reply, GUILayout.Width(150f));
 
                                 EditorGUILayout.EndHorizontal();
                                 EditorGUILayout.BeginHorizontal();
 
-                                EditorGUI.indentLevel = 4;
+                                EditorGUI.indentLevel = 2;
 
-                                EditorGUILayout.LabelField("Next Message", GUILayout.MinWidth(60f),
-                                    GUILayout.MaxWidth(150f));
-                                EditorGUILayout.EndHorizontal();
-                                EditorGUILayout.BeginHorizontal();
+                                EditorGUILayout.LabelField("Next Message", GUILayout.MaxWidth(125f));
                                 d.Messages[i].Responses[j].Next = EditorGUILayout.IntField(
                                     d.Messages[i].Responses[j].Next,
-                                    GUILayout.Width(80f));
+                                    GUILayout.Width(60f));
 
                                 EditorGUILayout.EndHorizontal();
                                 EditorGUILayout.BeginHorizontal();
 
-                                EditorGUILayout.LabelField("Trigger Event", GUILayout.MinWidth(60f),
-                                    GUILayout.MaxWidth(150f));
-                                EditorGUILayout.EndHorizontal();
-                                EditorGUILayout.BeginHorizontal();
+                                EditorGUILayout.LabelField("Trigger Event", 
+                                    GUILayout.MaxWidth(125f));
                                 d.Messages[i].Responses[j].TriggerEvent =
                                     EditorGUILayout.Toggle(d.Messages[i].Responses[j].TriggerEvent);
+
+                                if (d.Messages[i].Responses[j].TriggerEvent)
+                                {
+                                    EditorGUILayout.EndHorizontal();
+                                    EditorGUILayout.BeginHorizontal();
+
+                                    EditorGUILayout.LabelField("Event Number",
+                                        GUILayout.MaxWidth(125f));
+                                    d.Messages[i].Responses[j].EventNum =
+                                        EditorGUILayout.IntField(d.Messages[i].Responses[j].EventNum,
+                                            GUILayout.Width(60f));
+                                }
 
                                 EditorGUILayout.EndHorizontal();
                             }
