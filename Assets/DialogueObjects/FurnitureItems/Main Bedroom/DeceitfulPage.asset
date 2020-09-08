@@ -12,4 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: DeceitfulPage
   m_EditorClassIdentifier: 
-  _messages: []
+  _messages:
+  - _npcName: Death
+    _messageText: Something tucked into the edge of this mirror
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: This is probably the only well hidden thing so far
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1
+    _triggerEvent: 1
+    _eventNum: 0

@@ -12,4 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: Drawer
   m_EditorClassIdentifier: 
-  _messages: []
+  _messages:
+  - _npcName: Death
+    _messageText: All of these tacky, handmade clothes
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: She should get a better hobby
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: Preferably one that will get her killed
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0

@@ -12,4 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: TrophyPlace
   m_EditorClassIdentifier: 
-  _messages: []
+  _messages:
+  - _npcName: Death
+    _messageText: I've never seen someone hoard so much odd crap
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: This is on par with having a jar of your own belly button fluff
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0

@@ -996,6 +996,10 @@ PrefabInstance:
     - target: {fileID: 83842601, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157169}
+    - target: {fileID: 83842601, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 90912326, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1004,6 +1008,10 @@ PrefabInstance:
     - target: {fileID: 90912326, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157143}
+    - target: {fileID: 90912326, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 1654313795, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1012,6 +1020,10 @@ PrefabInstance:
     - target: {fileID: 1654313795, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157171}
+    - target: {fileID: 1654313795, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 1678477516, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1020,12 +1032,63 @@ PrefabInstance:
     - target: {fileID: 1678477516, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157157}
+    - target: {fileID: 1678477516, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 86522711700644424, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 86522711700644424, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943493}
+    - target: {fileID: 86522711700644424, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 86522711700644424, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 86522711700644424, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 4a6858daae1f13a49ab89da1fdf19b70,
+        type: 2}
+    - target: {fileID: 86522711700644424, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157154}
+    - target: {fileID: 86522711700644424, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 86522711700644424, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 86522711700644424, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 4a6858daae1f13a49ab89da1fdf19b70,
+        type: 2}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1036,16 +1099,199 @@ PrefabInstance:
       propertyPath: _objectsInside.Array.data[0]
       value: 
       objectReference: {fileID: 736943496}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: f17063bba2a2b8f49bcebd8cab029e27,
+        type: 2}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157152}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: f17063bba2a2b8f49bcebd8cab029e27,
+        type: 2}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157153}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: f36661a694da8c0439833e6077c9c884,
+        type: 2}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943494}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 86724ebfae357c849a36454ed096bfab,
+        type: 2}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157146}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 86724ebfae357c849a36454ed096bfab,
+        type: 2}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157147}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f12e70d20aeb5048a0ad9243f24ca2c,
+        type: 2}
+    - target: {fileID: 622801255503243931, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 622801255503243931, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943493}
+    - target: {fileID: 622801255503243931, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 031960eb03c02f04dacb902dacc3d9b5,
+        type: 2}
+    - target: {fileID: 622801255503243931, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 622801255503243931, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 622801255503243931, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157151}
+    - target: {fileID: 622801255503243931, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 622801255503243931, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 622801255503243931, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 031960eb03c02f04dacb902dacc3d9b5,
+        type: 2}
     - target: {fileID: 696510180217538311, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1055,11 +1301,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157177}
     - target: {fileID: 696510180217538311, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157178}
+    - target: {fileID: 696510180217538311, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 696510180217538311, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
@@ -1071,16 +1337,261 @@ PrefabInstance:
       propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943493}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157145}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: fddc8356fc6460e4eba449e4c4ff631c,
+        type: 2}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 07d3b7b167e97b44aa0536012e682a72,
+        type: 2}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157145}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: fddc8356fc6460e4eba449e4c4ff631c,
+        type: 2}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157146}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[1].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 0843d4a34f3f8e240928b5eac53805e6,
+        type: 2}
     - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 736943494}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: a737334dd38b0f64f8061d163f86b1e8,
+        type: 2}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157180}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: dd7d8b7365bfd62408230c0d2c6228a0,
+        type: 2}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157179}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: d94f25be0f65d6948926beba6a15ab94,
+        type: 2}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943494}
     - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
-      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: _myDialogue
       value: 
-      objectReference: {fileID: 736943494}
+      objectReference: {fileID: 11400000, guid: de2eed9ffd7a6cc47811b3179a854af5,
+        type: 2}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157160}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: de2eed9ffd7a6cc47811b3179a854af5,
+        type: 2}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157161}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 580541c4edf005943a3736fda9a5c427,
+        type: 2}
     - target: {fileID: 1052023250511747602, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1090,17 +1601,100 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157178}
     - target: {fileID: 1052023250511747602, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157168}
+    - target: {fileID: 1052023250511747602, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052023250511747602, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943493}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: e6591d5b2f3b4f740a05cae2d85c64be,
+        type: 2}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157162}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: e6591d5b2f3b4f740a05cae2d85c64be,
+        type: 2}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157163}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 2a96f9ec267da284a85061f570256903,
+        type: 2}
     - target: {fileID: 1112421067826450824, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1110,11 +1704,21 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157173}
     - target: {fileID: 1112421067826450824, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157174}
+    - target: {fileID: 1112421067826450824, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1112421067826450824, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 1354788893579205190, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
@@ -1125,11 +1729,21 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157172}
     - target: {fileID: 1354788893579205190, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157173}
+    - target: {fileID: 1354788893579205190, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1354788893579205190, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 2286441351795907073, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
@@ -1140,17 +1754,100 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157171}
     - target: {fileID: 2286441351795907073, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157172}
+    - target: {fileID: 2286441351795907073, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286441351795907073, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943494}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: aae4a4c9d9b45ff4f92c29baff9baee2,
+        type: 2}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157150}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: aae4a4c9d9b45ff4f92c29baff9baee2,
+        type: 2}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157151}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 396e6359aa344b74e8925986d6d2c1db,
+        type: 2}
     - target: {fileID: 2530341438027910195, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1160,6 +1857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157168}
+    - target: {fileID: 2530341438027910195, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 2548467585330939062, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
@@ -1170,6 +1872,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157142}
+    - target: {fileID: 2548467585330939062, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 2879589381640000141, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
@@ -1180,11 +1887,21 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157165}
     - target: {fileID: 2879589381640000141, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157166}
+    - target: {fileID: 2879589381640000141, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879589381640000141, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 3094142219040456894, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
@@ -1195,22 +1912,246 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157143}
+    - target: {fileID: 3094142219040456894, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943494}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: c2035b74b92accb488c22a94aa0e1468,
+        type: 2}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157144}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: c2035b74b92accb488c22a94aa0e1468,
+        type: 2}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157145}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: e1ac8add5791019459ef8a6a7cbc22e9,
+        type: 2}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943494}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: de40c9c114a5ba04b8f3a055e9ed482d,
+        type: 2}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157153}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: de40c9c114a5ba04b8f3a055e9ed482d,
+        type: 2}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157154}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 1d2d3b61ab15e7e4c80f45b305f479e2,
+        type: 2}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943493}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a241e1e553ce3b4c81b936b1321b589,
+        type: 2}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157149}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a241e1e553ce3b4c81b936b1321b589,
+        type: 2}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157150}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 588ac2a65d935364db40d75f8071eb69,
+        type: 2}
     - target: {fileID: 4317394017641946829, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1220,11 +2161,21 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157166}
     - target: {fileID: 4317394017641946829, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157167}
+    - target: {fileID: 4317394017641946829, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317394017641946829, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 5058265034243031701, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
@@ -1290,17 +2241,100 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157167}
     - target: {fileID: 5093310159437867828, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157156}
+    - target: {fileID: 5093310159437867828, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093310159437867828, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943494}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 62c6cb649b895da40a29307366524939,
+        type: 2}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157175}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157144}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ee151b536a734f4ea1aa4ced4e711b8,
+        type: 2}
+    - target: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 11f2495e9d4de94468f0d0f5bb105315,
+        type: 2}
     - target: {fileID: 5367434183804603119, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1310,17 +2344,100 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157157}
     - target: {fileID: 5367434183804603119, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157158}
+    - target: {fileID: 5367434183804603119, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367434183804603119, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943494}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f077d06d2a76a1478b4507b2562e337,
+        type: 2}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157163}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f077d06d2a76a1478b4507b2562e337,
+        type: 2}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157164}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: b8b2b9269b30f434e95c947969400aca,
+        type: 2}
     - target: {fileID: 5634861748775109133, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1330,11 +2447,21 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157169}
     - target: {fileID: 5634861748775109133, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157170}
+    - target: {fileID: 5634861748775109133, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5634861748775109133, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 5932557457091326325, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
@@ -1345,6 +2472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157156}
+    - target: {fileID: 5932557457091326325, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 5968113819096703640, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
@@ -1355,32 +2487,334 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157158}
     - target: {fileID: 5968113819096703640, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157142}
+    - target: {fileID: 5968113819096703640, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5968113819096703640, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943493}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157159}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 01cf7b7d85fef5144ae6c5aed9da017f,
+        type: 2}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 67b28d1df5b1ed6498a19e4eca999675,
+        type: 2}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157176}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 67b28d1df5b1ed6498a19e4eca999675,
+        type: 2}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943494}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f308f9c2df03aa4786d8671d0ac5e01,
+        type: 2}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157148}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f308f9c2df03aa4786d8671d0ac5e01,
+        type: 2}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157149}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 52e557caa59d5d64cbbfe15ee808b694,
+        type: 2}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943493}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: bd45029594977314fa6bd2ff3109f438,
+        type: 2}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157147}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: bd45029594977314fa6bd2ff3109f438,
+        type: 2}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157148}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 39dd5855b0d20224b8a4d90559255e36,
+        type: 2}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943494}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 71499a9f20b4aaa438b0daaff186ea95,
+        type: 2}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157159}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 71499a9f20b4aaa438b0daaff186ea95,
+        type: 2}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157160}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 04037ee9a1e5f3e4db55e53980ee2f77,
+        type: 2}
     - target: {fileID: 6918111075126483895, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1390,17 +2824,100 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5280742326242157174}
     - target: {fileID: 6918111075126483895, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157155}
+    - target: {fileID: 6918111075126483895, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918111075126483895, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943494}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: b9d71e3b1fa0d1b48bc4a6ca86dee61d,
+        type: 2}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157179}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: b9d71e3b1fa0d1b48bc4a6ca86dee61d,
+        type: 2}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157176}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: bf6f7a1fae4bf394aa8ed6f56ad2ed8d,
+        type: 2}
     - target: {fileID: 8100226300847009926, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: m_Name
@@ -1408,14 +2925,170 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943494}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ea7d614cb527714099930bca144df80,
+        type: 2}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157161}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ea7d614cb527714099930bca144df80,
+        type: 2}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157162}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 42802da1c8ca03241a8ce2dbfd02878b,
+        type: 2}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736943493}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f7f66ef3c07c2344adad22bf1b8c97e,
+        type: 2}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157164}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f7f66ef3c07c2344adad22bf1b8c97e,
+        type: 2}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5280742326242157152}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SwapDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue, unity.scriptable-dialogue-system.Editor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: df9a42feab57b3c4b8709304a6c70163,
+        type: 2}
+    - target: {fileID: 8649775016458812677, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984069765351309660, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8984069765351309660, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1425,6 +3098,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157155}
+    - target: {fileID: 8984069765351309660, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 9176240445176082889, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
@@ -1435,6 +3113,479 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
+      objectReference: {fileID: 5280742326242157170}
+    - target: {fileID: 9176240445176082889, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapDialogue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0189f1099b6f3ab49b748b1502106a54, type: 3}
+--- !u!114 &5280742326242157142 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2548467585330939062, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157143 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3094142219040456894, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157144 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3511989645258075958, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157145 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157146 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 586730734002106023, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157147 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6552094521032953724, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157148 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6230216530806468683, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4039230023114346331, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157150 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2312967304092627533, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157151 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 622801255503243931, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157152 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 135435269547273946, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3840029433133202680, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157154 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 86522711700644424, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157155 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8984069765351309660, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157156 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5932557457091326325, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157157 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5367434183804603119, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157158 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5968113819096703640, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157159 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6757296768709337004, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157160 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1014107960730957747, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157161 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8131436617276379194, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157162 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107203314910412032, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157163 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5466439651045332263, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157164 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8274861976359346434, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2879589381640000141, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157166 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4317394017641946829, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5093310159437867828, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2530341438027910195, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157169 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5634861748775109133, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157170 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9176240445176082889, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157171 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2286441351795907073, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157172 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1354788893579205190, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157173 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1112421067826450824, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157174 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6918111075126483895, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5285900724546912167, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157176 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6163963719311951486, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157177 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 696510180217538311, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157178 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1052023250511747602, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157179 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7339674366693677373, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5280742326242157180 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 940725090636064108, guid: 0189f1099b6f3ab49b748b1502106a54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5280742326242157141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

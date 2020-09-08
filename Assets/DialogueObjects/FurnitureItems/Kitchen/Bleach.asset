@@ -12,4 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
   m_Name: Bleach
   m_EditorClassIdentifier: 
-  _messages: []
+  _messages:
+  - _npcName: Death
+    _messageText: Well seeing as she wanted me to find this bleach I can give it
+      to her later
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: Cure her of her life
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: or at least cure the world of having her on it
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1
+    _triggerEvent: 1
+    _eventNum: 0
