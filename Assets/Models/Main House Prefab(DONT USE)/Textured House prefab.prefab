@@ -1,5 +1,569 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &83842599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 83842600}
+  - component: {fileID: 83842603}
+  - component: {fileID: 83842602}
+  - component: {fileID: 83842601}
+  m_Layer: 0
+  m_Name: Extra unit (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &83842600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83842599}
+  m_LocalRotation: {x: -0.00000008146034, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.19, y: -1.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1762364287115658550}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &83842603
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83842599}
+  m_Mesh: {fileID: -6168061723963359126, guid: 715cd35ae57f6504bb89205936fba519, type: 3}
+--- !u!23 &83842602
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83842599}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 670224309865224971, guid: 715cd35ae57f6504bb89205936fba519, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &83842601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83842599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: b74b939f63370d14f9361a7c3ad61797, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 293253373233062413, guid: d4c06888bf66f244bb9efbbb7b190d9f,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 83842601}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b74b939f63370d14f9361a7c3ad61797,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5634861748775109133}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d89d013dd2cfe294f95876122e79d9ef,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+--- !u!1 &90912324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 90912325}
+  - component: {fileID: 90912328}
+  - component: {fileID: 90912327}
+  - component: {fileID: 90912326}
+  m_Layer: 0
+  m_Name: bedstand (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &90912325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90912324}
+  m_LocalRotation: {x: 0.00000008146034, y: 3.560745e-15, z: 0.00000004371139, w: 1}
+  m_LocalPosition: {x: -4.5, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1762364287115658550}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &90912328
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90912324}
+  m_Mesh: {fileID: 9145072903910033543, guid: f50d8cb4e65e0084590cc58d71806c19, type: 3}
+--- !u!23 &90912327
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90912324}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2bfde59ed8466004ea059e05f62aa8c9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &90912326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90912324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 85c01f86cb631f2419323ee9d6f26b4d, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3708011613014521563, guid: c23ba1b49d8375e42bece08e19f85ea0,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 90912326}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 85c01f86cb631f2419323ee9d6f26b4d,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3094142219040456894}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b65c157b30dd8a9408fcf2a07a8d1642,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+--- !u!1 &1654313793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1654313794}
+  - component: {fileID: 1654313797}
+  - component: {fileID: 1654313796}
+  - component: {fileID: 1654313795}
+  m_Layer: 0
+  m_Name: Unit bedroom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1654313794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654313793}
+  m_LocalRotation: {x: 3.4408895e-10, y: 0.9999911, z: 0.00000008145963, w: -0.004224006}
+  m_LocalPosition: {x: -2.63, y: -0, z: 3.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1327907801836650920}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1654313797
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654313793}
+  m_Mesh: {fileID: 4702581022858292011, guid: 715cd35ae57f6504bb89205936fba519, type: 3}
+--- !u!23 &1654313796
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654313793}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 670224309865224971, guid: 715cd35ae57f6504bb89205936fba519, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &1654313795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654313793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 51ca50417e9601c45a4a00184bb63033, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5300366580222991710, guid: 4d96d0bc3a884c840a037781157742d3,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1654313795}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 0af042c09da41204682c29584c421513,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2286441351795907073}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 68ae1bfac55b95a4d8d20fe1e213c92e,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
+--- !u!1 &1678477514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1678477515}
+  - component: {fileID: 1678477518}
+  - component: {fileID: 1678477517}
+  - component: {fileID: 1678477516}
+  m_Layer: 0
+  m_Name: Cube.015 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1678477515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678477514}
+  m_LocalRotation: {x: -0.00000008146034, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.53, y: -0, z: -2.81}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1762364287115658550}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1678477518
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678477514}
+  m_Mesh: {fileID: -3537709356157935800, guid: 8b85aced65894b6419a271c84c40bbd3, type: 3}
+--- !u!23 &1678477517
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678477514}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: fd626184c0da5ef41aab22a420e049da, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &1678477516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678477514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: ca61888dab4a7554daab834e07396ad8, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 18458185123675815, guid: ef0ebc6a8ba761a4e9ea4226d6718360,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1678477516}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: ca61888dab4a7554daab834e07396ad8,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5367434183804603119}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 299d6ce399edb97489a10ae7ee2d56e9,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &83081510247474261
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +575,7 @@ GameObject:
   - component: {fileID: 4076080187480225384}
   - component: {fileID: 8418535980873902296}
   - component: {fileID: 4289234567904537341}
+  - component: {fileID: 5634861748775109133}
   m_Layer: 0
   m_Name: toilet.001
   m_TagString: Untagged
@@ -79,6 +644,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5634861748775109133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83081510247474261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 3e7cbf940c7c9f6449c6fd0eae1e5bb9, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7379317614409903937, guid: 17cd51aac119f974e9b2979de51316e6,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5634861748775109133}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 3e7cbf940c7c9f6449c6fd0eae1e5bb9,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9176240445176082889}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 0d0a3cc437779354da1b38b46fbfb204,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &86403855918568222
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +1190,7 @@ GameObject:
   - component: {fileID: 9141196042630455174}
   - component: {fileID: 8396342699098098400}
   - component: {fileID: 3845510091609784657}
+  - component: {fileID: 1014107960730957747}
   m_Layer: 0
   m_Name: Cube.028
   m_TagString: Untagged
@@ -632,6 +1259,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1014107960730957747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493466656470855004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: de2eed9ffd7a6cc47811b3179a854af5, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2254185911708517381, guid: f0769ec4c91e2254da2b420c0bece83b,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1014107960730957747}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: de2eed9ffd7a6cc47811b3179a854af5,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8131436617276379194}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 580541c4edf005943a3736fda9a5c427,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &529044927941161619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,6 +1727,7 @@ GameObject:
   - component: {fileID: 1799168977438435824}
   - component: {fileID: 5606543844227500810}
   - component: {fileID: 1400308059521162082}
+  - component: {fileID: 3840029433133202680}
   m_Layer: 0
   m_Name: Cube.045
   m_TagString: Untagged
@@ -1107,6 +1796,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3840029433133202680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682012718153114334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: de40c9c114a5ba04b8f3a055e9ed482d, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5692152127154227413, guid: 56b448e217f46124b88ccf818ae71324,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3840029433133202680}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: de40c9c114a5ba04b8f3a055e9ed482d,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 86522711700644424}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1d2d3b61ab15e7e4c80f45b305f479e2,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &745290013374960957
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +2026,7 @@ GameObject:
   - component: {fileID: 7268979165851448824}
   - component: {fileID: 5616145870035273357}
   - component: {fileID: 5718224716621091624}
+  - component: {fileID: 6163963719311951486}
   m_Layer: 0
   m_Name: sink.001
   m_TagString: Untagged
@@ -1344,6 +2095,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6163963719311951486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779989074192441448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 67b28d1df5b1ed6498a19e4eca999675, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4996622374086463874, guid: 2244c11fe8284df4e8dc74cafb3de170,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6757296768709337004}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 01cf7b7d85fef5144ae6c5aed9da017f,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6163963719311951486}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 67b28d1df5b1ed6498a19e4eca999675,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &854211505072219630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,6 +2960,7 @@ GameObject:
   - component: {fileID: 4420483248056602338}
   - component: {fileID: 5849469707830291773}
   - component: {fileID: 1241785037040157000}
+  - component: {fileID: 5093310159437867828}
   m_Layer: 0
   m_Name: bedstand
   m_TagString: Untagged
@@ -2216,6 +3029,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5093310159437867828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078348093485572192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 1b48f961b39cfa741a5afa17d7465d47, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5213482693192412609, guid: 47d1783a68676b342ac3fbf36ea48d61,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5093310159437867828}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1b48f961b39cfa741a5afa17d7465d47,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5932557457091326325}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 5ef977222d783264ba387f9dc3ae70ee,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &1081760583167362181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,6 +3445,147 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &1287935515631124856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4408392159413885548}
+  - component: {fileID: 1737366869056215500}
+  - component: {fileID: 3554548944402042642}
+  - component: {fileID: 7339674366693677373}
+  m_Layer: 0
+  m_Name: Cube.007 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4408392159413885548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287935515631124856}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.262311, y: -0.11237335, z: -2.85}
+  m_LocalScale: {x: 1, y: 1, z: 0.5}
+  m_Children: []
+  m_Father: {fileID: 6522523981476659227}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1737366869056215500
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287935515631124856}
+  m_Mesh: {fileID: -3329902420748629119, guid: db96e7d86a6ea9148895dc279f6f6b74, type: 3}
+--- !u!23 &3554548944402042642
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287935515631124856}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 53cc2674984492f4e95f43205795759f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &7339674366693677373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287935515631124856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: b9d71e3b1fa0d1b48bc4a6ca86dee61d, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7273343375634886468, guid: 84d8fbc95946ba3489cc81144c74d1b3,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7339674366693677373}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b9d71e3b1fa0d1b48bc4a6ca86dee61d,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6163963719311951486}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: bf6f7a1fae4bf394aa8ed6f56ad2ed8d,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &1298589651138765717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2661,6 +3676,7 @@ GameObject:
   - component: {fileID: 7171847341526780141}
   - component: {fileID: 3123166760294640259}
   - component: {fileID: 1864925671600470016}
+  - component: {fileID: 4317394017641946829}
   m_Layer: 0
   m_Name: Unit bedroom
   m_TagString: Untagged
@@ -2729,6 +3745,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4317394017641946829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561298238955947623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: bf49fbf176eee934997a0e9ef9225ea7, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2958204867708512337, guid: 565f32f838095374c81eaaf0cd6c665a,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4317394017641946829}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: bf49fbf176eee934997a0e9ef9225ea7,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5093310159437867828}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 12f142ecc1d6c1f489cb8e9b48a39409,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &1610565779473320045
 GameObject:
   m_ObjectHideFlags: 0
@@ -2740,6 +3817,7 @@ GameObject:
   - component: {fileID: 554284434231778369}
   - component: {fileID: 7937867477499602330}
   - component: {fileID: 8571088205214345545}
+  - component: {fileID: 4039230023114346331}
   m_Layer: 0
   m_Name: Dressing Table
   m_TagString: Untagged
@@ -2808,6 +3886,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4039230023114346331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610565779473320045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 7a241e1e553ce3b4c81b936b1321b589, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6715511573628821253, guid: 6d20a643ac945024ea3717921c7cdd16,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4039230023114346331}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7a241e1e553ce3b4c81b936b1321b589,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2312967304092627533}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 588ac2a65d935364db40d75f8071eb69,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &1643021598800321453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2819,6 +3958,7 @@ GameObject:
   - component: {fileID: 2206086449013898751}
   - component: {fileID: 6342294403084121669}
   - component: {fileID: 8427527315610433787}
+  - component: {fileID: 9176240445176082889}
   m_Layer: 0
   m_Name: trunk
   m_TagString: Untagged
@@ -2887,6 +4027,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &9176240445176082889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643021598800321453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: b39f7fe57ed623f43ae20c9d11a943c8, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8876674802920199468, guid: 4eea68a19c582f54c8c996c0631c7472,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9176240445176082889}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b39f7fe57ed623f43ae20c9d11a943c8,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1654313795}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 12bc6f09b38f312459a199f2698d3260,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &1666880194000814542
 GameObject:
   m_ObjectHideFlags: 0
@@ -2898,6 +4099,7 @@ GameObject:
   - component: {fileID: 4329506690553421941}
   - component: {fileID: 6541250541796986004}
   - component: {fileID: 3426481456838884779}
+  - component: {fileID: 3511989645258075958}
   m_Layer: 0
   m_Name: Sink
   m_TagString: Untagged
@@ -2966,6 +4168,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3511989645258075958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666880194000814542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: c2035b74b92accb488c22a94aa0e1468, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4600002897302514127, guid: 633cd055cfef84a4aab8a6bc2b02b29e,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3511989645258075958}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c2035b74b92accb488c22a94aa0e1468,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 775799905913879317}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e1ac8add5791019459ef8a6a7cbc22e9,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &1697282854609899315
 GameObject:
   m_ObjectHideFlags: 0
@@ -3767,6 +5030,7 @@ GameObject:
   - component: {fileID: 7323461722670522719}
   - component: {fileID: 3895086234462990627}
   - component: {fileID: 8159806125067967814}
+  - component: {fileID: 2530341438027910195}
   m_Layer: 0
   m_Name: bedstand.002
   m_TagString: Untagged
@@ -3835,6 +5099,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2530341438027910195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2519414907625224412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 8e3c0c5aa5f0f8944b1f7e0e8582e0af, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5894630044793683906, guid: 0de34436bb2580d4e9dfa3e3da4b8df6,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2530341438027910195}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 8e3c0c5aa5f0f8944b1f7e0e8582e0af,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 83842601}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b7b88fb35b72c9e4cb5f06fb7368da16,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &2525800776989698237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4243,6 +5568,7 @@ GameObject:
   - component: {fileID: 6172936546366206544}
   - component: {fileID: 4180402821768187046}
   - component: {fileID: 3120536673532724409}
+  - component: {fileID: 1112421067826450824}
   m_Layer: 0
   m_Name: shelf
   m_TagString: Untagged
@@ -4311,6 +5637,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1112421067826450824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2826540944634103976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: d88aea3135f73064d93099bdb5f52933, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4597892050597151424, guid: 9d09cac95f3a8c34c854664421d222db,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1112421067826450824}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d88aea3135f73064d93099bdb5f52933,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6918111075126483895}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c70a197e76147f949b50eb4bad5ca6d1,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &2966320312755193787
 GameObject:
   m_ObjectHideFlags: 0
@@ -4832,6 +6219,7 @@ GameObject:
   - component: {fileID: 3974341069256371125}
   - component: {fileID: 1903579977656887983}
   - component: {fileID: 1599050621274772597}
+  - component: {fileID: 8274861976359346434}
   m_Layer: 0
   m_Name: Unit 2
   m_TagString: Untagged
@@ -4900,6 +6288,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8274861976359346434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3356948001720194932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 6f7f66ef3c07c2344adad22bf1b8c97e, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8794200088181206414, guid: 28ee9752974945c4d82178e97ef00bb0,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8274861976359346434}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 6f7f66ef3c07c2344adad22bf1b8c97e,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 135435269547273946}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: df9a42feab57b3c4b8709304a6c70163,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &3416250818294880603
 GameObject:
   m_ObjectHideFlags: 0
@@ -4990,6 +6439,7 @@ GameObject:
   - component: {fileID: 3675522534982183808}
   - component: {fileID: 8444045303426347325}
   - component: {fileID: 3705699560011494853}
+  - component: {fileID: 6230216530806468683}
   m_Layer: 0
   m_Name: Cube.051
   m_TagString: Untagged
@@ -5058,6 +6508,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6230216530806468683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3555717791329111774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 7f308f9c2df03aa4786d8671d0ac5e01, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 337506854670365984, guid: 87624d15404801649926baed5c8fd0d1,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6230216530806468683}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7f308f9c2df03aa4786d8671d0ac5e01,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4039230023114346331}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 52e557caa59d5d64cbbfe15ee808b694,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &3579843630160219269
 GameObject:
   m_ObjectHideFlags: 0
@@ -5069,6 +6580,7 @@ GameObject:
   - component: {fileID: 5028695263162872859}
   - component: {fileID: 2707099764653138169}
   - component: {fileID: 7526630762949774137}
+  - component: {fileID: 5968113819096703640}
   m_Layer: 0
   m_Name: Cube.006
   m_TagString: Untagged
@@ -5137,6 +6649,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5968113819096703640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579843630160219269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: fe75ccd9977753849b613592cbcd65ca, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5240985827496299970, guid: a984fededf457ae48a26c8aa037d18d8,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5968113819096703640}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: fe75ccd9977753849b613592cbcd65ca,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2548467585330939062}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d0a636d0bf1f1814f9ee616418fa4dd9,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &3598515965013312985
 GameObject:
   m_ObjectHideFlags: 0
@@ -5216,6 +6789,134 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &3641422940654732868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5689693086331716544}
+  - component: {fileID: 1028971842443157210}
+  - component: {fileID: 30481875103894164}
+  - component: {fileID: 3094142219040456894}
+  m_Layer: 0
+  m_Name: Counter (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5689693086331716544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3641422940654732868}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.33, y: -0.3304882, z: 4.9430466}
+  m_LocalScale: {x: 0.5, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1541467760402895724}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1028971842443157210
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3641422940654732868}
+  m_Mesh: {fileID: -4134462517785884784, guid: db96e7d86a6ea9148895dc279f6f6b74, type: 3}
+--- !u!23 &30481875103894164
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3641422940654732868}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cd5407f8f2dc9df4bbbbd6c36f798be3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &3094142219040456894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3641422940654732868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 1da4a7d29ec11c54ca150876eb04af7b, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5512001242237628453, guid: 83b6abaf59a12804ca14c500cb2e40c5,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3094142219040456894}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1da4a7d29ec11c54ca150876eb04af7b,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &3669084915548433350
 GameObject:
   m_ObjectHideFlags: 0
@@ -5501,6 +7202,7 @@ GameObject:
   - component: {fileID: 6408512673969531346}
   - component: {fileID: 8971026413666260880}
   - component: {fileID: 3867275904846445768}
+  - component: {fileID: 5367434183804603119}
   m_Layer: 0
   m_Name: Bed.001
   m_TagString: Untagged
@@ -5569,6 +7271,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5367434183804603119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3855926612329376448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: acbc1b9614082164996a7d38c8821697, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7896258325908111025, guid: 5c9b6535f2695a04981ea24ac95e70e2,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5367434183804603119}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: acbc1b9614082164996a7d38c8821697,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5968113819096703640}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 9439d8a44ba3d5445993f87572c84f17,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &3930570661055511094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5792,6 +7555,7 @@ GameObject:
   - component: {fileID: 7922862445669080401}
   - component: {fileID: 5149785013287921777}
   - component: {fileID: 6453147450390703597}
+  - component: {fileID: 5932557457091326325}
   m_Layer: 0
   m_Name: Cabinet.005
   m_TagString: Untagged
@@ -5860,6 +7624,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5932557457091326325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981594959670755444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 6d48158b3ab7fc54e86081d4268af2c4, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3294993192971207896, guid: 09360a50e8846ff43bb32c8c1953b25c,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5932557457091326325}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 6d48158b3ab7fc54e86081d4268af2c4,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1678477516}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 4053770e73d70f24da838f71abb32659,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &4006467483199060452
 GameObject:
   m_ObjectHideFlags: 0
@@ -6145,6 +7970,7 @@ GameObject:
   - component: {fileID: 2367972189901491019}
   - component: {fileID: 2804569541715104945}
   - component: {fileID: 2609894524664919623}
+  - component: {fileID: 2548467585330939062}
   m_Layer: 0
   m_Name: trunk.001
   m_TagString: Untagged
@@ -6213,6 +8039,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2548467585330939062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4111961575027549226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 7b12fac271fc4b54f9f59abee50ce853, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7637667291741122764, guid: e828184fae5b4c4459d0f2b39393410d,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2548467585330939062}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7b12fac271fc4b54f9f59abee50ce853,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 90912326}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 746b30515e3448e4eb374874ee09a393,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &4127205596071730092
 GameObject:
   m_ObjectHideFlags: 0
@@ -6224,6 +8111,7 @@ GameObject:
   - component: {fileID: 543766913939837214}
   - component: {fileID: 5853184235704117540}
   - component: {fileID: 2650387095318470119}
+  - component: {fileID: 1354788893579205190}
   m_Layer: 0
   m_Name: Cabinet.002
   m_TagString: Untagged
@@ -6292,6 +8180,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1354788893579205190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4127205596071730092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 708f93ba725474343b9d17c86e730531, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 676089601145932048, guid: 134fa321ca9aa1c48ba95d7bdd52f7f6,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1354788893579205190}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 708f93ba725474343b9d17c86e730531,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1112421067826450824}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e8ba757a5b75c7f44a342854a2ef5318,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &4137759339324477038
 GameObject:
   m_ObjectHideFlags: 0
@@ -6465,6 +8414,7 @@ GameObject:
   - component: {fileID: 6913951712201031927}
   - component: {fileID: 6569011710679389258}
   - component: {fileID: 3189804241527710671}
+  - component: {fileID: 2312967304092627533}
   m_Layer: 0
   m_Name: Cabinet.004
   m_TagString: Untagged
@@ -6533,6 +8483,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2312967304092627533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4216801480748407182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: aae4a4c9d9b45ff4f92c29baff9baee2, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4824256700585007200, guid: 35bbaeffa56a3904794261d54d0b0172,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2312967304092627533}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: aae4a4c9d9b45ff4f92c29baff9baee2,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 622801255503243931}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 396e6359aa344b74e8925986d6d2c1db,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &4240074835165360062
 GameObject:
   m_ObjectHideFlags: 0
@@ -6577,6 +8588,7 @@ Transform:
   - {fileID: 1514757734716982436}
   - {fileID: 2919568226913711725}
   - {fileID: 8784510517569936667}
+  - {fileID: 5689693086331716544}
   m_Father: {fileID: 2495991850504785310}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6670,6 +8682,7 @@ GameObject:
   - component: {fileID: 3091721593551996829}
   - component: {fileID: 3354269617131677973}
   - component: {fileID: 1697852973799826252}
+  - component: {fileID: 1052023250511747602}
   m_Layer: 0
   m_Name: Counter
   m_TagString: Untagged
@@ -6685,8 +8698,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4377611309298971957}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.894392, y: -0.3304882, z: 4.9430466}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.58, y: -0.3304882, z: 4.9430466}
+  m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1541467760402895724}
   m_RootOrder: 1
@@ -6738,6 +8751,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1052023250511747602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4377611309298971957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 16af60d9953d22f47b9f9f8ecd104bef, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2711305405737661241, guid: fcaebf6a4a0f08d4f96a59df05b1cf81,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1052023250511747602}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 16af60d9953d22f47b9f9f8ecd104bef,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2530341438027910195}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 55bbf3940e913404285031f0ccd1e6bd,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &4433316349834551968
 GameObject:
   m_ObjectHideFlags: 0
@@ -6749,6 +8823,7 @@ GameObject:
   - component: {fileID: 8839149430509795995}
   - component: {fileID: 719126658097728929}
   - component: {fileID: 3466253511354906983}
+  - component: {fileID: 6918111075126483895}
   m_Layer: 0
   m_Name: toilet.002
   m_TagString: Untagged
@@ -6817,6 +8892,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6918111075126483895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4433316349834551968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: b8d05ce8910af144bad78ac120849f8d, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1131271942415040893, guid: c959223f0bd8c0f4e8d662d5e8248451,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6918111075126483895}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b8d05ce8910af144bad78ac120849f8d,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8984069765351309660}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e1864aef27bfa584eb9d20c7084f5e3c,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &4512497146186425608
 GameObject:
   m_ObjectHideFlags: 0
@@ -6907,6 +9043,7 @@ GameObject:
   - component: {fileID: 1529914633213764771}
   - component: {fileID: 4766871750341611673}
   - component: {fileID: 3076396616982570044}
+  - component: {fileID: 622801255503243931}
   m_Layer: 0
   m_Name: Cube.046
   m_TagString: Untagged
@@ -6975,6 +9112,54 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &622801255503243931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4528327644206577498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 031960eb03c02f04dacb902dacc3d9b5, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6831379009444178406, guid: 8294b09458d22b947b24faa8fe263a74,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 622801255503243931}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 031960eb03c02f04dacb902dacc3d9b5,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &4592630691237615018
 GameObject:
   m_ObjectHideFlags: 0
@@ -7001,7 +9186,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 83842600}
+  - {fileID: 90912325}
+  - {fileID: 1678477515}
   m_Father: {fileID: 8686025117361062275}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7174,6 +9362,7 @@ GameObject:
   - component: {fileID: 4225377964109535336}
   - component: {fileID: 2589999366327807416}
   - component: {fileID: 2420494771780697986}
+  - component: {fileID: 8984069765351309660}
   m_Layer: 0
   m_Name: chairbackup
   m_TagString: Untagged
@@ -7242,6 +9431,54 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8984069765351309660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4688151270116643762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: f76e1e217657dad4b902e0e106c026c6, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1548100753211292948, guid: fe37f2178a316054bb739b7dd0f4a321,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8984069765351309660}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f76e1e217657dad4b902e0e106c026c6,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &4738053004064629911
 GameObject:
   m_ObjectHideFlags: 0
@@ -8560,6 +10797,7 @@ GameObject:
   - component: {fileID: 8400328266650503008}
   - component: {fileID: 1430445871719440253}
   - component: {fileID: 6424146683787909182}
+  - component: {fileID: 940725090636064108}
   m_Layer: 0
   m_Name: sink
   m_TagString: Untagged
@@ -8628,6 +10866,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &940725090636064108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5517817436812972545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: a737334dd38b0f64f8061d163f86b1e8, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 764996707039337799, guid: 976ebee5921a75643ad90e3a1815a329,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 940725090636064108}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: dd7d8b7365bfd62408230c0d2c6228a0,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7339674366693677373}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d94f25be0f65d6948926beba6a15ab94,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &5534985264823480230
 GameObject:
   m_ObjectHideFlags: 0
@@ -9193,6 +11492,7 @@ GameObject:
   - component: {fileID: 9166288195228856074}
   - component: {fileID: 2693049585999273534}
   - component: {fileID: 5692308397685508189}
+  - component: {fileID: 696510180217538311}
   m_Layer: 0
   m_Name: table
   m_TagString: Untagged
@@ -9261,6 +11561,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &696510180217538311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5858934984033151215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 202b0128323c0ec45bba71176d3878bd, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5911320622802034511, guid: c3548dd6e815a1a409a8e3b666704b64,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 696510180217538311}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 5bb02269b8e484e47bd4963e885a2008,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1052023250511747602}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e580e73b0cbad914080254d8ce81ccc0,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &5878980612368652822
 GameObject:
   m_ObjectHideFlags: 0
@@ -9779,6 +12140,7 @@ GameObject:
   - component: {fileID: 752171625866671801}
   - component: {fileID: 8009181455413205490}
   - component: {fileID: 4277701850052854968}
+  - component: {fileID: 5285900724546912167}
   m_Layer: 0
   m_Name: Cube.011
   m_TagString: Untagged
@@ -9847,6 +12209,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5285900724546912167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6289623697433977814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 62c6cb649b895da40a29307366524939, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7647840639945888825, guid: 49b9a1ddea778bd48b9add563f67e9b8,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5285900724546912167}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 11f2495e9d4de94468f0d0f5bb105315,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3511989645258075958}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 9ee151b536a734f4ea1aa4ced4e711b8,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &6338815966591765910
 GameObject:
   m_ObjectHideFlags: 0
@@ -10134,6 +12557,7 @@ GameObject:
   - component: {fileID: 2176642337469089910}
   - component: {fileID: 2081579132548261098}
   - component: {fileID: 3131417173451606498}
+  - component: {fileID: 2286441351795907073}
   m_Layer: 0
   m_Name: Cube.014
   m_TagString: Untagged
@@ -10202,6 +12626,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2286441351795907073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569809630833037335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 948b3fff64c8a3142b1494512672e982, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2821131793587113880, guid: bb470e6a673a31d469242398196a62be,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2286441351795907073}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 948b3fff64c8a3142b1494512672e982,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1354788893579205190}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1ca8e9e42b3573c41a33501fade40785,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &6635498331450713674
 GameObject:
   m_ObjectHideFlags: 0
@@ -10492,6 +12977,7 @@ GameObject:
   - component: {fileID: 3921542043414062133}
   - component: {fileID: 8351699613929904958}
   - component: {fileID: 8782617011132498289}
+  - component: {fileID: 86522711700644424}
   m_Layer: 0
   m_Name: Cube.036
   m_TagString: Untagged
@@ -10560,6 +13046,54 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &86522711700644424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6796002460814137513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 4a6858daae1f13a49ab89da1fdf19b70, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1837643344038377743, guid: 2d87165ac81b3a742a0c38edb43bbc9c,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 86522711700644424}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 4a6858daae1f13a49ab89da1fdf19b70,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &6879295501966197513
 GameObject:
   m_ObjectHideFlags: 0
@@ -10571,6 +13105,7 @@ GameObject:
   - component: {fileID: 2128260752962579063}
   - component: {fileID: 7653000785478685845}
   - component: {fileID: 5010170340695036902}
+  - component: {fileID: 5466439651045332263}
   m_Layer: 0
   m_Name: fridge
   m_TagString: Untagged
@@ -10639,6 +13174,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5466439651045332263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6879295501966197513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 7f077d06d2a76a1478b4507b2562e337, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1516796750559086319, guid: fbf5d8bdc7553ec43ac8f9aca1f2d3fc,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5466439651045332263}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7f077d06d2a76a1478b4507b2562e337,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8274861976359346434}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b8b2b9269b30f434e95c947969400aca,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &6883737299051975656
 GameObject:
   m_ObjectHideFlags: 0
@@ -10729,6 +13325,7 @@ GameObject:
   - component: {fileID: 2014201675891631890}
   - component: {fileID: 7958484211621494986}
   - component: {fileID: 5886184573011159249}
+  - component: {fileID: 135435269547273946}
   m_Layer: 0
   m_Name: Cube.050
   m_TagString: Untagged
@@ -10797,6 +13394,68 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &135435269547273946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6888370589648242219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: f17063bba2a2b8f49bcebd8cab029e27, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2493895396191434807, guid: a3b6eca3a8e11124aac603e8c3f89796,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 135435269547273946}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f17063bba2a2b8f49bcebd8cab029e27,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3840029433133202680}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f36661a694da8c0439833e6077c9c884,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside:
+  - {fileID: 0}
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &6906223703985494914
 GameObject:
   m_ObjectHideFlags: 0
@@ -11125,6 +13784,7 @@ GameObject:
   - component: {fileID: 7578796309459676244}
   - component: {fileID: 7682964685902213525}
   - component: {fileID: 8188555590856834520}
+  - component: {fileID: 6552094521032953724}
   m_Layer: 0
   m_Name: sink.002
   m_TagString: Untagged
@@ -11193,6 +13853,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6552094521032953724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174875078738100062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: bd45029594977314fa6bd2ff3109f438, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 604811569577254266, guid: 225426d355a785341895c8cbe2ae3798,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6552094521032953724}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: bd45029594977314fa6bd2ff3109f438,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6230216530806468683}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 39dd5855b0d20224b8a4d90559255e36,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &7261971133249665530
 GameObject:
   m_ObjectHideFlags: 0
@@ -11379,6 +14100,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5034851469110930019}
+  - {fileID: 4408392159413885548}
   m_Father: {fileID: 394060788402092442}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11393,6 +14115,7 @@ GameObject:
   - component: {fileID: 2122756278038617799}
   - component: {fileID: 4127149152634636296}
   - component: {fileID: 1138080255141667037}
+  - component: {fileID: 8131436617276379194}
   m_Layer: 0
   m_Name: CRT TV
   m_TagString: Untagged
@@ -11461,6 +14184,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8131436617276379194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7350550434647499959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 7ea7d614cb527714099930bca144df80, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7547947971466665155, guid: fc424afe60369fe499948885f34a9b20,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8131436617276379194}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7ea7d614cb527714099930bca144df80,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1107203314910412032}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 42802da1c8ca03241a8ce2dbfd02878b,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &7443872399677555681
 GameObject:
   m_ObjectHideFlags: 0
@@ -11709,6 +14493,7 @@ GameObject:
   - component: {fileID: 6241087889543316115}
   - component: {fileID: 5702470833649884134}
   - component: {fileID: 5351441079880352910}
+  - component: {fileID: 586730734002106023}
   m_Layer: 0
   m_Name: Extra unit
   m_TagString: Untagged
@@ -11777,6 +14562,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &586730734002106023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7596014626440162571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 86724ebfae357c849a36454ed096bfab, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7228254823318412698, guid: 631e66a32ff422e4aa16b476f14d6384,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 586730734002106023}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 86724ebfae357c849a36454ed096bfab,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6552094521032953724}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 6f12e70d20aeb5048a0ad9243f24ca2c,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &7624164797454839108
 GameObject:
   m_ObjectHideFlags: 0
@@ -11792,7 +14638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4542880817529233697
 Transform:
   m_ObjectHideFlags: 0
@@ -12175,6 +15021,7 @@ GameObject:
   - component: {fileID: 5034851469110930019}
   - component: {fileID: 5992128358245905485}
   - component: {fileID: 373282864714935167}
+  - component: {fileID: 775799905913879317}
   m_Layer: 0
   m_Name: Cube.007
   m_TagString: Untagged
@@ -12190,8 +15037,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8035522867569446031}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.262311, y: -0.11237335, z: -1.7076721}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.262311, y: -0.11237335, z: -0.71}
+  m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 6522523981476659227}
   m_RootOrder: 0
@@ -12243,6 +15090,94 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &775799905913879317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8035522867569446031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: fddc8356fc6460e4eba449e4c4ff631c, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 624499217369607047, guid: 480b6d7fdda5a8c43806434502b76f0d,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 775799905913879317}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 07d3b7b167e97b44aa0536012e682a72,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 262759611512054588, guid: 5dd210c59eecfdf43bac7bac721675ef,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 775799905913879317}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: fddc8356fc6460e4eba449e4c4ff631c,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 586730734002106023}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 0843d4a34f3f8e240928b5eac53805e6,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &8064568850680227854
 GameObject:
   m_ObjectHideFlags: 0
@@ -12254,6 +15189,7 @@ GameObject:
   - component: {fileID: 2136825817734780175}
   - component: {fileID: 1918135643880130417}
   - component: {fileID: 1366116356492133277}
+  - component: {fileID: 2879589381640000141}
   m_Layer: 0
   m_Name: table.001
   m_TagString: Untagged
@@ -12322,6 +15258,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2879589381640000141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064568850680227854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 452fc5d119ebb8542aff4957171acd51, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2568549000009057186, guid: d5ab839d1757b2c41b247b2e0e789b55,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2879589381640000141}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 72d367b672bad9b4897d31ece018916b,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4317394017641946829}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e17fa0de07e5a3b4287e058d2d1b7b67,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &8091900142078830439
 GameObject:
   m_ObjectHideFlags: 0
@@ -12897,7 +15894,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 20.383484, y: -2.6917515, z: -15.64452}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1654313794}
   m_Father: {fileID: 7731341734357361330}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13038,6 +16036,7 @@ GameObject:
   - component: {fileID: 2964698627556558678}
   - component: {fileID: 8091188702656573430}
   - component: {fileID: 808987168418238844}
+  - component: {fileID: 6757296768709337004}
   m_Layer: 0
   m_Name: Cube.003
   m_TagString: Untagged
@@ -13106,6 +16105,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6757296768709337004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8818813113526014026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: 71499a9f20b4aaa438b0daaff186ea95, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8150603692374151929, guid: e9952a32f11799c4da0c50a6e873cdeb,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: InventoryScripts.ItemPickUp, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6757296768709337004}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 71499a9f20b4aaa438b0daaff186ea95,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1014107960730957747}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 04037ee9a1e5f3e4db55e53980ee2f77,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &8832707939862293779
 GameObject:
   m_ObjectHideFlags: 0
@@ -13591,6 +16651,7 @@ GameObject:
   - component: {fileID: 5793844504184268662}
   - component: {fileID: 712799579313639677}
   - component: {fileID: 686695509908632322}
+  - component: {fileID: 1107203314910412032}
   m_Layer: 0
   m_Name: bed.002
   m_TagString: Untagged
@@ -13659,6 +16720,67 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1107203314910412032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014586056769572153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: e6591d5b2f3b4f740a05cae2d85c64be, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: AddPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5534079485584565956, guid: 9877b53e1fd98ce4fa8bf93ae4e219ae,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: Pages.Page, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1107203314910412032}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e6591d5b2f3b4f740a05cae2d85c64be,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5466439651045332263}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 2a96f9ec267da284a85061f570256903,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _objectsInside: []
+  _inventoryScript: {fileID: 0}
+  _journalInventory: {fileID: 0}
+  _hiddenObjectCheck: 0
+  _hiddenObject: {fileID: 0}
+  _hiddenObjectPosition: -1
 --- !u!1 &9037549129232570973
 GameObject:
   m_ObjectHideFlags: 0
