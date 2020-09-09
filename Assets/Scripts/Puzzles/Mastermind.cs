@@ -148,6 +148,13 @@ namespace Puzzles
             _numberOfRight.text = _howManyRight.ToString();
         }
 
+        public void StartMastermind()
+        {
+            RandomColour();
+            SetColours();
+            _puzzlePanel.SetActive(true);
+        }
+
         private void UpdateColors()
         {
             _bookImages[0].color = _colorOrder[_bookGuess0];
@@ -179,12 +186,19 @@ namespace Puzzles
 
         private IEnumerator RunWinCycle()
         {
+            _myEvent[1].Invoke();
             yield return null;
         }
 
         private IEnumerator RunLoseCycle()
         {
+            _puzzlePanel.SetActive(false);
             yield return null;
+        }
+        
+        public void SwapDialogue(Dialogue dialogueObject)
+        {
+            _myDialogue = dialogueObject;
         }
     }
 }
