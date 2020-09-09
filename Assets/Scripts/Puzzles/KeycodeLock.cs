@@ -48,11 +48,14 @@ namespace Puzzles
         public void CheckPuzzle()
         {
             var count = 0;
-            for (int i = 0; i < _codeDisplay.Length; i++)
+            for (var i = 0; i < _codeDisplay.Length; i++)
             {
                 if (_currentCode[i] == _codes[i]) count++;
             }
-            if (count == _codes.Length) PlayWin();
+
+            if (count != _codes.Length) return;
+            PlayWin();
+            _display.SetActive(false);
         }
 
         private void PlayWin()
