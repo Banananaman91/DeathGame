@@ -54,6 +54,7 @@ namespace MovementNEW
             var roomNumber = other.gameObject.GetComponent<RoomCameras>();
             if (roomNumber)
             {
+                if (roomNumber.AdditionalObject) roomNumber.AdditionalObject.SetActive(false);
                 _cameraScript.ChangeRoom(roomNumber.RoomCamera);
             }
         }

@@ -77,7 +77,7 @@ namespace MovementNEW
         
         private void UpdateViewAndMovement()
         {
-            UpdateCameraView();
+            //UpdateCameraView();
             UpdateMovementDirection();
         }
     
@@ -116,7 +116,7 @@ namespace MovementNEW
                 {
                     _startedRotation = false;
                 }
-                UpdateCameraView();
+                //UpdateCameraView();
                 yield return null;
             } while (_startedRotation);
             UpdateMovementDirection();
