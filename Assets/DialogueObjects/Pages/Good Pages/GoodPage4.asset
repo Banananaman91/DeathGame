@@ -18,47 +18,82 @@ MonoBehaviour:
     _npcMood: 
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: "Ma\u2019am, if it is okay with you, we are happy to allow this
       woman to stay here with you"
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: I will speak to her Husband directly and will investigate the situation
     _npcMood: 
     _responses: []
     _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: "but we will make sure he isn\u2019t informed of her location"
     _npcMood: 
     _responses: []
     _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Young Granny
     _messageText: Absolutely officer, she is welcome to stay here as long as she
       needs.
     _npcMood: 
     _responses: []
     _nextMessage: 5
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: As long as she needs indeed
     _npcMood: 
     _responses: []
     _nextMessage: 6
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Over the next few days we grew very close as we got to know each
       other
     _npcMood: 
     _responses: []
     _nextMessage: 7
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
-    _messageText: In time, we fell in love and later would even marry each other.
+    _messageText: We spent a lot of time baking together, inviting family over to
+      visit to try out all of our baking
     _npcMood: 
     _responses: []
     _nextMessage: 8
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Granny
+    _messageText: They loved it all, and as we improved she became interested in
+      building our own bakery selling out of our kitchen window for those who came
+      by
+    _npcMood: 
+    _responses: []
+    _nextMessage: 9
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Granny
+    _messageText: In time, we fell in love and later would even marry each other
+    _npcMood: 
+    _responses: []
+    _nextMessage: 10
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I never expected so much of my life to come from moving in that
       day.
     _npcMood: 
     _responses: []
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0

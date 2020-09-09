@@ -18,97 +18,135 @@ MonoBehaviour:
     _npcMood: 
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I could feel something over my eyes
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I was unable to move
     _npcMood: 
     _responses: []
     _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Disorientated I could hear knocking and then the door opening
     _npcMood: 
     _responses: []
     _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: The sound of voices
     _npcMood: 
     _responses: []
     _nextMessage: 5
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: The first voice sounded so official, but the second voice was unmistakably
       the woman who left that morning.
     _npcMood: 
     _responses: []
     _nextMessage: 6
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: "Excuse me ma\u2019am, we have heard reports of a suspicious woman
       around this area"
     _npcMood: 
     _responses: []
     _nextMessage: 7
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: She appears to have been spying on some of your neighbours
     _npcMood: 
     _responses: []
     _nextMessage: 8
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: Have you seen anyone acting unusual around here?
     _npcMood: 
     _responses: []
     _nextMessage: 9
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Lady
     _messageText: "I\u2019m sorry officer, I only just moved here yesterday"
     _npcMood: 
     _responses: []
     _nextMessage: 10
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Lady
     _messageText: But if I see anybody, I will be sure to call immediately
     _npcMood: 
     _responses: []
     _nextMessage: 11
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: "Okay ma\u2019am, you stay safe and be sure to lock up securely
       tonight"
     _npcMood: 
     _responses: []
     _nextMessage: 12
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Lady
     _messageText: Thank you, officers
     _npcMood: 
     _responses: []
     _nextMessage: 13
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: The door closed, and then I heard footsteps approaching
     _npcMood: 
     _responses: []
     _nextMessage: 14
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: ' I could tell that I had been bound up and gagged'
     _npcMood: 
     _responses: []
     _nextMessage: 15
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: The blindfold was removed and before me was the same woman giving
       me that same smile
     _npcMood: 
     _responses: []
     _nextMessage: 16
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Lady
     _messageText: "\u2018I am going to have some fun with you"
     _npcMood: 
     _responses: []
     _nextMessage: 17
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I was then hit over the head
     _npcMood: 
     _responses: []
     _nextMessage: 18
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: The rest was darkness
     _npcMood: 
     _responses: []
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0
