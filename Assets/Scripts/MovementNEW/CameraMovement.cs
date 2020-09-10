@@ -17,6 +17,9 @@ namespace MovementNEW
         [SerializeField] private GameObject _currentCamera;
         public Vector3 CameraF => _cameraF;
         public Vector3 CameraR => _cameraR;
+
+        public GameObject CurrentCamera => _currentCamera;
+
         private Transform CameraPivot => _currentCamera.transform.parent;
         private Transform CameraTransform => _currentCamera.transform;
         // Start is called before the first frame update

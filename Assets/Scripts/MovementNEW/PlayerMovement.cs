@@ -49,14 +49,13 @@ namespace MovementNEW
             _playerRb.rotation = _playerRotation;
         }
 
-        private void OnCollisionEnter(Collision other)
+        private void OnCollisionStay(Collision other)
         {
             var roomNumber = other.gameObject.GetComponent<RoomCameras>();
-            if (roomNumber)
-            {
-                if (roomNumber.AdditionalObject) roomNumber.AdditionalObject.SetActive(false);
-                _cameraScript.ChangeRoom(roomNumber.RoomCamera);
-            }
+            if (!roomNumber) return;
+            if (_cameraScript.CurrentCamera == roomNumber.RoomCamera) return;
+            if (roomNumber.AdditionalObject) roomNumber.AdditionalObject.SetActive(false);
+            _cameraScript.ChangeRoom(roomNumber.RoomCamera);
         }
     }
 }
