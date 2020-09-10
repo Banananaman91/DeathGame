@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,10 +9,11 @@ public class UITurningPage : MonoBehaviour
     private static readonly int TurnPage1 = Animator.StringToHash("TurnPage1");
     private static readonly int TurnPage2 = Animator.StringToHash("TurnPage2");
 
-    void Start()
+
+    private void Start()
     {
         _animator.SetBool(TurnPage1, false);
-        _animator.SetBool(TurnPage2, false);
+        _animator.SetBool(TurnPage1, false);
     }
 
     public void TurnLtoR(int _page) //int 0 manages page 1, int 1 manages page 2

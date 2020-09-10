@@ -9,8 +9,11 @@ namespace InventoryScripts
 
         [SerializeField] private GameObject _inventoryPanel;
         [SerializeField] private InventoryScript _inventoryScript;
-        [SerializeField] private Text _nameOfItem, _descriptionOfItem;
-        [Header("Variables to disable player while in inventory")]
+        [Header("Variables to display pick up information")]
+        [SerializeField] private Text _nameOfItem;
+        [SerializeField] private Text _descriptionOfItem;
+        [SerializeField] private Image _imageOfItem;
+        [Header("Scripts to disable player while in inventory")]
         [SerializeField] private PlayerMovement _playerMovement;
         [SerializeField] private PlayerInteract _playerInteract;
         public bool Active { get; private set; }    // bool to check if inventory is open or closed
@@ -67,24 +70,7 @@ namespace InventoryScripts
         {
             _nameOfItem.text = item.ItemName;
             _descriptionOfItem.text = item.ItemDescription;
-        }
-
-        public void LoadPageRiddles(ItemInfo item)
-        {
-            _descriptionOfItem.text = "";
-            _nameOfItem.text = item.ItemName;
-            var itemDescription = item.ItemDescription.ToLower();
-            foreach (var page in _inventoryScript.PageObjects)
-            {
-                if (page == null) continue;
-                bool foundPage = page.GetComponent<ItemInfo>().ItemName.ToLower().Contains(itemDescription);
-                if (foundPage)
-                {
-                    Debug.Log("Found page");
-                    _descriptionOfItem.text += page.GetComponent<ItemInfo>().ItemDescription + Environment.NewLine;
-                }
-            }
-            //_itemInformation.SetActive(true);
+            _imageOfItem.sprite = item.ObjectSprite;
         }
     }
 }

@@ -4136,6 +4136,80 @@ Transform:
   m_Father: {fileID: 1593344579}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &515976948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 515976949}
+  - component: {fileID: 515976951}
+  - component: {fileID: 515976950}
+  m_Layer: 5
+  m_Name: ItemImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &515976949
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515976948}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1571251142}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 170.9}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &515976950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515976948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &515976951
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515976948}
+  m_CullTransparentMesh: 0
 --- !u!1 &521769916
 GameObject:
   m_ObjectHideFlags: 0
@@ -6691,7 +6765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.375, y: 171}
+  m_AnchoredPosition: {x: -7.375, y: 100.3}
   m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &784894851
@@ -8589,7 +8663,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1571251142}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10940,7 +11014,6 @@ GameObject:
   - component: {fileID: 1302049043}
   - component: {fileID: 1302049042}
   - component: {fileID: 1302049041}
-  - component: {fileID: 1302049040}
   - component: {fileID: 1302049039}
   m_Layer: 0
   m_Name: Cube
@@ -10976,23 +11049,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 61105723}
-  _objectSprite: {fileID: 21300000, guid: 081c5d45bfe17624a9ee08b0020c874f, type: 3}
-  _itemName: TestyBoi
-  _itemDescription: Tasty snack is tasty
---- !u!114 &1302049040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302049037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _itemName: 
-  _itemDescription: 
+  _objectSprite: {fileID: 21300000, guid: 709b348cd6d0edf4a924b7f4ea5b6f18, type: 3}
+  _itemName: Duct Tape
+  _itemDescription: Big Fat Chunky Juicy... roll of duct tape
 --- !u!65 &1302049041
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13509,7 +13568,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.375, y: 5.5742188}
+  m_AnchoredPosition: {x: -7.375, y: -62.625793}
   m_SizeDelta: {x: 250, y: 307.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570075279
@@ -13538,7 +13597,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -13584,6 +13643,7 @@ RectTransform:
   m_Children:
   - {fileID: 784894850}
   - {fileID: 1570075278}
+  - {fileID: 515976949}
   - {fileID: 984224561}
   m_Father: {fileID: 1621787624}
   m_RootOrder: 4
@@ -13642,7 +13702,6 @@ GameObject:
   - component: {fileID: 1571909625}
   - component: {fileID: 1571909624}
   - component: {fileID: 1571909623}
-  - component: {fileID: 1571909622}
   - component: {fileID: 1571909621}
   m_Layer: 0
   m_Name: Cube (1)
@@ -13678,23 +13737,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 61105723}
-  _objectSprite: {fileID: 21300000, guid: 86e9676841dbc6049b6d7fcafe3a29c2, type: 3}
-  _itemName: NotTestyBoi
-  _itemDescription: Life is suffering
---- !u!114 &1571909622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1571909619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _itemName: 
-  _itemDescription: 
+  _objectSprite: {fileID: 21300000, guid: 282f3141ed14cc345be87c2cab58575e, type: 3}
+  _itemName: Cleaner
+  _itemDescription: Do not drink, doesn't taste like mountain dew
 --- !u!65 &1571909623
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14212,8 +14257,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b31f061979857499cefa5c76cad217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _turnLtoR: 280
-  _turnRtoL: 281
   _animator: {fileID: 1621787628}
 --- !u!95 &1621787628
 Animator:
@@ -17428,6 +17471,11 @@ PrefabInstance:
       propertyPath: _playerInteract
       value: 
       objectReference: {fileID: 675600529}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _imageOfItem
+      value: 
+      objectReference: {fileID: 515976950}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20593bb1f04bd844a87efd11e058657e, type: 3}
 --- !u!114 &2004537500 stripped
