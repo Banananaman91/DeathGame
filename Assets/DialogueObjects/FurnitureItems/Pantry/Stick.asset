@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: Stick
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Death
+    _messageText: '"Stick your washing in"'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: That was really the best you could come up with for a Stick in
+      the washing machine?
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: I'm not going to have mercy on her soul for that one
+    _npcMood: 
+    _responses: []
+    _nextMessage: -1
+    _triggerEvent: 1
+    _eventNum: 0

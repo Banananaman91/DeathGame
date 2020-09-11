@@ -19,33 +19,45 @@ MonoBehaviour:
     _npcMood: 
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: She had turned up so suddenly
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: on my first day in my home
     _npcMood: 
     _responses: []
     _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: yet it felt so right that she should be here.
     _npcMood: 
     _responses: []
     _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I contemplated what I should do all night and found that sleep
       escaped me come the morning.
     _npcMood: 
     _responses: []
     _nextMessage: 5
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: "Yet I didn\u2019t feel completely exhausted and rose to make breakfast
       for my new guest eagerly."
     _npcMood: 
     _responses: []
     _nextMessage: 6
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Once we had finished breakfast and talked some more, this lady
       apologised for having stayed so long to rest and insisted that she must be
@@ -53,30 +65,50 @@ MonoBehaviour:
     _npcMood: 
     _responses: []
     _nextMessage: 7
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: It was such a shame
     _npcMood: 
     _responses: []
     _nextMessage: 8
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: but as she left, I was sure to tell her that she was welcome back
       anytime.
     _npcMood: 
     _responses: []
     _nextMessage: 9
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: She gave me the sweetest smile I had ever received and said
     _npcMood: 
     _responses: []
     _nextMessage: 10
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Lady
     _messageText: I would be happy to
     _npcMood: 
     _responses: []
     _nextMessage: 11
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
-    _messageText: Once she left, I spent the day relaxing and found myself falling
-      asleep dreaming of her.
+    _messageText: Once she left, I spent the day relaxing, gazing out the large windows
+      that beautifully framed the garden.
     _npcMood: 
     _responses: []
-    _nextMessage: -1
+    _nextMessage: 12
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Granny
+    _messageText: In all of its natural beauty I was captivated, and found myself
+      falling asleep dreaming of her.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 0
+    _triggerEvent: 0
+    _eventNum: 0

@@ -18,125 +18,173 @@ MonoBehaviour:
     _npcMood: 
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: It was like clockwork
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: "I wasn\u2019t sure what to do"
     _npcMood: 
     _responses: []
     _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: One morning I received a knock at the door
     _npcMood: 
     _responses: []
     _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: ' After checking to see who it was, I opened it up to two police
       officers.'
     _npcMood: 
     _responses: []
     _nextMessage: 5
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: "I\u2019m sorry to disturb you ma\u2019am, but we have received
       reports of some screaming coming from this property through the night"
     _npcMood: 
     _responses: []
     _nextMessage: 6
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: The neighbours were concerned, and we were wondering if we could
       look around
     _npcMood: 
     _responses: []
     _nextMessage: 7
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I invited the officers to look
     _npcMood: 
     _responses: []
     _nextMessage: 8
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I was too frightened to tell the officers that I had heard the
       screaming too
     _npcMood: 
     _responses: []
     _nextMessage: 9
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: After so much sleep deprivation and still traumatized from what
       that woman did to me, I was scared to look crazy
     _npcMood: 
     _responses: []
     _nextMessage: 10
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: They searched my home, but nothing was found
     _npcMood: 
     _responses: []
     _nextMessage: 11
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I felt relieved to know that
     _npcMood: 
     _responses: []
     _nextMessage: 12
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: "Sorry to have bothered you ma\u2019am"
     _npcMood: 
     _responses: []
     _nextMessage: 13
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: Say, are you the same lady who we spoke to a week ago? The one
       who had just moved in?
     _npcMood: 
     _responses: []
     _nextMessage: 14
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: As if waiting for that moment the screaming started again
     _npcMood: 
     _responses: []
     _nextMessage: 15
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Much louder, constant, horrifying screams
     _npcMood: 
     _responses: []
     _nextMessage: 16
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: The officers panicked and began to follow it
     _npcMood: 
     _responses: []
     _nextMessage: 17
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
-    _messageText: A secret room was found behind one of the book shelves
+    _messageText: A secret room was found behind the bathroom
     _npcMood: 
     _responses: []
     _nextMessage: 18
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
-    _messageText: ' I had no idea it was there, but I recognised it straight away'
+    _messageText: I had no idea it was there, but I recognised it straight away
     _npcMood: 
     _responses: []
     _nextMessage: 19
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: The room I had been kept in
     _npcMood: 
     _responses: []
     _nextMessage: 20
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: The room that now contained the woman strapped to the chair
     _npcMood: 
     _responses: []
     _nextMessage: 21
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I was arrested immediately
     _npcMood: 
     _responses: []
     _nextMessage: 22
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: It was a long ordeal to convince the officers of my innocence,
       by which time the woman was long gone
     _npcMood: 
     _responses: []
     _nextMessage: 23
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Sometimes I still have nightmares about her
     _npcMood: 
     _responses: []
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0

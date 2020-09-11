@@ -18,68 +18,125 @@ MonoBehaviour:
     _npcMood: 
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I ran excitedly to the door to see if this woman had returned.
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Alas, she had not
     _npcMood: 
     _responses: []
     _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: There were two police officers standing there
     _npcMood: 
     _responses: []
     _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: "Sorry ma\u2019am, we are following up on a query about a young
       woman who was seen in this area yesterday"
     _npcMood: 
     _responses: []
     _nextMessage: 5
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: She has been reported missing by her husband several days ago
     _npcMood: 
     _responses: []
     _nextMessage: 6
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: Have you seen anyone that looked out of place to you?
     _npcMood: 
     _responses: []
     _nextMessage: 7
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Young Granny
     _messageText: "I\u2019m sorry officer, a woman did arrive here yesterday but
       left early this morning"
     _npcMood: 
     _responses: []
     _nextMessage: 8
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Young Granny
     _messageText: She made no indication of being lost but just needed a place to
       stay
     _npcMood: 
     _responses: []
     _nextMessage: 9
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
-    _messageText: Oh, right then.
+    _messageText: Oh, do you mind if we come in and ask a few questions about the
+      woman?
     _npcMood: 
     _responses: []
     _nextMessage: 10
-  - _npcName: Officer
-    _messageText: ' If you do happen to see this woman again could you please contact
-      us?'
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Young Granny
+    _messageText: Absolutely officer, come inside
     _npcMood: 
     _responses: []
     _nextMessage: 11
-  - _npcName: Officer
-    _messageText: We must take these missing person cases very seriously and if there
-      is something more to it then we would need to follow up on that
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Granny
+    _messageText: We spent quite some time talking at length about the woman.
     _npcMood: 
     _responses: []
     _nextMessage: 12
-  - _npcName: Young Granny
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Granny
+    _messageText: I explained her condition, what she was like, the fact that she
+      seemed intent on where she was going and not lost.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 13
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Granny
+    _messageText: After our long talk, tea finished and the officers were satisfied,
+      they were ready to leave.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 14
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Officer
+    _messageText: "\u2018If you do happen to see this woman again could you please
+      contact us?"
+    _npcMood: 
+    _responses: []
+    _nextMessage: 15
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Officer
+    _messageText: We must take these missing person cases very seriously and if there
+      is something more to it then we would need to follow up on that.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 16
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Young granny
     _messageText: Absolutely officer
     _npcMood: 
     _responses: []
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0
