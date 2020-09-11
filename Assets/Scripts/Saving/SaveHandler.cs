@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Interaction;
 using InventoryScripts;
 using MovementNEW;
 using Newtonsoft.Json;
 using Pages;
+using ScriptableDialogueSystem.Editor.DialogueTypes;
 using UnityEngine;
 
 namespace Saving
@@ -29,6 +31,26 @@ namespace Saving
                 pageList = _pageList;
             }
         }
+
+        // [Serializable]
+        // public class DialogueSerialize
+        // {
+        //     public List<int> dialogueKey;
+        //     public List<Dialogue> dialogueScriptable;
+        // }
+        
+        [Serializable]
+        public struct DialogueSerialize
+        {
+            public List<int> dialogueKey;
+            public List<Dialogue> dialogueScriptable;
+
+            public DialogueSerialize(List<int> dK, List<Dialogue> dS)
+            {
+                dialogueKey = dK;
+                dialogueScriptable = dS;
+            }
+        }
         
         [Tooltip("All the pick ups that player can find go here")]
         [SerializeField] private GameObject[] _pickUps;
@@ -38,6 +60,7 @@ namespace Saving
         private readonly List<int> _inventoryObjects = new List<int>();
         private readonly List<int> _inventoryPages = new List<int>();
         private static PlayerMovement PlayerMovement => FindObjectOfType<PlayerMovement>();
+        private FurnitureInteract[] Interactables => FindObjectsOfType<FurnitureInteract>();
         private static Vector3 PlayerPosition
         {
             get => PlayerMovement.transform.position;
@@ -48,7 +71,8 @@ namespace Saving
             get => PlayerMovement.transform.rotation;
             set => PlayerMovement.transform.rotation = value;
         }
-        
+        public Dictionary<int, Dialogue> Dialogues { get; } = new Dictionary<int, Dialogue>();
+
         private void Awake()
         {
             SaveSystem.Initialize();
@@ -56,12 +80,13 @@ namespace Saving
 
         private void Start()
         {
+            
             LoadGame();
         }
 
         public void SaveGame()
         {
-            SaveSystem.Save(PlayerJson(), InventoryJson());
+            SaveSystem.Save(PlayerJson(), InventoryJson(), DialogueJson());
         }
 
         public void LoadGame()
@@ -85,6 +110,14 @@ namespace Saving
                 foreach (var page in pageList)
                 {
                     AllocatePages(page);
+                }
+            }
+            if (saves.Item3 != null)
+            {
+                var dialogueData = JsonUtility.FromJson<DialogueSerialize>(saves.Item3);
+                for (int i = 0; i < dialogueData.dialogueKey.Count; i++)
+                {
+                    PlaceDialogues(dialogueData.dialogueKey[i], dialogueData.dialogueScriptable[i]);
                 }
             }
         }
@@ -125,6 +158,19 @@ namespace Saving
             var inventoryJson = JsonConvert.SerializeObject(inventoryList);
             return inventoryJson;
         }
+        
+        private string DialogueJson()
+        {
+            var keyIds = new List<int>();
+            var dialogueSciptables = new List<Dialogue>();
+            foreach (var dialogue in Dialogues)
+            {
+                keyIds.Add(dialogue.Key);
+                dialogueSciptables.Add(dialogue.Value);
+            }
+            var saveData = new DialogueSerialize(keyIds, dialogueSciptables);
+            return JsonUtility.ToJson(saveData);
+        }
 
         private void CompareItems(int itemId)
         {
@@ -143,6 +189,15 @@ namespace Saving
                 if(page.GetInstanceID() != pageId) continue;
                 _inventoryScript.AddPage(page.GetComponent<Page>());
                 return;
+            }
+        }
+        
+        private void PlaceDialogues(int objectID, Dialogue dialogue)
+        {
+            foreach (var interactable in Interactables)
+            {
+                if(interactable.GetInstanceID() != objectID) continue;
+                interactable.SwapDialogue(dialogue);
             }
         }
     }
