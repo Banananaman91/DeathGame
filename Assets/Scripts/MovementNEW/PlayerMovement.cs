@@ -16,10 +16,10 @@ namespace MovementNEW
         private Vector2 _touchOrigin = -Vector2.one;
         [SerializeField] private Rigidbody _playerRb;
         [SerializeField] private CameraMovement _cameraScript;
-        [SerializeField] private JournalInventoryScript _journalInventory;
+        [SerializeField] private InventoryScript _inventory;
         [SerializeField] private Joystick _joystick;
 
-        public JournalInventoryScript JournalInventory => _journalInventory;
+        public InventoryScript Inventory => _inventory;
 
         public Vector3 RayDir => transform.forward;
     
