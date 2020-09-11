@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Boo.Lang;
+using MovementNEW;
+using Pages;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,30 +8,36 @@ namespace InventoryScripts
 {
     public class InventoryScript : MonoBehaviour {
 
-        [SerializeField] private Button[] _itemPlace;                       //creates an array of Buttons
-        [SerializeField] private GameObject[] _items;                       //creates an array of GameObjects
-        [SerializeField] private ManagerScript _manager;                    //reference to ManagerScript
-        public GameObject[] Items => _items;
-
-        private void Awake()
+        [Header("Inventory variables")]
+        [SerializeField] private GameObject _buttonPrefab;
+        [SerializeField] private ManagerScript _manager;
+        [SerializeField] private Transform _parentObject;
+        private readonly List<GameObject> _items = new List<GameObject>();
+        public List<GameObject> Items => _items;
+        //
+        [Header("Journal Inventory variables")]
+        [SerializeField] private Button[] _pageButtons;
+        [Tooltip("In inspector write down the size of array to fit number of available pages")]
+        [SerializeField] private GameObject[] _pageObjects;
+        [SerializeField] private PlayerMovement _thePlayer;
+        public GameObject[] PageObjects => _pageObjects;
+        
+        public void AddItem(ItemPickUp newItem)
         {
-            for (int i = 0; i < _items.Length; i++)              //loop which goes through all the items GameObjects                                           
-            {
-                _itemPlace[i].gameObject.SetActive(false);       //turns off buttons in inventory at the start of the game
-            }
+            var invSlot = Instantiate(_buttonPrefab, _parentObject);
+            _items.Add(newItem.gameObject);
+            var button = invSlot.GetComponentInChildren<Button>();
+            button.image.sprite = newItem.ObjectSprite;
+            button.onClick.AddListener(() => _manager.LoadItemInformation(newItem));
+            _manager.LoadItemInformation(newItem);
         }
-
-        public void AddItem(ItemPickUp newItem)                                                           //function that adds item into inventory (requires a GameObject)
+        
+        public void AddPage(Page page)
         {
-           for(var i = 0; i <= _itemPlace.Length; i++)
-           {
-               if (_items[i] != null) continue;
-               _items[i] = newItem.gameObject;
-               _itemPlace[i].gameObject.SetActive(true);
-               _itemPlace[i].image.sprite = newItem.ObjectSprite;
-               _itemPlace[i].onClick.AddListener(() => _manager.LoadItemInformation(i));
-               return;
-           }
+            _pageObjects[page.PageClass] = page.gameObject;
+            _pageButtons[page.PageClass].image.overrideSprite = page.SpriteObject;
+            _pageButtons[page.PageClass].onClick.AddListener(() => page.Interact(_thePlayer));
+            _pageButtons[page.PageClass].GetComponentInChildren<Text>().text = page.Clue;
         }
     }
 }

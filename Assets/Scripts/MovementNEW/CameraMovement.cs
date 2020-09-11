@@ -17,6 +17,9 @@ namespace MovementNEW
         [SerializeField] private GameObject _currentCamera;
         public Vector3 CameraF => _cameraF;
         public Vector3 CameraR => _cameraR;
+
+        public GameObject CurrentCamera => _currentCamera;
+
         private Transform CameraPivot => _currentCamera.transform.parent;
         private Transform CameraTransform => _currentCamera.transform;
         // Start is called before the first frame update
@@ -77,7 +80,7 @@ namespace MovementNEW
         
         private void UpdateViewAndMovement()
         {
-            UpdateCameraView();
+            //UpdateCameraView();
             UpdateMovementDirection();
         }
     
@@ -116,7 +119,7 @@ namespace MovementNEW
                 {
                     _startedRotation = false;
                 }
-                UpdateCameraView();
+                //UpdateCameraView();
                 yield return null;
             } while (_startedRotation);
             UpdateMovementDirection();
