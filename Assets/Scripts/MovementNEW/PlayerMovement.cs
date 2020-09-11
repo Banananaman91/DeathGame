@@ -16,10 +16,10 @@ namespace MovementNEW
         private Vector2 _touchOrigin = -Vector2.one;
         [SerializeField] private Rigidbody _playerRb;
         [SerializeField] private CameraMovement _cameraScript;
-        [SerializeField] private JournalInventoryScript _journalInventory;
+        [SerializeField] private InventoryScript _inventory;
         [SerializeField] private Joystick _joystick;
 
-        public JournalInventoryScript JournalInventory => _journalInventory;
+        public InventoryScript Inventory => _inventory;
 
         public Vector3 RayDir => transform.forward;
     
@@ -49,13 +49,13 @@ namespace MovementNEW
             _playerRb.rotation = _playerRotation;
         }
 
-        private void OnCollisionEnter(Collision other)
+        private void OnCollisionStay(Collision other)
         {
             var roomNumber = other.gameObject.GetComponent<RoomCameras>();
-            if (roomNumber)
-            {
-                _cameraScript.ChangeRoom(roomNumber.RoomCamera);
-            }
+            if (!roomNumber) return;
+            if (_cameraScript.CurrentCamera == roomNumber.RoomCamera) return;
+            if (roomNumber.AdditionalObject) roomNumber.AdditionalObject.SetActive(false);
+            _cameraScript.ChangeRoom(roomNumber.RoomCamera);
         }
     }
 }

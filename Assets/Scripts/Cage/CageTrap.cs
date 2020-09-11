@@ -15,7 +15,7 @@ namespace Cage
         {
             foreach (var item in _requiredItems)
             {
-                if (playerInteraction.JournalInventory.Books.Contains(item)) _itemCount++;
+                if (playerInteraction.Inventory.PageObjects.Contains(item)) _itemCount++;
             }
 
             if (_itemCount != _requiredItems.Length)
