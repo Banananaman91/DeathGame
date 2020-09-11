@@ -97,10 +97,18 @@ MonoBehaviour:
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
-    _messageText: Once she left, I spent the day relaxing and found myself falling
-      asleep dreaming of her.
+    _messageText: Once she left, I spent the day relaxing, gazing out the large windows
+      that beautifully framed the garden.
     _npcMood: 
     _responses: []
-    _nextMessage: -1
+    _nextMessage: 12
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Granny
+    _messageText: In all of its natural beauty I was captivated, and found myself
+      falling asleep dreaming of her.
+    _npcMood: 
+    _responses: []
+    _nextMessage: 0
     _triggerEvent: 0
     _eventNum: 0
