@@ -13,7 +13,7 @@ namespace Saving
     public class SaveHandler : MonoBehaviour
     {
         [Serializable]
-        private struct SaveData
+        private struct PlayerData
         {
             public Vector3 playerPosition;
             public Quaternion playerRotation;
@@ -50,9 +50,9 @@ namespace Saving
         [SerializeField] private InventoryScript _inventoryScript;
         private readonly List<int> _inventoryObjects = new List<int>();
         private readonly List<int> _inventoryPages = new List<int>();
-        private ItemPickUp[] PickUps => Resources.FindObjectsOfTypeAll<ItemPickUp>();
+        private static IEnumerable<ItemPickUp> PickUps => Resources.FindObjectsOfTypeAll<ItemPickUp>();
+        private static IEnumerable<FurnitureInteract> Interactables => FindObjectsOfType<FurnitureInteract>();
         private static PlayerMovement PlayerMovement => FindObjectOfType<PlayerMovement>();
-        private FurnitureInteract[] Interactables => FindObjectsOfType<FurnitureInteract>();
         private static Vector3 PlayerPosition
         {
             get => PlayerMovement.transform.position;
@@ -83,16 +83,16 @@ namespace Saving
 
         public void LoadGame()
         {
-            var saves = SaveSystem.Load();
-            if (saves.Item1 != null)
+            var (item1, item2, item3) = SaveSystem.Load();
+            if (item1 != null)
             {
-                var saveData = JsonUtility.FromJson<SaveData>(saves.Item1);
+                var saveData = JsonUtility.FromJson<PlayerData>(item1);
                 PlayerPosition = saveData.playerPosition;
                 PlayerRotation = saveData.playerRotation;
             }
-            if (saves.Item2 != null)
+            if (item2 != null)
             {
-                var inventoryData = JsonConvert.DeserializeObject<InventoryList>(saves.Item2);
+                var inventoryData = JsonConvert.DeserializeObject<InventoryList>(item2);
                 var invList = inventoryData.inventoryList;
                 var pageList = inventoryData.pageList;
                 foreach (var item in invList)
@@ -104,9 +104,9 @@ namespace Saving
                     AllocatePages(page);
                 }
             }
-            if (saves.Item3 != null)
+            if (item3 != null)
             {
-                var dialogueData = JsonUtility.FromJson<DialogueSerialize>(saves.Item3);
+                var dialogueData = JsonUtility.FromJson<DialogueSerialize>(item3);
                 for (int i = 0; i < dialogueData.dialogueKey.Count; i++)
                 {
                     PlaceDialogues(dialogueData.dialogueKey[i], dialogueData.dialogueScriptable[i]);
@@ -123,7 +123,7 @@ namespace Saving
         {
             var playerPos = PlayerPosition;
             var playerRot = PlayerRotation;
-            var saveData = new SaveData
+            var saveData = new PlayerData
             {
                 playerPosition = playerPos,
                 playerRotation = playerRot,

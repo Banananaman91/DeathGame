@@ -1,5 +1,5 @@
 ﻿using System;
-using Boo.Lang;
+using System.Collections.Generic;
 using MovementNEW;
 using Pages;
 using UnityEngine;
@@ -10,16 +10,16 @@ namespace InventoryScripts
     public class InventoryScript : MonoBehaviour {
 
         [SerializeField] private PlayerMovement _thePlayer;
+        [SerializeField] private ManagerScript _manager;
         [Header("Inventory variables")]
         [SerializeField] private GameObject _buttonPrefab;
-        [SerializeField] private ManagerScript _manager;
         [SerializeField] private Transform _parentObject;
         [Header("Journal Inventory variables")]
         [SerializeField] private Button[] _pageButtons; 
         [SerializeField] private Page[] _pages;
         private readonly List<ItemPickUp> _items = new List<ItemPickUp>();
-        public List<ItemPickUp> Items => _items;
-        public Page[] Pages => _pages;
+        public IEnumerable<ItemPickUp> Items => _items;
+        public IEnumerable<Page> Pages => _pages;
 
         private void OnValidate()
         {
