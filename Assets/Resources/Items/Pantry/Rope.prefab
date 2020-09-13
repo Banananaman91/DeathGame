@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 0}
-  _objectSprite: {fileID: 21300000, guid: 179ee576ba77775458866a056e16a3c7, type: 3}
-  _itemName: 
-  _itemDescription: 
+  _objectSprite: {fileID: 21300000, guid: 57904a6f016d03e4eba3f7d46de45883, type: 3}
+  _itemName: Unused Rope
+  _itemDescription: I never finished renovating the bathroom for my guests
 --- !u!212 &-7422106961745932938
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 179ee576ba77775458866a056e16a3c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57904a6f016d03e4eba3f7d46de45883, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

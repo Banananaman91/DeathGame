@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: These are some good classic tools
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: They look like they've seen some good action a long time ago too
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

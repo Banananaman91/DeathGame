@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: This granny is absolute trash
-    _npcMood: 
+    _npcMood: Annoyed
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: I should knock her over for treating such perfectly good furniture
       this way
-    _npcMood: 
+    _npcMood: Annoyed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

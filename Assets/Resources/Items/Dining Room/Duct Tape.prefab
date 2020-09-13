@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 0}
-  _objectSprite: {fileID: 21300000, guid: 55a5d74c393d7c74999c78f04982ddbf, type: 3}
-  _itemName: 
-  _itemDescription: 
+  _objectSprite: {fileID: 21300000, guid: 6f18544faea49e34b94c3b01fa499f34, type: 3}
+  _itemName: Duct Tape
+  _itemDescription: "I\u2019m hanging out and jammin"
 --- !u!212 &-794894388646622703
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 55a5d74c393d7c74999c78f04982ddbf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f18544faea49e34b94c3b01fa499f34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

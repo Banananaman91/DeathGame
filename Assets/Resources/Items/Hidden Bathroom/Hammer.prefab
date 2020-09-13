@@ -45,9 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 0}
-  _objectSprite: {fileID: 21300000, guid: 2a1af3155dbdf4843a57867557ca19f3, type: 3}
-  _itemName: 
-  _itemDescription: 
+  _objectSprite: {fileID: 21300000, guid: f987598e6e6e8974fac1e31d0df12dee, type: 3}
+  _itemName: Hammer
+  _itemDescription: "Sweeney Todd\u2019s tasty pies take you from one bathroom to
+    another"
 --- !u!212 &3230705237519544570
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2a1af3155dbdf4843a57867557ca19f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f987598e6e6e8974fac1e31d0df12dee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

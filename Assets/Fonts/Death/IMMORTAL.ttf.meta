@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bce237b6de476084598173e458b8644a
+guid: 3dba2bea1f1a5bf439670456a5474785
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Old English Text MT
+  fontName: Immortal
   fontNames:
-  - Old English Text MT
+  - Immortal
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

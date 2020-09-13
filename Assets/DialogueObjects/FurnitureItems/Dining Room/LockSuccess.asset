@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Yes! Got it.
-    _npcMood: 
+    _npcMood: Joyous
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

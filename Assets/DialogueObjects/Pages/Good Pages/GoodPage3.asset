@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Granny
     _messageText: Later in the night there was another knock on the door.
-    _npcMood: 
+    _npcMood: content
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   - _npcName: Granny
     _messageText: "I don\u2019t believe I had ever slept so well than laying next
       to her"
-    _npcMood: 
+    _npcMood: smitten
     _responses: []
     _nextMessage: 14
     _triggerEvent: 0

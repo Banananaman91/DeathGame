@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: This is a disgusting mess
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: She really needs to clean this shit up
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

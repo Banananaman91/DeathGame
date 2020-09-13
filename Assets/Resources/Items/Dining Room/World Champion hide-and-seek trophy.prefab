@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 0}
-  _objectSprite: {fileID: 21300000, guid: 63123f855ee96d44d8c063bec768c145, type: 3}
-  _itemName: 
-  _itemDescription: 
+  _objectSprite: {fileID: 21300000, guid: 03fadd82ae069e24eaf51408514ecc84, type: 3}
+  _itemName: World Champion Hide-&-Seek Trophy
+  _itemDescription: A place for nerds and dens
 --- !u!212 &3930001146566796184
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 63123f855ee96d44d8c063bec768c145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 03fadd82ae069e24eaf51408514ecc84, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

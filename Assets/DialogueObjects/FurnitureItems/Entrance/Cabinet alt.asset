@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Even without the rock this is just full of crap
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

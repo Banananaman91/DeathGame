@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e9a9265694ce2934292cecf464647444
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Nilland-SmallCaps
+  fontNames:
+  - Nilland-SmallCaps
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 685a6ee09eb0be64fb0fed4349b45aa4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

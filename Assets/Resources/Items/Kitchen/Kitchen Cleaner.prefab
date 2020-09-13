@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 0}
-  _objectSprite: {fileID: 21300000, guid: 282f3141ed14cc345be87c2cab58575e, type: 3}
-  _itemName: 
-  _itemDescription: 
+  _objectSprite: {fileID: 21300000, guid: a43575a3ed901ad44998950cb8164e38, type: 3}
+  _itemName: Kitchen Cleaner
+  _itemDescription: Take a peak at the room on both floors
 --- !u!212 &-6477812703166264405
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 282f3141ed14cc345be87c2cab58575e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a43575a3ed901ad44998950cb8164e38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

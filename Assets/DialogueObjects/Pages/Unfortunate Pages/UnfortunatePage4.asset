@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Granny
     _messageText: For days I spent sleepless nights hearing those screams
-    _npcMood: 
+    _npcMood: anxious
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
   - _npcName: Officer
     _messageText: "I\u2019m sorry to disturb you ma\u2019am, but we have received
       reports of some screaming coming from this property through the night"
-    _npcMood: 
+    _npcMood: unfortunate
     _responses: []
     _nextMessage: 6
     _triggerEvent: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Granny
     _messageText: I invited the officers to look
-    _npcMood: 
+    _npcMood: anxious
     _responses: []
     _nextMessage: 8
     _triggerEvent: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Officer
     _messageText: "Sorry to have bothered you ma\u2019am"
-    _npcMood: 
+    _npcMood: unfortunate
     _responses: []
     _nextMessage: 13
     _triggerEvent: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Granny
     _messageText: As if waiting for that moment the screaming started again
-    _npcMood: 
+    _npcMood: shaking
     _responses: []
     _nextMessage: 15
     _triggerEvent: 0

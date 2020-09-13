@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: A portable hookah pipe with a note inside
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: She should really clean this crap out when she is finished
-    _npcMood: 
+    _npcMood: Annoyed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

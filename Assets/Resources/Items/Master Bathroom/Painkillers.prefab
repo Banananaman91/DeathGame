@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 0}
-  _objectSprite: {fileID: 21300000, guid: dda4d8ffec55cf54b879ee116362d55f, type: 3}
-  _itemName: 
-  _itemDescription: 
+  _objectSprite: {fileID: 21300000, guid: c2f4aaeb8a82cee41bd1c1f6bb59675b, type: 3}
+  _itemName: Painkillers
+  _itemDescription: Three exits left
 --- !u!212 &4182959740393112957
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dda4d8ffec55cf54b879ee116362d55f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c2f4aaeb8a82cee41bd1c1f6bb59675b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -15,28 +15,28 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: This crystal ball is doing something...
-    _npcMood: 
+    _npcMood: Curious
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: A message is appearing inside of it
-    _npcMood: 
+    _npcMood: Curious
     _responses: []
     _nextMessage: 2
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Damn... the old lady actually figured out witch craft
-    _npcMood: 
+    _npcMood: Surprised
     _responses: []
     _nextMessage: 3
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: I've got to be careful with this one
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Whoever used this toilet should have checked it was plumbed in
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

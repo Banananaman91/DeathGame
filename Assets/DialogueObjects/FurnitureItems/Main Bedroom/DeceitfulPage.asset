@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Something tucked into the edge of this mirror
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: This is probably the only well hidden thing so far
-    _npcMood: 
+    _npcMood: Surprised
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

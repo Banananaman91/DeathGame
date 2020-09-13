@@ -7,9 +7,9 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
     [Serializable]
     public class MoodImage
     {
-        [SerializeField] private Image _npcMoodImage;
+        [SerializeField] private Sprite _npcMoodImage;
 
-        public Image NpcMoodImage
+        public Sprite NpcMoodImage
         {
             get => _npcMoodImage;
             set => _npcMoodImage = value;

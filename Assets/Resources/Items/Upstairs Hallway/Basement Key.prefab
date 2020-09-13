@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2dfd8f39626f16e4e9bc9b82f94c77e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00a587fd620bccc4e86299ab5545143f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,6 +95,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 0}
-  _objectSprite: {fileID: 21300000, guid: 2dfd8f39626f16e4e9bc9b82f94c77e8, type: 3}
-  _itemName: 
-  _itemDescription: 
+  _objectSprite: {fileID: 21300000, guid: 00a587fd620bccc4e86299ab5545143f, type: 3}
+  _itemName: Basement Key
+  _itemDescription: "I\u2019m in here"

@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Who'd have thought this was a door
-    _npcMood: 
+    _npcMood: Surprised
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0
