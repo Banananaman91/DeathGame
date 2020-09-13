@@ -29,7 +29,8 @@ MonoBehaviour:
       type: 3}
     _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
     _dialogueTextColour: {r: 0.8537736, g: 1, b: 0.9477046, a: 1}
-    _dialogueTextFont: {fileID: 0}
+    _dialogueTextFont: {fileID: 12800000, guid: 3dba2bea1f1a5bf439670456a5474785,
+      type: 3}
     _buttonSprite: {fileID: 21300000, guid: 5c44001538635dd468358c9a53c057fe, type: 3}
   - _npcName: Granny
     _npcMoodImages:
@@ -40,8 +41,9 @@ MonoBehaviour:
     _dialogueBackgroundImage: {fileID: 21300000, guid: 59e88038941ae8b45a37717a50b3c5ff,
       type: 3}
     _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
-    _dialogueTextColour: {r: 1, g: 1, b: 1, a: 1}
-    _dialogueTextFont: {fileID: 0}
+    _dialogueTextColour: {r: 0.90588236, g: 0.8627451, b: 0.7921569, a: 1}
+    _dialogueTextFont: {fileID: 12800000, guid: 477a6f1aa0e89ed428275157214e234d,
+      type: 3}
     _buttonSprite: {fileID: 0}
   - _npcName: Young Granny
     _npcMoodImages:
@@ -52,7 +54,8 @@ MonoBehaviour:
       type: 3}
     _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
     _dialogueTextColour: {r: 1, g: 1, b: 1, a: 1}
-    _dialogueTextFont: {fileID: 0}
+    _dialogueTextFont: {fileID: 12800000, guid: 64708e027e550b7438b53b4e8fa7464b,
+      type: 3}
     _buttonSprite: {fileID: 0}
   - _npcName: Officer
     _npcMoodImages:
@@ -62,6 +65,7 @@ MonoBehaviour:
     _dialogueBackgroundImage: {fileID: 21300000, guid: 0ecd4cff37bbb6647b7f8b6c49eee826,
       type: 3}
     _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
-    _dialogueTextColour: {r: 1, g: 1, b: 1, a: 1}
-    _dialogueTextFont: {fileID: 0}
+    _dialogueTextColour: {r: 0.7647059, g: 0.87058824, b: 0.98039216, a: 1}
+    _dialogueTextFont: {fileID: 12800000, guid: e9a9265694ce2934292cecf464647444,
+      type: 3}
     _buttonSprite: {fileID: 0}
