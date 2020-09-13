@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: All of these books and she still can't write a good story for shit
-    _npcMood: 
+    _npcMood: Annoyed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

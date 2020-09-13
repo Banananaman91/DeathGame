@@ -15,21 +15,21 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Herbert!
-    _npcMood: 
+    _npcMood: Surprised
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Oh man it has been too long, I should really visit your soul
-    _npcMood: 
+    _npcMood: Joyous
     _responses: []
     _nextMessage: 2
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Your head sure has seen better days though
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

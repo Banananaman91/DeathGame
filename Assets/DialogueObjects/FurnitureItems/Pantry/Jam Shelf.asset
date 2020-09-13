@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Now this is a large assortment of Jams
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: Wouldn't mind stocking up on some of these after I'm finished with
       her
-    _npcMood: 
+    _npcMood: Surprised
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

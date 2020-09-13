@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Junk, junk and more junk
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: Foreclosure letters, bank statements, so many damn pages of crap
       in here
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

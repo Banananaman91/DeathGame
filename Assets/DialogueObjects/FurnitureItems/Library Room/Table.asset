@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: This is some really fine wood, very strong and sturdy
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Would go really well with my pog collection
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

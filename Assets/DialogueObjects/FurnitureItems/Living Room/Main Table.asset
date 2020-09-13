@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: A newspaper from 10 years ago
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Definitely must be a reason for this being here, I'll take it
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

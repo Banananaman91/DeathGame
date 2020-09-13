@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Granny
     _messageText: The police arrived the next morning and we all talked at length
-    _npcMood: 
+    _npcMood: content
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   - _npcName: Officer
     _messageText: "Ma\u2019am, if it is okay with you, we are happy to allow this
       woman to stay here with you"
-    _npcMood: 
+    _npcMood: good
     _responses: []
     _nextMessage: 2
     _triggerEvent: 0
@@ -45,14 +45,14 @@ MonoBehaviour:
   - _npcName: Young Granny
     _messageText: Absolutely officer, she is welcome to stay here as long as she
       needs.
-    _npcMood: 
+    _npcMood: excited
     _responses: []
     _nextMessage: 5
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
     _messageText: As long as she needs indeed
-    _npcMood: 
+    _npcMood: smitten
     _responses: []
     _nextMessage: 6
     _triggerEvent: 0

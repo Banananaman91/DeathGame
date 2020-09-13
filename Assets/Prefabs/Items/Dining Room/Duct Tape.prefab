@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7904472030962981542}
   - component: {fileID: 676089601145932048}
-  - component: {fileID: 6100725872289597715}
   - component: {fileID: -794894388646622703}
   m_Layer: 0
   m_Name: Duct Tape
@@ -46,21 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 0}
-  _objectSprite: {fileID: 0}
---- !u!114 &6100725872289597715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7904472030962981541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _objectSprite: {fileID: 21300000, guid: 6f18544faea49e34b94c3b01fa499f34, type: 3}
   _itemName: Duct Tape
-  _itemDescription: I'm hanging out and jammin
+  _itemDescription: "I\u2019m hanging out and jammin"
 --- !u!212 &-794894388646622703
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -100,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 55a5d74c393d7c74999c78f04982ddbf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f18544faea49e34b94c3b01fa499f34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

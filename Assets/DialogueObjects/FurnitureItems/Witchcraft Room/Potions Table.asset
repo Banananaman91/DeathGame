@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Damn... these potions are actually really well done
-    _npcMood: 
+    _npcMood: Curious
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: She actually took this really seriously
-    _npcMood: 
+    _npcMood: Curious
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

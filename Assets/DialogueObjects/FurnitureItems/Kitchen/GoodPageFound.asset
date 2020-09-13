@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: There is something sticking out under that rats nest
-    _npcMood: 
+    _npcMood: Curious
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Looks like another one of those pages
-    _npcMood: 
+    _npcMood: Sarcastic
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0
