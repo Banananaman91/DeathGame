@@ -1,4 +1,5 @@
-﻿using Boo.Lang;
+﻿using System;
+using Boo.Lang;
 using MovementNEW;
 using Pages;
 using UnityEngine;
@@ -8,20 +9,23 @@ namespace InventoryScripts
 {
     public class InventoryScript : MonoBehaviour {
 
+        [SerializeField] private PlayerMovement _thePlayer;
         [Header("Inventory variables")]
         [SerializeField] private GameObject _buttonPrefab;
         [SerializeField] private ManagerScript _manager;
         [SerializeField] private Transform _parentObject;
+        [Header("Journal Inventory variables")]
+        [SerializeField] private Button[] _pageButtons; 
+        [SerializeField] private Page[] _pages;
         private readonly List<ItemPickUp> _items = new List<ItemPickUp>();
         public List<ItemPickUp> Items => _items;
-        //
-        [Header("Journal Inventory variables")]
-        [SerializeField] private Button[] _pageButtons;
-        [Tooltip("In inspector write down the size of array to fit number of available pages")]
-        [SerializeField] private GameObject[] _pageObjects;
-        [SerializeField] private PlayerMovement _thePlayer;
-        public GameObject[] PageObjects => _pageObjects;
-        
+        public Page[] Pages => _pages;
+
+        private void OnValidate()
+        {
+            if (_pages.Length != _pageButtons.Length) _pages = new Page[_pageButtons.Length];
+        }
+
         public void AddItem(ItemPickUp newItem)
         {
             var invSlot = Instantiate(_buttonPrefab, _parentObject);
@@ -34,7 +38,7 @@ namespace InventoryScripts
         
         public void AddPage(Page page)
         {
-            _pageObjects[page.PageClass] = page.gameObject;
+            _pages[page.PageClass] = page;
             _pageButtons[page.PageClass].image.overrideSprite = page.SpriteObject;
             _pageButtons[page.PageClass].onClick.AddListener(() => page.Interact(_thePlayer));
             _pageButtons[page.PageClass].GetComponentInChildren<Text>().text = page.Clue;

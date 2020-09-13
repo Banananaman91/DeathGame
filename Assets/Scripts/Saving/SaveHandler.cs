@@ -46,7 +46,7 @@ namespace Saving
         }
         
         [Tooltip("All the pages that player can find go here")]
-        [SerializeField] private GameObject[] _pages;
+        [SerializeField] private Page[] _pages;
         [SerializeField] private InventoryScript _inventoryScript;
         private readonly List<int> _inventoryObjects = new List<int>();
         private readonly List<int> _inventoryPages = new List<int>();
@@ -140,7 +140,7 @@ namespace Saving
                 _inventoryObjects.Add(item.GetInstanceID());
             }
 
-            foreach (var book in _inventoryScript.PageObjects)
+            foreach (var book in _inventoryScript.Pages)
             {
                 if (book == null) continue;
                 _inventoryPages.Add(book.GetInstanceID());
@@ -179,7 +179,7 @@ namespace Saving
             foreach (var page in _pages)
             {
                 if(page.GetInstanceID() != pageId) continue;
-                _inventoryScript.AddPage(page.GetComponent<Page>());
+                _inventoryScript.AddPage(page);
                 return;
             }
         }
