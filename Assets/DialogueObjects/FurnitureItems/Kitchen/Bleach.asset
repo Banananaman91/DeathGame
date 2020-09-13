@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: Bleach
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Death
+    _messageText: Well seeing as she wanted me to find this bleach I can give it
+      to her later
+    _npcMood: Sarcastic
+    _responses: []
+    _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: Cure her of her life
+    _npcMood: Impressed
+    _responses: []
+    _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: or at least cure the world of having her on it
+    _npcMood: Joyous
+    _responses: []
+    _nextMessage: -1
+    _triggerEvent: 1
+    _eventNum: 0

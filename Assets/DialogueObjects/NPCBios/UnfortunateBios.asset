@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73bfd9b5f65cb674a9683c5b75e77729, type: 3}
+  m_Name: UnfortunateBios
+  m_EditorClassIdentifier: 
+  _npcImage:
+  - _npcName: Death
+    _npcMoodImages:
+    - _npcMoodImage: {fileID: 21300000, guid: 15f21c9b49167a141b33bbdd0650bdba, type: 3}
+    - _npcMoodImage: {fileID: 21300000, guid: 665d5dc8f8b6d0f45a2d96556869a0c4, type: 3}
+    - _npcMoodImage: {fileID: 21300000, guid: 64b1198b63a7c1e488bff165fb42fce2, type: 3}
+    - _npcMoodImage: {fileID: 21300000, guid: ee190cb3a4c20af4682f36fec0dcbcf9, type: 3}
+    - _npcMoodImage: {fileID: 21300000, guid: fae39d573fb4ca540aba2bd7b5e81aa5, type: 3}
+    - _npcMoodImage: {fileID: 21300000, guid: 1296bd59faada0641acbf14709a3420a, type: 3}
+    - _npcMoodImage: {fileID: 21300000, guid: 539983156bbac5b47bee0a95c47725c3, type: 3}
+    - _npcMoodImage: {fileID: 21300000, guid: 91110ea47bdb842439682d8b8e97821d, type: 3}
+    _characterBackgroundImage: {fileID: 21300000, guid: 5085be3bb470aa34e915f945972553a5,
+      type: 3}
+    _dialogueBackgroundImage: {fileID: 21300000, guid: b328083ddea6e0f41948bc77b7e212e1,
+      type: 3}
+    _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
+    _dialogueTextColour: {r: 0.85490197, g: 1, b: 0.9490196, a: 1}
+    _dialogueTextFont: {fileID: 12800000, guid: 3dba2bea1f1a5bf439670456a5474785,
+      type: 3}
+    _buttonSprite: {fileID: 21300000, guid: 5c44001538635dd468358c9a53c057fe, type: 3}
+  - _npcName: Granny
+    _npcMoodImages:
+    - _npcMoodImage: {fileID: 21300000, guid: b6118bd26c39e9e44b6a51009380a225, type: 3}
+    - _npcMoodImage: {fileID: 21300000, guid: b83e9b70349391a448cad5d6d229cdd3, type: 3}
+    _characterBackgroundImage: {fileID: 21300000, guid: 89ab3bf411951b4479ce8b283a031740,
+      type: 3}
+    _dialogueBackgroundImage: {fileID: 21300000, guid: 4e703b808c050fb41b696772dab607a3,
+      type: 3}
+    _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
+    _dialogueTextColour: {r: 0.9056604, g: 0.8639483, b: 0.7903168, a: 1}
+    _dialogueTextFont: {fileID: 12800000, guid: 477a6f1aa0e89ed428275157214e234d,
+      type: 3}
+    _buttonSprite: {fileID: 0}
+  - _npcName: Young Lady
+    _npcMoodImages:
+    - _npcMoodImage: {fileID: 21300000, guid: 78587d611c6114645ae4e5c2c2c534b5, type: 3}
+    - _npcMoodImage: {fileID: 21300000, guid: b8479cf910f483d4a83b72a303a15c04, type: 3}
+    - _npcMoodImage: {fileID: 21300000, guid: 120b1838b3a6e224383b2f61775db628, type: 3}
+    _characterBackgroundImage: {fileID: 21300000, guid: 8d36aa643b84a2d439d74708d4e6754d,
+      type: 3}
+    _dialogueBackgroundImage: {fileID: 21300000, guid: 6a9a909752f860a4b9fcb02b3c1638c7,
+      type: 3}
+    _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
+    _dialogueTextColour: {r: 1, g: 0.3820755, b: 0.3820755, a: 1}
+    _dialogueTextFont: {fileID: 12800000, guid: da3519042616b11418f28ed5d7b13e23,
+      type: 3}
+    _buttonSprite: {fileID: 21300000, guid: 70c520fe881eca14db67d0773de43121, type: 3}
+  - _npcName: Officer
+    _npcMoodImages:
+    - _npcMoodImage: {fileID: 21300000, guid: 3dfe7e08a3bb646418cad0ad62783852, type: 3}
+    _characterBackgroundImage: {fileID: 21300000, guid: 2008c086869140344be47b107f081bb8,
+      type: 3}
+    _dialogueBackgroundImage: {fileID: 21300000, guid: 0763fc02f91ba7648a6856af18b95363,
+      type: 3}
+    _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
+    _dialogueTextColour: {r: 0.763617, g: 0.8691037, b: 0.9811321, a: 1}
+    _dialogueTextFont: {fileID: 12800000, guid: 685a6ee09eb0be64fb0fed4349b45aa4,
+      type: 3}
+    _buttonSprite: {fileID: 0}

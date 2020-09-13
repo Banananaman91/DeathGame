@@ -15,87 +15,119 @@ MonoBehaviour:
   _messages:
   - _npcName: Granny
     _messageText: One day there was a knock at the door
-    _npcMood: 
+    _npcMood: Proud
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: ' I hid the woman away behind the bookcase and opened the door'
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: It was the police
     _npcMood: 
     _responses: []
     _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: Excuse me, we are doing a sweep of the area. Your house is next
       on our search list
-    _npcMood: 
+    _npcMood: deceitful
     _responses: []
     _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Young Granny
     _messageText: Certainly officers, search away
-    _npcMood: 
+    _npcMood: calm
     _responses: []
     _nextMessage: 5
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: They searched quietly and thoroughly. On their exit I stopped them
-    _npcMood: 
+    _npcMood: proud
     _responses: []
     _nextMessage: 6
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Young Granny
     _messageText: officers I need your help. My life has been put in a very difficult
       position and I have been waiting for your arrival
-    _npcMood: 
+    _npcMood: concerned
     _responses: []
     _nextMessage: 7
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: Out with-it woman we have more houses to visit
-    _npcMood: 
+    _npcMood: deceitful
     _responses: []
     _nextMessage: 8
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Young Granny
     _messageText: "\u2018My house was broken into recently by the resistance"
-    _npcMood: 
+    _npcMood: concerned
     _responses: []
     _nextMessage: 9
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Young Granny
     _messageText: "They have forced me to hide one of their own here and threatened
       my life if I don\u2019t protect her"
-    _npcMood: 
+    _npcMood: concerned
     _responses: []
     _nextMessage: 10
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I proceeded to give them all the information I had gathered from
       the woman
-    _npcMood: 
+    _npcMood: proud
     _responses: []
     _nextMessage: 11
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: My house was soon swarmed with military police who had removed
       her
     _npcMood: 
     _responses: []
     _nextMessage: 12
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I was taken to give official statements of the information I had
     _npcMood: 
     _responses: []
     _nextMessage: 13
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: ' I was very generously rewarded for this'
     _npcMood: 
     _responses: []
     _nextMessage: 14
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
-    _messageText: ' as my information had been accurate and served to apprehend some
-      of the worst and highest members of the resistance'
+    _messageText: as my information had been accurate and served to apprehend some
+      of the worst and highest members of the resistance
     _npcMood: 
     _responses: []
     _nextMessage: 15
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
-    _messageText: ' I have lived a very comfortable life since that day'
+    _messageText: I have lived a very comfortable life since that day
     _npcMood: 
     _responses: []
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0

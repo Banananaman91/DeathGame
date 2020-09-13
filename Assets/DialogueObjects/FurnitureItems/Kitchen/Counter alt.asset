@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: A knife
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: These items she has got me looking for can't be as exciting as
       this... surely...
-    _npcMood: 
+    _npcMood: Sarcastic
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

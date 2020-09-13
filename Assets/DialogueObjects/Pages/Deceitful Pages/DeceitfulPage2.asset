@@ -16,72 +16,98 @@ MonoBehaviour:
   - _npcName: Granny
     _messageText: After a few days of this I began to get what information I could
       from her.
-    _npcMood: 
+    _npcMood: Proud
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Usually this is work for the military police but, as daddy always
       taught me, any information that can help is always rewarded
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I then knew that the next step would be to get her down and clean
       her up
     _npcMood: 
     _responses: []
     _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Although a blind eye was always turned for these acts, they were
       also not permitted
     _npcMood: 
     _responses: []
     _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: " so I couldn\u2019t just let the police walk in and see her like
       this"
     _npcMood: 
     _responses: []
     _nextMessage: 5
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: ' I began working on tending her wounds'
     _npcMood: 
     _responses: []
     _nextMessage: 6
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Being sure to be extra gentle with them
     _npcMood: 
     _responses: []
     _nextMessage: 7
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I fed her plenty and began to treat her extra kindly
     _npcMood: 
     _responses: []
     _nextMessage: 8
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I did this for weeks
     _npcMood: 
     _responses: []
     _nextMessage: 9
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: She grew to like the kindness
     _npcMood: 
     _responses: []
     _nextMessage: 10
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Eventually I would even give her baths
     _npcMood: 
     _responses: []
     _nextMessage: 11
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I put a mattress down in the secret room so that she could sleep
       somewhere that I could lock her up
     _npcMood: 
     _responses: []
     _nextMessage: 12
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Our bond grew as she began to trust me more and more, her injuries
-      almost fully healed
+      now almost fully healed
     _npcMood: 
     _responses: []
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0

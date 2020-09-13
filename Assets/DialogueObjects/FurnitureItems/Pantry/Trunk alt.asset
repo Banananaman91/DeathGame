@@ -15,56 +15,56 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: It must be in this trunk somewhere...
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: But which compartment?
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 2
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Not in this one...
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 3
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Not sure why this one has 50 cheese wheels stored inside
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: 4
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Or why this one has 50 dead pigeons...
-    _npcMood: 
+    _npcMood: Curious
     _responses: []
     _nextMessage: 5
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Wait...
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 6
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: This pigeon has some rolled up paper stuck up it
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 7
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: She truly is disgusting
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: There is an actual rat nest in here
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: How has she even survived this long?
-    _npcMood: 
+    _npcMood: Curious
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

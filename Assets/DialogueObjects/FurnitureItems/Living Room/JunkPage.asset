@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: JunkPage
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Death
+    _messageText: Damn I really need to look through all of this crap for something
+      relevant
+    _npcMood: Annoyed
+    _responses: []
+    _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: I hope she made use of this coop funeral directors leaflet
+    _npcMood: Emotionless
+    _responses: []
+    _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: Fuck it I'll leave her rotting corpse somewhere nice like the walls
+      or something
+    _npcMood: Impressed
+    _responses: []
+    _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: Oh yes! Another page! This story was actually getting pretty good.
+    _npcMood: Joyous
+    _responses: []
+    _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: I'm starting to root for that mysterious woman in this one
+    _npcMood: Joyous
+    _responses: []
+    _nextMessage: -1
+    _triggerEvent: 1
+    _eventNum: 0

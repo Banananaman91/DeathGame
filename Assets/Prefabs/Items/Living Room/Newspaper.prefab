@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1363815535470150478}
   - component: {fileID: 5911320622802034511}
-  - component: {fileID: 6828994874249907690}
   - component: {fileID: -7821418136888986759}
   m_Layer: 0
   m_Name: Newspaper
@@ -46,21 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 0}
-  _objectSprite: {fileID: 0}
---- !u!114 &6828994874249907690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363815535470150473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _objectSprite: {fileID: 21300000, guid: 18ad40ecc7f07ae4ab3a8d4a487f1e70, type: 3}
   _itemName: Newspaper
-  _itemDescription: 'Headline: Knife crime rates highest in a decade'
+  _itemDescription: Article about knife crime
 --- !u!212 &-7821418136888986759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -100,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ad505b14d7d6ae9448111686f824344e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 18ad40ecc7f07ae4ab3a8d4a487f1e70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
