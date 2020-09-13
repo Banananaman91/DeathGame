@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 namespace Puzzles
 {
-    [RequireComponent(typeof(BoxCollider2D))]
     public class Mastermind : DialogueObject, IInteract
     {
         [SerializeField] private Image[] _bookImages;
