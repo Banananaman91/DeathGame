@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Granny
     _messageText: I awoke to complete darkness.
-    _npcMood: 
+    _npcMood: anxious
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
   - _npcName: Officer
     _messageText: "Excuse me ma\u2019am, we have heard reports of a suspicious woman
       around this area"
-    _npcMood: 
+    _npcMood: unfortunate
     _responses: []
     _nextMessage: 7
     _triggerEvent: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Lady
     _messageText: "I\u2019m sorry officer, I only just moved here yesterday"
-    _npcMood: 
+    _npcMood: calm
     _responses: []
     _nextMessage: 10
     _triggerEvent: 0
@@ -95,21 +95,21 @@ MonoBehaviour:
   - _npcName: Officer
     _messageText: "Okay ma\u2019am, you stay safe and be sure to lock up securely
       tonight"
-    _npcMood: 
+    _npcMood: unfortunate
     _responses: []
     _nextMessage: 12
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Lady
     _messageText: Thank you, officers
-    _npcMood: 
+    _npcMood: emotionless
     _responses: []
     _nextMessage: 13
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
     _messageText: The door closed, and then I heard footsteps approaching
-    _npcMood: 
+    _npcMood: anxious
     _responses: []
     _nextMessage: 14
     _triggerEvent: 0
@@ -131,14 +131,14 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Lady
     _messageText: "\u2018I am going to have some fun with you"
-    _npcMood: 
+    _npcMood: cheerful
     _responses: []
     _nextMessage: 17
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
     _messageText: I was then hit over the head
-    _npcMood: 
+    _npcMood: anxious
     _responses: []
     _nextMessage: 18
     _triggerEvent: 0

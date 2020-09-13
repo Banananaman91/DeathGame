@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Granny
     _messageText: Midway through the night I slipped out of my bed
-    _npcMood: 
+    _npcMood: Proud
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -58,15 +58,15 @@ MonoBehaviour:
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
-    _messageText: " I couldn\u2019t allow her to go free"
+    _messageText: "I couldn\u2019t allow her to go free"
     _npcMood: 
     _responses: []
     _nextMessage: 7
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
-    _messageText: ' I headed to the basement and found the chains I always kept for
-      such an occasion'
+    _messageText: I headed to the basement and found the chains I always kept for
+      such an occasion
     _npcMood: 
     _responses: []
     _nextMessage: 8
@@ -104,8 +104,8 @@ MonoBehaviour:
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
-    _messageText: ' This is where I proceeded to beat her as my own personal justice
-      for her crimes against the state, and re-educate her'
+    _messageText: This is where I proceeded to beat her as my own personal justice
+      for her crimes against the state, and re-educate her
     _npcMood: 
     _responses: []
     _nextMessage: 13
@@ -121,7 +121,7 @@ MonoBehaviour:
   - _npcName: Granny
     _messageText: There would be no need to rush and call the police just yet for
       this traitor, I can have some fun.
-    _npcMood: 
+    _npcMood: EvilProud
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

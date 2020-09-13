@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Granny
     _messageText: Later that evening I had a knock on my door
-    _npcMood: 
+    _npcMood: emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -29,21 +29,21 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Young Granny
     _messageText: "Come in boys, It\u2019s about time"
-    _npcMood: 
+    _npcMood: calm
     _responses: []
     _nextMessage: 3
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Officer
     _messageText: "So what is it today, ma\u2019am?"
-    _npcMood: 
+    _npcMood: evil
     _responses: []
     _nextMessage: 4
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
     _messageText: I handed the officers the address
-    _npcMood: 
+    _npcMood: emotionless
     _responses: []
     _nextMessage: 5
     _triggerEvent: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   - _npcName: Young Granny
     _messageText: There is a woman who lives at this address, with her husband and
       2 children
-    _npcMood: 
+    _npcMood: calm
     _responses: []
     _nextMessage: 6
     _triggerEvent: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Granny
     _messageText: The officers agreed and left quickly
-    _npcMood: 
+    _npcMood: emotionless
     _responses: []
     _nextMessage: 9
     _triggerEvent: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   - _npcName: Granny
     _messageText: After a few days of this I began to get what information I could
       from her.
-    _npcMood: 
+    _npcMood: Proud
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Granny
     _messageText: Our bond grew as she began to trust me more and more, her injuries
-      almost fully healed
+      now almost fully healed
     _npcMood: 
     _responses: []
     _nextMessage: -1

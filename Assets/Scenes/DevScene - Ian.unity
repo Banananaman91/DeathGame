@@ -14256,7 +14256,6 @@ GameObject:
   - component: {fileID: 2766055064672582797}
   - component: {fileID: 2104247917233156125}
   - component: {fileID: 1117863549612078931}
-  - component: {fileID: 5280742325530402395}
   m_Layer: 0
   m_Name: drawer.006
   m_TagString: Untagged
@@ -19702,7 +19701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &3555183959449346158
 GameObject:
   m_ObjectHideFlags: 0
@@ -23343,7 +23342,6 @@ GameObject:
   - component: {fileID: 5723676311629467655}
   - component: {fileID: 5037702919395419603}
   - component: {fileID: 2515373502846405408}
-  - component: {fileID: 5280742325926160335}
   m_Layer: 0
   m_Name: drawer
   m_TagString: Untagged
@@ -24070,19 +24068,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9875678, y: 1.2584509, z: 0.43865752}
   m_Center: {x: -0.00011430681, y: -0.000000059604645, z: 0.004803315}
---- !u!65 &5280742325530402395
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569474429724922910}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.3520615, y: 0.41907454, z: 0.7264826}
-  m_Center: {x: -0.0008248091, y: 0.05698856, z: 0.0006799698}
 --- !u!65 &5280742325575781003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24696,19 +24681,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &5280742325926160335
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5256477322196485247}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.79342556, y: 0.62247646, z: 0.91345656}
-  m_Center: {x: -0.0009034574, y: 0.056183502, z: -0.00094020367}
 --- !u!65 &5280742325933932443
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26377,19 +26349,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.43782097, y: 1.2584509, z: 0.98719114}
   m_Center: {x: -0.0002699867, y: 0.1599349, z: 0.0007210672}
---- !u!65 &5280742326804665800
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8635488551706773341}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.3520617, y: 0.5016648, z: 0.7264825}
-  m_Center: {x: -0.0009201169, y: 0.06357845, z: 0.0007585734}
 --- !u!65 &5280742326831137651
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26730,19 +26689,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0623155, y: 0.927459, z: 0.87133986}
   m_Center: {x: -0.07224777, y: -0.0068146437, z: 0.010034859}
---- !u!65 &5280742327122775078
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7439962104121418492}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.3520617, y: 0.5016648, z: 0.7264825}
-  m_Center: {x: -0.0009201169, y: 0.06357845, z: 0.0007585734}
 --- !u!65 &5280742327131043495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30614,7 +30560,6 @@ GameObject:
   - component: {fileID: 2396528998613079787}
   - component: {fileID: 9042478432295181026}
   - component: {fileID: 3396112783328916919}
-  - component: {fileID: 5280742327122775078}
   m_Layer: 0
   m_Name: drawer.004
   m_TagString: Untagged
@@ -32866,7 +32811,6 @@ GameObject:
   - component: {fileID: 7190639583419594410}
   - component: {fileID: 6231535042338684315}
   - component: {fileID: 2182291509738600145}
-  - component: {fileID: 5280742326804665800}
   m_Layer: 0
   m_Name: drawer.005
   m_TagString: Untagged

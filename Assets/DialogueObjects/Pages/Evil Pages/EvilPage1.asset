@@ -16,46 +16,62 @@ MonoBehaviour:
   - _npcName: Granny
     _messageText: "During the night I had snuck down and searched through this woman\u2019s
       purse"
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I made a note of her address from her driving id
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: The next morning, I made us both breakfast and began to ask about
       her personal life
     _npcMood: 
     _responses: []
     _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: She told me about how she had a husband of 10 years and together
       they had 2 little children
     _npcMood: 
     _responses: []
     _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: It was so sweet, she seemed so happy about it all
     _npcMood: 
     _responses: []
     _nextMessage: 5
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: She told me about how she had been away visiting her mother and
       was returning home to surprise them
     _npcMood: 
     _responses: []
     _nextMessage: 6
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I insisted that she linger around for a while longer and that I
       would bake her gifts for her whole family
     _npcMood: 
     _responses: []
     _nextMessage: 7
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Once my cakes were finished I wrapped them up for her and she left,
       thanking me profusely for my hospitality
     _npcMood: 
     _responses: []
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0

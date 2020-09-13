@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Granny
     _messageText: I awoke later that evening to knocking on the door again.
-    _npcMood: 
+    _npcMood: content
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   - _npcName: Officer
     _messageText: "Sorry ma\u2019am, we are following up on a query about a young
       woman who was seen in this area yesterday"
-    _npcMood: 
+    _npcMood: good
     _responses: []
     _nextMessage: 5
     _triggerEvent: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   - _npcName: Young Granny
     _messageText: "I\u2019m sorry officer, a woman did arrive here yesterday but
       left early this morning"
-    _npcMood: 
+    _npcMood: concerned
     _responses: []
     _nextMessage: 8
     _triggerEvent: 0
@@ -82,21 +82,21 @@ MonoBehaviour:
   - _npcName: Officer
     _messageText: Oh, do you mind if we come in and ask a few questions about the
       woman?
-    _npcMood: 
+    _npcMood: good
     _responses: []
     _nextMessage: 10
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Young Granny
     _messageText: Absolutely officer, come inside
-    _npcMood: 
+    _npcMood: concerned
     _responses: []
     _nextMessage: 11
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
     _messageText: We spent quite some time talking at length about the woman.
-    _npcMood: 
+    _npcMood: content
     _responses: []
     _nextMessage: 12
     _triggerEvent: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
   - _npcName: Officer
     _messageText: "\u2018If you do happen to see this woman again could you please
       contact us?"
-    _npcMood: 
+    _npcMood: good
     _responses: []
     _nextMessage: 15
     _triggerEvent: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Young granny
     _messageText: Absolutely officer
-    _npcMood: 
+    _npcMood: calm
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0
