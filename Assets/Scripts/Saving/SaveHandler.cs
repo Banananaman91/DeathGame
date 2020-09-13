@@ -13,7 +13,7 @@ namespace Saving
     public class SaveHandler : MonoBehaviour
     {
         [Serializable]
-        private class SaveData
+        private struct SaveData
         {
             public Vector3 playerPosition;
             public Quaternion playerRotation;
@@ -31,13 +31,6 @@ namespace Saving
                 pageList = _pageList;
             }
         }
-
-        // [Serializable]
-        // public class DialogueSerialize
-        // {
-        //     public List<int> dialogueKey;
-        //     public List<Dialogue> dialogueScriptable;
-        // }
         
         [Serializable]
         public struct DialogueSerialize
@@ -52,13 +45,12 @@ namespace Saving
             }
         }
         
-        [Tooltip("All the pick ups that player can find go here")]
-        [SerializeField] private GameObject[] _pickUps;
         [Tooltip("All the pages that player can find go here")]
         [SerializeField] private GameObject[] _pages;
         [SerializeField] private InventoryScript _inventoryScript;
         private readonly List<int> _inventoryObjects = new List<int>();
         private readonly List<int> _inventoryPages = new List<int>();
+        private ItemPickUp[] PickUps => Resources.FindObjectsOfTypeAll<ItemPickUp>();
         private static PlayerMovement PlayerMovement => FindObjectOfType<PlayerMovement>();
         private FurnitureInteract[] Interactables => FindObjectsOfType<FurnitureInteract>();
         private static Vector3 PlayerPosition
@@ -174,7 +166,7 @@ namespace Saving
 
         private void CompareItems(int itemId)
         {
-            foreach (var pickUp in _pickUps)
+            foreach (var pickUp in PickUps)
             {
                 if(pickUp.GetInstanceID() != itemId) continue;
                 _inventoryScript.AddItem(pickUp.GetComponent<ItemPickUp>());

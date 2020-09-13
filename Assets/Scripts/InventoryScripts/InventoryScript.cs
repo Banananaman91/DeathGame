@@ -12,8 +12,8 @@ namespace InventoryScripts
         [SerializeField] private GameObject _buttonPrefab;
         [SerializeField] private ManagerScript _manager;
         [SerializeField] private Transform _parentObject;
-        private readonly List<GameObject> _items = new List<GameObject>();
-        public List<GameObject> Items => _items;
+        private readonly List<ItemPickUp> _items = new List<ItemPickUp>();
+        public List<ItemPickUp> Items => _items;
         //
         [Header("Journal Inventory variables")]
         [SerializeField] private Button[] _pageButtons;
@@ -25,7 +25,7 @@ namespace InventoryScripts
         public void AddItem(ItemPickUp newItem)
         {
             var invSlot = Instantiate(_buttonPrefab, _parentObject);
-            _items.Add(newItem.gameObject);
+            _items.Add(newItem);
             var button = invSlot.GetComponentInChildren<Button>();
             button.image.sprite = newItem.ObjectSprite;
             button.onClick.AddListener(() => _manager.LoadItemInformation(newItem));

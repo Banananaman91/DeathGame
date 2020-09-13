@@ -5939,7 +5939,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1593352849}
     - target: {fileID: 696510180217538311, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -5965,6 +5965,11 @@ PrefabInstance:
       propertyPath: _pageRender
       value: 
       objectReference: {fileID: 79625261}
+    - target: {fileID: 696510180217538311, guid: 0189f1099b6f3ab49b748b1502106a54,
+        type: 3}
+      propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddItem
+      objectReference: {fileID: 0}
     - target: {fileID: 775799905913879317, guid: 0189f1099b6f3ab49b748b1502106a54,
         type: 3}
       propertyPath: _myEvent.Array.data[0].m_PersistentCalls.m_Calls.Array.size
@@ -9656,9 +9661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abde941bcaaee2429b5cbafef889f92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickUps:
-  - {fileID: 0}
-  - {fileID: 0}
   _pages:
   - {fileID: 1456867164}
   - {fileID: 738384636}
