@@ -15,22 +15,22 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Oh Herbert what has she done to you
-    _npcMood: 
+    _npcMood: Surprised
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Putting such a thing in your throat
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: 2
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
-    _messageText: Don't worry Pete, this is the good story where bad things happen
+    _messageText: Don't worry Herbert, this is the good story where bad things happen
       to her, hopefully it has a fitting ending
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

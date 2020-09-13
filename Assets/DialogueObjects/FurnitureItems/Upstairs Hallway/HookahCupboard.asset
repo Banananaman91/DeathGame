@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Now this is my kind of cupboard
-    _npcMood: 
+    _npcMood: Surprised
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Some of this stuff would explain all this smoke in the house
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

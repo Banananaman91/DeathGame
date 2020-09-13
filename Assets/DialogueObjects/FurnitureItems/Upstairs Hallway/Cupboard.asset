@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: I can't wait to see how the next residents decorate this place
-    _npcMood: 
+    _npcMood: Sarcastic
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Maybe they will actually have some taste
-    _npcMood: 
+    _npcMood: Sarcastic
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

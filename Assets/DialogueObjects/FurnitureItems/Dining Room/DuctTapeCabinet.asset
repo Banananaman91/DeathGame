@@ -16,7 +16,7 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: This looks like one of those shit cupboards where people just throw
       anything into it
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Ah yes painkillers
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: For when you're an absolute pain in the ass and just won't fucking
       die
-    _npcMood: 
+    _npcMood: Annoyed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

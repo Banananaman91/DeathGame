@@ -16,21 +16,21 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: Well seeing as she wanted me to find this bleach I can give it
       to her later
-    _npcMood: 
+    _npcMood: Sarcastic
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Cure her of her life
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: 2
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: or at least cure the world of having her on it
-    _npcMood: 
+    _npcMood: Joyous
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

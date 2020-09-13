@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1113236820786145368}
   - component: {fileID: 4824256700585007200}
-  - component: {fileID: 2101450701947097335}
   - component: {fileID: 3930001146566796184}
   m_Layer: 0
   m_Name: World Champion hide-and-seek trophy
@@ -46,20 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invScript: {fileID: 0}
-  _objectSprite: {fileID: 0}
---- !u!114 &2101450701947097335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1113236820786145371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a354af0af6f65e14a8fe29ff740bce43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _itemName: Hide-and-Seek Champion
+  _objectSprite: {fileID: 21300000, guid: 03fadd82ae069e24eaf51408514ecc84, type: 3}
+  _itemName: World Champion Hide-&-Seek Trophy
   _itemDescription: A place for nerds and dens
 --- !u!212 &3930001146566796184
 SpriteRenderer:
@@ -100,7 +87,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 63123f855ee96d44d8c063bec768c145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 03fadd82ae069e24eaf51408514ecc84, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

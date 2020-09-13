@@ -60,6 +60,15 @@ namespace Editor
                         EditorGUILayout.EndHorizontal();
                         
                         EditorGUILayout.BeginHorizontal();
+                        EditorGUI.indentLevel = 1;
+                        EditorGUILayout.LabelField("Character Display Background", GUILayout.MinWidth(60f));
+                        EditorGUILayout.EndHorizontal();
+
+                        EditorGUILayout.BeginHorizontal();
+                        bio.NpcImage[i].CharacterBackgroundImage = EditorGUILayout.ObjectField(bio.NpcImage[i].CharacterBackgroundImage, typeof(Sprite)) as Sprite;
+                        EditorGUILayout.EndHorizontal();
+                        
+                        EditorGUILayout.BeginHorizontal();
                         EditorGUILayout.LabelField("Text Colour", GUILayout.MinWidth(60f), GUILayout.MaxWidth(100f));
                         EditorGUILayout.EndHorizontal();
 
@@ -74,6 +83,15 @@ namespace Editor
                         EditorGUILayout.BeginHorizontal();
                         bio.NpcImage[i].DialogueTextFont = EditorGUILayout.ObjectField(bio.NpcImage[i].DialogueTextFont, typeof(Font)) as Font;
                         EditorGUILayout.EndHorizontal();
+                        
+                        EditorGUILayout.BeginHorizontal();
+                        EditorGUI.indentLevel = 1;
+                        EditorGUILayout.LabelField("Button Sprite", GUILayout.MinWidth(60f));
+                        EditorGUILayout.EndHorizontal();
+
+                        EditorGUILayout.BeginHorizontal();
+                        bio.NpcImage[i].ButtonSprite = EditorGUILayout.ObjectField(bio.NpcImage[i].ButtonSprite, typeof(Sprite)) as Sprite;
+                        EditorGUILayout.EndHorizontal();
 
                         if (bio.NpcImage[i].NpcMoodImages != null && bio.NpcImage[i].NpcMoodImages.Count > 0)
                         {
@@ -87,7 +105,7 @@ namespace Editor
                                 EditorGUILayout.EndHorizontal();
                                 EditorGUILayout.BeginHorizontal();
                                 bio.NpcImage[i].NpcMoodImages[j].NpcMoodImage =
-                                    EditorGUILayout.ObjectField(bio.NpcImage[i].NpcMoodImages[j].NpcMoodImage, typeof(MoodImage), GUILayout.Width(150f)) as Image;
+                                    EditorGUILayout.ObjectField(bio.NpcImage[i].NpcMoodImages[j].NpcMoodImage, typeof(Sprite), GUILayout.Width(150f)) as Sprite;
                                 EditorGUILayout.EndHorizontal();
                             }
                         }

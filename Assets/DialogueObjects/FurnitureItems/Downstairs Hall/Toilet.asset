@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Now this is why toilets need to be flushed and cleaned regularly
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: I don't even want to know why the bottom looks yellow
-    _npcMood: 
+    _npcMood: Curious
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

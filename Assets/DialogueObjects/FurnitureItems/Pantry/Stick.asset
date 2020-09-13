@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: '"Stick your washing in"'
-    _npcMood: 
+    _npcMood: Sarcastic
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -23,14 +23,14 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: That was really the best you could come up with for a Stick in
       the washing machine?
-    _npcMood: 
+    _npcMood: Sarcastic
     _responses: []
     _nextMessage: 2
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: I'm not going to have mercy on her soul for that one
-    _npcMood: 
+    _npcMood: Annoyed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: No wonder people are always hopping through channels
-    _npcMood: 
+    _npcMood: Curious
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: These TV's have a god damn rabbit inside
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +11,8 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
     {
         [SerializeField] private Text _pageName;
         [SerializeField] private Text _pageText;
-        [SerializeField] private GameObject _pageImagePosition;
+        [SerializeField] private Image _characterImage;
+        [SerializeField] private Image _characterBackgroundImage;
         [SerializeField] private float _sentenceSpeed;
         [SerializeField] private Button _option;
         [SerializeField] private GameObject[] _buttonPositions;
@@ -18,9 +20,9 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         [SerializeField] private GameObject _dialogueBox;
         [SerializeField] private NpcImages _npcImages;
         private List<Button> _responseOptions = new List<Button>();
-        private Image _previousImage;
+        private Sprite _previousImage;
         private NpcBio _npcImageBio;
-        private Image _newMoodImage;
+        private Sprite _newMoodImage;
         private Coroutine _currentRoutine;
         private Dialogue _npc;
         private DialogueObject _dialogueObject;
@@ -97,6 +99,9 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                 {
                     //Set the dialogue box backgorund to the npcs required background if one exists
                     if (_npcImageBio.DialogueBackgroundImage) _dialogueBackground.sprite = _npcImageBio.DialogueBackgroundImage;
+
+                    if (_npcImageBio.CharacterBackgroundImage)
+                        _characterBackgroundImage.sprite = _npcImageBio.CharacterBackgroundImage;
  
                     _pageName.color = _npcImageBio.DialogueTextColour;
                     _pageText.color = _npcImageBio.DialogueTextColour;
@@ -123,13 +128,14 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
             
             if (!_dialogueBox.activeSelf) _dialogueBox.SetActive(true);
             
-            if (IsPreviousImageNotNull) Destroy(_previousImage.gameObject);
+            if (IsPreviousImageNotNull) _characterImage.sprite = null;
             
             if (IsNewMoodImageNotNull)
             {
-                var newImage = Instantiate(_newMoodImage, _pageImagePosition.transform);
-                newImage.transform.SetParent(_dialogueBackground.transform);
-                _previousImage = newImage;
+                _characterImage.sprite = _newMoodImage;
+                // var newImage = Instantiate(_newMoodImage, _pageImagePosition.transform);
+                // newImage.transform.SetParent(_dialogueBackground.transform);
+                // _previousImage = newImage;
             }
 
             if (IsCurrentRoutineNotNull) StopCoroutine(_currentRoutine);
@@ -147,6 +153,10 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                 var button = Instantiate(_option, _buttonPositions[index].transform.position,
                     _buttonPositions[index].transform.rotation);
                 button.transform.SetParent(_dialogueBackground.transform);
+                foreach (var npcImageMoods in from npcImageMoods in _npcImages.NpcImage let npcImageName = npcImageMoods.NpcName.ToLower() where npcImageName.Contains(_npc.Messages[_paragraphNumber].NpcName.ToLower()) select npcImageMoods)
+                {
+                    if (npcImageMoods.ButtonSprite) button.GetComponent<Image>().sprite = npcImageMoods.ButtonSprite;
+                }
                 button.GetComponentInChildren<Text>().text = response.Reply;
                 _responseOptions.Add(button);
                 button.onClick.AddListener(() => PlayParagraphCycle(response.Next));

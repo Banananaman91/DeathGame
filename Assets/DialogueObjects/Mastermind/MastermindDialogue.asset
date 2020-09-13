@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Interesting set of books here
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Would be a shame if someone shuffled them up
-    _npcMood: 
+    _npcMood: Joyous
     _responses:
     - _next: -1
       _reply: Lets shuffle

@@ -106,6 +106,7 @@ namespace Puzzles
 
         public void Interact(PlayerMovement playerInteraction)
         {
+            _pageRender.AssignResponseObject(this);
             _pageRender.PlayDialogue(_myDialogue);
         }
 
