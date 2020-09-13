@@ -49,7 +49,7 @@ MonoBehaviour:
   _myEvent:
   - m_PersistentCalls:
       m_Calls: []
-  _pageClass: 0
+  _pageClass: 14
   _spriteObject: {fileID: 21300000, guid: 3cf14c88afed00a499e34946fb5669d7, type: 3}
   _clue: A proud display for all of my dinner guests must be locked up tight
 --- !u!212 &882824310657732168

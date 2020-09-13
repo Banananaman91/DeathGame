@@ -18,55 +18,77 @@ MonoBehaviour:
     _npcMood: 
     _responses: []
     _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: Upon opening were two officers
     _npcMood: 
     _responses: []
     _nextMessage: 2
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Young Granny
     _messageText: "Come in boys, It\u2019s about time"
     _npcMood: 
     _responses: []
     _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Officer
     _messageText: "So what is it today, ma\u2019am?"
     _npcMood: 
     _responses: []
     _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: I handed the officers the address
     _npcMood: 
     _responses: []
     _nextMessage: 5
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Young Granny
     _messageText: There is a woman who lives at this address, with her husband and
       2 children
     _npcMood: 
     _responses: []
     _nextMessage: 6
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Young Granny
     _messageText: By now the drugs should have kicked in
     _npcMood: 
     _responses: []
     _nextMessage: 7
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Young Granny
     _messageText: You get the whole family here and as always you will be paid handsomely
     _npcMood: 
     _responses: []
     _nextMessage: 8
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: The officers agreed and left quickly
     _npcMood: 
     _responses: []
     _nextMessage: 9
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: " It didn\u2019t seem like they were gone long before there was
       another knock at the door."
     _npcMood: 
     _responses: []
     _nextMessage: 10
+    _triggerEvent: 0
+    _eventNum: 0
   - _npcName: Granny
     _messageText: They had the family for me
     _npcMood: 
     _responses: []
     _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0

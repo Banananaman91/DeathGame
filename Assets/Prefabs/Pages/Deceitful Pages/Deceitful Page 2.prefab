@@ -49,7 +49,7 @@ MonoBehaviour:
   _myEvent:
   - m_PersistentCalls:
       m_Calls: []
-  _pageClass: 0
+  _pageClass: 13
   _spriteObject: {fileID: 21300000, guid: 3cf14c88afed00a499e34946fb5669d7, type: 3}
   _clue: Hidden books hide hidden art
 --- !u!212 &4042233607545330223

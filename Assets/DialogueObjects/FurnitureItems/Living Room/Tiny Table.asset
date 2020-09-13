@@ -24,6 +24,21 @@ MonoBehaviour:
     _messageText: This is going to be a long day
     _npcMood: Annoyed
     _responses: []
-    _nextMessage: -1
+    _nextMessage: 2
     _triggerEvent: 1
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: Should I even bother reading this right now?
+    _npcMood: Annoyed
+    _responses:
+    - _next: -1
+      _reply: May Aswell
+      _triggerEvent: 1
+      _eventNum: 1
+    - _next: -1
+      _reply: Nah
+      _triggerEvent: 0
+      _eventNum: 0
+    _nextMessage: -1
+    _triggerEvent: 0
     _eventNum: 0

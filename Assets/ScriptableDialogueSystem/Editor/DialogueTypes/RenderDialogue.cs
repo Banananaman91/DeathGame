@@ -89,7 +89,7 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                 foreach (var npcImageMoods in _npcImages.NpcImage)
                 {
                     var npcImageName = npcImageMoods.NpcName.ToLower();
-                    if (npcImageName.Contains(_npc.Messages[_paragraphNumber].NpcName.ToLower()))
+                    if (npcImageName == _npc.Messages[_paragraphNumber].NpcName.ToLower())
                     {
                         _npcImageBio = npcImageMoods;
                     }

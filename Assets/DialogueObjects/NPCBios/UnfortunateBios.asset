@@ -27,7 +27,7 @@ MonoBehaviour:
       type: 3}
     _dialogueBackgroundImage: {fileID: 21300000, guid: b328083ddea6e0f41948bc77b7e212e1,
       type: 3}
-    _dialogueBackgroundColour: {r: 0, g: 0, b: 0, a: 0}
+    _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
     _dialogueTextColour: {r: 0.85490197, g: 1, b: 0.9490196, a: 1}
     _dialogueTextFont: {fileID: 0}
     _buttonSprite: {fileID: 21300000, guid: 5c44001538635dd468358c9a53c057fe, type: 3}
@@ -39,8 +39,8 @@ MonoBehaviour:
       type: 3}
     _dialogueBackgroundImage: {fileID: 21300000, guid: 4e703b808c050fb41b696772dab607a3,
       type: 3}
-    _dialogueBackgroundColour: {r: 0, g: 0, b: 0, a: 0}
-    _dialogueTextColour: {r: 0, g: 0, b: 0, a: 0}
+    _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
+    _dialogueTextColour: {r: 1, g: 1, b: 1, a: 1}
     _dialogueTextFont: {fileID: 0}
     _buttonSprite: {fileID: 0}
   - _npcName: Young Lady
@@ -52,8 +52,8 @@ MonoBehaviour:
       type: 3}
     _dialogueBackgroundImage: {fileID: 21300000, guid: 6a9a909752f860a4b9fcb02b3c1638c7,
       type: 3}
-    _dialogueBackgroundColour: {r: 0, g: 0, b: 0, a: 0}
-    _dialogueTextColour: {r: 0, g: 0, b: 0, a: 0}
+    _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
+    _dialogueTextColour: {r: 1, g: 1, b: 1, a: 1}
     _dialogueTextFont: {fileID: 0}
     _buttonSprite: {fileID: 21300000, guid: 70c520fe881eca14db67d0773de43121, type: 3}
   - _npcName: Officer
@@ -63,7 +63,7 @@ MonoBehaviour:
       type: 3}
     _dialogueBackgroundImage: {fileID: 21300000, guid: 0763fc02f91ba7648a6856af18b95363,
       type: 3}
-    _dialogueBackgroundColour: {r: 0, g: 0, b: 0, a: 0}
-    _dialogueTextColour: {r: 0, g: 0, b: 0, a: 0}
+    _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
+    _dialogueTextColour: {r: 1, g: 1, b: 1, a: 1}
     _dialogueTextFont: {fileID: 0}
     _buttonSprite: {fileID: 0}

@@ -49,7 +49,7 @@ MonoBehaviour:
   _myEvent:
   - m_PersistentCalls:
       m_Calls: []
-  _pageClass: 0
+  _pageClass: 9
   _spriteObject: {fileID: 21300000, guid: d5171baed70b9bc4180a730d4d6a9e18, type: 3}
   _clue: At the base you can find my favourite view
 --- !u!212 &6568141995658644330
