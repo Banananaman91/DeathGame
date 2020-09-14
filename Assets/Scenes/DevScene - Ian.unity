@@ -2863,6 +2863,81 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &501697927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 501697928}
+  - component: {fileID: 501697929}
+  - component: {fileID: 501697930}
+  - component: {fileID: 501697931}
+  m_Layer: 0
+  m_Name: UpstairsTransition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &501697928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501697927}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -18.569088, y: 2.8295789, z: -3.1520922}
+  m_LocalScale: {x: 0.27686587, y: 1, z: 0.24936312}
+  m_Children: []
+  m_Father: {fileID: 1115316100186071232}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &501697929
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501697927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &501697930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501697927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3bb2658b1bcf0a4db4b7331143ac136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _otherFloor: {fileID: 3549640963424771920}
+  _onOrOff: 1
+--- !u!114 &501697931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501697927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3480b005bd98446b24383ff867dcc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _roomCamera: {fileID: 532009405309504446}
+  _additionalObject: {fileID: 0}
 --- !u!1 &510870258
 GameObject:
   m_ObjectHideFlags: 0
@@ -17890,6 +17965,7 @@ Transform:
   - {fileID: 2451024116292862183}
   - {fileID: 8521788106914694004}
   - {fileID: 5693265441093794687}
+  - {fileID: 501697928}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22322,7 +22398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3555183959449346158
 GameObject:
   m_ObjectHideFlags: 0
@@ -28394,6 +28470,8 @@ GameObject:
   - component: {fileID: 5280742326428346602}
   - component: {fileID: 5280742326428346516}
   - component: {fileID: 5280742326428346517}
+  - component: {fileID: 5280742326428346604}
+  - component: {fileID: 5280742326428346605}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -28401,6 +28479,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5280742326428346604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5280742326428346603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3bb2658b1bcf0a4db4b7331143ac136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _otherFloor: {fileID: 3549640963424771920}
+  _onOrOff: 0
+--- !u!114 &5280742326428346605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5280742326428346603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3480b005bd98446b24383ff867dcc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _roomCamera: {fileID: 532009406091647247}
+  _additionalObject: {fileID: 0}
 --- !u!65 &5280742326428907595
 BoxCollider:
   m_ObjectHideFlags: 0
