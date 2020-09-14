@@ -13646,7 +13646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2037374172
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23790,7 +23790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _myDialogue: {fileID: 11400000, guid: aeb41d60ef0f8e1438d52a6fbe869d2c, type: 2}
-  _pageRender: {fileID: 0}
+  _pageRender: {fileID: 5554085951253088031}
   _myEvent:
   - m_PersistentCalls:
       m_Calls:
