@@ -46,7 +46,20 @@ MonoBehaviour:
   _myDialogue: {fileID: 11400000, guid: 0699c162a0856ca47b91c2bd79a4b9db, type: 2}
   _pageRender: {fileID: 0}
   _myEvent:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls: []
-  _pageClass: 0
-  _spriteObject: {fileID: 0}
+  _pageClass: 16
+  _pureEvil: 0
+  _spriteObject: {fileID: 21300000, guid: 4ef98673bdf32e64cbf1298de0a09e35, type: 3}
+  _clue: 'Clue 1: A beautiful view for the living
+
+
+    Clue 2: It''s not exactly
+    fresh news
+
+
+    Clue 3: Some of my spare junk just can''t stay upright
+
+
+    Clue
+    4: My first place to visit first thing in the morning'
