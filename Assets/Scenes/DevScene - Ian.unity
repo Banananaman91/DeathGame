@@ -6454,7 +6454,7 @@ MonoBehaviour:
   _cutscenePanel: {fileID: 1783575535}
   _videoPlayer: {fileID: 1711564583}
   _text: {fileID: 927209434}
-  _winLoseText: You Lose
+  _winLoseText: 
   _textColor: {r: 0.6132076, g: 0, b: 0, a: 1}
 --- !u!224 &957759586
 RectTransform:
@@ -22322,7 +22322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &3555183959449346158
 GameObject:
   m_ObjectHideFlags: 0
@@ -22609,13 +22609,43 @@ GameObject:
   - component: {fileID: 8008961376223970126}
   - component: {fileID: 5265054658408062863}
   - component: {fileID: 5280742325655192962}
+  - component: {fileID: 3737110521263624007}
   m_Layer: 0
-  m_Name: bath.001
+  m_Name: BathHiding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3737110521263624007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737110521263624006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9256f1c188584a4ead7c97c2562631a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myDialogue: {fileID: 11400000, guid: aeb41d60ef0f8e1438d52a6fbe869d2c, type: 2}
+  _pageRender: {fileID: 0}
+  _myEvent:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 957759585}
+        m_MethodName: PlayVideo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 32900000, guid: 5e0cdc5ec3f3c214193583b897521626,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &3738551437524293838
 Transform:
   m_ObjectHideFlags: 0
@@ -22934,6 +22964,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3737110521263624007}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1aa731680f74e7b45967909609e52375,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 996909278}
@@ -23033,6 +23076,20 @@ MonoBehaviour:
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
             unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 957759585}
+        m_MethodName: PlayVideo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 32900000, guid: e08dc8f21526d374380e3ae0c1416eb6,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -32481,6 +32538,19 @@ MonoBehaviour:
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 1da4a7d29ec11c54ca150876eb04af7b,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
+            unity.scriptable-dialogue-system.Editor
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3895746975848616860}
+        m_MethodName: SwapDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 6566300c9749e2b44bd478c773ac338d,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ScriptableDialogueSystem.Editor.DialogueTypes.Dialogue,
             unity.scriptable-dialogue-system.Editor
