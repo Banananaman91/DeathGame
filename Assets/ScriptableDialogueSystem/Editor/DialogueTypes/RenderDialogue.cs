@@ -20,6 +20,7 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         [SerializeField] private Image _dialogueBackground;
         [SerializeField] private GameObject _dialogueBox;
         [SerializeField] private NpcImages _npcImages;
+        [SerializeField, Tooltip("Use this to disable any game objects while dialogue is playing")] private GameObject[] _disableObjects;
         private List<Button> _responseOptions = new List<Button>();
         private NpcBio _npcImageBio;
         private Sprite _newMoodImage;
@@ -61,6 +62,11 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
             foreach (var other in OtherDialogues.Where(other => other.gameObject.activeSelf))
             {
                 other.EndDialogue();
+            }
+
+            foreach (var other in _disableObjects)
+            {
+                if (other.activeSelf) other.SetActive(false);
             }
             _npc = npcDialogue;
             _paragraphNumber = 0;
@@ -104,15 +110,23 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                 if (_npcImageBio != null)
                 {
                     //Set the dialogue box backgorund to the npcs required background if one exists
-                    if (_npcImageBio.DialogueBackgroundImage) _dialogueBackground.sprite = _npcImageBio.DialogueBackgroundImage;
+                    if (_npcImageBio.DialogueBackgroundImage)
+                        _dialogueBackground.sprite = _npcImageBio.DialogueBackgroundImage;
 
                     if (_npcImageBio.CharacterBackgroundImage)
+                    {
                         _characterBackgroundImage.sprite = _npcImageBio.CharacterBackgroundImage;
- 
+                        if (!_characterBackgroundImage.gameObject.activeSelf) _characterBackgroundImage.gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        if (_characterBackgroundImage.gameObject.activeSelf) _characterBackgroundImage.gameObject.SetActive(false);
+                    }
+
                     _pageName.color = _npcImageBio.DialogueTextColour;
                     _pageText.color = _npcImageBio.DialogueTextColour;
                     _dialogueBackground.color = _npcImageBio.DialogueBackgroundColour;
-                    
+
                     //Set the dialogue box font to the npcs required font if one exists
                     if (_npcImageBio.DialogueTextFont)
                     {
@@ -130,6 +144,8 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                         }
                     }
                 }
+
+                else _newMoodImage = null;
             }
             
             if (!_dialogueBox.activeSelf) _dialogueBox.SetActive(true);
