@@ -45,12 +45,11 @@ namespace Saving
             }
         }
         
-        [Tooltip("All the pages that player can find go here")]
-        [SerializeField] private Page[] _pages;
         [SerializeField] private InventoryScript _inventoryScript;
         private readonly List<int> _inventoryObjects = new List<int>();
         private readonly List<int> _inventoryPages = new List<int>();
         private static IEnumerable<ItemPickUp> PickUps => Resources.FindObjectsOfTypeAll<ItemPickUp>();
+        private static IEnumerable<Page> Pages => Resources.FindObjectsOfTypeAll<Page>();
         private static IEnumerable<FurnitureInteract> Interactables => FindObjectsOfType<FurnitureInteract>();
         private static PlayerMovement PlayerMovement => FindObjectOfType<PlayerMovement>();
         private static Vector3 PlayerPosition
@@ -176,7 +175,7 @@ namespace Saving
 
         private void AllocatePages(int pageId)
         {
-            foreach (var page in _pages)
+            foreach (var page in Pages)
             {
                 if(page.GetInstanceID() != pageId) continue;
                 _inventoryScript.AddPage(page);
