@@ -56,14 +56,14 @@ namespace InventoryScripts
                 }
             }
         }
-#elif UNITY_ANDROID || UNITY_IOS || UNITY_IPHONE
+#endif
         public void Inventory()
         {
             if (!Active)                //if statement that checks the bool
             {
                 Active = true;                  //changes the bool
                 if (IsInventoryPanelNotNull) _inventoryPanel.SetActive(true);           //sets GameObject as active
-                    foreach (var uiObject in _otherUiObjects)
+                    foreach (var uiObject in _disableUiObjects)
                     {
                         if (uiObject.activeSelf) uiObject.SetActive(false);
                     }
@@ -74,8 +74,7 @@ namespace InventoryScripts
                 if (IsInventoryPanelNotNull) _inventoryPanel.SetActive(false);      //sets the GameObject as unactive
             }
         }
-#endif
-
+        
         public void LoadItemInformation(ItemPickUp item)
         {
             _nameOfItem.text = item.ItemName;

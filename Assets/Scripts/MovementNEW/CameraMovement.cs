@@ -56,8 +56,7 @@ namespace MovementNEW
                 RotateCamera(90);
             }
         }
-        
-#elif UNITY_ANDROID || UNITY_IOS || UNITY_IPHONE
+#endif
         public void RotateLeft(int angle)
         {
             if (_startedRotation) return;
@@ -69,8 +68,7 @@ namespace MovementNEW
             if (_startedRotation) return;
             RotateCamera(angle);
         }
-#endif
-    
+        
         private void RotateCamera(int angle)
         {
             _goalRotateEuler = new Vector3(0, CameraPivot.transform.eulerAngles.y + angle, 0);
