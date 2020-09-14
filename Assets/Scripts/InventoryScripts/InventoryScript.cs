@@ -1,4 +1,5 @@
-﻿using Boo.Lang;
+﻿using System;
+using System.Collections.Generic;
 using MovementNEW;
 using Pages;
 using UnityEngine;
@@ -8,24 +9,27 @@ namespace InventoryScripts
 {
     public class InventoryScript : MonoBehaviour {
 
+        [SerializeField] private PlayerMovement _thePlayer;
+        [SerializeField] private ManagerScript _manager;
         [Header("Inventory variables")]
         [SerializeField] private GameObject _buttonPrefab;
-        [SerializeField] private ManagerScript _manager;
         [SerializeField] private Transform _parentObject;
-        private readonly List<GameObject> _items = new List<GameObject>();
-        public List<GameObject> Items => _items;
-        //
         [Header("Journal Inventory variables")]
-        [SerializeField] private Button[] _pageButtons;
-        [Tooltip("In inspector write down the size of array to fit number of available pages")]
-        [SerializeField] private GameObject[] _pageObjects;
-        [SerializeField] private PlayerMovement _thePlayer;
-        public GameObject[] PageObjects => _pageObjects;
-        
+        [SerializeField] private Button[] _pageButtons; 
+        [SerializeField] private Page[] _pages;
+        private readonly List<ItemPickUp> _items = new List<ItemPickUp>();
+        public IEnumerable<ItemPickUp> Items => _items;
+        public IEnumerable<Page> Pages => _pages;
+
+        private void OnValidate()
+        {
+            if (_pages.Length != _pageButtons.Length) _pages = new Page[_pageButtons.Length];
+        }
+
         public void AddItem(ItemPickUp newItem)
         {
             var invSlot = Instantiate(_buttonPrefab, _parentObject);
-            _items.Add(newItem.gameObject);
+            _items.Add(newItem);
             var button = invSlot.GetComponentInChildren<Button>();
             button.image.sprite = newItem.ObjectSprite;
             button.onClick.AddListener(() => _manager.LoadItemInformation(newItem));
@@ -34,7 +38,7 @@ namespace InventoryScripts
         
         public void AddPage(Page page)
         {
-            _pageObjects[page.PageClass] = page.gameObject;
+            _pages[page.PageClass] = page;
             _pageButtons[page.PageClass].image.overrideSprite = page.SpriteObject;
             _pageButtons[page.PageClass].onClick.AddListener(() => page.Interact(_thePlayer));
             _pageButtons[page.PageClass].GetComponentInChildren<Text>().text = page.Clue;
