@@ -9,6 +9,7 @@ namespace Saving
         private static readonly string SaveFolder = Application.dataPath + "/Saves";
         private static readonly string PlayerInfo = SaveFolder + "/playerinf.json";
         private static readonly string InventoryInfo = SaveFolder + "/inventory.json";
+        private static readonly string SavedDialogues = SaveFolder + "/dialogues.json";
 
         public static void Initialize()
         {
@@ -18,16 +19,18 @@ namespace Saving
             }
         }
 
-        public static void Save(string playerString, string inventoryString)
+        public static void Save(string playerString, string inventoryString, string dialogueString)
         {
             File.WriteAllText(PlayerInfo, playerString);
             File.WriteAllText(InventoryInfo, inventoryString);
+            File.WriteAllText(SavedDialogues, dialogueString);
         }
    
-        public static (string , string) Load()
+        public static (string , string, string) Load()
         {
             string data1 = null;
             string data2 = null;
+            string data3 = null;
             if (File.Exists(PlayerInfo))
             {
                 data1 = File.ReadAllText(PlayerInfo);
@@ -36,7 +39,11 @@ namespace Saving
             {
                 data2 = File.ReadAllText(InventoryInfo);
             }
-            return (data1, data2);
+            if (File.Exists(SavedDialogues))
+            {
+                data3 = File.ReadAllText(SavedDialogues);
+            }
+            return (data1, data2, data3);
         }
 
         public static void Delete()
