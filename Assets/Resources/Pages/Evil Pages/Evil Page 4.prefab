@@ -52,7 +52,7 @@ MonoBehaviour:
   _pageClass: 7
   _pureEvil: 1
   _spriteObject: {fileID: 21300000, guid: a66ecd1a6fc0b924c961c8a1932e5a16, type: 3}
-  _clue: 
+  _clue: Hidden away, remaining untouched, cleanse your soul
 --- !u!212 &922715899923857968
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -37,14 +37,14 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Granny
     _messageText: So, Death, I challenge you
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 4
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
     _messageText: I have hidden myself inside of the house
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 5
     _triggerEvent: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
   - _npcName: Granny
     _messageText: If you follow the clues, you will eventually find each page of
       my journal
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 6
     _triggerEvent: 0
@@ -60,14 +60,14 @@ MonoBehaviour:
   - _npcName: Granny
     _messageText: After which, the final page will provide you with a clue to where
       I am hidden
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 7
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
     _messageText: But beware, there are also fake versions of my journal
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 8
     _triggerEvent: 0

@@ -10,28 +10,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
-  m_Name: EvilPageComputer
+  m_Name: FrontDoorClues
   m_EditorClassIdentifier: 
   _messages:
   - _npcName: Death
-    _messageText: Looks like there is a note under this keyboard
-    _npcMood: Emotionless
+    _messageText: 'Clue 1: A beautiful view for the living'
+    _npcMood: 
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
-    _messageText: Must be another one of her horrible stories
-    _npcMood: Sarcastic
+    _messageText: 'Clue 2: It''s not exactly fresh news'
+    _npcMood: 
     _responses: []
     _nextMessage: 2
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
-    _messageText: Why does she think anybody cares about what she done when she was
-      younger
-    _npcMood: Annoyed
+    _messageText: 'Clue 3: Some of my spare junk just can''t stay upright'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: 'Clue 4: My first place to visit first thing in the morning'
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Death
+    _messageText: These are all really bad...
+    _npcMood: 
     _responses: []
     _nextMessage: -1
-    _triggerEvent: 1
+    _triggerEvent: 0
     _eventNum: 0

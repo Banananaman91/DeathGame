@@ -50,8 +50,9 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls: []
   _pageClass: 3
+  _pureEvil: 0
   _spriteObject: {fileID: 21300000, guid: b5f8f83bab776f347bf7bfc6bafa5abd, type: 3}
-  _clue: 
+  _clue: Magic trunks fit all kinds of treats
 --- !u!212 &51082429789994450
 SpriteRenderer:
   m_ObjectHideFlags: 0

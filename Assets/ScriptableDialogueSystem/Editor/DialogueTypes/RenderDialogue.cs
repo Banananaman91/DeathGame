@@ -32,6 +32,8 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         private bool IsCurrentRoutineNotNull => _currentRoutine != null;
         private bool IsNewMoodImageNotNull => _newMoodImage != null;
 
+        private string _previousMoodName;
+
         [HideInInspector] public List<RenderDialogue> OtherDialogues = new List<RenderDialogue>();
 
         private void RenderPageText(string pageName, string pageText)
@@ -134,13 +136,17 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
                         _pageText.font = _npcImageBio.DialogueTextFont;
                     }
 
-                    //Set NPC mood image from previous list based on current mood
-                    foreach (var npcMood in _npcImageBio.NpcMoodImages)
+                    if (_npc.Messages[_paragraphNumber].NpcMood != "")
                     {
-                        var npcMoodName = npcMood.NpcMoodImage.name.ToLower();
-                        if (npcMoodName.Contains(_npc.Messages[_paragraphNumber].NpcMood.ToLower()))
+                        //Set NPC mood image from previous list based on current mood
+                        foreach (var npcMood in _npcImageBio.NpcMoodImages)
                         {
-                            _newMoodImage = npcMood.NpcMoodImage;
+                            var npcMoodName = npcMood.NpcMoodImage.name.ToLower();
+                            if (npcMoodName.Contains(_npc.Messages[_paragraphNumber].NpcMood.ToLower()))
+                            {
+                                _newMoodImage = npcMood.NpcMoodImage;
+                                _previousMoodName = npcMoodName;
+                            }
                         }
                     }
                 }

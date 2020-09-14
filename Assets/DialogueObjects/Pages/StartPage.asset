@@ -16,7 +16,7 @@ MonoBehaviour:
   - _npcName: Granny
     _messageText: The day I moved into my first home was an eventful day. I never
       realised how much this home would affect my life
-    _npcMood: Content
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0

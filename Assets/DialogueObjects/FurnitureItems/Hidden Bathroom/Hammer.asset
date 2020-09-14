@@ -25,5 +25,5 @@ MonoBehaviour:
     _npcMood: Emotionless
     _responses: []
     _nextMessage: -1
-    _triggerEvent: 0
+    _triggerEvent: 1
     _eventNum: 0

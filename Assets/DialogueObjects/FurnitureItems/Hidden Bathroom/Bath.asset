@@ -10,28 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
-  m_Name: EvilPageComputer
+  m_Name: Bath
   m_EditorClassIdentifier: 
   _messages:
   - _npcName: Death
-    _messageText: Looks like there is a note under this keyboard
-    _npcMood: Emotionless
+    _messageText: Curious bath filled with water, when it isn't plumbed in
+    _npcMood: Curious
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
-    _messageText: Must be another one of her horrible stories
+    _messageText: I bet that filthy bitch hasn't ever used it
     _npcMood: Sarcastic
     _responses: []
-    _nextMessage: 2
-    _triggerEvent: 0
-    _eventNum: 0
-  - _npcName: Death
-    _messageText: Why does she think anybody cares about what she done when she was
-      younger
-    _npcMood: Annoyed
-    _responses: []
     _nextMessage: -1
-    _triggerEvent: 1
+    _triggerEvent: 0
     _eventNum: 0
