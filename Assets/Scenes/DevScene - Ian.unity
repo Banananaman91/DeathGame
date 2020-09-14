@@ -1801,6 +1801,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210344619}
   m_CullTransparentMesh: 0
+--- !u!1 &228868752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 228868753}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &228868753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228868752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.414991, y: 7.837967, z: -1.7539062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &269824911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,6 +1945,8 @@ MonoBehaviour:
   _dialogueBackground: {fileID: 917535307}
   _dialogueBox: {fileID: 275645595}
   _npcImages: {fileID: 11400000, guid: d50f358d57896d14fad7103cd07eb49d, type: 2}
+  _disableObjects:
+  - {fileID: 1763588894}
   OtherDialogues: []
 --- !u!224 &275645597
 RectTransform:
@@ -2402,6 +2434,8 @@ MonoBehaviour:
   _dialogueBackground: {fileID: 1559989663}
   _dialogueBox: {fileID: 385706251}
   _npcImages: {fileID: 11400000, guid: 5bef53fbb1d4073469cbe3cc00100e8e, type: 2}
+  _disableObjects:
+  - {fileID: 1763588894}
   OtherDialogues: []
 --- !u!224 &385706253
 RectTransform:
@@ -3636,6 +3670,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
         type: 3}
+      propertyPath: _otherUiObjects.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _disableUiObjects.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
       propertyPath: _inventoryPanel
       value: 
       objectReference: {fileID: 1763588894}
@@ -3679,6 +3723,66 @@ PrefabInstance:
       propertyPath: _playerInteract
       value: 
       objectReference: {fileID: 1398405870}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _otherUiObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 5554085951253088025}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _otherUiObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 1553199785}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _otherUiObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 385706251}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _otherUiObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 275645595}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _otherUiObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 1595645554}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _otherUiObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 996909277}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _disableUiObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 5554085951253088025}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _disableUiObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 1553199785}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _disableUiObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 385706251}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _disableUiObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 275645595}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _disableUiObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 1595645554}
+    - target: {fileID: 7325840728520856056, guid: 20593bb1f04bd844a87efd11e058657e,
+        type: 3}
+      propertyPath: _disableUiObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 996909277}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20593bb1f04bd844a87efd11e058657e, type: 3}
 --- !u!114 &686381472 stripped
@@ -6574,6 +6678,8 @@ MonoBehaviour:
   _dialogueBackground: {fileID: 813365416}
   _dialogueBox: {fileID: 996909277}
   _npcImages: {fileID: 11400000, guid: ead6eca706313004b976553a52189599, type: 2}
+  _disableObjects:
+  - {fileID: 1763588894}
   OtherDialogues: []
 --- !u!224 &996909279
 RectTransform:
@@ -7556,6 +7662,51 @@ RectTransform:
   m_AnchoredPosition: {x: 216.7, y: -36.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1197367193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1197367195}
+  - component: {fileID: 1197367194}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1197367194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197367193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9abde941bcaaee2429b5cbafef889f92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pages: []
+  _inventoryScript: {fileID: 1763588895}
+--- !u!4 &1197367195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197367193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.414991, y: 7.837967, z: -1.7539062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1203610452
 GameObject:
   m_ObjectHideFlags: 0
@@ -8981,6 +9132,8 @@ MonoBehaviour:
   _dialogueBackground: {fileID: 1239499812}
   _dialogueBox: {fileID: 1553199785}
   _npcImages: {fileID: 11400000, guid: f86702cffbdfdc0428111bb04786f508, type: 2}
+  _disableObjects:
+  - {fileID: 1763588894}
   OtherDialogues: []
 --- !u!224 &1553199787
 RectTransform:
@@ -9320,6 +9473,8 @@ MonoBehaviour:
   _dialogueBackground: {fileID: 637250131}
   _dialogueBox: {fileID: 1595645554}
   _npcImages: {fileID: 11400000, guid: 73113ca044fc39647956ead13b551634, type: 2}
+  _disableObjects:
+  - {fileID: 1763588894}
   OtherDialogues: []
 --- !u!224 &1595645556
 RectTransform:
@@ -10594,9 +10749,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29ba9f1038a69094dbe831c2c63d48dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _thePlayer: {fileID: 1299812970}
+  _manager: {fileID: 686381472}
   _buttonPrefab: {fileID: 3596239170074124678, guid: 6b436478a66429c438b09908e2f46262,
     type: 3}
-  _manager: {fileID: 686381472}
   _parentObject: {fileID: 1766203258}
   _pageButtons:
   - {fileID: 1696524503}
@@ -10615,7 +10771,7 @@ MonoBehaviour:
   - {fileID: 902720831}
   - {fileID: 878206486}
   - {fileID: 1207870114}
-  _pageObjects:
+  _pages:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -10632,7 +10788,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _thePlayer: {fileID: 1299812970}
+  _versionDialogues:
+  - {fileID: 1553199786}
+  - {fileID: 385706252}
+  - {fileID: 275645596}
+  - {fileID: 1595645555}
+  - {fileID: 996909278}
 --- !u!114 &1763588896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12723,11 +12884,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &40510184967194930
 Transform:
   m_ObjectHideFlags: 0
@@ -12932,11 +13088,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &190626636322783859
 Transform:
   m_ObjectHideFlags: 0
@@ -13152,11 +13303,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!1 &237168297737997018
 GameObject:
   m_ObjectHideFlags: 0
@@ -16561,11 +16707,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!23 &556145620714007048
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17636,11 +17777,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!33 &1152637093074440964
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18141,11 +18277,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &1426618716735054414
 Transform:
   m_ObjectHideFlags: 0
@@ -18268,11 +18399,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!23 &1493023191969642406
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19394,11 +19520,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!1 &1955992306030840274
 GameObject:
   m_ObjectHideFlags: 0
@@ -19520,11 +19641,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &1992548560036804016
 Transform:
   m_ObjectHideFlags: 0
@@ -19673,11 +19789,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &2081325206997536773
 Transform:
   m_ObjectHideFlags: 0
@@ -19935,11 +20046,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &2293523482428858566
 Transform:
   m_ObjectHideFlags: 0
@@ -21091,11 +21197,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &3031421077701783823
 Transform:
   m_ObjectHideFlags: 0
@@ -21367,11 +21468,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!23 &3225523255003505286
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22701,11 +22797,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!1 &3884744165834566969
 GameObject:
   m_ObjectHideFlags: 0
@@ -22795,11 +22886,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!1 &3905440911391061148
 GameObject:
   m_ObjectHideFlags: 0
@@ -23118,11 +23204,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!1 &4209092546161518713
 GameObject:
   m_ObjectHideFlags: 0
@@ -23315,11 +23396,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!33 &4314028621812260643
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -24035,11 +24111,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &4697303059035936012
 Transform:
   m_ObjectHideFlags: 0
@@ -24109,11 +24180,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &4715527628416834416
 Transform:
   m_ObjectHideFlags: 0
@@ -24209,11 +24275,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &4785487515545526594
 Transform:
   m_ObjectHideFlags: 0
@@ -24455,11 +24516,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!1 &4871738956253069885
 GameObject:
   m_ObjectHideFlags: 0
@@ -24562,11 +24618,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!1001 &4940276886447192682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25083,11 +25134,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!33 &5050755214421112215
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -25151,11 +25197,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!1 &5065380448041789136
 GameObject:
   m_ObjectHideFlags: 0
@@ -25334,11 +25375,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!1 &5160036154845522663
 GameObject:
   m_ObjectHideFlags: 0
@@ -25452,11 +25488,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!1 &5183508507164697731
 GameObject:
   m_ObjectHideFlags: 0
@@ -25599,11 +25630,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!114 &5235960692550667407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25659,12 +25685,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside:
-  - {fileID: 0}
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!23 &5252093183197486507
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26654,11 +26674,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &5280742325680763159
 Transform:
   m_ObjectHideFlags: 0
@@ -26834,11 +26849,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!33 &5280742325772036763
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27727,11 +27737,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &5280742326324950141
 Transform:
   m_ObjectHideFlags: 0
@@ -27921,11 +27926,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!33 &5280742326332003357
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -29772,6 +29772,8 @@ MonoBehaviour:
   _dialogueBackground: {fileID: 5554085951418327289}
   _dialogueBox: {fileID: 5554085951253088025}
   _npcImages: {fileID: 11400000, guid: 5af8d43f0d5c07f429d3aa80d8970016, type: 2}
+  _disableObjects:
+  - {fileID: 1763588894}
   OtherDialogues: []
 --- !u!224 &5554085951418327288
 RectTransform:
@@ -30734,11 +30736,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &6285494818168128843
 Transform:
   m_ObjectHideFlags: 0
@@ -31280,11 +31277,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!33 &6607095219606861619
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -32403,11 +32395,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!4 &7190639583419594410
 Transform:
   m_ObjectHideFlags: 0
@@ -33160,11 +33147,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!33 &7596210173443872647
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -33256,11 +33238,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!23 &7649745833922538772
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33397,11 +33374,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!33 &7679936711537140041
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -33828,11 +33800,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!33 &7992965294518256686
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -34151,11 +34118,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!1 &8177297942906617240
 GameObject:
   m_ObjectHideFlags: 0
@@ -34368,11 +34330,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!23 &8261612418651612504
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35491,11 +35448,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!23 &8801649092645541776
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35801,11 +35753,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _objectsInside: []
-  _inventoryScript: {fileID: 0}
-  _hiddenObjectCheck: 0
-  _hiddenObject: {fileID: 0}
-  _hiddenObjectPosition: -1
 --- !u!23 &8941061598888092420
 MeshRenderer:
   m_ObjectHideFlags: 0

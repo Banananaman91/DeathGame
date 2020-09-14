@@ -50,6 +50,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls: []
   _pageClass: 5
+  _pureEvil: 1
   _spriteObject: {fileID: 21300000, guid: a66ecd1a6fc0b924c961c8a1932e5a16, type: 3}
   _clue: Start again
 --- !u!212 &4481255672077759953

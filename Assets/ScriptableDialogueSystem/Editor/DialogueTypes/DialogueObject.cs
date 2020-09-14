@@ -13,6 +13,8 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         private int _eventNum;
         public UnityEvent[] MyEvent => _myEvent;
 
+        public Dialogue MyDialogue => _myDialogue;
+
         public void EventTrigger(int num)
         {
             _myEvent[num].Invoke();
