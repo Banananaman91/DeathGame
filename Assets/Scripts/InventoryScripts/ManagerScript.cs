@@ -1,6 +1,7 @@
 using System;
 using MovementNEW;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace InventoryScripts
@@ -9,6 +10,7 @@ namespace InventoryScripts
 
         [SerializeField] private GameObject _inventoryPanel;
         [SerializeField] private InventoryScript _inventoryScript;
+        [SerializeField] private GameObject[] _disableUiObjects;
         [Header("Variables to display pick up information")]
         [SerializeField] private Text _nameOfItem;
         [SerializeField] private Text _descriptionOfItem;
@@ -40,6 +42,10 @@ namespace InventoryScripts
                     if (IsInventoryPanelNotNull) _inventoryPanel.SetActive(true);
                     _playerMovement.enabled = false;
                     _playerInteract.enabled = false;
+                    foreach (var uiObject in _disableUiObjects)
+                    {
+                        if (uiObject.activeSelf) uiObject.SetActive(false);
+                    }
                 }
                 else if(Active)
                 {
@@ -57,6 +63,10 @@ namespace InventoryScripts
             {
                 Active = true;                  //changes the bool
                 if (IsInventoryPanelNotNull) _inventoryPanel.SetActive(true);           //sets GameObject as active
+                    foreach (var uiObject in _otherUiObjects)
+                    {
+                        if (uiObject.activeSelf) uiObject.SetActive(false);
+                    }
             }
             else if(Active)             //if statement that checks the bool
             {

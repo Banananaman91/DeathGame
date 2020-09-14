@@ -20,6 +20,7 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
         [SerializeField] private Image _dialogueBackground;
         [SerializeField] private GameObject _dialogueBox;
         [SerializeField] private NpcImages _npcImages;
+        [SerializeField, Tooltip("Use this to disable any game objects while dialogue is playing")] private GameObject[] _disableObjects;
         private List<Button> _responseOptions = new List<Button>();
         private NpcBio _npcImageBio;
         private Sprite _newMoodImage;
@@ -61,6 +62,11 @@ namespace ScriptableDialogueSystem.Editor.DialogueTypes
             foreach (var other in OtherDialogues.Where(other => other.gameObject.activeSelf))
             {
                 other.EndDialogue();
+            }
+
+            foreach (var other in _disableObjects)
+            {
+                if (other.activeSelf) other.SetActive(false);
             }
             _npc = npcDialogue;
             _paragraphNumber = 0;
