@@ -1,0 +1,1 @@
+This file will keep the folder for git, as git doesn't accept empty folders"
