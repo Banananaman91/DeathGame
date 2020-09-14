@@ -30,7 +30,15 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: Do I open it to find out?
     _npcMood: emotionless
-    _responses: []
-    _nextMessage: 0
-    _triggerEvent: 1
-    _eventNum: 2
+    _responses:
+    - _next: -1
+      _reply: Yes
+      _triggerEvent: 1
+      _eventNum: 0
+    - _next: -1
+      _reply: No
+      _triggerEvent: 0
+      _eventNum: 0
+    _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0
