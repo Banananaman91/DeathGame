@@ -71,3 +71,15 @@ MonoBehaviour:
     _dialogueTextFont: {fileID: 12800000, guid: 3281bd09bf74d654a8aed231dd8b3a5a,
       type: 3}
     _buttonSprite: {fileID: 0}
+  - _npcName: Young lady
+    _npcMoodImages:
+    - _npcMoodImage: {fileID: 21300000, guid: 78587d611c6114645ae4e5c2c2c534b5, type: 3}
+    _characterBackgroundImage: {fileID: 21300000, guid: b967049544ce82543b62a181d0002faa,
+      type: 3}
+    _dialogueBackgroundImage: {fileID: 21300000, guid: 83ceb3c28fdadf84abd4df67b52f3527,
+      type: 3}
+    _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
+    _dialogueTextColour: {r: 1, g: 0.94841784, b: 0.7122642, a: 1}
+    _dialogueTextFont: {fileID: 12800000, guid: 64708e027e550b7438b53b4e8fa7464b,
+      type: 3}
+    _buttonSprite: {fileID: 0}

@@ -44,3 +44,24 @@ MonoBehaviour:
     _dialogueTextFont: {fileID: 12800000, guid: 477a6f1aa0e89ed428275157214e234d,
       type: 3}
     _buttonSprite: {fileID: 0}
+  - _npcName: Young Lady
+    _npcMoodImages:
+    - _npcMoodImage: {fileID: 21300000, guid: 78587d611c6114645ae4e5c2c2c534b5, type: 3}
+    _characterBackgroundImage: {fileID: 21300000, guid: b967049544ce82543b62a181d0002faa,
+      type: 3}
+    _dialogueBackgroundImage: {fileID: 21300000, guid: 83ceb3c28fdadf84abd4df67b52f3527,
+      type: 3}
+    _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
+    _dialogueTextColour: {r: 1, g: 0.9805892, b: 0.7688679, a: 1}
+    _dialogueTextFont: {fileID: 12800000, guid: 64708e027e550b7438b53b4e8fa7464b,
+      type: 3}
+    _buttonSprite: {fileID: 0}
+  - _npcName: System
+    _npcMoodImages: []
+    _characterBackgroundImage: {fileID: 0}
+    _dialogueBackgroundImage: {fileID: 21300000, guid: 4cbf691f879fa1e4a844317c37b5a0d6,
+      type: 3}
+    _dialogueBackgroundColour: {r: 1, g: 1, b: 1, a: 1}
+    _dialogueTextColour: {r: 1, g: 1, b: 1, a: 1}
+    _dialogueTextFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    _buttonSprite: {fileID: 0}
