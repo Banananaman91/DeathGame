@@ -17,6 +17,9 @@ namespace MovementNEW
         [SerializeField] private GameObject _currentCamera;
         public Vector3 CameraF => _cameraF;
         public Vector3 CameraR => _cameraR;
+
+        public GameObject CurrentCamera => _currentCamera;
+
         private Transform CameraPivot => _currentCamera.transform.parent;
         private Transform CameraTransform => _currentCamera.transform;
         // Start is called before the first frame update
@@ -53,8 +56,7 @@ namespace MovementNEW
                 RotateCamera(90);
             }
         }
-        
-#elif UNITY_ANDROID || UNITY_IOS || UNITY_IPHONE
+#endif
         public void RotateLeft(int angle)
         {
             if (_startedRotation) return;
@@ -66,8 +68,7 @@ namespace MovementNEW
             if (_startedRotation) return;
             RotateCamera(angle);
         }
-#endif
-    
+        
         private void RotateCamera(int angle)
         {
             _goalRotateEuler = new Vector3(0, CameraPivot.transform.eulerAngles.y + angle, 0);
@@ -77,7 +78,7 @@ namespace MovementNEW
         
         private void UpdateViewAndMovement()
         {
-            UpdateCameraView();
+            //UpdateCameraView();
             UpdateMovementDirection();
         }
     
@@ -116,7 +117,7 @@ namespace MovementNEW
                 {
                     _startedRotation = false;
                 }
-                UpdateCameraView();
+                //UpdateCameraView();
                 yield return null;
             } while (_startedRotation);
             UpdateMovementDirection();

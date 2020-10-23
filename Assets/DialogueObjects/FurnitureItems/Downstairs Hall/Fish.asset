@@ -15,15 +15,15 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: That picture looks fishy
-    _npcMood: 
+    _npcMood: Curious
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Best take it for my own bathroom
-    _npcMood: 
+    _npcMood: Joyous
     _responses: []
     _nextMessage: -1
-    _triggerEvent: 0
+    _triggerEvent: 1
     _eventNum: 0

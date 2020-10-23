@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: This is actually just a cupboard full of sawdust
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: How is that even possible?
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

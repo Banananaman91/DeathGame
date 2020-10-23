@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Green chicken, stinks of egg, and what I assume to be a fuzzy cucumber
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: I'm going to make a tasty sandwich when this is all over
-    _npcMood: 
+    _npcMood: Joyous
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

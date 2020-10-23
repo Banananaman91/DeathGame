@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Just a whole lot of dust and a broom
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: Maybe I should tell her where he broom is so that she can finally
       clean this disgusting building
-    _npcMood: 
+    _npcMood: Curious
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

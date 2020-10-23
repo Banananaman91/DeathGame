@@ -16,14 +16,14 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: Maybe I should take a visit to hell and donate some of these books
       to the kids
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: They'll really hate this crap
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

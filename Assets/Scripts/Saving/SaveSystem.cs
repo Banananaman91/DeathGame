@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using UnityEngine;
 
 namespace Saving
@@ -6,6 +7,9 @@ namespace Saving
     public static class SaveSystem
     {
         private static readonly string SaveFolder = Application.dataPath + "/Saves";
+        private static readonly string PlayerInfo = SaveFolder + "/playerinf.json";
+        private static readonly string InventoryInfo = SaveFolder + "/inventory.json";
+        private static readonly string SavedDialogues = SaveFolder + "/dialogues.json";
 
         public static void Initialize()
         {
@@ -15,45 +19,42 @@ namespace Saving
             }
         }
 
-        public static void Save(string saveString)
+        public static void Save(string playerString, string inventoryString, string dialogueString)
         {
-            File.WriteAllText(SaveFolder + "/playerinf.json", saveString);
+            File.WriteAllText(PlayerInfo, playerString);
+            File.WriteAllText(InventoryInfo, inventoryString);
+            File.WriteAllText(SavedDialogues, dialogueString);
         }
-
-        public static void SaveInventory(string saveString)
+   
+        public static (string , string, string) Load()
         {
-            File.WriteAllText(SaveFolder + "/inventory.json", saveString);
-        }
-
-        public static string Load()
-        {
-            if (File.Exists(SaveFolder + "/playerinf.json"))
+            string data1 = null;
+            string data2 = null;
+            string data3 = null;
+            if (File.Exists(PlayerInfo))
             {
-                var data = File.ReadAllText(SaveFolder + "/playerinf.json");
-                return data;
+                data1 = File.ReadAllText(PlayerInfo);
             }
-            return null;
-        }
-
-        public static string LoadInventory()
-        {
-            if (File.Exists(SaveFolder + "/inventory.json"))
+            if (File.Exists(InventoryInfo))
             {
-                var data = File.ReadAllText(SaveFolder + "/inventory.json");
-                return data;
+                data2 = File.ReadAllText(InventoryInfo);
             }
-            return null;
+            if (File.Exists(SavedDialogues))
+            {
+                data3 = File.ReadAllText(SavedDialogues);
+            }
+            return (data1, data2, data3);
         }
 
         public static void Delete()
         {
-            if (File.Exists(SaveFolder + "/playerinf.json"))
+            if (!Directory.EnumerateFileSystemEntries(SaveFolder).Any()) return;
+            var filesPaths = Directory.GetFiles(SaveFolder);
             {
-                File.Delete(SaveFolder + "/playerinf.json");
-            }
-            if (File.Exists(SaveFolder + "/inventory.json"))
-            {
-                File.Delete(SaveFolder + "/inventory.json");
+                foreach (var file in filesPaths)
+                {
+                    File.Delete(file);
+                }
             }
         }
     }

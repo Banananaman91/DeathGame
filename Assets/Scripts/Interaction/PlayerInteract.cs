@@ -26,10 +26,10 @@ public class PlayerInteract : MonoBehaviour {
         interactable?.Interact(_thePlayer);
         //_wasInteracting = interacting;
     }
-#if UNITY_ANDROID || UNITY_IOS || UNITY_IPHONE
+
     public void Interact()
     {
         _interact = true;
     }
-#endif
+
 }

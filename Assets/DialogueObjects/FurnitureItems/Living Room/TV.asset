@@ -15,21 +15,21 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: These tv's used to be the best
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Electrocutions, fire, falling on people
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: 2
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Golden age of tv if you ask me
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

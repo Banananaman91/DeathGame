@@ -1,35 +1,51 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using MovementNEW;
+using Pages;
+using ScriptableDialogueSystem.Editor.DialogueTypes;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace InventoryScripts
 {
     public class InventoryScript : MonoBehaviour {
+        [SerializeField] private PlayerMovement _thePlayer;
+        [SerializeField] private ManagerScript _manager;
+        [Header("Inventory variables")]
+        [SerializeField] private GameObject _buttonPrefab;
+        [SerializeField] private Transform _parentObject;
+        [Header("Journal Inventory variables")]
+        [SerializeField] private Button[] _pageButtons = new Button[0]; 
+        [SerializeField] private Page[] _pages = new Page[0];
+        [SerializeField] private RenderDialogue[] _versionDialogues = new RenderDialogue[0];
+        private readonly List<ItemPickUp> _items = new List<ItemPickUp>();
+        public IEnumerable<ItemPickUp> Items => _items;
+        public IEnumerable<Page> Pages => _pages;
 
-        [SerializeField] private Button[] _itemPlace;                       //creates an array of Buttons
-        [SerializeField] private GameObject[] _items;                       //creates an array of GameObjects
-        [SerializeField] private ManagerScript _manager;                    //reference to ManagerScript
-        public GameObject[] Items => _items;
-
-        private void Awake()
+        private void OnValidate()
         {
-            for (int i = 0; i < _items.Length; i++)              //loop which goes through all the items GameObjects                                           
-            {
-                _itemPlace[i].gameObject.SetActive(false);       //turns off buttons in inventory at the start of the game
-            }
+            if (_pages.Length != _pageButtons.Length) _pages = new Page[_pageButtons.Length];
         }
 
-        public void AddItem(ItemPickUp newItem)                                                           //function that adds item into inventory (requires a GameObject)
+        public void AddItem(ItemPickUp newItem)
         {
-           for(var i = 0; i <= _itemPlace.Length; i++)
-           {
-               if (_items[i] != null) continue;
-               _items[i] = newItem.gameObject;
-               _itemPlace[i].gameObject.SetActive(true);
-               _itemPlace[i].image.sprite = newItem.ObjectSprite;
-               _itemPlace[i].onClick.AddListener(() => _manager.LoadItemInformation(i));
-               return;
-           }
+            var invSlot = Instantiate(_buttonPrefab, _parentObject);
+            _items.Add(newItem);
+            var button = invSlot.GetComponentInChildren<Button>();
+            button.image.sprite = newItem.ObjectSprite;
+            button.onClick.AddListener(() => _manager.LoadItemInformation(newItem));
+            _manager.LoadItemInformation(newItem);
+        }
+        
+        public void AddPage(Page page)
+        {
+            _pages[page.PageClass] = page;
+            _pageButtons[page.PageClass].image.overrideSprite = page.SpriteObject;
+            var num = page.PageClass == 0 ? 0 : Mathf.Floor(_pages.Length / page.PageClass);
+            if (page.PureEvil) num = _versionDialogues.Length;
+            _pageButtons[page.PageClass].onClick.AddListener(() => _versionDialogues[(int)num].PlayDialogue(page.MyDialogue));
+            _pageButtons[page.PageClass].GetComponentInChildren<Text>().text = page.Clue;
         }
     }
 }

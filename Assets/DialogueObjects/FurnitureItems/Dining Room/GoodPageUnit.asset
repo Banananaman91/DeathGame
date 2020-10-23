@@ -15,21 +15,21 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Oh my...
-    _npcMood: 
+    _npcMood: Surprised
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: I don't think I've ever seen so many porcelain babies
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: 2
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: This bitch has a real problem
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

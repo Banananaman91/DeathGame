@@ -15,7 +15,7 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Oh look a key
-    _npcMood: 
+    _npcMood: Sarcastic
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -23,14 +23,14 @@ MonoBehaviour:
   - _npcName: Death
     _messageText: I wonder what a key with "basement" written on it could ever be
       for
-    _npcMood: 
+    _npcMood: Confused
     _responses: []
     _nextMessage: 2
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Maybe it is for me to jam into her kidneys
-    _npcMood: 
+    _npcMood: Impressed
     _responses: []
     _nextMessage: -1
     _triggerEvent: 1

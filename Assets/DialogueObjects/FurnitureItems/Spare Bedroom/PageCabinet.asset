@@ -15,14 +15,14 @@ MonoBehaviour:
   _messages:
   - _npcName: Death
     _messageText: Nothing but thick layers of dust
-    _npcMood: 
+    _npcMood: Emotionless
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Death
     _messageText: Probably because nobody wants to visit this dump
-    _npcMood: 
+    _npcMood: Sarcastic
     _responses: []
     _nextMessage: -1
     _triggerEvent: 0

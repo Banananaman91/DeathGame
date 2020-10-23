@@ -16,7 +16,7 @@ MonoBehaviour:
   - _npcName: Granny
     _messageText: "As I lay in bed, I couldn\u2019t stop thinking of this strange
       woman downstairs."
-    _npcMood: 
+    _npcMood: content
     _responses: []
     _nextMessage: 1
     _triggerEvent: 0
@@ -37,7 +37,7 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Granny
     _messageText: yet it felt so right that she should be here.
-    _npcMood: 
+    _npcMood: smitten
     _responses: []
     _nextMessage: 4
     _triggerEvent: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   - _npcName: Granny
     _messageText: I contemplated what I should do all night and found that sleep
       escaped me come the morning.
-    _npcMood: 
+    _npcMood: content
     _responses: []
     _nextMessage: 5
     _triggerEvent: 0
@@ -91,16 +91,24 @@ MonoBehaviour:
     _eventNum: 0
   - _npcName: Lady
     _messageText: I would be happy to
-    _npcMood: 
+    _npcMood: Cheerful
     _responses: []
     _nextMessage: 11
     _triggerEvent: 0
     _eventNum: 0
   - _npcName: Granny
-    _messageText: Once she left, I spent the day relaxing and found myself falling
-      asleep dreaming of her.
+    _messageText: Once she left, I spent the day relaxing, gazing out the large windows
+      that beautifully framed the garden.
+    _npcMood: smitten
+    _responses: []
+    _nextMessage: 12
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Granny
+    _messageText: In all of its natural beauty I was captivated, and found myself
+      falling asleep dreaming of her.
     _npcMood: 
     _responses: []
-    _nextMessage: -1
+    _nextMessage: 0
     _triggerEvent: 0
     _eventNum: 0
