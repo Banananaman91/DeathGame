@@ -1,5 +1,30 @@
 # Narrative exploration game
-### Still in Development
+### In Development
+
+### Credits
+
+#### Ian Barrow
+- Co-creator
+- Director
+- Project Manager
+- Gameplay Developer
+
+#### Aleksandr Ovcinikov
+- Co-creator
+- Gameplay Developer
+
+#### Dave Newman
+- Art Director
+- Character Animation
+- 3D Models (Characters and Environment)
+- Texture Artist
+- UI Artist and Developer
+- Lighting
+
+#### Leena Jarvenpaa
+- 3D Models (Environment Assets)
+- 2D Character Art
+- 2D Animation
 
 Death has come to reap the soul of an old lady who is at the end of her life. However, she has been preparing for this and challenges Death to find her.
 
