@@ -1,5 +1,5 @@
 # Narrative exploration game
-### In Development
+## In Development
 
 ### Credits
 
